@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <title>Combine Couture</title>   
+        <link rel="stylesheet" href="http://shoppable.co/assets/css/lib/bootstrap.min.css"></link>
+        <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+        <link href="css/font.css" rel="stylesheet" type="text/css"/>
+        
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    </head>
+ 
+  <body>
+    <div class="container">
+      <div class="layout">
+        <div id="header">
+                <a href="index.html" class="logo"><img src="images/logo.png" width="378" height="100" alt="logo"/></a>
+        </div>
+
+      
+          <script type="text/javascript" id="_loader">
+            function qs(key) {
+              key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+              var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+              return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+            }
+    
+            var _shop = _shop || {};
+            _shop.apiToken = '876sfdjkhgsdf7lkj912kdnd9';
+            _shop.returnToSite = encodeURI('http://combinecouture.com');
+           
+            _shop.checkoutURL = 'https://shoppable.co/checkout?referrer=' + _shop.returnToSite 
+              + '&id=' + qs('cart')
+              + '&apiToken=' + _shop.apiToken;
+            var checkout = document.createElement('iframe');
+            checkout.name = 'checkout';
+            checkout.id = 'checkout';
+            checkout.width = '100%';
+            checkout.height = '800';
+            checkout.frameBorder = '0';
+            checkout.scrolling='no';
+            checkout.src = _shop.checkoutURL;
+            var s = document.getElementById('_loader');
+            s.parentNode.insertBefore(checkout, s);
+          </script>
+    
+    </div>
+    </div>
+    
+  </body>
+</html>
+

@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Combine Couture</title>   
+        <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+        <link href="css/font.css" rel="stylesheet" type="text/css"/>
+        <link href="css/stylish-select.css" rel="stylesheet" type="text/css"/>
+        <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.stylish-select.js"></script>
+        <script type="text/javascript" src="js/jquery.bxSlider.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+        <script type="text/javascript">
+            function bodyOnload(){
+                $('.scroll-pane').jScrollPane();
+            }
+            $(function () {
+                
+                $('#my-dropdown').sSelect();
+                $('#my-dropdown2').sSelect();
+                var slider = $('#slider1').bxSlider({
+                    pause: 3000,
+                    speed: 500,
+                    controls: false,
+                    pager: true
+                });
+
+                $('#prev1').click(function () {
+                    slider.goToPreviousSlide();
+                    return false;
+                });
+
+                $('#next1').click(function () {
+                    slider.goToNextSlide();
+                    return false;
+                });
+            });
+            $(document).ready(function () {
+                $("#slider_sec li").hover(function () {
+                    if ($(this).hasClass('active')) {
+                    } else {
+                        $(this).children(".quick_look").show();
+                    }
+                }, function () {
+                    $(this).children(".quick_look").hide();
+                });
+                $(".quick_look").click(function () {
+                    $(this).parent("li").addClass("active");
+                    $(this).hide();
+                    $('.scroll-pane').jScrollPane();
+                    return false;
+                });
+                $(".close_btn").click(function () {
+                    $(this).parent('li').removeClass("active");
+                    $('.scroll-pane').jScrollPane();
+                    return false;
+                });
+                $('.links .link02').click(function () {
+                    $(".overlay").fadeIn();
+                    $(".product_popup").fadeIn();
+                    return false;
+                });
+                $('.popup_close').click(function () {
+                    $(".overlay").fadeOut();
+                    $(".product_popup").fadeOut();
+                    return false;
+                });
+
+                $(".hot_spot_c").click(function () {
+                    $(".porduct_des").fadeOut();
+                    $(this).css("display", "none");
+                    var productDes = $(this).attr("href");
+                    $(productDes).fadeIn();
+                    return false;
+                });
+                $(".description_close").click(function () {
+                    $(".porduct_des").fadeOut();
+                    $(".hot_spot_c").css("display", "block");
+                    return false;
+                });
+
+                $(".email_updates h3").next(".search_box").hide();
+                $(".email_updates h3").toggle(function () {
+                    $(this).next(".search_box").show();
+                }, function () {
+                    $(this).next(".search_box").hide();
+                });
+            });
+        </script>
+    </head>
+    <body onload="bodyOnload()">
+      <div class="layout">
+        <div id="header">
+                <a href="index.html" class="logo"><img src="images/logo.png" width="378" height="100" alt="logo"/></a>
+        </div>
+        <div id="outer_top_head">
+            <div id="top_head">
+                <ul class="icons">
+                    <li><a href="#"><img src="images/email_icon.png" alt="email_icon"/></a></li>
+                    <li><a href="#"><img src="images/fb_icon.png" alt="fb_icon"/></a></li>
+                    <li><a href="#"><img src="images/twitter_icon.png" alt="twitter_icon"/></a></li>
+                    <li><a href="#"><img src="images/pinterest_icon.png" alt="pinterest_icon"/></a></li>
+                </ul>
+                <ul class="account">
+                    <li class="last"><a href="#" class="shopping">SHOPPING BAG</a><span class="bg02">2<em></em></span></li>
+                </ul>
+            </div>
+        </div>
+            
+
+            <div class="left_sec">
+                <h2>TRENDS</h2>
+                <h3><strong>Hot Printed</strong>CLUTCHES</h3>
+                <small class="img"><img src="images/img01.jpg" width="229" height="242" alt="img01"/></small>
+                <p>Suspendisse venenatis euismod metus, in fringilla elit semper venenatis. Aliquam sollicitudin, orci ac lacinia suscipit, tortor erat pharetra sem, et facilisis velit nisi at sem. In hac habita sse platea dictumst. Vestibulum felis urna, faucibus sit amet. </p>
+                <a href="trends.html" class="shop_btn">read &amp; shop</a>
+            </div>
+            <div class="mid_sec">
+                <span class="img"><img src="images/img02.jpg" width="437" height="629" alt="img02"/></span>
+                <div class="look">
+                    <strong>DAILY LUX</strong><span>14 . MAY . 2012</span>
+                    <a href="#" class="shop_btn">read &amp; shop</a>
+                </div>
+                <a href="#des1" class="hot_spot01 hot_spot_c"></a>
+                <a href="#des2" class="hot_spot02 hot_spot_c"></a>
+                <a href="#des3" class="hot_spot03 hot_spot_c"></a>
+                <a href="#des4" class="hot_spot04 hot_spot_c"></a>
+                <div id="des1" class="porduct_des">
+                    <a href="#" class="description_close"></a>
+                    <div class="text">
+                        <h5>MichaEL Kors</h5>
+                        <small>Black clutch - $214</small>
+                        <a href="#" class="shop_btn">DETAILS</a>
+                        <span class="links"><a href="#" class="link01"></a><a href="#" class="link02"></a></span>
+                    </div>
+                </div>
+                <div id="des2" class="porduct_des">
+                    <a href="#" class="description_close"></a>
+                    <div class="text">
+                        <h5>MichaEL Kors</h5>
+                        <small>Black clutch - $214</small>
+                        <a href="#" class="shop_btn">DETAILS</a>
+                        <span class="links"><a href="#" class="link01"></a><a href="#" class="link02"></a></span>
+                    </div>
+                </div>
+                <div id="des3" class="porduct_des">
+                    <a href="#" class="description_close"></a>
+                    <div class="text">
+                        <h5>MichaEL Kors</h5>
+                        <small>Black clutch - $214</small>
+                        <a href="#" class="shop_btn">DETAILS</a>
+                        <span class="links"><a href="#" class="link01"></a><a href="#" class="link02"></a></span>
+                    </div>
+                </div>
+                <div id="des4" class="porduct_des">
+                    <a href="#" class="description_close"></a>
+                    <div class="text">
+                        <h5>MichaEL Kors</h5>
+                        <small>Black clutch - $214</small>
+                        <a href="#" class="shop_btn">DETAILS</a>
+                        <span class="links"><a href="#" class="link01"></a><a href="#" class="link02"></a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="right_sec">
+                <span class="img"><img src="images/img03.jpg" width="246" height="629" alt="img03"/></span>
+                <div class="text">
+                    <h3>BEHIND THE </h3><h4>BRAND: <strong>BCBG</strong></h4>
+                </div>
+                <a href="#" class="shop_btn dark">read &amp; shop</a>
+            </div>
+            <div id="footer">
+                <ul class="footer_nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li class="last"><a href="#">Terms of Use</a></li>
+                </ul>
+                <p class="copyright">&copy; 2012 <a href="#">72Lux</a> Inc. All Rights Reserved</p>
+            </div>
+        </div>
+        
+        <div class="overlay"></div>
+        
+        
+        <div class="product_popup">
+            <a href="#" class="popup_close">CLOSE</a>
+            <img class="pop_img" src="images/popup_img.jpg" alt="img" />
+            <div class="right_sec">
+                <h3>COMFORT VERA WANG  <small>Red Flats</small></h3>
+                <p>Item #1010-85708812036</p>
+                <form action="#">
+                    <div class="row">
+                        <label>SIZE</label>
+                        <select id="my-dropdown">
+                            <option>36</option>
+                            <option>36</option>
+                            <option>36</option>
+                            <option>36</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label>COLOR</label>
+                        <select id="my-dropdown2"><option>Red</option></select>
+                    </div>
+                    <div class="row2">
+                        <ul class="social">
+                            <li><a href="#">
+                                    <img src="images/email_icon.png" width="16" height="16" alt="email_icon"/>
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="images/fb_icon.png" width="16" height="16" alt="email_icon"/>
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="images/twitter_icon.png" width="16" height="16" alt="email_icon"/>
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="images/pinterest_icon.png" width="16" height="16" alt="email_icon"/>
+                                </a></li>
+                        </ul>
+                        <ul class="fav">
+                            <li>
+                                <a class="heart" href="#">
+                                    
+                                </a></li>
+                            <li><a class="bag" href="#">Add to Shopping Bag</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
