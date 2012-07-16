@@ -2,7 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Combine Couture</title>   
+        <title>Combine Couture</title>
+        <link rel="stylesheet" href="http://shoppable.co/assets/css/lib/bootstrap.min.css"></link>   
         <link href="css/layout.css" rel="stylesheet" type="text/css"/>
         <link href="css/font.css" rel="stylesheet" type="text/css"/>
         <link href="css/stylish-select.css" rel="stylesheet" type="text/css"/>
@@ -12,85 +13,9 @@
         <script type="text/javascript" src="js/jquery.bxSlider.js"></script>
         <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
         <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
-        <script type="text/javascript">
-            function bodyOnload(){
-                $('.scroll-pane').jScrollPane();
-            }
-            $(function () {
-                
-                $('#my-dropdown').sSelect();
-                $('#my-dropdown2').sSelect();
-                var slider = $('#slider1').bxSlider({
-                    pause: 3000,
-                    speed: 500,
-                    controls: false,
-                    pager: true
-                });
 
-                $('#prev1').click(function () {
-                    slider.goToPreviousSlide();
-                    return false;
-                });
-
-                $('#next1').click(function () {
-                    slider.goToNextSlide();
-                    return false;
-                });
-            });
-            $(document).ready(function () {
-                $("#slider_sec li").hover(function () {
-                    if ($(this).hasClass('active')) {
-                    } else {
-                        $(this).children(".quick_look").show();
-                    }
-                }, function () {
-                    $(this).children(".quick_look").hide();
-                });
-                $(".quick_look").click(function () {
-                    $(this).parent("li").addClass("active");
-                    $(this).hide();
-                    $('.scroll-pane').jScrollPane();
-                    return false;
-                });
-                $(".close_btn").click(function () {
-                    $(this).parent('li').removeClass("active");
-                    $('.scroll-pane').jScrollPane();
-                    return false;
-                });
-                $('.links .link02').click(function () {
-                    $(".overlay").fadeIn();
-                    $(".product_popup").fadeIn();
-                    return false;
-                });
-                $('.popup_close').click(function () {
-                    $(".overlay").fadeOut();
-                    $(".product_popup").fadeOut();
-                    return false;
-                });
-
-                $(".hot_spot_c").click(function () {
-                    $(".porduct_des").fadeOut();
-                    $(this).css("display", "none");
-                    var productDes = $(this).attr("href");
-                    $(productDes).fadeIn();
-                    return false;
-                });
-                $(".description_close").click(function () {
-                    $(".porduct_des").fadeOut();
-                    $(".hot_spot_c").css("display", "block");
-                    return false;
-                });
-
-                $(".email_updates h3").next(".search_box").hide();
-                $(".email_updates h3").toggle(function () {
-                    $(this).next(".search_box").show();
-                }, function () {
-                    $(this).next(".search_box").hide();
-                });
-            });
-        </script>
     </head>
-    <body onload="bodyOnload()">
+    <body>
       <div class="layout">
         <div id="header">
                 <a href="index.html" class="logo"><img src="images/logo.png" width="378" height="100" alt="logo"/></a>
@@ -104,7 +29,7 @@
                     <li><a href="#"><img src="images/pinterest_icon.png" alt="pinterest_icon"/></a></li>
                 </ul>
                 <ul class="account">
-                    <li class="last"><a href="#" class="shopping">SHOPPING BAG</a><span class="bg02">0<em></em></span></li>
+                    <li class="last"><a href="#" id="my-cart-popover-btn" data-cart="my-cart-popover" class="shopping cart-btn cart-popover-btn">SHOPPING BAG</a><span id="cartlabel" class="bg02 cartlabel">0<em></em></span></li>
                 </ul>
             </div>
         </div>
