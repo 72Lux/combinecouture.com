@@ -183,6 +183,25 @@
         
         <div class="overlay"></div>
         
+        <script type="text/javascript" id="_loader">
+          if (typeof jQuery != 'undefined') { var _jquery = jQuery.noConflict(); }
+          var _shop = _shop || {};
+          _shop.apiToken = 'I9F2IK0EAjvvgDfV9c88565dfae';
+          _shop.secureCheckout = 'https://combinecouture.com/checkout.html';
+          _shop.products = [];
+          _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'shoppable.co/';
+        
+          var frames = document.createElement('script');
+          frames.type = 'text/javascript';
+          frames.async = true;
+          frames.defer = 'defer';
+          frames.src = _shop.apiSrc + 'assets/js/frames/assets/js/require-jquery.js';
+          frames.setAttribute('data-main', _shop.apiSrc + 'assets/js/frames/app/frames.js');
+          var s = document.getElementById('_loader');
+          s.parentNode.insertBefore(frames, s);
+        </script>
+
+        
         
         <div class="product_popup">
             <a href="#" class="popup_close">CLOSE</a>
