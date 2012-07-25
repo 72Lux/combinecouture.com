@@ -52,12 +52,11 @@
   _shop.products = [
     {'div': 'frame1', 'frameId': 29, 'config' : {'frameType' : 'singleProductFrame' }}
   ];
-  _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'www.shoppable.co/';
+  _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'shoppable.co/';
 
   var frames = document.createElement('script');
   frames.type = 'text/javascript';
   frames.async = true;
-  frames.defer = 'defer';
   frames.src = _shop.apiSrc + 'assets/js/frames/assets/js/require-jquery.js';
   frames.setAttribute('data-main', _shop.apiSrc + 'assets/js/frames/app/frames.js');
   var s = document.getElementById('_loader');
