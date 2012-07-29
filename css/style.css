@@ -29,3 +29,14 @@ p {margin-bottom:10px;}
 #see-more-container {
   position:relative;
 }
+
+#alexander-wang-copy {
+  float:right;
+  width:750px;
+}
+
+
+
+.clear {
+  clear:both;
+}
