@@ -5,7 +5,6 @@ p {margin-bottom:10px;}
 }
 
 .article_sec {
-	position:relative;
 }
 
 #frame1 {
@@ -25,4 +24,8 @@ p {margin-bottom:10px;}
 #get-it-now-container .shop_btn {
   bottom:15px;
   right:13px;
+}
+
+#see-more-container {
+  position:relative;
 }
