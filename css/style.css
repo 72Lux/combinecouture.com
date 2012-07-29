@@ -1,1 +1,10 @@
 p {margin-bottom:10px;}
+
+.article_sec {
+	position:relative;
+}
+
+#frame1 {
+  height:525px;
+}
+
