@@ -19,6 +19,17 @@
 
       
           <script type="text/javascript" id="_loader">
+            function resizeCrossDomainIframe(id, other_domain) {
+              window.addEventListener('message', function(event) {
+                var iframe = document.getElementById(id);
+                if (event.origin !== other_domain) return; // only accept messages from the specified domain
+                if (isNaN(event.data)) return; // only accept something which can be parsed as a number
+                var height = parseInt(event.data) + 32; // add some extra height to avoid scrollbar
+                iframe.height = height + "px";
+                console.log(height);
+              }, false);
+            }
+
             function qs(key) {
               key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
               var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
@@ -39,6 +50,7 @@
             checkout.height = '800';
             checkout.frameBorder = '0';
             checkout.scrolling='no';
+            checkout.onload = resizeCrossDomainIframe('checkout', 'http://shoppable.lux:8888');
             checkout.src = _shop.checkoutURL;
             var s = document.getElementById('_loader');
             s.parentNode.insertBefore(checkout, s);
