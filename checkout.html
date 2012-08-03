@@ -16,7 +16,6 @@
                 <a href="index.html" class="logo"><img src="images/logo.png" width="378" height="100" alt="logo"/></a>
         </div>
 
-      
           <script type="text/javascript" id="_loader">
             function resizeCrossDomainIframe(id, other_domain) {
               window.addEventListener('message', function(event) {
@@ -25,7 +24,10 @@
                 if (isNaN(event.data)) return; // only accept something which can be parsed as a number
                 var height = parseInt(event.data) + 32; // add some extra height to avoid scrollbar
                 iframe.height = height + "px";
-                //event.source.postMessage(event.data,event.origin); // send that height back somehow
+                //console.log('initial determinationing');
+                //console.log(event.data);
+                //console.log('postMessage with new height');
+                event.source.postMessage(event.data,event.origin); // send that height back somehow
               }, false);
             }
 
@@ -46,10 +48,9 @@
             checkout.name = 'checkout';
             checkout.id = 'checkout';
             checkout.width = '100%';
-            checkout.height = '800';
             checkout.frameBorder = '0';
             checkout.scrolling='no';
-            checkout.onload = resizeCrossDomainIframe('checkout', 'http://shoppable.co/');
+            checkout.onload = resizeCrossDomainIframe('checkout', 'http://shoppable.co');
             checkout.src = _shop.checkoutURL;
             var s = document.getElementById('_loader');
             s.parentNode.insertBefore(checkout, s);
