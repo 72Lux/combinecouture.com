@@ -1,10 +1,10 @@
 /*new style*/
-#popup{float:left; width:987px; border:1px solid #000; background:#fff; padding:0 20px; display:none; position:absolute; top:30px; left:-400px; z-index:999;}
+#popup{width:854px; border:1px solid #000; background:#fff; padding:0 20px; display:none; position:absolute; /*top:30px; left:-400px;*/ z-index:999;}
 .close_box{float:left; width:100%;}
-.close_box .close{float:right; width:42px; background:url(../images/close_img.jpg) no-repeat right center; font:8px/14px arial; color:#9b9b9b; margin-top:16px;}
+.close_box .close{float:right; width:42px; background:url(../images/close_img.jpg) no-repeat right center; font:8px/14px arial; color:#9b9b9b; /*margin-top:16px;*/}
 .heading{float:left; width:100%;border-bottom:3px solid #000;padding-bottom: 7px;padding-top: 5px;}
 .heading ul{float:left; width:100%;}
-.heading ul li{float:left; text-align:center; font:12px/15px 'NeutraDisplayThinMedium'; color:#000; background:none; list-style-type:none;padding: 0 35px;}
+.heading ul li{float:left; text-align:center; font:12px/15px 'NeutraDisplayThinMedium'; color:#000; background:none; list-style-type:none;/*padding: 0 35px;*/}
 .main_heading{float:left; width:100%; background:#000; margin-top:2px;}
 .main_heading h3{font:13px/23px 'NeutraDisplayAltBold'; color:#fff; float:left; width:500px; padding-left:8px;}
 .main_heading .customer_service{font:10px/23px Georgia, "Times New Roman", Times, serif; color:#fff; float:right; width:auto; padding-right:5px;}
@@ -13,14 +13,20 @@
 .items{float:left; width:100%;}
 .items ul{float:left; width:100%; border-bottom:1px solid #000; padding-top:20px;}
 .items ul.bordnone{border-bottom:none;}
-.items ul li{float:left; width:auto; list-style-type:none; background:none;font:12px/60px Georgia, "Times New Roman", Times, serif; color:#000; padding: 0 26px 0 20px;}
-.items ul li.width137{width:137px;}
-.items ul li.updown{background:url(../images/up_down_img.jpg) no-repeat scroll 12px 10px;}
-.items ul li.number{padding:0 40px 0 29px;}
+.items ul li{float:left; min-height:10px; /*width:auto;*/ text-align:center; list-style-type:none; background:none;font:12px/60px Georgia, "Times New Roman", Times, serif; color:#000; /*padding: 0 26px 0 20px;*/}
 .items ul li a{ float:left;font:10px/15px Georgia, "Times New Roman", Times, serif; text-transform:uppercase;}
 .items ul li a.remove{color:#c0c0c0; width:60px; background:url(../images/remove_img.jpg) no-repeat left center; text-indent:15px; margin:0px;}
 .items ul li a.return_policy{color:#000; width:90px;}
-.items ul li.remove_li{width:90px; margin:20px 0 0 0;}
+.items ul li.remove_li{width:90px;/* margin:20px 0 0 0;*/}
+
+li.item-image, li.item-header-image {width:100px;}
+li.item-designer, li.item-header-designer {width:78px;}
+li.item-name, li.item-header-name {width:183px;}
+li.item-color, li.item-header-color {width:70px;}
+li.item-size, li.item-header-size {width:92px;}
+li.item-price, li.item-header-price {width:88px;}
+li.item-qty, li.item-header-qty {width:51px;}
+li.item-subtotal, li.item-header-subtotal {width:89px;}
 
 .row{float:left; width:100%; padding-bottom:20px;}
 .row .cont_shop{float:right; width:255px; margin-top:14px;}
