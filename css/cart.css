@@ -11,7 +11,7 @@
 .main_heading .sub_total{float:right;font:17px/23px 'NeutraDisplayAltBold'; color:#fff; padding-right:5px;}
 
 .items{float:left; width:100%;}
-.items ul{float:left; width:100%; border-bottom:1px solid #000; padding-top:20px;}
+.items ul{float:left; width:100%; border-bottom:1px solid #000; /*padding-top:20px;*/}
 .items ul.bordnone{border-bottom:none;}
 .items ul li{float:left; min-height:10px; /*width:auto;*/ text-align:center; list-style-type:none; background:none;font:12px/60px Georgia, "Times New Roman", Times, serif; color:#000; /*padding: 0 26px 0 20px;*/}
 .items ul li a{ float:left;font:10px/15px Georgia, "Times New Roman", Times, serif; text-transform:uppercase;}
