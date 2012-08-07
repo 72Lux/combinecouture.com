@@ -1,5 +1,5 @@
 /*new style*/
-#popup{width:auto; border:1px solid #000; background:#fff; padding:0 20px; display:none; position:absolute; /*top:30px; left:-400px;*/ z-index:999;}
+#popup{width:854px; border:1px solid #000; background:#fff; padding:0 20px; display:none; position:absolute; /*top:30px; left:-400px;*/ z-index:999;}
 /*#my-cart-popover{width:854px;}*/
 .cart {width:854px;}
 .close_box{float:left; width:100%;}
@@ -32,12 +32,12 @@ li.item-qty, li.item-header-qty {width:51px;}
 li.item-subtotal, li.item-header-subtotal {width:89px;}
 
 .row{float:left; width:100%; padding-bottom:20px;}
-.row .cont_shop{float:right; width:255px; margin-top:14px;}
+.row .cont_shop{float:right; /*width:255px;*/ margin-top:14px;}
 .row .cont_shop li{float:left; list-style-type:none; background:none; padding:0;}
 .row .cont_shop .continue_link{ float:left; width:153px;  border:1px solid #000; text-align:center; font:12px/17px 'NeutraDisplayAltBold'; color:#000;}
 .row .cont_shop .checkout_link{ float:left; width:83px; text-align:center; font:12px/19px 'NeutraDisplayAltBold'; color:#fff; background:#0845ab; margin-left:15px;}
 
-.row .coupon{float:left; width:255px; margin-top:14px;}
+.row .coupon{float:left; /*width:255px;*/ margin-top:14px;}
 .row .coupon li{float:left; list-style-type:none; background:none; padding:0;}
 .row .coupon li input{float:left; width:88px; height:17px; border:1px solid #737373; margin-right:7px; font:10px/17px Georgia, "Times New Roman", Times, serif; color:#818181; text-indent:5px;}
 .row .coupon li a{float:left; font:12px/19px 'NeutraDisplayAltBold'; color:#fff; background:#000; padding:0 8px;}
