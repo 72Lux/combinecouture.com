@@ -18,17 +18,35 @@
 
           <script type="text/javascript" id="_loader">
             function resizeCrossDomainIframe(id, other_domain) {
-              window.addEventListener('message', function(event) {
-                var iframe = document.getElementById(id);
-                if (event.origin !== other_domain) return; // only accept messages from the specified domain
-                if (isNaN(event.data)) return; // only accept something which can be parsed as a number
-                var height = parseInt(event.data) + 32; // add some extra height to avoid scrollbar
-                iframe.height = height + "px";
-                //console.log('initial determinationing');
-                //console.log(event.data);
-                //console.log('postMessage with new height');
-                event.source.postMessage(event.data,event.origin); // send that height back somehow
-              }, false);
+
+              if(window.addEventListener) {
+
+                window.addEventListener('message', function(event) {
+                  var iframe = document.getElementById(id);
+                  if (event.origin !== other_domain) return; // only accept messages from the specified domain
+                  if (isNaN(event.data)) return; // only accept something which can be parsed as a number
+                  var height = parseInt(event.data) + 32; // add some extra height to avoid scrollbar
+                  iframe.height = height + "px";
+                  //console.log('initial determinationing');
+                  //console.log(event.data);
+                  //console.log('postMessage with new height');
+                  event.source.postMessage(event.data,event.origin); // send that height back somehow
+                }, false);
+
+              } else {
+
+                window.attachEvent('onmessage',function(event){
+                  var iframe = document.getElementById(id);
+                  if (event.origin !== other_domain) return; // only accept messages from the specified domain
+                  if (isNaN(event.data)) return; // only accept something which can be parsed as a number
+                  var height = parseInt(event.data) + 32; // add some extra height to avoid scrollbar
+                  iframe.height = height + "px";
+                  //console.log('initial determinationing');
+                  //console.log(event.data);
+                  //console.log('postMessage with new height');
+                  event.source.postMessage(event.data,event.origin); // send that height back somehow
+                });
+              }
             }
 
             function qs(key) {
