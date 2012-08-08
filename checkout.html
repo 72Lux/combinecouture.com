@@ -27,9 +27,6 @@
                   if (isNaN(event.data)) return; // only accept something which can be parsed as a number
                   var height = parseInt(event.data) + 32; // add some extra height to avoid scrollbar
                   iframe.height = height + "px";
-                  //console.log('initial determinationing');
-                  //console.log(event.data);
-                  //console.log('postMessage with new height');
                   event.source.postMessage(event.data,event.origin); // send that height back somehow
                 }, false);
 
@@ -41,9 +38,6 @@
                   if (isNaN(event.data)) return; // only accept something which can be parsed as a number
                   var height = parseInt(event.data) + 32; // add some extra height to avoid scrollbar
                   iframe.height = height + "px";
-                  //console.log('initial determinationing');
-                  //console.log(event.data);
-                  //console.log('postMessage with new height');
                   event.source.postMessage(event.data,event.origin); // send that height back somehow
                 });
               }
@@ -58,7 +52,7 @@
             var _shop = _shop || {};
             _shop.apiToken = 'zJ6bT998x4qgbpYL4453522f73bec852';
             _shop.returnToSite = encodeURI('https://combinecouture.com');
-           
+
             _shop.checkoutURL = 'https://shoppable.co/checkout?referrer=' + _shop.returnToSite 
               + '&id=' + qs('cart')
               + '&apiToken=' + _shop.apiToken;
