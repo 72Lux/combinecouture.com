@@ -27,7 +27,7 @@
                   if (isNaN(event.data)) return; // only accept something which can be parsed as a number
                   var height = parseInt(event.data) + 32; // add some extra height to avoid scrollbar
                   iframe.height = height + "px";
-                  //event.source.postMessage(event.data,event.origin); // send that height back somehow
+                  event.source.postMessage(event.data,event.origin); // send that height back somehow
                 }, false);
 
               } else {
@@ -38,7 +38,7 @@
                   if (isNaN(event.data)) return; // only accept something which can be parsed as a number
                   var height = parseInt(event.data) + 32; // add some extra height to avoid scrollbar
                   iframe.height = height + "px";
-                  //event.source.postMessage(event.data,event.origin); // send that height back somehow
+                  event.source.postMessage(event.data,event.origin); // send that height back somehow
                 });
               }
             }
