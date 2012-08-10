@@ -27,7 +27,6 @@
                   if (isNaN(event.data)) return; // only accept something which can be parsed as a number
                   var height = parseInt(event.data) + 32; // add some extra height to avoid scrollbar
                   iframe.height = height + "px";
-                  //event.source.postMessage(event.data,event.origin); // send that height back somehow
                 }, false);
 
               } else {
@@ -38,7 +37,6 @@
                   if (isNaN(event.data)) return; // only accept something which can be parsed as a number
                   var height = parseInt(event.data) + 32; // add some extra height to avoid scrollbar
                   iframe.height = height + "px";
-                  //event.source.postMessage(event.data,event.origin); // send that height back somehow
                 });
               }
             }
@@ -59,10 +57,7 @@
             var checkout = document.createElement('iframe');
             checkout.name = 'checkout';
             checkout.id = 'checkout';
-            checkout.width = '100%';
             checkout.height = '600';
-            checkout.frameBorder = '0';
-            checkout.scrolling='no';
             checkout.onload = resizeCrossDomainIframe('checkout', 'http://dev.shoppable.co');
             checkout.src = _shop.checkoutURL;
             var s = document.getElementById('_loader');

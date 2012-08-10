@@ -206,3 +206,10 @@ ul.footer_nav li a:hover{text-decoration: underline;}
 .jspContainer{width: 241px !important;}
 .jspPane{width: 212px !important;}
 .overlay{width: 100%; height: 100%; position: fixed; background: #000; opacity:0.5; display: none;}
+
+/* checkout frame styles */
+iframe#checkout {
+  border:none;
+  overflow:visible;
+	width:100%;
+}
