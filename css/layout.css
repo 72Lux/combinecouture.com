@@ -210,6 +210,6 @@ ul.footer_nav li a:hover{text-decoration: underline;}
 /* checkout frame styles */
 iframe#checkout {
   border:none;
-  overflow:visible;
+  overflow:hidden;
 	width:100%;
 }
