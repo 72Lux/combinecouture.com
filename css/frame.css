@@ -148,6 +148,8 @@ p.product-retail-price {
 #product-grid .product {
   float:left;
   width:302px;
+  clear:none;
+  margin:9px;
 }
 #product-grid .product .product-image {
   margin:0;
@@ -155,6 +157,10 @@ p.product-retail-price {
 }
 #product-grid .product .product-image img {
   width:280px;
+}
+#product-grid .product .product-info {
+  width:302px;
+  float;none;
 }
 
 /* Cart settings */
