@@ -1,3 +1,4 @@
+/* general single product frame styles */
 .product {
   clear:both;
 }
@@ -138,6 +139,22 @@ p.product-retail-price {
 
 .spacer {
    clear: both;			
+}
+
+/* grid styles */
+#product-grid {
+  width:960px;
+}
+#product-grid .product {
+  float:left;
+  width:302px;
+}
+#product-grid .product .product-image {
+  margin:0;
+  float:none;
+}
+#product-grid .product .product-image img {
+  width:280px;
 }
 
 /* Cart settings */
