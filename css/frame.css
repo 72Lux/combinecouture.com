@@ -162,6 +162,9 @@ p.product-retail-price {
   width:302px;
   float;none;
 }
+#product-grid .product .modal-info {
+  display:none;
+}
 
 /* Cart settings */
 
