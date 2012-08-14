@@ -65,7 +65,8 @@
   font-weight: normal;
   margin: 20px 0 10px 0;
 }
-.single-product p.product-brand-name-text {
+.single-product p.product-brand-name-text, 
+#product-grid .product-brand-name {
   font: 24px/24px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif;
   line-height: 30px;
   font-weight: bold;
@@ -78,12 +79,14 @@
 .single-product p.product-description-text {
   font-style: normal;
 }
-.single-product p.product-name-text {
+.single-product p.product-name-text,
+#product-grid .product-name {
   font: 20px/20px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif;
   line-height: 30px;
   font-weight: normal;
 }
-.single-product p.product-retail-price {
+.single-product p.product-retail-price,
+#product-grid p.product-retail-price {
   font: 20px/20px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif;
   color: #9A9A9A;
   margin: 20px 0 10px 0;
