@@ -2,8 +2,7 @@
 .single-product {
   clear:both;
 }
-.single-product .product-collection-name,
-#product-grid .product-collection-name, { display: none; }
+.single-product .product-collection-name { display: none; }
 .single-product .product-image {
   max-width:350px;
   border: 1px solid #efefef;
@@ -67,8 +66,7 @@
   font-weight: normal;
   margin: 20px 0 10px 0;
 }
-.single-product p.product-brand-name-text, 
-#product-grid .product-brand-name {
+.single-product p.product-brand-name-text {
   font: 24px/24px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif;
   line-height: 30px;
   font-weight: bold;
@@ -81,8 +79,7 @@
 .single-product p.product-description-text {
   font-style: normal;
 }
-.single-product p.product-name-text,
-#product-grid .product-name {
+.single-product p.product-name-text {
   font: 20px/20px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif;
   line-height: 30px;
   font-weight: normal;
@@ -151,9 +148,9 @@
 }
 #product-grid .product {
   float:left;
-  width:302px;
+  width:230px;
   clear:none;
-  margin:9px;
+  margin:5px;
 }
 #product-grid .product .product-image {
   border: 1px solid #efefef;
@@ -170,11 +167,13 @@
   float:none;
 }
 #product-grid .product .product-image img {
-  width:280px;
+  width:208px;
 }
 #product-grid .product .product-info {
-  width:302px;
-  float;none;
+  padding-top:10px;
+  width:232px;
+  height:134px;
+  float:none;
 }
 #product-grid .modal-trigger {cursor:pointer;}
 #product-grid .product .modal-info {
@@ -226,9 +225,19 @@
 }
 /* default style overrides */
 #product-grid p.product-retail-price {
-  font: 20px/20px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif;
+  font: 16px/16px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif;
   color: #9A9A9A;
   margin: 10px 0;
+}
+#product-grid .product-brand-name {
+  font: 16px/16px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif;
+  line-height: 18px;
+  font-weight: bold;
+}
+#product-grid .product-name {
+  font: 20px/20px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif;
+  line-height: 30px;
+  font-weight: normal;
 }
 
 /* Cart settings */
