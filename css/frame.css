@@ -131,12 +131,12 @@
   text-transform: uppercase;
   padding: 0 10px 0 11px;
   margin: 20px 0 10px 0;
- }
+}
 .single-product .add-to-cart-button:hover {
   color: #fff;
   background: #000;
   border-color: #fff;
-  }
+}
 
 .single-product .spacer {
    clear: both;			
@@ -145,6 +145,7 @@
 /* grid styles */
 #product-grid {
   width:960px;
+  min-height:323px;
 }
 #product-grid .product {
   float:left;
@@ -184,10 +185,10 @@
   width:940px;
 
   position: fixed;
-  top: 50%;
+  top: 35%;
   left: 50%;
   z-index: 1050;
-  margin: -250px 0 0 -481px;
+  margin: -230px 0 0 -481px;
   padding:10px;
   overflow: hidden;
   background-color: #fff;
