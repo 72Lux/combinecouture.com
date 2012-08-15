@@ -172,7 +172,8 @@
 #product-grid .product .product-info {
   padding-top:10px;
   width:232px;
-  height:134px;
+  min-height:210px;
+  overflow:hidden;
   float:none;
 }
 #product-grid .modal-trigger {cursor:pointer;}
