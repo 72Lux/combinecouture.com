@@ -176,6 +176,7 @@
   width:302px;
   float;none;
 }
+#product-grid .modal-trigger {cursor:pointer;}
 #product-grid .product .modal-info {
   display:none;
 }
