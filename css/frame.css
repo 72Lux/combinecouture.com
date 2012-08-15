@@ -145,7 +145,6 @@
 /* grid styles */
 #product-grid {
   width:960px;
-  min-height:323px;
 }
 #product-grid .product {
   float:left;
