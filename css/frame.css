@@ -5,6 +5,7 @@
 .single-product .product-collection-name,
 #product-grid .product-collection-name, { display: none; }
 .single-product .product-image {
+  max-width:350px;
   border: 1px solid #efefef;
   margin:30px 25px 30px 0;
   background: #fff;
@@ -179,7 +180,6 @@
   display:none;
 }
 #singleProductModal {
-  /*height:530px;*/
   width:940px;
 
   position: fixed;
@@ -245,3 +245,5 @@
   margin-top:5px;
 }
 
+/* layout styles */
+.clear {clear:both;}
