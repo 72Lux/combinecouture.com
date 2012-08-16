@@ -142,6 +142,15 @@
    clear: both;			
 }
 
+.unavailable-text {
+  color: #ff0000; 
+  font: 14px/24px 'NeutraDisplayBold',Georgia,Times New Roman,times,serif;
+  word-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0 10px 0 0;
+  margin: 20px 0 10px 0;
+}
+
 /* grid styles */
 #product-grid {
   width:960px;
@@ -259,3 +268,4 @@
 
 /* layout styles */
 .clear {clear:both;}
+.hide {display:none;}
