@@ -1,5 +1,6 @@
 #popup{width:854px; border:1px solid #000; background:#fff; padding:0 20px; display:none; position:absolute;z-index:999;}
 .cart {width:854px;}
+.popover-title {padding-top:10px;}
 .close_box{float:left; width:100%;}
 .close_box .close{float:right; width:42px; background:url(../images/close_img.jpg) no-repeat right center; font:8px/14px arial; color:#9b9b9b;}
 .heading{float:left; width:100%;border-bottom:3px solid #000;padding-bottom: 7px;padding-top: 5px;}
