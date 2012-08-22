@@ -40,26 +40,22 @@
 <script type="text/javascript" id="_loader">
   if (typeof jQuery != 'undefined') { var _jquery = jQuery.noConflict(); }
   
-  // create wrapper div
   var _div = document.createElement('div');
   _div.setAttribute('id','loader');
   _div.style.top = _div.style.right = _div.style.bottom = _div.style.left = 0;
-  _div.style.height = _div.style.width = '100%';
   _div.style.padding = '15% 0 0 0';
   _div.style.position = 'fixed';
   _div.style.background = '#000';
-  _div.style.opacity = '.8'; // needs more for IEs
+  _div.style.opacity = '.8';
   _div.style.zIndex = '9999';
   _div.style.textAlign = 'center';
   document.body.insertBefore(_div, document.body.firstChild);
 
-  // create the image element
   _image = (new Image()) ? new Image() : document.createElement('img');
   _image.src = 'http://dev.shoppable.co/assets/img/lib/loading.gif';
   _image.alt = 'loading...';
   _image.title = 'Loading.';
   _image.width = _image.height = '75';
-  //document.body.insertBefore(_image, document.body.firstChild);
   _div.appendChild(_image);
 
   var _shop = _shop || {};
