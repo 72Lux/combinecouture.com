@@ -52,6 +52,7 @@
   _div.style.position = 'fixed';
   _div.style.background = '#000';
   _div.style.opacity = '.8';
+  _div.style.filter = 'alpha(opacity=80)';
   _div.style.zIndex = '9999';
   _div.style.textAlign = 'center';
   document.body.insertBefore(_div, document.body.firstChild);
@@ -59,7 +60,7 @@
   _image.src = _shop.apiSrc + 'assets/img/lib/loading.gif';
   _image.alt = 'loading...';
   _image.title = 'Loading.';
-  _image.width = _image.height = '75';
+  _image.style.width = _image.style.height = '75';
   _div.appendChild(_image);
   var frames = document.createElement('script');
   frames.type = 'text/javascript';
