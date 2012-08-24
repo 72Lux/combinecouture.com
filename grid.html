@@ -37,16 +37,43 @@
             
 
             <div class="article_sec">
-<script type="text/javascript" id="_loader">
-  if (typeof jQuery != 'undefined') { var _jquery = jQuery.noConflict(); }
-  var _shop = _shop || {};
-  _shop.apiToken = 'zJ6bT998x4qgbpYL4453522f73bec852';
-  _shop.secureCheckout = 'https://combinecouture.com/checkout.html';
-  _shop.products = [
-    {'div': 'productGrid', 'frameId': 12, 'config' : {'hideCollectionName' : 1, 'frameType' : 'productGridFrame' }}
-  ];
-  _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'shoppable.co/';
 
+
+
+
+            <div id="productGrid" class="frame"></div>
+
+
+
+<script type="text/javascript" id="_loader">
+  if (jQuery !== 'undefined') { var jquery = jQuery.noConflict(); }
+  var _shop = _shop || {};
+  _shop.apiToken = 'n68gRqiImfBjDlKD899145e808bfff80';
+  _shop.secureCheckout = 'checkout.html';
+  _shop.products = [{'div': 'productGrid', 'frameId': 1, 'config' : {'hideFrameName' : 1, 'frameType' : 'productGridFrame' }}];
+  _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'dev.shoppable.co/';
+  var _div = document.createElement('div');
+  _div.setAttribute('class', 'loader');
+  _div.style.height = _div.style.width = '100%';
+  _div.style.padding = '25% 0 0 0';
+  _div.style.position = 'fixed';
+  _div.style.background = '#000';
+  _div.style.opacity = '.4';
+  _div.style.filter = 'alpha(opacity=40)';
+  _div.style.zIndex = '9999';
+  _div.style.textAlign = 'center';
+  var _image = new Image() || document.createElement('img');
+  _image.src = _shop.apiSrc + 'assets/img/lib/loading.gif';
+  _image.alt = 'loading...';
+  _image.title = 'Loading.';
+  _image.width = _image.height = _image.style.width = _image.style.height = '75';
+  _div.appendChild(_image);
+  var elems = document.getElementsByTagName('*'), i;
+  for (i = 0; i < elems.length; i++) {
+    if((" " + elems[i].className + " ").indexOf(" " + 'frame' + " ") > -1) {
+      elems[i].appendChild(_div.cloneNode(true));
+    }
+  }
   var frames = document.createElement('script');
   frames.type = 'text/javascript';
   frames.async = true;
@@ -56,7 +83,6 @@
   s.parentNode.insertBefore(frames, s);
 </script>
 
-            <div id="productGrid"></div>
             
             </div>
             <div id="footer">
