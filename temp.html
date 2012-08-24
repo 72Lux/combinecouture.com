@@ -43,6 +43,7 @@
             <div id="frame2" class="frame"></div>
             <div id="frame3" class="frame"></div>
 
+
 <script type="text/javascript" id="_loader">
   if (jQuery !== 'undefined') { var jquery = jQuery.noConflict(); }
   var _shop = _shop || {};
@@ -54,17 +55,12 @@
   _div.setAttribute('class', 'loader');
   _div.style.height = _div.style.width = '100%';
   _div.style.padding = '25% 0 0 0';
-  _div.style.position = 'fixed';
-  _div.style.background = '#000';
-  _div.style.opacity = '.4';
-  _div.style.filter = 'alpha(opacity=40)';
-  _div.style.zIndex = '9999';
   _div.style.textAlign = 'center';
   var _image = new Image() || document.createElement('img');
-  _image.src = _shop.apiSrc + 'assets/img/lib/loading.gif';
+  _image.src = _shop.apiSrc + 'assets/img/lib/spinner16.gif';
   _image.alt = 'loading...';
   _image.title = 'Loading.';
-  _image.width = _image.height = _image.style.width = _image.style.height = '75';
+  _image.width = _image.height = '16';
   _div.appendChild(_image);
   var elems = document.getElementsByTagName('*'), i;
   for (i = 0; i < elems.length; i++) {
