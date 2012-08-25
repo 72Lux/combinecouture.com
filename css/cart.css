@@ -23,6 +23,7 @@
 .items ul li.item-image {padding-top:0;}
 li.item-image, li.item-header-image {width:100px;}
 li.item-designer, li.item-header-designer {width:78px;}
+li.item-brand, li.item-header-brand {width:78px;}
 li.item-name, li.item-header-name {width:183px;}
 li.item-color, li.item-header-color {width:70px;}
 li.item-size, li.item-header-size {width:92px;}

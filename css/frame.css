@@ -3,6 +3,7 @@
   clear:both;
 }
 .single-product .product-collection-name { display: none; }
+.single-product .product-frame-name { display: none; }
 .single-product .product-image {
   max-width:350px;
   border: 1px solid #efefef;
