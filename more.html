@@ -49,23 +49,22 @@
   _shop.products = [{'div': 'frame1', 'frameId': 15, 'config' : {'hideCollectionName' : 1, 'frameType' : 'productGridFrame' }}];
   _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'www.shoppable.co/';
   var _div = document.createElement('div');
-  _div.setAttribute('id', 'loader');
-  _div.style.top = _div.style.right = _div.style.bottom = _div.style.left = 0;
+  _div.setAttribute('class', 'loader');
   _div.style.height = _div.style.width = '100%';
-  _div.style.padding = '15% 0 0 0';
-  _div.style.position = 'fixed';
-  _div.style.background = '#000';
-  _div.style.opacity = '.8';
-  _div.style.filter = 'alpha(opacity=80)';
-  _div.style.zIndex = '9999';
+  _div.style.padding = '35% 0 35% 0';
   _div.style.textAlign = 'center';
-  document.body.insertBefore(_div, document.body.firstChild);
   var _image = new Image() || document.createElement('img');
   _image.src = _shop.apiSrc + 'assets/img/lib/loading.gif';
   _image.alt = 'loading...';
   _image.title = 'Loading.';
-  _image.style.width = _image.style.height = '75';
+  _image.width = _image.height = '16';
   _div.appendChild(_image);
+  var elems = document.getElementsByTagName('*'), i;
+  for (i = 0; i < elems.length; i++) {
+    if((" " + elems[i].className + " ").indexOf(" " + 'frame' + " ") > -1) {
+      elems[i].appendChild(_div.cloneNode(true));
+    }
+  }
   var frames = document.createElement('script');
   frames.type = 'text/javascript';
   frames.async = true;
