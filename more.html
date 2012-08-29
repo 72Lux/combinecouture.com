@@ -49,7 +49,7 @@
   var _shop = _shop || {};
   _shop.apiToken = 'zJ6bT998x4qgbpYL4453522f73bec852';
   _shop.secureCheckout = 'checkout.html';
-  _shop.products = [{'div': 'frame1', 'frameId': 15, 'config' : {'hideCollectionName' : 1, 'frameType' : 'productGridFrame' }}];
+  _shop.products = [{'div': 'frame1', 'frameId': 15, 'config' : {'hideFrameName' : 1, 'frameType' : 'productGridFrame' }}];
   _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'www.shoppable.co/';
   var _div = document.createElement('div');
   _div.setAttribute('class', 'loader');
@@ -57,7 +57,7 @@
   _div.style.padding = '35% 0 35% 0';
   _div.style.textAlign = 'center';
   var _image = new Image() || document.createElement('img');
-  _image.src = _shop.apiSrc + 'assets/img/lib/loading.gif';
+  _image.src = _shop.apiSrc + 'assets/img/lib/spinner16.gif';
   _image.alt = 'loading...';
   _image.title = 'Loading.';
   _image.width = _image.height = '16';
@@ -76,6 +76,7 @@
   var s = document.getElementById('_loader');
   s.parentNode.insertBefore(frames, s);
 </script>
+
 
             
             </div>
