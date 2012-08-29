@@ -30,7 +30,8 @@
                     <li><a href="#"><img src="images/pinterest_icon.png" alt="pinterest_icon"/></a></li>
                 </ul>
                 <ul class="account">
-                    <li class="last"><a href="#" id="my-cart-popover-btn" data-cart="my-cart-popover" class="shopping cart-btn cart-popover-btn">SHOPPING BAG</a><span class="bg02"><span id="cartlabel" class="cartlabel">0</span><em></em></span></li>
+                  <a href="#" id="my-cart" class="cart-popover-btn">SHOPPING BAG</a>
+                  <span id="cartlabel" class="cartlabel">0</span>
                 </ul>
             </div>
         </div>
@@ -45,11 +46,11 @@
 
 
 <script type="text/javascript" id="_loader">
-  if (jQuery !== 'undefined') { var jquery = jQuery.noConflict(); }
+  if (typeof jQuery !== 'undefined') { var jquery = jQuery.noConflict(); }
   var _shop = _shop || {};
   _shop.apiToken = 'n68gRqiImfBjDlKD899145e808bfff80';
   _shop.secureCheckout = 'checkout.html';
-  _shop.products = [{'div': 'frame1', 'frameId': 1, 'config' : {'frameType' : 'singleProductFrame' }},{'div': 'frame2', 'frameId': 3, 'config' : {'frameType' : 'singleProductFrame' }},{'div': 'frame3', 'frameId': 4, 'config' : {'frameType' : 'singleProductFrame' }}];
+  _shop.products = [{'div': 'frame1', 'frameId': 4, 'config' : {'frameType' : 'singleProductFrame' }}];
   _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'dev.shoppable.co/';
   var _div = document.createElement('div');
   _div.setAttribute('class', 'loader');
@@ -76,7 +77,6 @@
   var s = document.getElementById('_loader');
   s.parentNode.insertBefore(frames, s);
 </script>
-
             
             </div>
             <div id="footer">
