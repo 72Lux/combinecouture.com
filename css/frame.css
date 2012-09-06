@@ -186,7 +186,6 @@
   overflow:hidden;
   float:none;
 }
-#product-grid .product .product-name {min-height:120px;}
 #product-grid .modal-trigger {cursor:pointer;}
 #product-grid .product .modal-info {
   display:none;
