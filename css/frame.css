@@ -179,6 +179,9 @@
 #product-grid .product .product-image img {
   width:208px;
 }
+#product-grid .unavailable-text {
+  display: none;
+}
 #product-grid .product .product-info {
   padding-top:10px;
   width:232px;
