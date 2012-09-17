@@ -51,7 +51,7 @@
             _shop.apiToken = 'zJ6bT998x4qgbpYL4453522f73bec852';
             _shop.returnToSite = encodeURI('https://combinecouture.com');
 
-            _shop.checkoutURL = 'https://shoppable.co/checkout?referrer=' + _shop.returnToSite 
+            _shop.checkoutURL = 'https://api.shoppable.co/checkout?referrer=' + _shop.returnToSite 
               + '&id=' + qs('cart')
               + '&apiToken=' + _shop.apiToken;
             var checkout = document.createElement('iframe');
