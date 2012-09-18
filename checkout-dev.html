@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <title>Combine Couture</title>   
+        <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+        <link href="css/font.css" rel="stylesheet" type="text/css"/>
+        
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    </head>
+ 
+  <body>
+    <div class="container">
+      <div class="layout">
+        <div id="header">
+                <a href="index.html" class="logo"><img src="images/logo.png" width="378" height="100" alt="logo"/></a>
+        </div>
+
+          <script type="text/javascript" id="_loader">
+            function resizeCrossDomainIframe(id, other_domain) {
+
+              if(window.addEventListener) {
+
+                window.addEventListener('message', function(event) {
+                  var iframe = document.getElementById(id);
+                  if (event.origin !== other_domain) return; // only accept messages from the specified domain
+                  if (isNaN(event.data)) return; // only accept something which can be parsed as a number
+                  var height = parseInt(event.data) + 32; // add some extra height to avoid scrollbar
+                  iframe.height = height + "px";
+                }, false);
+
+              } else {
+
+                window.attachEvent('onmessage',function(event){
+                  var iframe = document.getElementById(id);
+                  if (event.origin !== other_domain) return; // only accept messages from the specified domain
+                  if (isNaN(event.data)) return; // only accept something which can be parsed as a number
+                  var height = parseInt(event.data) + 32; // add some extra height to avoid scrollbar
+                  iframe.height = height + "px";
+                });
+              }
+            }
+
+            function qs(key) {
+              key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+              var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+              return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+            }
+    
+            var _shop = _shop || {};
+            _shop.apiToken = 'w9ws124u8YrtlbmPfac1ca515fea6386';
+            _shop.returnToSite = encodeURI('https://combinecouture.com');
+
+            _shop.checkoutURL = 'http://dev.shoppable.co/checkout?referrer=' + _shop.returnToSite 
+              + '&id=' + qs('cart')
+              + '&apiToken=' + _shop.apiToken;
+            var checkout = document.createElement('iframe');
+            checkout.name = 'checkout';
+            checkout.id = 'checkout';
+            checkout.height = '600';
+            checkout.onload = resizeCrossDomainIframe('checkout', 'http://dev.shoppable.co');
+            checkout.src = _shop.checkoutURL;
+            var s = document.getElementById('_loader');
+            s.parentNode.insertBefore(checkout, s);
+          </script>
+    
+    </div>
+    </div>
+    
+  </body>
+</html>
+
