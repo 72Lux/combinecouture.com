@@ -30,26 +30,38 @@
                     <li><a href="#"><img src="images/pinterest_icon.png" alt="pinterest_icon"/></a></li>
                 </ul>
                 <ul class="account">
-                  <li class="last">
-                    <a href="#" id="my-cart" class="cart-popover-btn">SHOPPING BAG</a>
-                    <span id="cartlabel" class="cartlabel">0</span>
-                  </li>
+                    <li class="last"><a href="#" id="my-cart-popover-btn" data-cart="my-cart-popover" class="shopping cart-btn cart-popover-btn">SHOPPING BAG</a><span class="bg02"><span id="cartlabel" class="cartlabel">0</span><em></em></span></li>
                 </ul>
             </div>
         </div>
             
 
             <div class="article_sec">
-<script type="text/javascript" id="_loader">
-  if (typeof jQuery != 'undefined') { var _jquery = jQuery.noConflict(); }
-  var _shop = _shop || {};
-  _shop.apiToken = 'zJ6bT998x4qgbpYL4453522f73bec852';
-  _shop.secureCheckout = 'https://combinecouture.com/checkout.html';
-  _shop.products = [
-    {'div': 'frame1', 'frameId': 16, 'config' : {'frameType' : 'singleProductFrame' }}
-  ];
-  _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'api.shoppable.co/';
 
+<script type="text/javascript" id="_loader">
+  if (typeof jQuery !== 'undefined') { var jquery = jQuery.noConflict(); }
+  var _shop = _shop || {};
+  _shop.apiToken = 'QTKjF6dJrYC3NOwE2498831069e1b964';
+  _shop.secureCheckout = 'checkout.html';
+  _shop.products = [{'div': 'frame1', 'frameId': 1000000000, 'config' : {'hideFrameName' : 1, 'frameType' : 'singleProductFrame' }}];
+  _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'platform.lux:8888/';
+  var _div = document.createElement('div');
+  _div.setAttribute('class', 'loader');
+  _div.style.height = _div.style.width = '100%';
+  _div.style.padding = '35% 0 35% 0';
+  _div.style.textAlign = 'center';
+  var _image = new Image() || document.createElement('img');
+  _image.src = _shop.apiSrc + 'assets/img/lib/spinner16.gif';
+  _image.alt = 'loading...';
+  _image.title = 'Loading.';
+  _image.width = _image.height = '16';
+  _div.appendChild(_image);
+  var elems = document.getElementsByTagName('*'), i;
+  for (i = 0; i < elems.length; i++) {
+    if((" " + elems[i].className + " ").indexOf(" " + 'frame' + " ") > -1) {
+      elems[i].appendChild(_div.cloneNode(true));
+    }
+  }
   var frames = document.createElement('script');
   frames.type = 'text/javascript';
   frames.async = true;
@@ -58,9 +70,10 @@
   var s = document.getElementById('_loader');
   s.parentNode.insertBefore(frames, s);
 </script>
+
                 <div id="frame1"></div>
             
-                <div id="see-more-container"><a href="more.html" class="shop_btn">See More Handbags</a></div>
+                <div id="see-more-container"><a href="#" class="shop_btn">See More Handbags</a></div>
             </div>
             <div id="footer">
                 <ul class="footer_nav">

@@ -41,11 +41,11 @@
   if (typeof jQuery != 'undefined') { var _jquery = jQuery.noConflict(); }
   var _shop = _shop || {};
   _shop.apiToken = 'zJ6bT998x4qgbpYL4453522f73bec852';
-  _shop.secureCheckout = 'checkout.html';
+  _shop.secureCheckout = 'https://combinecouture.com/checkout.html';
   _shop.products = [
     {'div': 'productGrid', 'frameId': 7, 'config' : {'hideCollectionName' : 1, 'frameType' : 'productGridFrame' }}
   ];
-  _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'www.shoppable.co/';
+  _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'api.shoppable.co/';
 
   var frames = document.createElement('script');
   frames.type = 'text/javascript';

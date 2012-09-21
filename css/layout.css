@@ -26,11 +26,13 @@ ul.account li.last{background: none;}
 ul.account li a{color: #535353;}
 ul.account li a:hover{text-decoration: underline;}
 ul.account .faves{float: left; background: url(../images/heart.png) no-repeat 0 0; padding: 0 0 0 24px;}
-ul.account .shopping{float: left; background: url(../images/bag.png) no-repeat 0 0; padding: 0 0 0 23px;}
+
+/** shopping cart trigger button styles **/
+ul.account .cart-popover-btn{float: left; background: url(../images/bag.png) no-repeat 0 0; padding: 0 0 0 23px;}
 ul.account .bg01{float: left; width: auto; background: #ff005a; color: #fff; font: 18px/20px 'NeutraDisplayBold',Georgia,Times New Roman,times,serif; padding: 0 7px; position: relative; margin: -2px 0 0 7px ; }
 ul.account .bg01 em{position: absolute; left: -4px; top: 7px; width: 4px; height: 7px; background: url(../images/arrow01.png) no-repeat 0 0;}
-ul.account .bg02{float: left; width: auto; background: #4ad1a6; color: #fff; font: 18px/20px 'NeutraDisplayBold',Georgia,Times New Roman,times,serif; padding: 0 7px; position: relative;margin: -2px 0 0 7px ; }
-ul.account .bg02 em{position: absolute; left: -4px; top: 7px; width: 4px; height: 7px; background: url(../images/arrow02.png) no-repeat 0 0;}
+ul.account .cartlabel{float: left; width: auto; background: #4ad1a6; color: #fff; font: 18px/20px 'NeutraDisplayBold',Georgia,Times New Roman,times,serif; padding: 0 7px; position: relative;margin: -2px 0 0 7px ; }
+ul.account .cartlabel em{position: absolute; left: -4px; top: 7px; width: 4px; height: 7px; background: url(../images/arrow02.png) no-repeat 0 0;}
 
 ul.publisher{float: right; width: auto; list-style: none; padding: 0 107px 0 0;}
 ul.publisher li{float: left; width: auto; border-right: 1px solid #000; padding: 0 17px 10px 24px;}

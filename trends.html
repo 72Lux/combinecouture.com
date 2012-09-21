@@ -30,7 +30,10 @@
                     <li><a href="#"><img src="images/pinterest_icon.png" alt="pinterest_icon"/></a></li>
                 </ul>
                 <ul class="account">
-                    <li class="last"><a href="#" id="my-cart-popover-btn" data-cart="my-cart-popover" class="shopping cart-btn cart-popover-btn">SHOPPING BAG</a><span class="bg02"><span id="cartlabel" class="cartlabel">0</span><em></em></span></li>
+                  <li class="last">
+                    <a href="#" id="my-cart" class="cart-popover-btn">SHOPPING BAG</a>
+                    <span id="cartlabel" class="cartlabel">0</span>
+                  </li>
                 </ul>
             </div>
         </div>
@@ -47,6 +50,42 @@
             <a href="/rocco-black-pebble-lamb.html" class="shop_btn">Get it now</a> 
           </div>
           <p>Also keep price in mind.  Do not purchase a handbag just because it’s marked down because that doesn’t necessarily mean it’s the bag for you.  If you’re going to spend a lot of money regardless, pay full price for something you’ll love for a long time.  As in any circumstance, a timeless piece speaks for itself; you can wear it for all time without it becoming outdated. At the very least, bags redefine the idea of your basic summer tote or your dire winter must-have. If purchasing correctly, you will have a handbag to last you through all the seasons.  To be frank, I’d be utterly surprised if you didn’t get looks of jealousy shooting your way from now until end of time if you purchase correctly and always keep class in mind.   We have combed through all of this seasons bags and have curated our top picks that we deem worthy for your classic wardrobe.  Click “get it now” for more details and to shop the look.</p>
+          <div class="frame" id="frame1"></div>
+<script type="text/javascript" id="_loader">
+  if (typeof jQuery !== 'undefined') { var jquery = jQuery.noConflict(); }
+  var _shop = _shop || {};
+  _shop.apiToken = 'zJ6bT998x4qgbpYL4453522f73bec852';
+  _shop.secureCheckout = 'checkout.html';
+  _shop.products = [{'div': 'frame1', 'frameId': 27, 'config' : {'hideFrameName' : 1, 'hideTitle' : 1, 'frameType' : 'productGridFrame' }}];
+  _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'api.shoppable.co/';
+  var _div = document.createElement('div');
+  _div.setAttribute('class', 'loader');
+  _div.style.height = _div.style.width = '100%';
+  _div.style.padding = '35% 0 35% 0';
+  _div.style.textAlign = 'center';
+  var _image = new Image() || document.createElement('img');
+  _image.src = _shop.apiSrc + 'assets/img/lib/spinner16.gif';
+  _image.alt = 'loading...';
+  _image.title = 'Loading.';
+  _image.width = _image.height = '16';
+  _div.appendChild(_image);
+  var elems = document.getElementsByTagName('*'), i;
+  for (i = 0; i < elems.length; i++) {
+    if((" " + elems[i].className + " ").indexOf(" " + 'frame' + " ") > -1) {
+      elems[i].appendChild(_div.cloneNode(true));
+    }
+  }
+  var frames = document.createElement('script');
+  frames.type = 'text/javascript';
+  frames.async = true;
+  frames.src = _shop.apiSrc + 'assets/js/frames/assets/js/require-jquery.js';
+  frames.setAttribute('data-main', _shop.apiSrc + 'assets/js/frames/app/frames.js');
+  var s = document.getElementById('_loader');
+  s.parentNode.insertBefore(frames, s);
+</script>
+
+
+
         </div>
         <div id="footer">
             <ul class="footer_nav">
@@ -59,7 +98,7 @@
       </div>
         
         <div class="overlay"></div>
-        
+
         
         <div class="product_popup">
             <a href="#" class="popup_close">CLOSE</a>
