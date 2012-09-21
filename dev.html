@@ -1,140 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-        <meta charset="utf-8">
-        <title>Combine Couture</title>   
-        <link href="css/layout.css" rel="stylesheet" type="text/css"/>
-        <link href="css/frame.css" rel="stylesheet" type="text/css"/>
-        <link href="css/font.css" rel="stylesheet" type="text/css"/>
-        <link href="css/cart.css" rel="stylesheet" type="text/css"/>
-        <link href="css/stylish-select.css" rel="stylesheet" type="text/css"/>
-        <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
-        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-        <script type="text/javascript" src="js/jquery.stylish-select.js"></script>
-        <script type="text/javascript" src="js/jquery.bxSlider.js"></script>
-        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-        <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
-    </head>
-    <body>
-      <div class="layout">
-        <div id="header">
-                <a href="index.html" class="logo"><img src="images/logo.png" width="378" height="100" alt="logo"/></a>
-        </div>
-        <div id="outer_top_head">
-            <div id="top_head">
-                <ul class="icons">
-                    <li><a href="#"><img src="images/email_icon.png" alt="email_icon"/></a></li>
-                    <li><a href="#"><img src="images/fb_icon.png" alt="fb_icon"/></a></li>
-                    <li><a href="#"><img src="images/twitter_icon.png" alt="twitter_icon"/></a></li>
-                    <li><a href="#"><img src="images/pinterest_icon.png" alt="pinterest_icon"/></a></li>
-                </ul>
-                <ul class="account">
-                  <li class="last">
-                    <a href="#" id="my-cart" class="cart-popover-btn">SHOPPING BAG</a>
-                    <span id="cartlabel" class="cartlabel">0</span>
-                  </li>
-                </ul>
-            </div>
-        </div>
-            
+<head>
+  <meta charset="utf-8">
+  <title>Combine Couture</title>   
+  <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+  <link href="css/frame.css" rel="stylesheet" type="text/css"/>
+  <link href="css/cart.css" rel="stylesheet" type="text/css"/>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <div class="layout">
+    <div id="header">
+      <a href="index.html" class="logo"><img src="images/logo.png" width="378" height="100" alt="logo"/></a>
+    </div>
+    <div id="outer_top_head">
+      <div id="top_head">
+        <ul class="icons">
+          <li><a href="#"><img src="images/email_icon.png" alt="email_icon"/></a></li>
+          <li><a href="#"><img src="images/fb_icon.png" alt="fb_icon"/></a></li>
+          <li><a href="#"><img src="images/twitter_icon.png" alt="twitter_icon"/></a></li>
+          <li><a href="#"><img src="images/pinterest_icon.png" alt="pinterest_icon"/></a></li>
+        </ul>
+        <ul class="account">
+          <li class="last">
+            <a href="#" id="my-cart" class="cart-popover-btn">SHOPPING BAG</a>
+            <span id="cartlabel" class="cartlabel">0</span>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-            <div class="article_sec">
-<script type="text/javascript" id="_loader">
-  if (typeof jQuery !== 'undefined') { var jquery = jQuery.noConflict(); }
-  var _shop = _shop || {};
-  _shop.apiToken = 'w9ws124u8YrtlbmPfac1ca515fea6386';
-  _shop.secureCheckout = 'checkout-dev.html';
-  _shop.products = [{'div': 'frame1', 'frameId': 15, 'config' : {'frameType' : 'singleProductFrame' }}];
-  _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'dev.shoppable.co/';
-  var _div = document.createElement('div');
-  _div.setAttribute('class', 'loader');
-  _div.style.height = _div.style.width = '100%';
-  _div.style.padding = '35% 0 35% 0';
-  _div.style.textAlign = 'center';
-  var _image = new Image() || document.createElement('img');
-  _image.src = _shop.apiSrc + 'assets/img/lib/spinner16.gif';
-  _image.alt = 'loading...';
-  _image.title = 'Loading.';
-  _image.width = _image.height = '16';
-  _div.appendChild(_image);
-  var elems = document.getElementsByTagName('*'), i;
-  for (i = 0; i < elems.length; i++) {
-    if((" " + elems[i].className + " ").indexOf(" " + 'frame' + " ") > -1) {
-      elems[i].appendChild(_div.cloneNode(true));
-    }
-  }
-  var frames = document.createElement('script');
-  frames.type = 'text/javascript';
-  frames.async = true;
-  frames.src = _shop.apiSrc + 'assets/js/frames/assets/js/require-jquery.js';
-  frames.setAttribute('data-main', _shop.apiSrc + 'assets/js/frames/app/frames.js');
-  var s = document.getElementById('_loader');
-  s.parentNode.insertBefore(frames, s);
-</script>
-
-                <div id="frame1"></div>
-            
-                <div id="see-more-container"><a href="more.html" class="shop_btn">See More Handbags</a></div>
-            </div>
-            <div id="footer">
-                <ul class="footer_nav">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li class="last"><a href="#">Terms of Use</a></li>
-                </ul>
-                <p class="copyright">&copy; 2012 <a href="#">72Lux</a> Inc. All Rights Reserved</p>
-            </div>
-        </div>
-        
-        <div class="overlay"></div>
-        
-        
-        <div class="product_popup">
-            <a href="#" class="popup_close">CLOSE</a>
-            <img class="pop_img" src="images/popup_img.jpg" alt="img" />
-            <div class="right_sec">
-                <h3>COMFORT VERA WANG  <small>Red Flats</small></h3>
-                <p>Item #1010-85708812036</p>
-                <form action="#">
-                    <div class="row">
-                        <label>SIZE</label>
-                        <select id="my-dropdown">
-                            <option>36</option>
-                            <option>36</option>
-                            <option>36</option>
-                            <option>36</option>
-                        </select>
-                    </div>
-                    <div class="row">
-                        <label>COLOR</label>
-                        <select id="my-dropdown2"><option>Red</option></select>
-                    </div>
-                    <div class="row2">
-                        <ul class="social">
-                            <li><a href="#">
-                                    <img src="images/email_icon.png" width="16" height="16" alt="email_icon"/>
-                                </a></li>
-                            <li><a href="#">
-                                    <img src="images/fb_icon.png" width="16" height="16" alt="email_icon"/>
-                                </a></li>
-                            <li><a href="#">
-                                    <img src="images/twitter_icon.png" width="16" height="16" alt="email_icon"/>
-                                </a></li>
-                            <li><a href="#">
-                                    <img src="images/pinterest_icon.png" width="16" height="16" alt="email_icon"/>
-                                </a></li>
-                        </ul>
-                        <ul class="fav">
-                            <li>
-                                <a class="heart" href="#">
-                                    
-                                </a></li>
-                            <li><a class="bag" href="#">Add to Shopping Bag</a></li>
-                        </ul>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </body>
+    <div class="article_sec">
+      <div id="frame1"></div>
+      <script type="text/javascript" id="_loader">
+        if (typeof jQuery !== 'undefined') { var jquery = jQuery.noConflict(); }
+        var _shop = _shop || {};
+        _shop.apiToken = 'w9ws124u8YrtlbmPfac1ca515fea6386';
+        _shop.secureCheckout = 'https://combinecouture.com/checkout-dev.html';
+        _shop.products = [{'div': 'frame1', 'frameId': 19, 'config' : {'hideFrameName' : 1, 'frameType' : 'productSlideshowFrame' }}];
+        _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'dev.shoppable.co/';
+        var _div = document.createElement('div');
+        _div.setAttribute('class', 'loader');
+        _div.style.height = _div.style.width = '100%';
+        _div.style.padding = '35% 0 35% 0';
+        _div.style.textAlign = 'center';
+        var _image = new Image() || document.createElement('img');
+        _image.src = _shop.apiSrc + 'assets/img/lib/spinner16.gif';
+        _image.alt = 'loading...';
+        _image.title = 'Loading.';
+        _image.width = _image.height = '16';
+        _div.appendChild(_image);
+        var elems = document.getElementsByTagName('*'), i;
+        for (i = 0; i < elems.length; i++) {
+          if((" " + elems[i].className + " ").indexOf(" " + 'frame' + " ") > -1) {
+            elems[i].appendChild(_div.cloneNode(true));
+          }
+        }
+        var frames = document.createElement('script');
+        frames.type = 'text/javascript';
+        frames.async = true;
+        frames.src = _shop.apiSrc + 'assets/js/frames/assets/js/require-jquery.js';
+        frames.setAttribute('data-main', _shop.apiSrc + 'assets/js/frames/app/frames.js');
+        var s = document.getElementById('_loader');
+        s.parentNode.insertBefore(frames, s);
+      </script>
+    </div>
+    <div id="footer">
+      <ul class="footer_nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li class="last"><a href="#">Terms of Use</a></li>
+      </ul>
+      <p class="copyright">&copy; 2012 <a href="#">72Lux</a> Inc. All Rights Reserved</p>
+    </div>
+  </div>
+</body>
 </html>
