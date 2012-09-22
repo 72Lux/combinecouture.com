@@ -347,8 +347,8 @@
 }
 
 .carousel-control {
+	top: 40%; 
   position: absolute;
-  top: 40%;
   left: 15px;
   width: 40px;
   height: 40px;
@@ -394,3 +394,12 @@
   color: #ffffff;
 }
 /* end Slideshow settings */
+
+#product-slideshow .carousel-inner {
+	height: 600px;
+}
+
+#product-slideshow .carousel-control {
+	top: auto;
+	bottom: 20px; 
+}
