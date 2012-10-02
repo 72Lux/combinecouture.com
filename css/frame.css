@@ -250,9 +250,7 @@
   font-weight: bold;
 }
 #product-grid .product-name {
-  font: 20px/20px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif;
-  line-height: 30px;
-  font-weight: normal;
+  display: none;
 }
 
 /** general frame styles **/
