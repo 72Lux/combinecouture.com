@@ -92,20 +92,21 @@
   width: 100%;
 }
 .single-product .add-to-cart label {
-  display: block;
+  display: inline;
   clear: both;
   margin: 0 0 5px 0;
   color: #231F20;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 12px;
   width: auto;
   height: 13px;
+  line-height: 18px;
 }
 .single-product .add-to-cart select {
-  width: 185px;
-  height: 28px;
-  margin: 0 0 10px 0;
+  width: 120px;
+  height: 18px;
+  margin: 10px 0 10px 5px;
   display: inline;
   font-size: 14px;
 }
