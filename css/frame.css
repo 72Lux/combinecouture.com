@@ -180,6 +180,10 @@
 #product-grid .product .product-image img {
   width:208px;
 }
+#product-grid .product .product-image > span {
+  height:300px;
+  overflow: hidden;
+}
 #product-grid .unavailable-text {
   display: none;
 }
