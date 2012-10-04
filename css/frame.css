@@ -29,7 +29,9 @@
 .single-product .product-detail-image-src {
   max-width: 350px;
 }
-
+.single-product .product-detail-image > span {
+  height: 460px;
+}
 .single-product .product-image:before,
 .single-product .product-image:after {
     content:"";
