@@ -64,13 +64,9 @@ for (i = 0; i < elems.length; i++) {
   }
 }
 var s = document.getElementById('_loader');
-var yepnope = document.createElement('script');
-yepnope.type = 'text/javascript';
-yepnope.async = true;
-yepnope.defer = 'defer';
-yepnope.src = _shop.apiSrc + 'assets/js/lib/yepnope.min.js';
-yepnope.onload = function() {
+function onLoadHandler(evt) {
   "use strict";
+  alert('onLoadHandler');
   var frames = document.createElement('script');
   frames.type = 'text/javascript';
   frames.async = true;
@@ -78,7 +74,28 @@ yepnope.onload = function() {
   frames.src = _shop.apiSrc + 'assets/js/launch.20121004.js';
   s.parentNode.insertBefore(frames, s.nextSibling);
 };
+
+var yepnope = document.createElement('script');
+yepnope.type = 'text/javascript';
+yepnope.async = true;
+yepnope.defer = 'defer';
+yepnope.src = _shop.apiSrc + 'assets/js/lib/yepnope.min.js';
 s.parentNode.insertBefore(yepnope, s);
+
+// for IE
+if (yepnope.attachEvent) {
+  yepnope.attachEvent('onload', onLoadHandler);
+  alert('.attachEvent');
+}
+// for everyone else
+else {
+  yepnope.addEventListener('load', onLoadHandler, false);
+  alert('.addEventListener');
+}
+
+//document.getElementById('yepnope-script').addEventListener('load', onLoadHandler, false);
+
+
 </script>
 
                 <div id="frame1"></div>
