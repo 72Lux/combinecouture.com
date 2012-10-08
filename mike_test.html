@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Combine Couture</title>
+  <link href="css/layout.css" rel="stylesheet" type="text/css">
+  <link href="css/frame.css" rel="stylesheet" type="text/css">
+  <link href="css/font.css" rel="stylesheet" type="text/css">
+  <link href="css/cart.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" id="_loader">
+    var _shop = _shop || {};
+    _shop.apiToken = 'QTKjF6dJrYC3NOwE2498831069e1b964';
+    _shop.secureCheckout = 'https://combinecouture.com/checkout-dev.html';
+    _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'dev.shoppable.co/';
+    var _div = document.createElement('div');
+    _div.setAttribute('class', 'loader');
+    _div.style.height = _div.style.width = '100%';
+    _div.style.padding = '35% 0 35% 0';
+    _div.style.textAlign = 'center';
+    var _image = new Image() || document.createElement('img');
+    _image.src = _shop.apiSrc + 'assets/img/lib/spinner16.gif';
+    _image.alt = 'loading...';
+    _image.title = 'Loading.';
+    _image.width = _image.height = '16';
+    _div.appendChild(_image);
+    var elems = document.getElementsByTagName('*'), i;
+    for (i = 0; i < elems.length; i++) {
+      if((" " + elems[i].className + " ").indexOf(" " + 'frame' + " ") > -1) {
+        elems[i].appendChild(_div.cloneNode(true));
+      }
+    }
+    var frames = document.createElement('script');
+    frames.type = 'text/javascript';
+    frames.async = true;
+    frames.src = _shop.apiSrc + 'assets/js/frames/assets/js/require-jquery.js';
+    frames.setAttribute('data-main', _shop.apiSrc + 'assets/js/frames/app/frames.js');
+    var s = document.getElementById('_loader');
+    s.parentNode.insertBefore(frames, s);
+  </script>
+ 
+</head>
+<body>
+  <div class="layout">
+    <div id="header"><a href="index.html" class="logo"><img src="images/logo.png" width="378" height="100" alt="logo"></a></div>
+    <div id="outer_top_head">
+      <div id="top_head">
+        <ul class="icons">
+          <li><a href="#"><img src="images/email_icon.png" alt="email_icon"></a></li>
+          <li><a href="#"><img src="images/fb_icon.png" alt="fb_icon"></a></li>
+          <li><a href="#"><img src="images/twitter_icon.png" alt="twitter_icon"></a></li>
+          <li><a href="#"><img src="images/pinterest_icon.png" alt="pinterest_icon"></a></li>
+        </ul>
+        <ul class="account">
+          <li class="last"><a href="#" id="my-cart" class="cart-popover-btn">SHOPPING BAG</a> <span id="cartlabel" class="cartlabel">0</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="article_sec">
+      <div id="frame1"></div>
+      <script type="text/javascript" id="_loader">
+        var _shop = _shop || {};
+        _shop.products = [{'div': 'frame1', 'frameId': 65, 'config' : {'hideFrameName' : 1, 'frameType' : 'singleProductFrame' }}];        
+        if (!_shop.apiSrc) {
+           _shop.apiToken = 'QTKjF6dJrYC3NOwE2498831069e1b964';
+           _shop.secureCheckout = 'https://combinecouture.com/checkout-dev.html';
+           _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'dev.shoppable.co/';
+          var _div = document.createElement('div');
+          _div.setAttribute('class', 'loader');
+          _div.style.height = _div.style.width = '100%';
+          _div.style.padding = '35% 0 35% 0';
+          _div.style.textAlign = 'center';
+          var _image = new Image() || document.createElement('img');
+          _image.src = _shop.apiSrc + 'assets/img/lib/spinner16.gif';
+          _image.alt = 'loading...';
+          _image.title = 'Loading.';
+          _image.width = _image.height = '16';
+          _div.appendChild(_image);
+          var elems = document.getElementsByTagName('*'), i;
+          for (i = 0; i < elems.length; i++) {
+            if((" " + elems[i].className + " ").indexOf(" " + 'frame' + " ") > -1) {
+              elems[i].appendChild(_div.cloneNode(true));
+            }
+          }
+          var frames = document.createElement('script');
+          frames.type = 'text/javascript';
+          frames.async = true;
+          frames.src = _shop.apiSrc + 'assets/js/frames/assets/js/require-jquery.js';
+          frames.setAttribute('data-main', _shop.apiSrc + 'assets/js/frames/app/frames.js');
+          var s = document.getElementById('_loader');
+          s.parentNode.insertBefore(frames, s);
+        }
+        
+
+      </script>
+    </div>
+
+    </div>
+    <div id="footer">
+      <ul class="footer_nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li class="last"><a href="#">Terms of Use</a></li>
+      </ul>
+      <p class="copyright">© 2012 <a href="#">72Lux</a> Inc. All Rights Reserved</p>
+    </div>
+  </div>
+</body>
+</html>
