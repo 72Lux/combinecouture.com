@@ -51,13 +51,13 @@
     yepnope.defer = 'defer';
     s.parentNode.insertBefore(yepnope, s);
     
-    var stylish = document.getElementById('stylish');
+   // var stylish = document.getElementById('stylish');
     
     // for IE
     if (yepnope.attachEvent) {
       yepnope.attachEvent('onload', onLoadHandler);
     
-      stylish.attachEvent('onload', eventHandler);
+     //stylish.attachEvent('onload', eventHandler);
     }
     // for everyone else
     else {
