@@ -12,34 +12,36 @@
   <script type="text/javascript" src="http://dev.shoppable.co/assets/js/lib/yepnope.min.js"></script>
   <script type="text/javascript" id="_loader">
     var _shop = _shop || {};
-    _shop.apiToken = 'w9ws124u8YrtlbmPfac1ca515fea6386';
-    _shop.secureCheckout = 'checkout-dev.html';
-    _shop.products = [{'div': 'frame1', 'frameId': 65, 'config' : {'hideFrameName' : 1, 'hideItemNumber' : 1, 'frameType' : 'singleProductFrame' }}];
-    _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'dev.shoppable.co/';
-    var _div = document.createElement('div');
-    _div.setAttribute('class', 'loader');
-    _div.style.height = _div.style.width = '100%';
-    _div.style.padding = '35% 0 35% 0';
-    _div.style.textAlign = 'center';
-    var _image = new Image() || document.createElement('img');
-    _image.src = _shop.apiSrc + 'assets/img/lib/spinner16.gif';
-    _image.alt = 'loading...';
-    _image.title = 'Loading.';
-    _image.width = _image.height = '16';
-    _div.appendChild(_image);
-    var elems = document.getElementsByTagName('*'), i;
-    for (i = 0; i < elems.length; i++) {
-      if((" " + elems[i].className + " ").indexOf(" " + 'frame' + " ") > -1) {
-        elems[i].appendChild(_div.cloneNode(true));
+    _shop.products.push({'div': 'frame1', 'frameId': 65, 'config' : {'hideFrameName' : 1, 'hideItemNumber' : 1, 'frameType' : 'singleProductFrame' }});
+    if(!_shop.apiSrc) {
+      _shop.apiToken = 'w9ws124u8YrtlbmPfac1ca515fea6386';
+      _shop.secureCheckout = 'checkout-dev.html';
+      _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'dev.shoppable.co/';
+      var _div = document.createElement('div');
+      _div.setAttribute('class', 'loader');
+      _div.style.height = _div.style.width = '100%';
+      _div.style.padding = '35% 0 35% 0';
+      _div.style.textAlign = 'center';
+      var _image = new Image() || document.createElement('img');
+      _image.src = _shop.apiSrc + 'assets/img/lib/spinner16.gif';
+      _image.alt = 'loading...';
+      _image.title = 'Loading.';
+      _image.width = _image.height = '16';
+      _div.appendChild(_image);
+      var elems = document.getElementsByTagName('*'), i;
+      for (i = 0; i < elems.length; i++) {
+        if((" " + elems[i].className + " ").indexOf(" " + 'frame' + " ") > -1) {
+          elems[i].appendChild(_div.cloneNode(true));
+        }
       }
+      var s = document.getElementById('_loader');
+      var frames = document.createElement('script');
+      frames.type = 'text/javascript';
+      frames.async = true;
+      frames.defer = 'defer';
+      frames.src = _shop.apiSrc + 'assets/js/launch.20121004.js';
+      s.parentNode.insertBefore(frames, s);
     }
-    var s = document.getElementById('_loader');
-    var frames = document.createElement('script');
-    frames.type = 'text/javascript';
-    frames.async = true;
-    frames.defer = 'defer';
-    frames.src = _shop.apiSrc + 'assets/js/launch.20121004.js';
-    s.parentNode.insertBefore(frames, s);
   </script>
   
 </head>
