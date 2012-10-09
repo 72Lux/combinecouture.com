@@ -10,6 +10,7 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
   <script type="text/javascript" id="_loader">
+    window.yepnope || document.write('<script type="text/javascript" src="http://dev.shoppable.co/assets/js/lib/yepnope.min.js"><\/script>');
     var _shop = _shop || {};
     _shop.apiToken = 'w9ws124u8YrtlbmPfac1ca515fea6386';
     _shop.secureCheckout = 'checkout-dev.html';
@@ -32,12 +33,12 @@
         elems[i].appendChild(_div.cloneNode(true));
       }
     }
+    var s = document.getElementById('_loader');
     var frames = document.createElement('script');
     frames.type = 'text/javascript';
     frames.async = true;
-    frames.src = _shop.apiSrc + 'assets/js/frames/assets/js/require-jquery.js';
-    frames.setAttribute('data-main', _shop.apiSrc + 'assets/js/frames/app/frames.js');
-    var s = document.getElementById('_loader');
+    frames.defer = 'defer';
+    frames.src = _shop.apiSrc + 'assets/js/launch.20121004.js';
     s.parentNode.insertBefore(frames, s);
   </script>
 </head>
@@ -61,6 +62,7 @@
       <div id="frame1"></div>
       
       <script type="text/javascript" id="_loader">
+        window.yepnope || document.write('<script type="text/javascript" src="http://dev.shoppable.co/assets/js/lib/yepnope.min.js"><\/script>');
         var _shop = _shop || {};
         _shop.products = _shop.products || Array();
         _shop.products.push({'div': 'frame1', 'frameId': 65, 'config' : {'hideFrameName' : 1, 'hideItemNumber' : 1, 'frameType' : 'singleProductFrame' }});
