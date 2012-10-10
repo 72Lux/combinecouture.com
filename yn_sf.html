@@ -9,6 +9,7 @@
   <link href="css/cart.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" id="_yepnope_loader" src="http://dev.shoppable.co/assets/js/lib/yepnope.min.js"></script>
   <script type="text/javascript" id="_loader">
     var _shop = _shop || {};
     _shop.products = _shop.products || Array();
@@ -17,7 +18,6 @@
       _shop.apiToken = 'w9ws124u8YrtlbmPfac1ca515fea6386';
       _shop.secureCheckout = 'checkout.html';
       _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'dev.shoppable.co/';
-      window.yepnope || document.write('<script type="text/javascript" id="_yepnope_loader" src="' + _shop.apiSrc + '/assets/js/lib/yepnope.min.js"><\/script>');
       var _div = document.createElement('div');
       _div.setAttribute('class', 'loader');
       _div.style.height = _div.style.width = '100%';
