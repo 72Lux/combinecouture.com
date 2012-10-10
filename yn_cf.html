@@ -16,7 +16,7 @@
       _shop.apiToken = 'w9ws124u8YrtlbmPfac1ca515fea6386';
       _shop.secureCheckout = 'checkout.html';
       _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'dev.shoppable.co/';
-      window.yepnope || document.write('<script type="text/javascript" async id="_yepnope_loader" src="' + _shop.apiSrc + '/assets/js/lib/yepnope.min.js"><\/script>');
+      //window.yepnope || document.write('<script type="text/javascript" async id="_yepnope_loader" src="' + _shop.apiSrc + '/assets/js/lib/yepnope.min.js"><\/script>');
       var _div = document.createElement('div');
       _div.setAttribute('class', 'loader');
       _div.style.height = _div.style.width = '100%';
@@ -35,21 +35,20 @@
       //  }
       //}
 
-      (function() {
-        var frames = document.createElement('script');
-        frames.type = 'text/javascript';
-        frames.defer = true;
-        frames.src = _shop.apiSrc + 'assets/js/launch.20121010.js';
-        var s = document.getElementById('_yepnope_loader');
-        s.parentNode.appendChild(frames);
-      })();
+      var s = document.getElementById('_yepnope_loader');
 
-      // var frames = document.createElement('script');
-      // frames.type = 'text/javascript';
-      // frames.src = _shop.apiSrc + 'assets/js/launch.20121010.js';
-      // frames.defer = true;
-      // var s = document.getElementById('_yepnope_loader');
-      // s.parentNode.insertBefore(frames, s.nextSibling);
+      var yepnope = document.createElement('script');
+      yepnope.type = 'text/javascript';
+      yepnope.src = _shop.apiSrc + 'assets/js/lib/yepnope.min.js';
+      yepnope.setAttribute('id','_yepnope_loader');
+      s.parentNode.insertBefore(yepnope, s.nextSibling);
+
+      var frames = document.createElement('script');
+      frames.type = 'text/javascript';
+      frames.src = _shop.apiSrc + 'assets/js/launch.20121010.js';
+      frames.defer = true;
+      yepnope.parentNode.insertBefore(frames, yepnope.nextSibling);
+
     }
   </script>
 </head>
