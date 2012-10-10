@@ -16,7 +16,7 @@
       _shop.apiToken = 'w9ws124u8YrtlbmPfac1ca515fea6386';
       _shop.secureCheckout = 'checkout.html';
       _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'dev.shoppable.co/';
-      window.yepnope || document.write('<script type="text/javascript" id="_yepnope_loader" src="' + _shop.apiSrc + '/assets/js/lib/yepnope.min.js"><\/script>');
+      window.yepnope || document.write('<script type="text/javascript" async id="_yepnope_loader" src="' + _shop.apiSrc + '/assets/js/lib/yepnope.min.js"><\/script>');
       var _div = document.createElement('div');
       _div.setAttribute('class', 'loader');
       _div.style.height = _div.style.width = '100%';
@@ -37,6 +37,7 @@
       var frames = document.createElement('script');
       frames.type = 'text/javascript';
       frames.src = _shop.apiSrc + 'assets/js/launch.20121010.js';
+      frames.defer = true;
       var s = document.getElementById('_yepnope_loader');
       s.parentNode.insertBefore(frames, s.nextSibling);
     }
