@@ -290,6 +290,7 @@
   position: relative;
   margin-bottom: 18px;
   line-height: 1;
+  float:left;
 }
 
 .carousel-inner {
