@@ -29,6 +29,7 @@
     <div class="article_sec">
       <div id="frame1"></div>
       <script type="text/javascript" id="_loader">
+        window.yepnope || document.write('<script type="text/javascript" id="_yepnope_loader" src="http://dev.shoppable.co/assets/js/lib/yepnope.min.js"><\/script>');
         var _shop = _shop || {};
         _shop.products = _shop.products || Array();
         _shop.products.push({'div': 'frame1', 'frameId': 65, 'config' : {'hideFrameName' : 1, 'hideItemNumber' : 1, 'frameType' : 'productSlideshowFrame' }});
@@ -36,7 +37,6 @@
           _shop.apiToken = 'w9ws124u8YrtlbmPfac1ca515fea6386';
           _shop.secureCheckout = 'checkout.html';
           _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'dev.shoppable.co/';
-          window.yepnope || document.write('<script type="text/javascript" id="_yepnope_loader" src="' + _shop.apiSrc + '/assets/js/lib/yepnope.min.js"><\/script>');
           var _div = document.createElement('div');
           _div.setAttribute('class', 'loader');
           _div.style.height = _div.style.width = '100%';
