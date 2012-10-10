@@ -33,14 +33,12 @@
   //    if ((" " + elems[i].className + " ").indexOf(" " + 'frame' + " ") > -1) {
   //      elems[i].appendChild(_div.cloneNode(true));
   //    }
-      $(document).ready(function() {
         var frames = document.createElement('script');
         frames.type = 'text/javascript';
-        frames.defer = true;
+        frames.defer = "true";
         frames.src = _shop.apiSrc + 'assets/js/launch.20121010.js';
-        var s = document.getElementById('_yepnope_loader');
+        var s = document.getElementsByTagName('body')[0];
         s.parentNode.appendChild(frames);
-      });
     }
   </script>
 </head>
@@ -88,14 +86,12 @@
      //       if ((" " + elems[i].className + " ").indexOf(" " + 'frame' + " ") > -1) {
      //         elems[i].appendChild(_div.cloneNode(true));
      //       }
-              $(document).ready(function() {
                 var frames = document.createElement('script');
                 frames.type = 'text/javascript';
-                frames.defer = true;
+                frames.defer = "true";
                 frames.src = _shop.apiSrc + 'assets/js/launch.20121010.js';
-                var s = document.getElementById('_yepnope_loader');
+                var s = document.getElementsByTagName('body')[0];
                 s.parentNode.appendChild(frames);
-              });
         }
         </script>
     </div>
