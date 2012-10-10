@@ -28,21 +28,19 @@
       _image.title = 'Loading.';
       _image.width = _image.height = '16';
       _div.appendChild(_image);
-  //    var elems = document.getElementsByTagName('*'), i;
-  //    for (i = 0; i < elems.length; i++) {
-  //    if ((" " + elems[i].className + " ").indexOf(" " + 'frame' + " ") > -1) {
-  //      elems[i].appendChild(_div.cloneNode(true));
-  //    }
-  
-        function loadScript() {
-          var script = document.createElement("script");
-          script.type = "text/javascript";
-          script.src = _shop.apiSrc + 'assets/js/launch.20121010.js';
-          document.body.appendChild(script);
+      var elems = document.getElementsByTagName('*'), i;
+      for (i = 0; i < elems.length; i++) {
+        if ((" " + elems[i].className + " ").indexOf(" " + 'frame' + " ") > -1) {
+          elems[i].appendChild(_div.cloneNode(true));
         }
-
-        window.onload = loadScript;
-       
+      }
+      function loadFrame() {
+        var script = document.createElement("script");
+        script.type = 'text/javascript';
+        script.src = _shop.apiSrc + 'assets/js/launch.20121010.js';
+        document.body.appendChild(script);
+      }
+      window.onload = loadFrame;
     }
   </script>
 </head>
@@ -85,20 +83,19 @@
             _image.title = 'Loading.';
             _image.width = _image.height = '16';
             _div.appendChild(_image);
-     //       var elems = document.getElementsByTagName('*'), i;
-     //       for (i = 0; i < elems.length; i++) {
-     //       if ((" " + elems[i].className + " ").indexOf(" " + 'frame' + " ") > -1) {
-     //         elems[i].appendChild(_div.cloneNode(true));
-     //       }
-              function loadScript() {
-                var script = document.createElement("script");
-                script.type = "text/javascript";
-                script.src = _shop.apiSrc + 'assets/js/launch.20121010.js';
-                document.body.appendChild(script);
-              }
-      
-              window.onload = loadScript;
-
+            var elems = document.getElementsByTagName('*'), i;
+            for (i = 0; i < elems.length; i++) {
+              if ((" " + elems[i].className + " ").indexOf(" " + 'frame' + " ") > -1) {
+                elems[i].appendChild(_div.cloneNode(true));
+                }
+            }
+            function loadFrame() {
+              var script = document.createElement("script");
+              script.type = 'text/javascript';
+              script.src = _shop.apiSrc + 'assets/js/launch.20121010.js';
+              document.body.appendChild(script);
+            }
+            window.onload = loadFrame;
         }
         </script>
     </div>
