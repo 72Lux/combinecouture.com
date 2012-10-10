@@ -41,13 +41,15 @@
       yepnope.type = 'text/javascript';
       yepnope.src = _shop.apiSrc + 'assets/js/lib/yepnope.min.js';
       yepnope.setAttribute('id','_yepnope_loader');
-      s.parentNode.insertBefore(yepnope, s.nextSibling);
+      //s.parentNode.insertBefore(yepnope, s.nextSibling);
+      s.appendChild(yepnope);
 
       var frames = document.createElement('script');
       frames.type = 'text/javascript';
       frames.src = _shop.apiSrc + 'assets/js/launch.20121010.js';
       frames.defer = true;
-      yepnope.parentNode.insertBefore(frames, yepnope.nextSibling);
+      //yepnope.parentNode.insertBefore(frames, yepnope.nextSibling);
+      s.appendChild(frames);
 
     }
   </script>
