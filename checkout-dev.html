@@ -58,6 +58,9 @@
             checkout.name = 'checkout';
             checkout.id = 'checkout';
             checkout.height = '600';
+            checkout.setAttribute('frameborder',0);
+            checkout.setAttribute('marginheight',0);
+            checkout.setAttribute('marginwidth',0);
             checkout.onload = resizeCrossDomainIframe('checkout', 'http://dev.shoppable.co');
             checkout.src = _shop.checkoutURL;
             var s = document.getElementById('_loader');
