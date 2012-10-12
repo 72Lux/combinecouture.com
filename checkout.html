@@ -43,8 +43,9 @@
      
       _shop.apiToken = 'zJ6bT998x4qgbpYL4453522f73bec852';  // Configure for your site
       _shop.returnToSite = 'https://combinecouture.com';    // Configure for your site
+      _shop.publisherCheckout = encodeURI(window.location.protocol + '//' + window.location.host);
      
-      _shop.checkoutURL = 'https://api.shoppable.co/checkout?referrer=' + encodeURI(_shop.returnToSite) + '&id=' + qs('cart') + '&apiToken=' + _shop.apiToken;
+      _shop.checkoutURL = 'https://api.shoppable.co/checkout?returnToSite=' + encodeURI(_shop.returnToSite) + '&id=' + qs('cart') + '&apiToken=' + _shop.apiToken + '&publisherCheckout=' + _shop.publisherCheckout;
       var checkout = document.createElement('iframe');
       checkout.name = 'checkout';
       checkout.id = 'checkout';
