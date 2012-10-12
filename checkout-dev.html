@@ -43,7 +43,7 @@
      
       _shop.apiToken = 'w9ws124u8YrtlbmPfac1ca515fea6386';  // Configure for your site
       _shop.returnToSite = 'http://combinecouture.com';    // Configure for your site
-      _shop.publisherCheckout = encodeURI(window.location.origin);
+      _shop.publisherCheckout = encodeURI(window.location.protocol + '//' + window.location.host);
 
       _shop.checkoutURL = 'http://dev.shoppable.co/checkout?returnToSite=' + encodeURI(_shop.returnToSite) + '&id=' + qs('cart') + '&apiToken=' + _shop.apiToken + '&publisherCheckout=' + _shop.publisherCheckout;
       var checkout = document.createElement('iframe');
