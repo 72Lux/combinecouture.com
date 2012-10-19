@@ -8,7 +8,9 @@
 .heading ul li{float:left; text-align:center; font:16px/16px 'NeutraDisplayThinMedium'; color:#000; background:none; list-style-type:none;}
 .main_heading{float:left; width:100%; background:#000; margin-top:2px;}
 .main_heading h3{font:16px/23px 'NeutraDisplayThinMedium'; color:#fff; float:left; width:500px; padding-left:8px;}
-.main_heading .customer_service{font:10px/23px Georgia, "Times New Roman", Times, serif; color:#fff; float:right; width:auto; padding-right:5px;}
+.main_heading .customer_service,
+.main_heading .shipped_from {text-align:right; font:10px/23px Georgia, "Times New Roman", Times, serif; color:#fff; float:right; width:400px; padding:0 5px 0 0;}
+.main_heading .shipped_from {text-align:left; float:left;padding:0 0 0 5px;}
 .main_heading .sub_total{float:right;font:17px/23px 'NeutraDisplayAltBold'; color:#fff; padding-right:5px;}
 
 .items{float:left; width:100%;}
@@ -35,7 +37,7 @@ li.item-subtotal, li.item-header-subtotal {width:89px;}
 .row .right-actions{float:right; /*width:255px;*/ margin-top:14px;}
 .row .right-actions li{float:left; list-style-type:none; background:none; padding:0;}
 .row .right-actions .continue_link{ cursor:pointer; float:left; width:153px;  border:1px solid #000; text-align:center; font:14px/17px 'NeutraDisplayAltBold'; color:#000;background:#fff;}
-.row .right-actions .checkout_link{ cursor:pointer; float:left; width:83px; border:none; text-align:center; font:14px/19px 'NeutraDisplayAltBold'; color:#fff; background:#0845ab; margin-left:15px;}
+.row .right-actions .checkout_link{ cursor:pointer; float:left; width:83px; border:none; text-align:center; font:14px/19px 'NeutraDisplayAltBold'; color:#fff; background:#000; margin-left:15px;}
 
 .row .left-actions{float:left; /*width:255px;*/ margin-top:14px;}
 .row .left-actions li{float:left; list-style-type:none; background:none; padding:0;}
