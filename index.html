@@ -7,14 +7,8 @@
         <link href="css/frame.css" rel="stylesheet" type="text/css"/>
         <link href="css/font.css" rel="stylesheet" type="text/css"/>
         <link href="css/cart.css" rel="stylesheet" type="text/css"/>
-        <link href="css/stylish-select.css" rel="stylesheet" type="text/css"/>
-        <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-        <script type="text/javascript" src="js/jquery.stylish-select.js"></script>
-        <script type="text/javascript" src="js/jquery.bxSlider.js"></script>
-        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-        <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
 
     </head>
     <body>
@@ -112,26 +106,42 @@
         </div>
         
         <div class="overlay"></div>
-        
         <script type="text/javascript" id="_loader">
-          if (typeof jQuery != 'undefined') { var _jquery = jQuery.noConflict(); }
           var _shop = _shop || {};
-          _shop.apiToken = 'zJ6bT998x4qgbpYL4453522f73bec852';
-          _shop.secureCheckout = 'https://combinecouture.com/checkout.html';
-          _shop.products = [];
-          _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'api.shoppable.co/';
-        
-          var frames = document.createElement('script');
-          frames.type = 'text/javascript';
-          frames.async = true;
-          frames.defer = 'defer';
-          frames.src = _shop.apiSrc + 'assets/js/frames/assets/js/require-jquery.js';
-          frames.setAttribute('data-main', _shop.apiSrc + 'assets/js/frames/app/frames.js');
-          var s = document.getElementById('_loader');
-          s.parentNode.insertBefore(frames, s);
-        </script>
-
-        
+          _shop.products = _shop.products || [];
+          function loadFrame() {
+            "use strict";
+            var script = document.createElement("script");
+            script.type = 'text/javascript';
+            script.src = _shop.apiSrc + 'assets/js/launch.20121021.js';
+            script.async = true;
+            document.body.appendChild(script);
+          }
+          if (!_shop.apiSrc) {
+            _shop.apiToken = 'zJ6bT998x4qgbpYL4453522f73bec852'; // Configure for your site
+            _shop.secureCheckout = 'https://combinecouture.com/checkout.html'; // Configure for your site
+            _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'api.shoppable.co/';
+            var ynscript = document.createElement('script');
+            ynscript.src = _shop.apiSrc + '/assets/js/lib/yepnope.min.js';
+            ynscript.onloadDone = false;
+            ynscript.async = true;
+            ynscript.onload = function() {
+              "use strict"; 
+              if (!ynscript.onloadDone) {
+                ynscript.onloadDone = true; 
+                loadFrame(); 
+              }
+            };
+            ynscript.onreadystatechange = function() { 
+              "use strict";
+              if (("loaded" === ynscript.readyState || "complete" === ynscript.readyState ) && ! ynscript.onloadDone) {
+                ynscript.onloadDone = true; 
+                loadFrame();
+              }
+            };
+            window.yepnope || document.getElementsByTagName('head')[0].appendChild(ynscript);
+          }
+        </script>        
         
         <div class="product_popup">
             <a href="#" class="popup_close">CLOSE</a>
