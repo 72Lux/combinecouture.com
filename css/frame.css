@@ -403,8 +403,3 @@
 #product-slideshow .carousel-inner {
   height: 600px;
 }
-
-#product-slideshow .carousel-control {
-  top: auto;
-  bottom: 20px; 
-}
