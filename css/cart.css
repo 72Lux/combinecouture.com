@@ -145,8 +145,6 @@
 }
 .items ul li .remove{
   color:#c0c0c0;
-  width:60px;
-  /*background:url(../img/remove_img.jpg) no-repeat left center;*/
   text-indent:15px;
   margin:0;
 }
@@ -155,7 +153,7 @@
   width:90px;
 }
 .items ul .remove_li{
-  width:90px;
+  width:100px;
 }
 
 .items ul .item-image {
