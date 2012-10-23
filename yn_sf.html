@@ -22,30 +22,32 @@
           <li><a href="#"><img src="images/pinterest_icon.png" alt="pinterest_icon"></a></li>
         </ul>
         <ul class="account">
-          <li class="last"><a href="#" id="my-cart" class="cart-popover-btn">SHOPPING BAG</a> <span id="cartlabel" class="cartlabel">0</span></li>
+          <li class="last"><a href="#" id="my-cart" class="cart-popover-btn">SHOPPING BAG</a> <span id="cartlabel" class="cartlabel">&nbsp;</span></li>
         </ul>
       </div>
     </div>
     <div class="article_sec">
       <div id="frame1"></div>
-      <script type="text/javascript" id="_loader">
+      <script type="text/javascript">
         var _shop = _shop || {};
-        _shop.products = _shop.products || new Array();
-        _shop.products.push({'div': 'frame1', 'frameId': 65, 'config' : {'hideFrameName' : 1, 'hideItemNumber' : 1, 'frameType' : 'singleProductFrame' }});
+        _shop.products = _shop.products || [];
+        _shop.products.push({'div': 'frame1', 'frameId': 65, 'config' : {'hideFrameName' : 1, 'hideItemNumber' : 1, 'frameType' : 'productGridFrame' }});
+        function loadFrame() {
+          "use strict";
+          var script = document.createElement("script");
+          script.type = 'text/javascript';
+          script.src = _shop.apiSrc + 'assets/js/launch.20121022.js';
+          document.body.appendChild(script);
+        }
         if (!_shop.apiSrc) {
           _shop.apiToken = 'w9ws124u8YrtlbmPfac1ca515fea6386'; // Configure for your site
           _shop.secureCheckout = 'https://combinecouture.com/checkout-dev.html'; // Configure for your site
           _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'dev.shoppable.co/';
           window.yepnope || document.write('<script type="text/javascript" id="_yepnope_loader" src="' + _shop.apiSrc + '/assets/js/lib/yepnope.min.js"><\/script>');
-          function loadFrame() {
-            var script = document.createElement("script");
-            script.type = 'text/javascript';
-            script.src = _shop.apiSrc + 'assets/js/launch.20121010.js';
-            document.body.appendChild(script);
-          }
           window.onload = loadFrame;
         }
       </script>
+
 
     </div>
     <div id="footer">
