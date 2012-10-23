@@ -45,8 +45,8 @@
 .popover {
   width:854px;
   border:1px solid #000;
-  background:#fff;
   padding:0 20px;
+  background:#fff;
   display:none;
   position:absolute;
   z-index:999;
@@ -64,7 +64,7 @@
 .close_box .close{
   float:right;
   width:42px;
-  background:url(images/close_img.jpg) no-repeat right center;
+  background:url(../images/close_img.jpg) no-repeat right center;
   font:8px/14px arial;
   color:#9b9b9b;
 }
@@ -95,19 +95,20 @@
   margin-top:2px;
 }
 .main_heading .shipped_from{
-  font:16px/23px 'NeutraDisplayThinMedium';
+  width:300px;
+  margin-left:8px;
+  font:12px/23px Georgia, "Times New Roman", Times, serif;
   color:#fff;
   float:left;
-  width:500px;
-  padding-left:8px;
 }
 .main_heading .customer_service{
   display:none;
+  margin-right:5px;
+  width:300px;
   font:10px/23px Georgia, "Times New Roman", Times, serif;
   color:#fff;
   float:right;
-  width:auto;
-  padding-right:5px;
+  text-align:right;
 }
 .main_heading .sub_total{
   float:right;
@@ -132,7 +133,7 @@
 .items ul li{
   float:left;
   height:90px;
-  padding-top:30px;
+  margin-top:30px;
   text-align:center;
   list-style-type:none;
   background:none;
@@ -158,7 +159,7 @@
 }
 
 .items ul .item-image {
-  padding-top:0;
+  margin-top:0;
 }
 .item-image, .item-header-image {
   width:100px;
@@ -203,24 +204,24 @@
   padding:0;
 }
 .row .right-actions .continue_link{
-  cursor:pointer;
-  float:left;
   width:153px;
   border:1px solid #000;
-  text-align:center;
-  font:14px/17px 'NeutraDisplayAltBold';
-  color:#000;
-  background:#fff;
-}
-.row .right-actions .checkout_link{
   cursor:pointer;
   float:left;
+  color:#000;
+  background:#fff;
+  text-align:center;
+  font:14px/17px 'NeutraDisplayAltBold';
+}
+.row .right-actions .checkout_link{
   width:83px;
   border:none;
-  text-align:center;
-  font:14px/19px 'NeutraDisplayAltBold';
+  cursor:pointer;
+  float:left;
   color:#fff;
   background:#000;
+  text-align:center;
+  font:14px/19px 'NeutraDisplayAltBold';
   margin-left:15px;
 }
 
@@ -236,11 +237,11 @@
 }
 .row .left-actions li .coupon_input{
   display:none;
-  float:left;
   width:88px;
   height:19px;
   border:1px solid #737373;
   margin-right:7px;
+  float:left;
   font:10px/17px Georgia, "Times New Roman", Times, serif;
   color:#818181;
   text-indent:5px;
