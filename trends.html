@@ -21,7 +21,7 @@
           <li><a href="#"><img src="images/pinterest_icon.png" alt="pinterest_icon"></a></li>
         </ul>
         <ul class="account">
-          <li class="last"><a href="#" id="my-cart" class="cart-popover-btn">SHOPPING BAG</a> <span id="cartlabel" class="cartlabel">&nbsp;</span></li>
+          <li class="last"><a href="#" id="my-cart" class="cart-popover-btn">SHOPPING BAG</a> <span id="cartlabel" class="cartlabel">0</span></li>
         </ul>
       </div>
     </div>
@@ -37,7 +37,7 @@
       <p>Also keep price in mind.  Do not purchase a handbag just because it’s marked down because that doesn’t necessarily mean it’s the bag for you.  If you’re going to spend a lot of money regardless, pay full price for something you’ll love for a long time.  As in any circumstance, a timeless piece speaks for itself; you can wear it for all time without it becoming outdated. At the very least, bags redefine the idea of your basic summer tote or your dire winter must-have. If purchasing correctly, you will have a handbag to last you through all the seasons.  To be frank, I’d be utterly surprised if you didn’t get looks of jealousy shooting your way from now until end of time if you purchase correctly and always keep class in mind.   We have combed through all of this seasons bags and have curated our top picks that we deem worthy for your classic wardrobe.  Click “get it now” for more details and to shop the look.</p>
       
       <div id="frame1"></div>
-      <script type="text/javascript">
+      <script type="text/javascript" id="_loader">
         var _shop = _shop || {};
         _shop.products = _shop.products || [];
         _shop.products.push({'div': 'frame1', 'frameId': 27, 'config' : {'hideFrameName' : 1, 'hideItemNumber' : 1, 'frameType' : 'singleProductFrame' }});
@@ -45,17 +45,35 @@
           "use strict";
           var script = document.createElement("script");
           script.type = 'text/javascript';
-          script.src = _shop.apiSrc + 'assets/js/launch.20121022.js';
+          script.src = _shop.apiSrc + 'assets/js/launch.20121021.js';
+          script.async = true;
           document.body.appendChild(script);
         }
         if (!_shop.apiSrc) {
           _shop.apiToken = 'zJ6bT998x4qgbpYL4453522f73bec852'; // Configure for your site
           _shop.secureCheckout = 'https://combinecouture.com/checkout.html'; // Configure for your site
           _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'api.shoppable.co/';
-          window.yepnope || document.write('<script type="text/javascript" id="_yepnope_loader" src="' + _shop.apiSrc + '/assets/js/lib/yepnope.min.js"><\/script>');
-          window.onload = loadFrame;
+          var ynscript = document.createElement('script');
+          ynscript.src = _shop.apiSrc + '/assets/js/lib/yepnope.min.js';
+          ynscript.onloadDone = false;
+          ynscript.async = true;
+          ynscript.onload = function() {
+            "use strict"; 
+            if (!ynscript.onloadDone) {
+              ynscript.onloadDone = true; 
+              loadFrame(); 
+            }
+          };
+          ynscript.onreadystatechange = function() { 
+            "use strict";
+            if (("loaded" === ynscript.readyState || "complete" === ynscript.readyState ) && ! ynscript.onloadDone) {
+              ynscript.onloadDone = true; 
+              loadFrame();
+            }
+          };
+          window.yepnope || document.getElementsByTagName('head')[0].appendChild(ynscript);
         }
-      </script>
+      </script>            
       <div id="see-more-container"><a href="more.html" class="shop_btn">See More Handbags</a></div>
     </div>
     <div id="footer">

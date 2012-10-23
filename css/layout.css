@@ -83,7 +83,18 @@ ul.main_nav li a:hover{text-decoration: underline;}
 .bx-pager a:hover{background: url(../images/dot_hover.png) no-repeat 0 0;}
 .bx-pager a.pager-active{background: url(../images/dot_hover.png) no-repeat 0 0;}
 
-.shop_btn{position: absolute; bottom: 18px; right: 18px;color: #000; background: #fff;border: 1px solid #000;  font: 14px/22px 'NeutraDisplayBold',Georgia,Times New Roman,times,serif; word-spacing: 1px; text-transform: uppercase;padding: 0 10px 0 11px;}
+.see_more_btn { 
+	float:right;
+	color: #000;
+  background: #fff;
+  border: 1px solid #000;
+  font: 14px/22px 'NeutraDisplayBold',Georgia,Times New Roman,times,serif;
+  word-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0 10px 0 11px;
+}
+.shop_btn {position: absolute; bottom: 18px; right: 18px;color: #000; background: #fff;border: 1px solid #000;  font: 14px/22px 'NeutraDisplayBold',Georgia,Times New Roman,times,serif; word-spacing: 1px; text-transform: uppercase;padding: 0 10px 0 11px;}
+.see_more_btn:hover,
 .shop_btn:hover{color: #fff; background: #000; border-color: #fff; }
 
 .shop_btn.dark{color: #fff; background: #000;border: 1px solid #fff;}

@@ -404,11 +404,11 @@
 }
 /* end Slideshow settings */
 
-.carousel-inner {
+.product-slideshow .carousel-inner {
   height: 600px;
 }
 
-.carousel-control {
+.product-slideshow .carousel-control {
   top: auto;
   bottom: 20px;
 }

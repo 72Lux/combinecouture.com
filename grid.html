@@ -24,7 +24,7 @@
         <ul class="account">
           <li class="last">
             <a href="#" id="my-cart" class="cart-popover-btn">SHOPPING BAG</a>
-            <span id="cartlabel" class="cartlabel">&nbsp;</span>
+            <span id="cartlabel" class="cartlabel">0</span>
           </li>
         </ul>
       </div>
@@ -32,7 +32,7 @@
 
     <div class="article_sec">
       <div id="frame1"></div>
-      <script type="text/javascript">
+      <script type="text/javascript" id="_loader">
         var _shop = _shop || {};
         _shop.products = _shop.products || [];
         _shop.products.push({'div': 'frame1', 'frameId': 40, 'config' : {'hideFrameName' : 1, 'frameType' : 'productGridFrame' }});
@@ -40,16 +40,66 @@
           "use strict";
           var script = document.createElement("script");
           script.type = 'text/javascript';
-          script.src = _shop.apiSrc + 'assets/js/launch.20121022.js';
+          script.src = _shop.apiSrc + 'assets/js/launch.20121021.js';
+          script.async = true;
           document.body.appendChild(script);
         }
         if (!_shop.apiSrc) {
           _shop.apiToken = 'w9ws124u8YrtlbmPfac1ca515fea6386'; // Configure for your site
           _shop.secureCheckout = 'https://combinecouture.com/checkout-dev.html'; // Configure for your site
           _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'dev.shoppable.co/';
-          window.yepnope || document.write('<script type="text/javascript" id="_yepnope_loader" src="' + _shop.apiSrc + '/assets/js/lib/yepnope.min.js"><\/script>');
-          window.onload = loadFrame;
+          var ynscript = document.createElement('script');
+          ynscript.src = _shop.apiSrc + '/assets/js/lib/yepnope.min.js';
+          ynscript.onloadDone = false;
+          ynscript.async = true;
+          ynscript.onload = function() {
+            "use strict"; 
+            if (!ynscript.onloadDone) {
+              ynscript.onloadDone = true; 
+              loadFrame(); 
+            }
+          };
+          ynscript.onreadystatechange = function() { 
+            "use strict";
+            if (("loaded" === ynscript.readyState || "complete" === ynscript.readyState ) && ! ynscript.onloadDone) {
+              ynscript.onloadDone = true; 
+              loadFrame();
+            }
+          };
+          window.yepnope || document.getElementsByTagName('head')[0].appendChild(ynscript);
         }
+      </script>
+
+      <script type="text/javascript" id="_loader">
+        var _shop = _shop || {};
+        _shop.apiToken = 'w9ws124u8YrtlbmPfac1ca515fea6386';
+        _shop.secureCheckout = 'checkout.html';
+        _shop.products = [{'div': 'frame1', 'frameId': 40, 'config' : {'hideFrameName' : 1, 'frameType' : 'productGridFrame' }}];
+        _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'dev.shoppable.co/';
+        var _div = document.createElement('div');
+        _div.setAttribute('class', 'loader');
+        _div.style.height = _div.style.width = '100%';
+        _div.style.padding = '35% 0 35% 0';
+        _div.style.textAlign = 'center';
+        var _image = new Image() || document.createElement('img');
+        _image.src = _shop.apiSrc + 'assets/img/lib/spinner16.gif';
+        _image.alt = 'loading...';
+        _image.title = 'Loading.';
+        _image.width = _image.height = '16';
+        _div.appendChild(_image);
+        var elems = document.getElementsByTagName('*'), i;
+        for (i = 0; i < elems.length; i++) {
+          if((" " + elems[i].className + " ").indexOf(" " + 'frame' + " ") > -1) {
+            elems[i].appendChild(_div.cloneNode(true));
+          }
+        }
+        var frames = document.createElement('script');
+        frames.type = 'text/javascript';
+        frames.async = true;
+        frames.src = _shop.apiSrc + 'assets/js/frames/assets/js/require-jquery.js';
+        frames.setAttribute('data-main', _shop.apiSrc + 'assets/js/frames/app/frames.js');
+        var s = document.getElementById('_loader');
+        s.parentNode.insertBefore(frames, s);
       </script>
 
     </div>
