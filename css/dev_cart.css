@@ -2,17 +2,6 @@
 .cart-popover-btn{
   font-size:12px;
   float: left;
-  background: url(images/bag.png) no-repeat 0 0;
-}
-.bg01{
-  float: left;
-  width: auto;
-  background: #ff005a;
-  color: #fff;
-  font: 18px/20px Georgia,Times New Roman,times,serif;
-  padding: 0 7px;
-  position: relative;
-  margin: -2px 0 0 7px;
 }
 .cartlabel{
   float: left;
