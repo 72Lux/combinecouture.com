@@ -2,26 +2,9 @@
 .cart-popover-btn{
   font-size:12px;
   float: left;
-  background: url(images/bag.png) no-repeat 0 0;
+  line-height:18px;
 }
-.bg01{
-  float: left;
-  width: auto;
-  background: #ff005a;
-  color: #fff;
-  font: 18px/20px 'NeutraDisplayBold',Georgia,Times New Roman,times,serif;
-  padding: 0 7px;
-  position: relative;
-  margin: -2px 0 0 7px;
-}
-.bg01 em{
-  position: absolute;
-  left: -4px;
-  top: 7px;
-  width: 4px;
-  height: 7px;
-  background: url(../img/arrow01.png) no-repeat 0 0;
-}
+
 .cartlabel{
   float: left;
   width: auto;
@@ -31,14 +14,6 @@
   padding: 0 5px;
   position: relative;
   margin: 0 0 0 7px;
-}
-.cartlabel em{
-  position: absolute;
-  left: -4px;
-  top: 7px;
-  width: 4px;
-  height: 7px;
-  background: url(../img/arrow02.png) no-repeat 0 0;
 }
 
 /** Shopping cart popover styles */
