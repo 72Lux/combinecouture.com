@@ -144,12 +144,12 @@
 }
 .add-to-cart-button.adding-to-cart,
 .add-to-cart-button.adding-to-cart:hover {
-  -webkit-transition: all 0.3s ease-out;  /* Safari 3.2+, Chrome */
-     -moz-transition: all 0.3s ease-out;  /* Firefox 4-15 */
-       -o-transition: all 0.3s ease-out;  /* Opera 10.5–12.00 */
-          transition: all 0.3s ease-out;  /* Firefox 16+, Opera 12.50+ */
+  -webkit-transition: all 0.1s ease-out;  /* Safari 3.2+, Chrome */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.5–12.00 */
+          transition: all 0.1s ease-out;  /* Firefox 16+, Opera 12.50+ */
 
-  color:#ddd;
+  color:#666666;
   background:#fff;
   border-color:#000;
 }
