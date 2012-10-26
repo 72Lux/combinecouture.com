@@ -1,10 +1,12 @@
 /** Shopping cart trigger label styles */
-.cart-popover-btn{
+.cart-popover-btn, 
+.lux-cart-frame {
   font-size:12px;
   float: left;
   line-height:18px;
 }
-.cartlabel{
+.cartlabel,
+.lux-cart-label {
   float: left;
   width: auto;
   background: #4ad1a6;
