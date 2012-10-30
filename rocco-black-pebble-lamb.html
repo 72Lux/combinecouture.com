@@ -8,6 +8,7 @@
   <link href="css/font.css" rel="stylesheet" type="text/css">
   <link href="css/cart.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script id='lux-shop-loader' src='http://api.shoppable.co/assets/js/shop.2012102901.js?token=zJ6bT998x4qgbpYL4453522f73bec852'></script>
 </head>
 <body>
   <div class="layout">
@@ -21,32 +22,12 @@
           <li><a href="#"><img src="images/pinterest_icon.png" alt="pinterest_icon"></a></li>
         </ul>
         <ul class="account">
-          <li class="last"><a href="#" id="my-cart" class="cart-popover-btn">SHOPPING BAG</a> <span id="cartlabel" class="cartlabel">&nbsp;</span></li>
+          <li class="last"><a href="#" class="lux-cart-frame" data-checkout="https://combinecouture.com/checkout.html">SHOPPING BAG</a> <span class="lux-cart-label">&nbsp;</span></li>
         </ul>
       </div>
     </div>
     <div class="article_sec">
-      <div id="frame1"></div>
-      <script type="text/javascript">
-        var _shop = _shop || {};
-        _shop.products = _shop.products || [];
-        _shop.products.push({'div': 'frame1', 'frameId': 16, 'config' : {'hideFrameName' : 1, 'hideItemNumber' : 1, 'frameType' : 'singleProductFrame' }});
-        function loadFrame() {
-          "use strict";
-          var script = document.createElement("script");
-          script.type = 'text/javascript';
-          script.src = _shop.apiSrc + 'assets/js/launch.20121022.js';
-          document.body.appendChild(script);
-        }
-        if (!_shop.apiSrc) {
-          _shop.apiToken = 'zJ6bT998x4qgbpYL4453522f73bec852'; // Configure for your site
-          _shop.secureCheckout = 'https://combinecouture.com/checkout.html'; // Configure for your site
-          _shop.apiSrc = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'api.shoppable.co/';
-          window.yepnope || document.write('<script type="text/javascript" id="_yepnope_loader" src="' + _shop.apiSrc + '/assets/js/lib/yepnope.min.js"><\/script>');
-          window.onload = loadFrame;
-        }
-      </script>
-
+      <div class='lux-product-frame' data-frame='single' data-id='16'></div>
       <div id="see-more-container"><a href="more.html" class="see_more_btn">See More Handbags</a></div>
     </div>
     <div id="footer">
