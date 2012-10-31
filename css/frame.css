@@ -97,6 +97,10 @@
   margin: 20px 0 10px 0;
   width: 100%;
 }
+.single-product .add-to-cart .colors,
+.single-product .add-to-cart .sizes {
+  margin:20px 0;
+}
 .single-product .add-to-cart label {
   clear: both;
   margin:0 0 5px 0;
@@ -110,8 +114,7 @@
 }
 .single-product .add-to-cart select {
   width: 120px;
-  height: 18px;
-  margin: 10px 0 10px 5px;
+  height: 22px;
   font-size: 14px;
 }
 
