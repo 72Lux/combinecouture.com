@@ -5,59 +5,14 @@
   <title>Combine Couture</title>
   <link href="css/layout.css" rel="stylesheet" type="text/css">
   <link href="css/font.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" id="lux-checkout-loader" src="//dev.shoppable.co/assets/js/shop-checkout.20121031.js?token=w9ws124u8YrtlbmPfac1ca515fea6386"></script>
 </head>
 <body>
   <div class="layout">
     <div id="header"><a href="index.html" class="logo"><img src="images/logo.png" width="378" height="100" alt="logo"></a></div>
-  
-    <script type="text/javascript" id="_checkout_loader">
-      function resizeCrossDomainIframe(id, other_domain) {
-        "use strict";
-        if(window.addEventListener) {
-          window.addEventListener('message', function(event) {
-            var iframe = document.getElementById(id);
-            if (event.origin !== other_domain) { return; }
-            if (isNaN(event.data)) { return; }
-            var height = parseInt(event.data, 10) + 32;
-            iframe.height = height + "px";
-          }, false);
-        } else {
-          window.attachEvent('onmessage', function(event){
-            var iframe = document.getElementById(id);
-            if (event.origin !== other_domain) { return; }
-            if (isNaN(event.data)) { return; }
-            var height = parseInt(event.data, 10) + 32;
-            iframe.height = height + "px";
-          });
-        }
-      }
-     
-      function qs(key) {
-        "use strict";
-        key = key.replace(/[*+?\^$.\[\]{}()|\\\/]/g, "\\$&");
-        var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
-        return match && decodeURIComponent(match[1].replace(/\+/g, " "));
-      }
-     
-      var _shop = _shop || {};
-     
-      _shop.apiToken = 'w9ws124u8YrtlbmPfac1ca515fea6386';  // Configure for your site
-      _shop.returnToSite = 'http://combinecouture.com';    // Configure for your site
-      _shop.publisherCheckout = encodeURI(window.location.protocol + '//' + window.location.host);
 
-      _shop.checkoutURL = 'http://dev.shoppable.co/checkout?returnToSite=' + encodeURI(_shop.returnToSite) + '&id=' + qs('cart') + '&apiToken=' + _shop.apiToken + '&publisherCheckout=' + _shop.publisherCheckout;
-      var checkout = document.createElement('iframe');
-      checkout.name = 'checkout';
-      checkout.id = 'checkout';
-      checkout.height = '600';
-      checkout.setAttribute('frameborder',0);
-      checkout.setAttribute('marginheight',0);
-      checkout.setAttribute('marginwidth',0);
-      checkout.onload = resizeCrossDomainIframe('checkout', 'http://dev.shoppable.co');
-      checkout.src = _shop.checkoutURL;
-      var s = document.getElementById('_checkout_loader');
-      s.parentNode.insertBefore(checkout, s);
-    </script>            
+    <div class='lux-checkout-frame' data-return-to-site='http://combinecouture.com'></div>
+
     <div id="footer">
       <ul class="footer_nav">
         <li><a href="http://www.72lux.com/about.html">About</a></li>
