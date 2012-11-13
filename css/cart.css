@@ -34,10 +34,7 @@
 .popover-title {
   padding-top:10px;
 }
-.close_box{
-  float:left;
-  width:100%;
-}
+.popover-close,
 .close_box .close{
   float:right;
   width:42px;
@@ -183,6 +180,7 @@
   background:none;
   padding:0;
 }
+.row .right-actions .continue-link,
 .row .right-actions .continue_link{
   width:153px;
   border:1px solid #000;
