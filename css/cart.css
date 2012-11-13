@@ -1,3 +1,6 @@
+body.modal-open {
+  overflow: hidden;
+}
 /** Shopping cart trigger label styles */
 .cart-popover-btn,
 .lux-cart-frame {
