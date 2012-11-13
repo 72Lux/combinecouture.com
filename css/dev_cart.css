@@ -19,7 +19,6 @@
 
 /** Shopping cart modal styles **/
 .cart-modal {
-  padding:20px;
   position: fixed;
   top: 40%;
   left: 50%;
@@ -45,15 +44,18 @@
   background-clip: padding-box;
 }
 .cart-modal .modal-header {
-  height:32px;
+  height:42px;
 }
 .cart-modal .modal-body {
-  height: 550px;
+  height: 530px;
   overflow-x:hidden;
   overflow-y:scroll;
 }
 .cart-modal .modal-footer {
   height:68px;
+}
+.modal-footer-buttons {
+  padding: 0 10px 10px 10px;
 }
 
 /** Shopping cart popover styles */
@@ -72,26 +74,24 @@
 .popover-title {
   padding-top:10px;
 }
-.close_box{
-  float:left;
-  width:100%;
-}
-.close_box .close{
-  float:right;
+.close-cart-modal,
+.popover-close {
+  position: absolute;
   width:42px;
   background:url(../images/close_img.jpg) no-repeat right center;
   font:8px/14px arial;
   color:#9b9b9b;
+  top: 5px;
+  right: 5px;
 }
 .heading{
   float:left;
   width:100%;
   border-bottom:3px solid #000;
-  padding-bottom: 7px;
-  padding-top: 5px;
+  padding: 10px 0;
 }
 .heading ul{
-  float:left;
+  /*float:left;*/
   width:100%;
   margin:0;
 }
@@ -221,7 +221,7 @@
   background:none;
   padding:0;
 }
-.row .right-actions .continue_link{
+.row .right-actions .continue-link{
   width:153px;
   border:1px solid #000;
   cursor:pointer;
