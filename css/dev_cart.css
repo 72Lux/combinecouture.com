@@ -24,7 +24,7 @@
   left: 50%;
   z-index: 1050;
   width: 854px;
-  height:650px;
+  max-height:650px;
   overflow-x:hidden;
   overflow-y:hidden;
   margin: -250px 0 0 -445px;
@@ -43,7 +43,7 @@
   height:42px;
 }
 .cart-modal .modal-body {
-  height: 530px;
+  max-height: 530px;
   overflow-x:hidden;
   overflow-y:scroll;
 }
