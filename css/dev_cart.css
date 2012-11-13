@@ -286,7 +286,8 @@
 
 /* empty shopping cart */
 .empty-cart p {
-  margin-top:150px;
+  line-height:140px;
+  height:140px;
   text-align:center;
   font-size:20px;
 }
