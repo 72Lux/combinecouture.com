@@ -56,7 +56,15 @@ body.modal-open {
 .modal-footer-buttons {
   padding: 0 10px 10px 10px;
 }
-
+.close-cart-modal {
+  position: absolute;
+  width:42px;
+  background:url(../images/close_img.jpg) no-repeat right center;
+  font:8px/14px arial;
+  color:#9b9b9b;
+  top: 5px;
+  right: 5px;
+}
 /** Shopping cart popover styles */
 .popover {
   width:854px;
@@ -73,16 +81,18 @@ body.modal-open {
 .popover-title {
   padding-top:10px;
 }
-.close-cart-modal,
-.popover-close {
-  position: absolute;
+.close_box{
+  float:left;
+  width:100%;
+}
+.close_box .close{
+  float:right;
   width:42px;
   background:url(../images/close_img.jpg) no-repeat right center;
   font:8px/14px arial;
   color:#9b9b9b;
-  top: 5px;
-  right: 5px;
 }
+
 .heading{
   float:left;
   width:100%;
