@@ -89,6 +89,8 @@ body.modal-open {
   color: #9A9A9A;
 }
 .single-product .product-description-text {
+  max-height:160px;
+  overflow:scroll;
   font-style: normal;
 }
 .single-product .product-name-text {
