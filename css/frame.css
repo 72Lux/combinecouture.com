@@ -1,3 +1,8 @@
+/* prevent body from scrolling when modal is up */
+body.modal-open {
+  overflow:hidden;
+}
+
 /* general single product frame styles */
 .single-product {
   clear:both;
