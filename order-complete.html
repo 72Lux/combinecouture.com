@@ -2,27 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Combine Couture</title>
-  <link href="css/layout.css" rel="stylesheet" type="text/css">
-  <link href="css/font.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" id="lux-checkout-loader" src="//dev.shoppable.co/assets/js/shop-checkout.20121116.js?token=w9ws124u8YrtlbmPfac1ca515fea6386"></script>
 </head>
 <body>
-  <div class="layout">
-    <div id="header"><a href="index.html" class="logo"><img src="images/logo.png" width="378" height="100" alt="logo"></a></div>
+  <div>
+    Your Order is complete! And we thank you for that.
 
-    <div>
-      Your Order is complete!
-    </div>
 
-    <div id="footer">
-      <ul class="footer_nav">
-        <li><a href="http://www.72lux.com/about.html">About</a></li>
-        <li><a href="http://www.72lux.com/privacy_policy.html">Privacy Policy</a></li>
-        <li class="last"><a href="http://www.72lux.com/terms_of_use.html">Terms of Use</a></li>
-      </ul>
-      <p class="copyright">&copy; 2012 <a href="http://www.72lux.com">72Lux</a> Inc. All Rights Reserved</p>
-    </div>
+
   </div>
 </body>
 </html>
@@ -41,6 +27,7 @@
 <script type="text/javascript">
   if(_gaq) {
     _gaq.push(['_trackEvent', 'combinecouture', 'cart', 'Order complete!']);
+    alert('Event pushed!');
   }
-  alert('Complete');
+  alert('Complete. Parameters: ' + window.location.pathname);
 </script>
