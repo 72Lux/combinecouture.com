@@ -6,6 +6,8 @@ body.modal-open {
 /* general single product frame styles */
 .single-product {
   clear:both;
+  position:relative;
+  height:580px;
 }
 .single-product .product-frame-name {
   display: none;
@@ -163,6 +165,16 @@ body.modal-open {
   color:#666666;
   background:#fff;
   border-color:#000;
+}
+
+.poweredBy {
+  height:72px;
+  width:144px;
+  position:absolute;
+  /*bottom:-52px;
+  left:62px;*/
+  bottom:0px;
+  left:62px;
 }
 
 .single-product .spacer {
