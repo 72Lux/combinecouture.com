@@ -7,7 +7,7 @@ body.modal-open {
 .single-product {
   clear:both;
   position:relative;
-  height:580px;
+  height:591px;
 }
 .single-product .product-frame-name {
   display: none;
@@ -173,8 +173,8 @@ body.modal-open {
   position:absolute;
   /*bottom:-52px;
   left:62px;*/
-  bottom:0px;
-  left:62px;
+  bottom:-0px;
+  left:109px;
 }
 
 .single-product .spacer {
