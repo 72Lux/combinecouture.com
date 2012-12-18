@@ -6,6 +6,8 @@ body.modal-open {
 /* general single product frame styles */
 .single-product {
   clear:both;
+  position:relative;
+  height:591px;
 }
 .single-product .product-frame-name {
   display: none;
@@ -165,6 +167,14 @@ body.modal-open {
   border-color:#000;
 }
 
+.single-product .poweredBy {
+  height:54px;
+  width:108px;
+  bottom:14px;
+  left:127px;
+  position:absolute;
+}
+
 .single-product .spacer {
   clear: both;
 }
@@ -181,6 +191,14 @@ body.modal-open {
 /* grid styles */
 .product-grid {
   width:960px;
+  position:relative;
+}
+.product-grid .poweredBy {
+  height:54px;
+  width:108px;
+  position:absolute;
+  bottom:0px;
+  right:0px;
 }
 .product-grid .product {
   float:left;

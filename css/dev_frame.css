@@ -168,17 +168,10 @@ body.modal-open {
 }
 
 .single-product .poweredBy {
-/*  height:72px;
-  width:144px;
-  bottom:-0px;
-  left:109px;
-*/
-
   height:54px;
   width:108px;
   bottom:14px;
   left:127px;
-
   position:absolute;
 }
 
@@ -201,9 +194,6 @@ body.modal-open {
   position:relative;
 }
 .product-grid .poweredBy {
-/*  height:72px;
-  width:144px;
-*/
   height:54px;
   width:108px;
   position:absolute;
