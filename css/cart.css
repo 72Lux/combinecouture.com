@@ -57,13 +57,15 @@ body.modal-open {
   padding: 0 10px 10px 10px;
 }
 .close-cart-modal {
-  position: absolute;
-  width:42px;
-  background:url(../images/close_img.jpg) no-repeat right center;
+  width:28px;
+  height:28px;
+  text-indent: -9999px !important;
+  background:url(../images/close.png) no-repeat right center;
   font:8px/14px arial;
   color:#9b9b9b;
-  top: 5px;
-  right: 5px;
+  position:absolute;
+  top:5px;
+  right:5px;
 }
 /** Shopping cart popover styles */
 .popover {
@@ -86,13 +88,16 @@ body.modal-open {
   width:100%;
 }
 .close_box .close{
-  float:right;
-  width:42px;
-  background:url(../images/close_img.jpg) no-repeat right center;
+  width:28px;
+  height:28px;
+  text-indent: -9999px !important;
+  background:url(../images/close.png) no-repeat right center;
   font:8px/14px arial;
   color:#9b9b9b;
+  position:absolute;
+  top:5px;
+  right:5px;
 }
-
 .heading{
   float:left;
   width:100%;
