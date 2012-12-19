@@ -278,12 +278,11 @@ body.modal-open {
   filter: alpha(opacity=70);
 }
 .close-product-modal {
+  z-index:10;
   width:28px;
   height:28px;
   text-indent: -9999px !important;
   background:url(../images/close.png) no-repeat right center;
-  font:8px/14px arial;
-  color:#9b9b9b;
   position:absolute;
   top:5px;
   right:5px;
