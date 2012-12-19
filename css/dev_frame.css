@@ -191,14 +191,11 @@ body.modal-open {
 /* grid styles */
 .product-grid {
   width:960px;
-  position:relative;
 }
 .product-grid .poweredBy {
   height:54px;
   width:108px;
-  position:absolute;
-  bottom:0px;
-  right:0px;
+  float:right;
 }
 .product-grid .product {
   float:left;
