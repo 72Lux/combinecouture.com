@@ -240,6 +240,7 @@ body.modal-open {
 .product-grid .product .modal-info {
   display:none;
 }
+.modalFrameModal,
 .singleProductModal {
   width:940px;
   border: 1px solid #999;
@@ -258,6 +259,7 @@ body.modal-open {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
+.modalFrameModal .modal-body,
 .singleProductModal .modal-body {
   margin-left:15px;
 }
@@ -431,4 +433,9 @@ body.modal-open {
   text-decoration: none;
   opacity: 0.9;
   filter: alpha(opacity=90);
+}
+
+/* modal frame styles */
+.product-modal .product-modal-payload {
+  display:none;
 }
