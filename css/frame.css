@@ -307,7 +307,7 @@ body.modal-open {
 .price-2 {
   /* when an item is on sale, the retail price also receives the class .price-2
   so this ensures that the retail price only gets crossed out when item is on sale */
-  text-decoration:strikethrough;
+  text-decoration:line-through;
 }
 
 /* Cart settings */
