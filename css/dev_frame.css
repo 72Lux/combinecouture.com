@@ -240,7 +240,7 @@ body.modal-open {
 .product-grid .product .modal-info {
   display:none;
 }
-.modalFrameModal,
+.linkFrameModal,
 .singleProductModal {
   width:940px;
   border: 1px solid #999;
@@ -259,7 +259,7 @@ body.modal-open {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
-.modalFrameModal .modal-body,
+.linkFrameModal .modal-body,
 .singleProductModal .modal-body {
   margin-left:15px;
 }
@@ -441,13 +441,13 @@ body.modal-open {
 }
 
 /* modal frame styles */
-.product-modal {
+.product-link {
   display:inline;
 }
-.product-modal-trigger {
+.product-link-trigger {
   text-decoration: underline;
 }
-.product-modal .product-modal-payload {
+.product-link .product-link-payload {
   /* only within .product-modal block */
   display:none;
 }
