@@ -335,6 +335,10 @@ body.modal-open {
   display:none;
 }
 
+/* fix for image zoom when using bootstrap.css */
+img.zoomImg {
+  max-width:none;
+}
 
 /* start Slideshow settings */
 .carousel {
@@ -451,3 +455,4 @@ body.modal-open {
   /* only within .product-modal block */
   display:none;
 }
+
