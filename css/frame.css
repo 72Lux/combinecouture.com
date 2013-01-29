@@ -240,6 +240,7 @@ body.modal-open {
 .product-grid .product .modal-info {
   display:none;
 }
+.linkFrameModal,
 .singleProductModal {
   width:940px;
   border: 1px solid #999;
@@ -258,6 +259,7 @@ body.modal-open {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
+.linkFrameModal .modal-body,
 .singleProductModal .modal-body {
   margin-left:15px;
 }
@@ -333,6 +335,10 @@ body.modal-open {
   display:none;
 }
 
+/* fix for image zoom when using bootstrap.css */
+img.zoomImg {
+  max-width:none;
+}
 
 /* start Slideshow settings */
 .carousel {
@@ -436,4 +442,16 @@ body.modal-open {
   text-decoration: none;
   opacity: 0.9;
   filter: alpha(opacity=90);
+}
+
+/* modal frame styles */
+.product-link {
+  display:inline;
+}
+.product-link-trigger {
+  text-decoration: underline;
+}
+.product-link .product-link-payload {
+  /* only within .product-modal block */
+  display:none;
 }
