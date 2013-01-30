@@ -139,7 +139,9 @@ body.modal-open {
   cursor: pointer;
 }
 
+.single-product .frame-button,
 .single-product .add-to-cart-button {
+  cursor:pointer;
   position: relative;
   color: #000;
   background: #fff;
@@ -150,6 +152,7 @@ body.modal-open {
   padding: 0 10px 0 11px;
   margin: 20px 0 10px 0;
 }
+.single-product .frame-button:hover,
 .single-product .add-to-cart-button:hover {
   color: #fff;
   background: #000;
@@ -165,6 +168,13 @@ body.modal-open {
   color:#666666;
   background:#fff;
   border-color:#000;
+}
+
+.share-input {
+  width:161px;
+  height: 20px;
+  margin: 20px 0 10px 0;
+  border:1px solid black;
 }
 
 .single-product .poweredBy {
