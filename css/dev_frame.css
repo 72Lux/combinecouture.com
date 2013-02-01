@@ -170,11 +170,20 @@ body.modal-open {
   border-color:#000;
 }
 
+.share-button {
+  margin-bottom:0px;
+  width:104px;
+}
 .share-input {
-  width:161px;
+  width: 300px;
   height: 20px;
-  margin: 20px 0 10px 0;
   border:1px solid black;
+}
+.share-overlay {
+  position:absolute;
+  padding:10px;
+  background:#e6e6e6;
+  border:1px solid #CCC;
 }
 
 .single-product .poweredBy {
