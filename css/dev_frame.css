@@ -17,7 +17,7 @@ body.modal-open {
   display: none;
 }
 .single-product .product-image {
-  max-width:350px;
+  width:350px;
   position: relative;
   float: left;
 }
@@ -192,7 +192,7 @@ body.modal-open {
 
 .unavailable-text {
   color: #ff0000;
-  font: 14px/24px 'NeutraDisplayBold',Georgia,Times New Roman,times,serif;
+  font: 14px/24px 'Helvetica Neue', sans-serif;
   word-spacing: 1px;
   text-transform: uppercase;
   padding: 0 10px 0 0;
