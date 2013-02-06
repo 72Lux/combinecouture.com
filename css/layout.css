@@ -5,7 +5,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, dl, dt, dd, ul, li, fieldse
 .right{float:right !important;}
 img{ border:none}
 :focus{outline:0;}
-body{padding:0; margin:0; font:12px Georgia,Times New Roman,times,serif;} 
+body{padding:0; margin:0; font:12px Georgia,Times New Roman,times,serif;}
 a{ text-decoration:none; cursor:pointer;}
 a:hover{ text-decoration:none;}
 
@@ -76,7 +76,7 @@ ul.main_nav li a:hover{text-decoration: underline;}
 .bx-pager a:hover{background: url(../images/dot_hover.png) no-repeat 0 0;}
 .bx-pager a.pager-active{background: url(../images/dot_hover.png) no-repeat 0 0;}
 
-.see_more_btn { 
+.see_more_btn {
 	float:right;
 	color: #000;
   background: #fff;
@@ -207,7 +207,7 @@ ul.footer_nav li a:hover{text-decoration: underline;}
 .jspDrag{background: #000 !important;}
 .jspTrack{
     height: 371px !important;
-    margin: 3px 0 0 !important; 
+    margin: 3px 0 0 !important;
 }
 .jspContainer{width: 241px !important;}
 .jspPane{width: 212px !important;}
@@ -218,4 +218,18 @@ iframe#checkout {
   border:none;
   overflow:hidden;
   width:940px;
+}
+
+/* layout for ad frame page */
+
+.content-block {
+width: 571px;
+float: left;
+}
+
+.sidebar {
+width: 377px;
+float: right;
+}
+}
 }
