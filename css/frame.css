@@ -433,8 +433,9 @@ img.zoomImg {
   color: #ffffff;
   background: #222222;
 
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  /*opacity: 0.0;
+  filter: alpha(opacity=00);*/
+  display:none;
 }
 
 .carousel-control.right {
@@ -442,11 +443,10 @@ img.zoomImg {
   left: auto;
 }
 
-.carousel-control:hover {
-  color: #ffffff;
-  text-decoration: none;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
+.carousel-inner:hover .carousel-control {
+  /*opacity: 0.9;
+  filter: alpha(opacity=90);*/
+  display:block;
 }
 
 /* modal frame styles */

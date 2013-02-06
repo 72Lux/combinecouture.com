@@ -433,18 +433,25 @@ img.zoomImg {
   color: #ffffff;
   background: #222222;
 
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
+  opacity: 0.0;
+  filter: alpha(opacity=00);
+  visibility:hidden;
 
+  -webkit-transition: all 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.3s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.3s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+}
 .carousel-control.right {
   right: 0px;
   left: auto;
 }
-
-.carousel-control:hover {
-  color: #ffffff;
-  text-decoration: none;
+.carousel:hover .carousel-control {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  visibility: visible;
+}
+.carousel:hover .carousel-control:hover {
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
