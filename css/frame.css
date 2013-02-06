@@ -456,6 +456,10 @@ img.zoomImg {
   filter: alpha(opacity=90);
 }
 
+.carousel:hover .carousel-control:active {
+  opacity:1;
+}
+
 /* modal frame styles */
 .product-link {
   display:inline;

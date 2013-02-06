@@ -23,6 +23,7 @@ body.modal-open {
 /** Shopping cart modal styles **/
 .cart-modal {
   position: fixed;
+  padding:0 5px;
   top: 40%;
   left: 50%;
   z-index: 1050;
@@ -57,15 +58,13 @@ body.modal-open {
   padding: 0 10px 10px 10px;
 }
 .close-cart-modal {
-  width:28px;
-  height:28px;
+  width:15px;
+  height:15px;
   text-indent: -9999px !important;
-  background:url(../images/close.png) no-repeat right center;
-  font:8px/14px arial;
-  color:#9b9b9b;
+  background:url(../images/close.png) no-repeat top center;
   position:absolute;
-  top:5px;
-  right:5px;
+  top:6px;
+  right:6px;
 }
 /** Shopping cart popover styles */
 .popover {
@@ -98,12 +97,11 @@ body.modal-open {
   top:5px;
   right:5px;
 }
-
 .heading{
-  float:left;
-  width:100%;
-  border-bottom:3px solid #000;
-  padding: 10px 0;
+  float: left;
+  width: 100%;
+  border-bottom: 3px solid #000;
+  padding: 19px 0 3px 0;
 }
 .heading ul{
   /*float:left;*/
@@ -113,7 +111,7 @@ body.modal-open {
 .heading ul li{
   float:left;
   text-align:center;
-  font:16px/16px Helvetica, Arial, sans-serif;
+  font:16px/16px "Helvetica Neue", Helvetica, sans-serif;
   color:#000;
   background:none;
   list-style-type:none;
@@ -127,7 +125,7 @@ body.modal-open {
 .main_heading .shipped_from{
   width:300px;
   margin-left:8px;
-  font:12px/23px Georgia, "Times New Roman", Times, serif;
+  font:12px/23px "Helvetica Neue", Helvetica, sans-serif;
   color:#fff;
   float:left;
 }
@@ -145,7 +143,7 @@ body.modal-open {
 }
 .main_heading .sub_total{
   float:right;
-  font:17px/23px Georgia, "Times New Roman", Times, serif;
+  font:17px/23px "Helvetica Neue", Helvetica, sans-serif;
   color:#fff;
   padding-right:5px;
 }
@@ -237,24 +235,26 @@ body.modal-open {
   padding:0;
 }
 .row .right-actions .continue-link{
-  width:153px;
+  width:176px;
   border:1px solid #000;
   cursor:pointer;
   float:left;
   color:#000;
   background:#fff;
   text-align:center;
-  font:14px/17px Georgia, "Times New Roman", Times, serif;
+  text-transform:uppercase;
+  font:14px/17px "Helvetica Neue", Helvetica, sans-serif;
 }
 .row .right-actions .checkout_link{
-  width:83px;
+  width:106px;
   border:none;
   cursor:pointer;
   float:left;
   color:#fff;
   background:#000;
   text-align:center;
-  font:14px/19px Georgia, "Times New Roman", Times, serif;
+  text-transform:uppercase;
+  font:14px/19px "Helvetica Neue", Helvetica, sans-serif;
   margin-left:15px;
 }
 
@@ -275,16 +275,19 @@ body.modal-open {
   border:1px solid #737373;
   margin-right:7px;
   float:left;
-  font:10px/17px Georgia, "Times New Roman", Times, serif;
+  text-transform:uppercase;
+  font:10px/17px "Helvetica Neue", Helvetica, sans-serif;
   color:#818181;
   text-indent:5px;
 }
 .row .left-actions li .clear_link{
   cursor:pointer;
   float:left;
+  width:106px;
   background:#000;
   border:none;
-  font:14px/19px Georgia, "Times New Roman", Times, serif;
+  text-transform:uppercase;
+  font:14px/19px "Helvetica Neue", Helvetica, sans-serif;
   color:#fff;
 }
 
