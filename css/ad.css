@@ -7,6 +7,7 @@ body.modal-open {
   text-align: center;
 }
 /* grid styles */
+
 .product-grid-inner {
   /*width:960px;*/
   border: 1px solid #EEE;
@@ -75,6 +76,11 @@ body.modal-open {
   text-align: center;
 }
 .product-grid .frame-title {
+  border-bottom: 1px solid #CCC;
+  padding: 0 5px;
+  display: none;
+}
+.product-grid .frame-title-link {
   border-bottom: 1px solid #CCC;
   padding: 0 5px;
 }
