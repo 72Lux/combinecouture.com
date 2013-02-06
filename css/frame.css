@@ -209,21 +209,10 @@ body.modal-open {
   margin:5px;
 }
 .product-grid .product .product-image {
-  border: 1px solid #efefef;
-  background: #fff;
-  position: relative;
-  padding: 10px;
-  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -webkit-border-radius:4px;
-  -moz-border-radius:4px;
-  border-radius:4px;
-  margin:0;
-  float:none;
+  border:1px solid #333;
 }
 .product-grid .product .product-image img {
-  width:208px;
+  width:230px;
 }
 .product-grid .product .product-image > span {
   height:320px;
@@ -293,17 +282,23 @@ body.modal-open {
 }
 /* default style overrides */
 .product-grid .product-retail-price {
-  font: 16px/16px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif;
-  color: #9A9A9A;
-  margin: 10px 0;
+  font: 16px/16px 'Futura', Helvetica, sans-serif;
+  color: #333;
+  margin: 5px 0 0 0;
+  text-transform: uppercase;
+}
+.product-grid .retail-price-label {
+  color:#9a9a9a;
 }
 .product-grid .product-brand-name {
-  font: 16px/16px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif;
+  font: 16px/16px 'HelveticaNeue', Helvetica, sans-serif;
   line-height: 18px;
+  color: #333;
   font-weight: bold;
 }
 .product-grid .product-name {
-  display: none;
+  margin-top:5px;
+  font: 14px/14px "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /** general frame styles **/
