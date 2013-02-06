@@ -163,6 +163,7 @@ body.modal-open {
   height:24px;
   text-transform:Capitalize;
   opacity:.4;
+  filter: alpha(opacity=40);
   line-height:23px;
   margin-left:0px;
 }
@@ -433,20 +434,26 @@ img.zoomImg {
   color: #ffffff;
   background: #222222;
 
-  /*opacity: 0.0;
-  filter: alpha(opacity=00);*/
-  display:none;
-}
+  opacity: 0.0;
+  filter: alpha(opacity=00);
 
+  -webkit-transition: all 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.3s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.3s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+}
 .carousel-control.right {
   right: 0px;
   left: auto;
 }
-
-.carousel-inner:hover .carousel-control {
-  /*opacity: 0.9;
-  filter: alpha(opacity=90);*/
+.carousel:hover .carousel-control {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   display:block;
+}
+.carousel:hover .carousel-control:hover {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
 }
 
 /* modal frame styles */

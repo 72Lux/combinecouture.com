@@ -163,6 +163,7 @@ body.modal-open {
   height:24px;
   text-transform:Capitalize;
   opacity:.4;
+  filter: alpha(opacity=40);
   line-height:23px;
   margin-left:0px;
 }
@@ -435,7 +436,6 @@ img.zoomImg {
 
   opacity: 0.0;
   filter: alpha(opacity=00);
-  visibility:hidden;
 
   -webkit-transition: all 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
      -moz-transition: all 0.3s ease-out;  /* Firefox 4-15 */
@@ -449,7 +449,7 @@ img.zoomImg {
 .carousel:hover .carousel-control {
   opacity: 0.5;
   filter: alpha(opacity=50);
-  visibility: visible;
+  display:block;
 }
 .carousel:hover .carousel-control:hover {
   opacity: 0.9;
