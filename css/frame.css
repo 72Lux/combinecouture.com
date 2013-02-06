@@ -287,13 +287,15 @@ body.modal-open {
   right:10px;
 }
 /* default style overrides */
-.product-grid .product-retail-price {
+.product-grid .price-1,
+.product-grid .price-2 {
   font: 16px/16px 'Futura', Helvetica, sans-serif;
   color: #333;
   margin: 5px 0 0 0;
   text-transform: uppercase;
 }
-.product-grid .retail-price-label {
+.product-grid .product-retail-price,
+.product-grid .product-sale-price {
   color:#9a9a9a;
 }
 .product-grid .product-brand-name {
