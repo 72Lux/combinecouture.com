@@ -82,6 +82,9 @@ body.modal-open {
   color: #9a9a9a;
   text-transform:uppercase;
 }
+.single-product .sale-price-label {
+  color:#F70C0C;
+}
 
 .single-product .add-to-cart .colors,
 .single-product .add-to-cart .sizes {
