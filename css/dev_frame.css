@@ -70,16 +70,19 @@ body.modal-open {
   font: 20px/20px 'HelveticaNeue', sans-serif;
   margin-bottom:40px;
 }
-.single-product .product-retail-price {
+
+.single-product .price-1,
+.single-product .price-2 {
   font: 16px/16px 'Futura', sans-serif;
   color: #333;
   margin: 0 0 5px 0;
-  width: 100%;
 }
-.single-product .retail-price-label {
+.single-product .price-1 .price-label,
+.single-product .price-2 .price-label {
+  color: #9a9a9a;
   text-transform:uppercase;
-  color:#9a9a9a;
 }
+
 .single-product .add-to-cart .colors,
 .single-product .add-to-cart .sizes {
   margin:0 0 5px 0;
