@@ -8,6 +8,7 @@ body.modal-open {
   clear:both;
   position:relative;
   height:591px;
+  padding-top:15px;
 }
 .single-product .product-frame-name {
   display: none;
@@ -17,24 +18,13 @@ body.modal-open {
 }
 .single-product .product-image {
   max-width:350px;
-  border: 1px solid #efefef;
-  margin:30px 25px 30px 0;
   position: relative;
   float: left;
-  padding: 10px;
-  background: #fff;
-  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-
-  -webkit-border-radius:4px;
-  -moz-border-radius:4px;
-  border-radius:4px;
 }
 .single-product .product-info {
   float: left;
   width: 500px;
-  margin: 30px 15px 30px 0;
+  margin: 0 0 0 15px;
   position: relative;
 }
 
@@ -44,82 +34,67 @@ body.modal-open {
 .single-product .product-detail-image > span {
   height: 460px;
 }
-.single-product .product-image:before,
-.single-product .product-image:after {
-  content:"";
-  position:absolute;
-  z-index:-2;
-  bottom:15px;
-  left:10px;
-  width:50%;
-  height:20%;
-  max-width:300px;
-  max-height:100px;
-  -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
-  box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
-  -webkit-transform:rotate(-3deg);
-  -moz-transform:rotate(-3deg);
-  -ms-transform:rotate(-3deg);
-  -o-transform:rotate(-3deg);
-  transform:rotate(-3deg);
-}
 
-
-.single-product .product-image:after {
-  right:10px;
-  left:auto;
-  -webkit-transform:rotate(3deg);
-  -moz-transform:rotate(3deg);
-  -ms-transform:rotate(3deg);
-  -o-transform:rotate(3deg);
-  transform:rotate(3deg);
-}
 .single-product .product-ships-from-text {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: normal;
-  margin: 20px 0 10px 0;
+  margin: 20px 0 5px 0;
+  font: 16px/16px "Futura", sans-serif;
+  color: #333;
 }
+.single-product .product-ships-from-label {
+  color: #9a9a9a;
+}
+
+.single-product .product-return-policy-url-text {
+  margin-bottom: 20px;
+  line-height: 17px;
+}
+.single-product .product-return-policy-url-text a {
+  color: #9a9a9a;
+  font: italic 17px/17px Calibri, Times New Roman, serif;
+}
+
 .single-product .product-brand-name-text {
-  font: 24px/24px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif;
-  line-height: 30px;
-  font-weight: bold;
+  font: bold 28px/28px 'HelveticaNeue', sans-serif;
+  margin-bottom:0px;
 }
 .single-product .item-number-text {
   font: 14px/14px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif;
   color: #9A9A9A;
 }
 .single-product .product-description-text {
+  font:16px/21px Calibri, Times New Roman, serif;
   max-height:160px;
   overflow:auto;
-  font-style: normal;
 }
 .single-product .product-name-text {
-  font: 20px/20px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif;
-  line-height: 30px;
-  font-weight: normal;
+  font: 20px/20px 'HelveticaNeue', sans-serif;
+  margin-bottom:40px;
 }
 .single-product .product-retail-price {
-  font: 20px/20px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif;
-  color: #9A9A9A;
-  margin: 20px 0 10px 0;
+  font: 16px/16px 'Futura', sans-serif;
+  color: #333;
+  margin: 0 0 5px 0;
   width: 100%;
+}
+.single-product .retail-price-label {
+  text-transform:uppercase;
+  color:#9a9a9a;
 }
 .single-product .add-to-cart .colors,
 .single-product .add-to-cart .sizes {
-  margin:20px 0;
+  margin:0 0 5px 0;
+  color:#333;
+  font: 14px/14px "Futura", sans-serif;
+  text-transform:lowercase;
 }
 .single-product .add-to-cart label {
   clear: both;
   margin:0 0 5px 0;
-  color: #231F20;
+  font: 16px/16px "Futura", sans-serif;
+  color: #9a9a9a;
   text-transform: uppercase;
-  font-weight: normal;
-  font-size: 12px;
   width: auto;
   height: 13px;
-  line-height: 18px;
 }
 .single-product .add-to-cart select {
   width: 120px;
@@ -141,22 +116,23 @@ body.modal-open {
 
 .single-product .frame-button,
 .single-product .add-to-cart-button {
+  width:122px;
+  text-align:center;
   cursor:pointer;
   position: relative;
-  color: #000;
-  background: #fff;
+  color: #fff;
+  background: #000;
   border: 1px solid #000;
-  font: 14px/22px 'NeutraDisplayBold',Georgia,Times New Roman,times,serif;
+  font: 14px/33px 'HelveticaNeue', Helvetica, sans-serif;
   word-spacing: 1px;
-  text-transform: uppercase;
   padding: 0 10px 0 11px;
-  margin: 20px 0 10px 0;
+  margin: 5px 0 10px 0;
 }
 .single-product .frame-button:hover,
 .single-product .add-to-cart-button:hover {
-  color: #fff;
-  background: #000;
-  border-color: #fff;
+  color: #000;
+  background: #fff;
+  border-color: #000;
 }
 .add-to-cart-button.adding-to-cart,
 .add-to-cart-button.adding-to-cart:hover {
@@ -165,14 +141,24 @@ body.modal-open {
        -o-transition: all 0.1s ease-out;  /* Opera 10.5–12.00 */
           transition: all 0.1s ease-out;  /* Firefox 16+, Opera 12.50+ */
 
-  color:#666666;
-  background:#fff;
-  border-color:#000;
+  color:#fff;
+  background:#000;
+  border-color:#fff;
 }
 
-.share-button {
+.single-product .add-to-cart-button {
+  margin-top:35px;
+  text-transform:uppercase;
+}
+
+.single-product .share-button {
   margin-bottom:0px;
-  width:104px;
+  width:65px;
+  height:24px;
+  text-transform:Capitalize;
+  opacity:.4;
+  line-height:23px;
+  margin-left:0px;
 }
 .share-input {
   width: 300px;
@@ -181,9 +167,9 @@ body.modal-open {
 }
 .share-overlay {
   position:absolute;
-  padding:10px;
-  background:#e6e6e6;
-  border:1px solid #CCC;
+  left:65px;
+  float:none;
+  bottom:0px;
 }
 
 .single-product .poweredBy {
@@ -297,13 +283,13 @@ body.modal-open {
 }
 .close-product-modal {
   z-index:10;
-  width:28px;
-  height:28px;
+  width:15px;
+  height:15px;
   text-indent: -9999px !important;
-  background:url(../images/close.png) no-repeat right center;
+  background:url(../images/close.png) no-repeat top center;
   position:absolute;
-  top:5px;
-  right:5px;
+  top:10px;
+  right:10px;
 }
 /* default style overrides */
 .product-grid .product-retail-price {
