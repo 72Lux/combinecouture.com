@@ -50,6 +50,12 @@ body.modal-open {
   margin:10px;
   float:none;
 }
+.product-grid .product .product-image:hover {
+  border: 2px solid #CCC;
+}
+.product-grid .product .product-image:active {
+  border: 2px solid #999;
+}
 .product-grid .product .product-image img {
   width: 100%;
 }
@@ -65,7 +71,14 @@ body.modal-open {
   padding: 5px;
   text-align: center;
 }
-
+.product-grid .frame-info {
+  margin: 5px 0 10px 0;
+  text-align: center;
+}
+.product-grid .frame-title {
+  border-bottom: 1px solid #CCC;
+  padding: 0 5px;
+}
 /* layout styles */
 .clear {
   clear:both;
