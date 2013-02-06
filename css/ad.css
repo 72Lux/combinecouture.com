@@ -10,9 +10,7 @@ body.modal-open {
 /* grid styles */
 
 .product-grid-inner {
-  /*width:960px;*/
   border: 1px solid #EEE;
-  padding: 10px;
   background: #EEE;
   clear:both;
   display: inline-block;
