@@ -300,6 +300,7 @@ body.modal-open {
   font-weight: bold;
 }
 .product-grid .product-name {
+  display:none;
   margin-top:5px;
   font: 14px/14px "Helvetica Neue", Helvetica, sans-serif;
 }
