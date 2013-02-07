@@ -222,21 +222,21 @@ body.modal-open {
   width:89px;
 }
 
-.row{
+.cart-modal .row{
   float:left;
   width:100%;
 }
-.row .right-actions{
+.cart-modal .row .right-actions{
   float:right;
   margin:19px 0 0 0;
 }
-.row .right-actions li{
+.cart-modal .row .right-actions li{
   float:left;
   list-style-type:none;
   background:none;
   padding:0;
 }
-.row .right-actions .continue-link{
+.cart-modal .row .right-actions .continue-link{
   width:176px;
   border:1px solid #000;
   cursor:pointer;
@@ -247,7 +247,7 @@ body.modal-open {
   text-transform:uppercase;
   font:14px "Helvetica Neue", Helvetica, sans-serif;
 }
-.row .right-actions .checkout_link{
+.cart-modal .row .right-actions .checkout_link{
   width:106px;
   border:none;
   cursor:pointer;
@@ -260,17 +260,17 @@ body.modal-open {
   margin-left:15px;
 }
 
-.row .left-actions{
+.cart-modal .row .left-actions{
   float:left;
   margin:19px 0;
 }
-.row .left-actions li{
+.cart-modal .row .left-actions li{
   float:left;
   list-style-type:none;
   background:none;
   padding:0;
 }
-.row .left-actions li .coupon_input{
+.cart-modal .row .left-actions li .coupon_input{
   display:none;
   width:88px;
   height:19px;
@@ -282,7 +282,7 @@ body.modal-open {
   color:#818181;
   text-indent:5px;
 }
-.row .left-actions li .clear_link{
+.cart-modal .row .left-actions li .clear_link{
   cursor:pointer;
   float:left;
   width:106px;
