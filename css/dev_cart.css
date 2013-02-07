@@ -46,7 +46,7 @@ body.modal-open {
   height:42px;
 }
 .cart-modal .modal-body {
-  max-height: 530px;
+  max-height: 500px;
   overflow-x:hidden;
   overflow-y:scroll;
 }

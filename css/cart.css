@@ -46,7 +46,7 @@ body.modal-open {
   height:42px;
 }
 .cart-modal .modal-body {
-  max-height: 530px;
+  max-height: 500px;
   overflow-x:hidden;
   overflow-y:scroll;
 }
@@ -142,7 +142,7 @@ body.modal-open {
 }
 .main_heading .sub_total{
   float:right;
-  font:17px/23px "Helvetica Neue", Helvetica, sans-serif;
+  font:16px/23px "Helvetica Neue", Helvetica, sans-serif;
   color:#fff;
   padding-right:5px;
 }
