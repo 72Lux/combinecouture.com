@@ -14,7 +14,7 @@ body.modal-open {
   background: #EEE;
   clear:both;
   display: inline-block;
-  margin: 0 auto;
+  margin: 5px auto;
 }
 .product-grid .poweredBy {
   height:54px;
@@ -70,16 +70,16 @@ body.modal-open {
   padding: 5px;
   text-align: center;
 }
-.product-grid .frame-info {
+.product-grid .ad-info {
   margin: 5px 0 10px 0;
   text-align: center;
 }
-.product-grid .frame-title {
+.product-grid .ad-title {
   border-bottom: 1px solid #CCC;
   padding: 0 5px;
   display: none;
 }
-.product-grid .frame-title-link {
+.product-grid .ad-title-link {
   border-bottom: 1px solid #CCC;
   padding: 0 5px;
 }
