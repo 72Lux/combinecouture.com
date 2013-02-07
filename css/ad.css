@@ -83,6 +83,10 @@ body.modal-open {
   border-bottom: 1px solid #CCC;
   padding: 0 5px;
 }
+
+.product-grid .product-title {
+  display:none;
+}
 /* layout styles */
 .clear {
   clear:both;
