@@ -87,6 +87,9 @@ body.modal-open {
 .product-grid .product-title {
   display:none;
 }
+.product-grid .product-brand {
+  display: block;
+}
 /* layout styles */
 .clear {
   clear:both;
