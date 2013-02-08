@@ -25,6 +25,8 @@ body.modal-open {
 .product-grid .product-outer {
   float: left;
   clear:none;
+  min-height: 300px;
+  overflow: hidden;
 }
 .product-grid .product {
   background: #FFF;
