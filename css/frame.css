@@ -71,10 +71,14 @@ body.modal-open {
   margin-bottom:40px;
 }
 
-.single-product .price-1,
-.single-product .price-2 {
+.single-product .price-1 {
   font: 16px/16px 'Futura', sans-serif;
   color: #333;
+  margin: 0 0 5px 0;
+}
+.single-product .price-2 {
+  font: 14px/14px 'Futura', sans-serif;
+  color: #9a9a9a;
   margin: 0 0 5px 0;
 }
 .single-product .price-1 .price-label,
@@ -296,10 +300,11 @@ body.modal-open {
   text-transform: uppercase;
 }
 .product-grid .product-retail-price .price-label,
-.product-grid .product-sale-price .price-label {
+.product-grid .product-sale-price .price-label,
+.product-grid .price-2 {
   color:#9a9a9a;
 }
-.product-grid .product-sale-price.price-1 .price-label { color:#F70C0C; }
+.product-grid .product-sale-price.price-1 .price-label {  }
 
 .product-grid .product-brand-name {
   font: 16px/16px 'HelveticaNeue', Helvetica, sans-serif;
@@ -320,8 +325,9 @@ body.modal-open {
 }
 .price-2 {
   /* when an item is on sale, the retail price also receives the class .price-2
-  so this ensures that the retail price only gets crossed out when item is on sale */
-  text-decoration:line-through;
+  so this ensures that the retail price only gets crossed out when item is on sale
+  Currently, we have it turned off */
+  /*text-decoration:line-through;*/
 }
 
 /* Cart settings */
@@ -454,10 +460,6 @@ img.zoomImg {
 .carousel:hover .carousel-control:hover {
   opacity: 0.9;
   filter: alpha(opacity=90);
-}
-
-.carousel:hover .carousel-control:active {
-  opacity:1;
 }
 
 /* modal frame styles */
