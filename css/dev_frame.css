@@ -78,6 +78,7 @@ body.modal-open {
 }
 .single-product .price-2 {
   font: 14px/14px 'Futura', sans-serif;
+  color: #9a9a9a;
   margin: 0 0 5px 0;
 }
 .single-product .price-1 .price-label,
