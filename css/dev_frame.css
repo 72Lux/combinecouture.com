@@ -83,6 +83,7 @@ body.modal-open {
   text-transform:uppercase;
 }
 .single-product .product-sale-price .price-label {
+  color:#F70C0C;
 }
 
 .single-product .add-to-cart .colors,
@@ -300,7 +301,7 @@ body.modal-open {
   text-decoration: none;
   color:#9a9a9a;
 }
-.product-grid .product-sale-price.price-1 .price-label { color:#F70C0C; }
+.product-grid .product-sale-price.price-1 .price-label {  }
 
 .product-grid .product-brand-name {
   font: 16px/16px 'HelveticaNeue', Helvetica, sans-serif;
