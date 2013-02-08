@@ -83,7 +83,6 @@ body.modal-open {
   text-transform:uppercase;
 }
 .single-product .product-sale-price .price-label {
-  color:#F70C0C;
 }
 
 .single-product .add-to-cart .colors,
@@ -296,7 +295,9 @@ body.modal-open {
   text-transform: uppercase;
 }
 .product-grid .product-retail-price .price-label,
-.product-grid .product-sale-price .price-label {
+.product-grid .product-sale-price .price-label,
+.product-grid .price-2 {
+  text-decoration: none;
   color:#9a9a9a;
 }
 .product-grid .product-sale-price.price-1 .price-label { color:#F70C0C; }
