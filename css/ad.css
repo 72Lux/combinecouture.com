@@ -15,8 +15,6 @@ body.modal-open {
   clear:both;
   display: inline-block;
   margin: 5px auto;
-  height: 310px;
-  overflow: scroll;
 }
 .product-grid .poweredBy {
   height:54px;
