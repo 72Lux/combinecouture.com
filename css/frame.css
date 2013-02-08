@@ -77,7 +77,7 @@ body.modal-open {
   margin: 0 0 5px 0;
 }
 .single-product .price-2 {
-  font: 14px/14px 'Futura', sans-serif;
+  font: 12px/12px 'Futura', sans-serif;
   color: #9a9a9a;
   margin: 0 0 5px 0;
 }
@@ -292,8 +292,7 @@ body.modal-open {
   right:10px;
 }
 /* default style overrides */
-.product-grid .price-1,
-.product-grid .price-2 {
+.product-grid .price-1 {
   font: 16px/16px 'Futura', Helvetica, sans-serif;
   color: #333;
   margin: 5px 0 0 0;
@@ -302,7 +301,7 @@ body.modal-open {
 .product-grid .product-retail-price .price-label,
 .product-grid .product-sale-price .price-label,
 .product-grid .price-2 {
-  color:#9a9a9a;
+  display:none;
 }
 .product-grid .product-sale-price.price-1 .price-label {  }
 
