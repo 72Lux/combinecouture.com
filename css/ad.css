@@ -64,6 +64,10 @@ body.modal-open {
   height:175px;
   overflow: hidden;
 }
+.product-grid .product-image a {
+  height: 175px;
+  display: block;
+}
 .product-grid .modal-trigger {
   cursor:pointer;
 }
