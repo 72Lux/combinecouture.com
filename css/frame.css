@@ -221,13 +221,11 @@ body.modal-open {
 }
 .product-grid .product .product-image {
   border:1px solid #333;
+  height:320px;
+  overflow:hidden;
 }
 .product-grid .product .product-image img {
   width:228px;
-}
-.product-grid .product .product-image > span {
-  height:320px;
-  overflow: hidden;
 }
 .product-grid .unavailable-text {
   display: none;
