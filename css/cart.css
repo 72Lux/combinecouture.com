@@ -42,14 +42,17 @@ body.modal-open {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
+.popover .modal-header,
 .cart-modal .modal-header {
   height:42px;
 }
+.popover .modal-body,
 .cart-modal .modal-body {
   max-height: 500px;
   overflow-x:hidden;
   overflow-y:scroll;
 }
+.popover .modal-footer,
 .cart-modal .modal-footer {
   height:68px;
 }
@@ -226,16 +229,19 @@ body.modal-open {
   float:left;
   width:100%;
 }
+.popover .row .right-actions,
 .cart-modal .row .right-actions{
   float:right;
   margin:19px 0 0 0;
 }
+.popover .row .right-actions li,
 .cart-modal .row .right-actions li{
   float:left;
   list-style-type:none;
   background:none;
   padding:0;
 }
+.popover .row .right-actions .continue-link,
 .cart-modal .row .right-actions .continue-link{
   width:176px;
   border:1px solid #000;
@@ -247,6 +253,7 @@ body.modal-open {
   text-transform:uppercase;
   font:14px "Helvetica Neue", Helvetica, sans-serif;
 }
+.popover .row .right-actions .checkout_link,
 .cart-modal .row .right-actions .checkout_link{
   width:106px;
   border:none;
@@ -260,16 +267,19 @@ body.modal-open {
   margin-left:15px;
 }
 
+.popover .row .left-actions,
 .cart-modal .row .left-actions{
   float:left;
   margin:19px 0;
 }
+.popover .row .left-actions li,
 .cart-modal .row .left-actions li{
   float:left;
   list-style-type:none;
   background:none;
   padding:0;
 }
+.popover .row .left-actions li .coupon_input,
 .cart-modal .row .left-actions li .coupon_input{
   display:none;
   width:88px;
@@ -282,6 +292,7 @@ body.modal-open {
   color:#818181;
   text-indent:5px;
 }
+.popover .row .left-actions li .clear_link,
 .cart-modal .row .left-actions li .clear_link{
   cursor:pointer;
   float:left;
