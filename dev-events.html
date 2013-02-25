@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Combine Couture</title>
+  <link href="css/layout.css" rel="stylesheet" type="text/css">
+  <link href="css/dev_frame.css" rel="stylesheet" type="text/css">
+  <link href="css/font.css" rel="stylesheet" type="text/css">
+  <link href="css/dev_cart.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script type='text/javascript' id='lux-shop-loader' src='//dev.api.shoppable.co/assets/js/shop.js?token=jj7JfIf9oO177lqX7c5503611'></script>
+</head>
+<body>
+  <div class="layout">
+    <div id="header"><a href="index.html" class="logo"><img src="images/logo.png" width="378" height="100" alt="logo"></a></div>
+    <div id="outer_top_head">
+      <div id="top_head">
+        <ul class="icons">
+          <li><a href="#"><img src="images/email_icon.png" alt="email_icon"></a></li>
+          <li><a href="#"><img src="images/fb_icon.png" alt="fb_icon"></a></li>
+          <li><a href=1"#"><img src="images/twitter_icon.png" alt="twitter_icon"></a></li>
+          <li><a href="#"><img src="images/pinterest_icon.png" alt="pinterest_icon"></a></li>
+        </ul>
+        <ul class="account">
+          <li class="last"><a href="#" class="lux-cart-frame" data-style="modal" data-checkout="http://combinecouture.lux:8888/local-checkout.html">SHOPPING BAG</a> <span class="lux-cart-label">&nbsp;</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="article_sec">
+
+      <h3><strong>Hot</strong>HANDBAGS</h3>
+      <small class="img"><img src="images/fullshot.png" width="229" /></small>
+      <p>Maecenas sed diam eget risus <span class='lux-product-frame' data-share="1" data-frame='link' data-modal='true' data-id='39' data-show-powered-by="1" data-link-title="varius blandit"></span> sit amet non magna. Maecenas faucibus mollis interdum. Aenean eu leo quam. <span class='lux-product-frame' data-share="1" data-frame='link' data-modal='true' data-id='37' data-show-powered-by="1"></span> lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+      <p>Donec sed odio dui. <span class='lux-product-frame' data-share="1" data-frame='link' data-modal='true' data-id='22' data-show-powered-by="1" data-link-title="Donec ullamcorper nulla non metus auctor"></span> fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa <span class='lux-product-frame' data-share="1" data-frame='link' data-modal='true' data-id='25' data-show-powered-by="1" data-link-title="justo sit"></span> amet risus. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum.</p>
+      <div id="get-it-now-container">
+        <small class="img"><img src="images/get-it-now.jpeg" width="300"></small>
+        <a href="/rocco-black-pebble-lamb.html" class="shop_btn">Get it now</a>
+      </div>
+      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. <span class='lux-product-frame' data-share="1" data-frame='link' data-modal='true' data-id='16' data-show-powered-by="1" data-link-title="Aenean lacinia bibendum"></span> nulla sed consectetur. Donec id elit non mi porta gravida at eget metus.</p>
+      <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+      <div class='lux-product-frame' data-share="1" data-frame='grid' data-id='6'></div>
+
+    </div>
+    <div id="footer">
+      <ul class="footer_nav">
+        <li><a href="#" id="trigger">Test Trigger</a></li>
+        <li><a href="http://www.72lux.com/about.html">About</a></li>
+        <li><a href="http://www.72lux.com/privacy_policy.html">Privacy Policy</a></li>
+        <li class="last"><a href="http://www.72lux.com/terms_of_use.html">Terms of Use</a></li>
+      </ul>
+      <p class="copyright">&copy; 2012 <a href="http://www.72lux.com">72Lux</a> Inc. All Rights Reserved</p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+      luxevent.debug();
+
+      luxevent.set_hook('triggerGridModal', 'triggerGridModal_console_log', function (partNumber, productName, shareURL) {
+        //console.log('triggerGridModal_console_log');
+        //console.log(arguments);
+        //console.log(productName);
+      });
+
+      luxevent.set_hook('addToCart', 'addToCart_console_log', function (cartId, product, productArray) {
+        //console.log('local-sandbox.html:addToCart:');
+        //console.log(arguments);
+        //console.log(product.name);
+      });
+
+      luxevent.set_hook('removeItemFromCart', 'removeItemFromCart_console_log', function (cartId, product, productArray) {
+        //console.log('local-sandbox.html:removeItemFromCart:');
+        //console.log(arguments);
+      });
+
+      luxevent.set_hook('updateItemInCart', 'updateItemInCart_console_log', function (cartId, product, productArray) {
+        //console.log('local-sandbox.html:updateItemInCart:');
+        //console.log(arguments);
+      });
+
+      luxevent.set_hook('emptyCart', 'emptyCart_console_log', function (cartId, productArray) {
+        //console.log('local-sandbox.html:emptyCart:');
+        //console.log(arguments);
+      });
+
+    });
+
+
+  </script>
+</body>
+</html>
