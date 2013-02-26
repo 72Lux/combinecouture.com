@@ -58,28 +58,29 @@
   <script type="text/javascript">
 
     $(document).ready(function(){
+      shopevent.debug();
 
-      luxevent.set_hook('triggerGridModal', 'triggerGridModal_console_log', function (partNumber, productName, shareURL) {
+      shopevent.set_hook('triggerGridModal', 'triggerGridModal_console_log', function (partNumber, productName, shareURL) {
         //console.log('triggerGridModal_console_log');
         //console.log(arguments);
       });
 
-      luxevent.set_hook('addToCart', 'addToCart_console_log', function (cartId, product, productArray) {
+      shopevent.set_hook('addToCart', 'addToCart_console_log', function (cartId, product, productArray) {
         //console.log('local-sandbox.html:addToCart:');
         //console.log(arguments);
       });
 
-      luxevent.set_hook('removeItemFromCart', 'removeItemFromCart_console_log', function (cartId, product, productArray) {
+      shopevent.set_hook('removeItemFromCart', 'removeItemFromCart_console_log', function (cartId, product, productArray) {
         //console.log('local-sandbox.html:removeItemFromCart:');
         //console.log(arguments);
       });
 
-      luxevent.set_hook('updateItemInCart', 'updateItemInCart_console_log', function (cartId, product, productArray) {
+      shopevent.set_hook('updateItemInCart', 'updateItemInCart_console_log', function (cartId, product, productArray) {
         //console.log('local-sandbox.html:updateItemInCart:');
         //console.log(arguments);
       });
 
-      luxevent.set_hook('emptyCart', 'emptyCart_console_log', function (cartId, productArray) {
+      shopevent.set_hook('emptyCart', 'emptyCart_console_log', function (cartId, productArray) {
         //console.log('local-sandbox.html:emptyCart:');
         //console.log(arguments);
       });
