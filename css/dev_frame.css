@@ -217,6 +217,7 @@ body.modal-open {
 .product-grid .product {
   float:left;
   width:230px;
+  height:442px;
   clear:none;
   margin:5px;
 }
