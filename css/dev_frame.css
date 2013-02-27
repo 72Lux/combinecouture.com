@@ -213,6 +213,7 @@ body.modal-open {
   width:108px;
   float:right;
 }
+.product-grid .blank-cell,
 .product-grid .product {
   float:left;
   width:230px;
