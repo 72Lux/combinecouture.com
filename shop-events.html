@@ -45,28 +45,23 @@
   <script type="text/javascript">
     shopevent.debug();
 
-    shopevent.set_hook('triggerGridModal', 'triggerGridModal_console_log', function (partNumber, productName, shareURL) {
-      //console.log('triggerGridModal_console_log');
+    shopevent.set_hook('triggerGridModal', 'do_nothing', function (partNumber, productName, shareURL) {
       //console.log(arguments);
     });
 
-    shopevent.set_hook('addToCart', 'addToCart_console_log', function (cartId, product, productArray) {
-      //console.log('local-sandbox.html:addToCart:');
+    shopevent.set_hook('addToCart', 'console_log_args', function (cartId, product, productArray) {
+      console.log(arguments);
+    });
+
+    shopevent.set_hook('removeItemFromCart', 'do_nothing', function (cartId, product, productArray) {
       //console.log(arguments);
     });
 
-    shopevent.set_hook('removeItemFromCart', 'removeItemFromCart_console_log', function (cartId, product, productArray) {
-      //console.log('local-sandbox.html:removeItemFromCart:');
+    shopevent.set_hook('updateItemInCart', 'do_nothing', function (cartId, product, productArray) {
       //console.log(arguments);
     });
 
-    shopevent.set_hook('updateItemInCart', 'updateItemInCart_console_log', function (cartId, product, productArray) {
-      //console.log('local-sandbox.html:updateItemInCart:');
-      //console.log(arguments);
-    });
-
-    shopevent.set_hook('emptyCart', 'emptyCart_console_log', function (cartId, productArray) {
-      //console.log('local-sandbox.html:emptyCart:');
+    shopevent.set_hook('emptyCart', 'do_nothing', function (cartId, productArray) {
       //console.log(arguments);
     });
 
