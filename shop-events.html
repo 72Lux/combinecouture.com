@@ -26,10 +26,7 @@
       </div>
     </div>
     <div class="article_sec">
-      <!--<div class='lux-product-frame' data-frame='grid' data-id='619' data-share="true"></div>
-      <div class='lux-product-frame' data-frame='grid' data-id='586' data-share="true" data-share-link-title="Link"></div> -->
-      <!-- The following frame is used in the shop-ad page. Please do not disable -->
-      <div class='lux-product-frame' data-frame='grid' data-id='626' data-share="true"></div>
+      <div class='lux-product-frame' data-frame='grid' data-id='723' data-show-blank-cells='1' ></div>
 
     </div>
     <div id="footer">
@@ -43,26 +40,10 @@
     </div>
   </div>
   <script type="text/javascript">
-    shopevent.debug();
+    //shopevent.debug();
 
-    shopevent.set_hook('triggerGridModal', 'do_nothing', function (partNumber, productName, shareURL) {
-      //console.log(arguments);
-    });
-
-    shopevent.set_hook('addToCart', 'console_log_args', function (cartId, product, productArray) {
-      console.log(arguments);
-    });
-
-    shopevent.set_hook('removeItemFromCart', 'do_nothing', function (cartId, product, productArray) {
-      //console.log(arguments);
-    });
-
-    shopevent.set_hook('updateItemInCart', 'do_nothing', function (cartId, product, productArray) {
-      //console.log(arguments);
-    });
-
-    shopevent.set_hook('emptyCart', 'do_nothing', function (cartId, productArray) {
-      //console.log(arguments);
+    shopevent.set_hook('allFramesLoaded','cageify', function () {
+      alert('all frames are loaded!');
     });
 
   </script>
