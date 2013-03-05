@@ -22,7 +22,7 @@
           <li><a href="#"><img src="images/pinterest_icon.png" alt="pinterest_icon"></a></li>
         </ul>
         <ul class="account">
-          <li class="last"><a href="#" class="lux-cart-frame" data-style="modal" data-checkout="http://combinecouture.lux:8888/local-checkout.html">SHOPPING BAG</a> <span class="lux-cart-label">&nbsp;</span></li>
+          <li class="last"><a href="#" class="lux-cart-frame" data-style="modal" data-checkout="dev-checkout.html">SHOPPING BAG</a> <span class="lux-cart-label">&nbsp;</span></li>
         </ul>
       </div>
     </div>
@@ -39,7 +39,7 @@
       <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. <span class='lux-product-frame' data-share="1" data-frame='link' data-modal='true' data-id='16' data-show-powered-by="1" data-link-title="Aenean lacinia bibendum"></span> nulla sed consectetur. Donec id elit non mi porta gravida at eget metus.</p>
       <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
 
-      <div class='lux-product-frame' data-share="1" data-frame='grid' data-id='6'></div>
+      <div class='lux-product-frame' data-share="1" data-frame='grid' data-id='6' data-show-blank-cells='1'></div>
 
     </div>
     <div id="footer">
@@ -57,15 +57,25 @@
 
   <script type="text/javascript">
 
-    $(document).ready(function(){
-      shopevent.debug();
+    //$(document).ready(function(){
+      //shopevent.debug();
+
+      shopevent.set_hook('allFramesLoaded','cageify', function () {
+        $('.blank-cell').each(function () {
+          var $img = $('<img>');
+          var _height = getRandomInt(100, 442);
+          var _width = getRandomInt(100, 230);
+          $img.attr('src', 'http://placecage.com/' + _width + '/' + _height);
+          $(this).append($img);
+        });
+      });
 
       shopevent.set_hook('triggerGridModal', 'do_nothing', function (partNumber, productName, shareURL) {
         //console.log(arguments);
       });
 
       shopevent.set_hook('addItemToCart', 'console_log_args', function (cartId, product, productArray) {
-        console.log(arguments);
+        //console.log(arguments);
       });
 
       shopevent.set_hook('removeItemFromCart', 'do_nothing', function (cartId, product, productArray) {
@@ -80,7 +90,7 @@
         //console.log(arguments);
       });
 
-    });
+    //});
 
 
   </script>
