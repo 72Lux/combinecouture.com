@@ -485,16 +485,3 @@ img.zoomImg {
   /* only within .product-modal block */
   display:none;
 }
-
-
-.fade {
-  opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-  -moz-transition: opacity 0.15s linear;
-  -ms-transition: opacity 0.15s linear;
-  -o-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear;
-}
-.in {
-  opacity:1;
-}
