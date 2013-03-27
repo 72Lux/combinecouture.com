@@ -40,5 +40,36 @@
       <p class="copyright">&copy; 2012 <a href="http://www.72lux.com">72Lux</a> Inc. All Rights Reserved</p>
     </div>
   </div>
+  <script type="text/javascript">
+  shopevent.set_hook('allFramesLoaded', 'console.log', function() {
+    console.log('allFramesLoaded');
+  });
+
+  shopevent.set_hook('triggerGridModal', 'console.log', function(partNumber, name, shareURL) {
+    console.log('triggerGridModal');
+    console.log(arguments);
+  });
+
+  shopevent.set_hook('addItemToCart', 'console.log', function(cartId, sku, skusArray) {
+    console.log('addItemToCart');
+    console.log(arguments);
+  });
+
+  shopevent.set_hook('removeItemFromCart', 'console.log', function(cartId, sku, skusArray) {
+    console.log('removeItemFromCart');
+    console.log(arguments);
+  });
+
+  shopevent.set_hook('updateItemInCart', 'console.log', function(cartId, sku, skusArray) {
+    console.log('updateItemInCart');
+    console.log(arguments);
+  });
+
+  shopevent.set_hook('emptyCart', 'console.log', function(cartId, skusArray) {
+    console.log('emptyCart');
+    console.log(arguments);
+  });
+
+  </script>
 </body>
 </html>
