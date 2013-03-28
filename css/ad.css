@@ -3,39 +3,39 @@ body.modal-open {
   overflow:hidden;
 }
 
-.product-grid {
+.lux-ad-frame .product-grid {
   text-align: center;
   background: #EEE;
 }
 /* grid styles */
 
-.product-grid-inner {
+.lux-ad-frame .product-grid-inner {
   border: 1px solid #EEE;
   background: #EEE;
   clear:both;
   display: inline-block;
   margin: 5px auto;
 }
-.product-grid .poweredBy {
+.lux-ad-frame .product-grid .poweredBy {
   height:54px;
   width:108px;
   float:right;
 }
 
-.product-grid .product-outer {
+.lux-ad-frame .product-grid .product-outer {
   float: left;
   clear:none;
   min-height: 310px;
   overflow: hidden;
 }
-.product-grid .product {
+.lux-ad-frame .product-grid .product {
   background: #FFF;
   width: 160px;
   clear: none;
   margin: 5px;
   padding: 5px;
 }
-.product-grid .product .product-image {
+.lux-ad-frame .product-grid .product .product-image {
   border: 2px solid #efefef;
   background: #fff;
   position: relative;
@@ -51,50 +51,50 @@ body.modal-open {
   margin:10px;
   float:none;
 }
-.product-grid .product .product-image:hover {
+.lux-ad-frame .product-grid .product .product-image:hover {
   border: 2px solid #CCC;
 }
-.product-grid .product .product-image:active {
+.lux-ad-frame .product-grid .product .product-image:active {
   border: 2px solid #999;
 }
-.product-grid .product .product-image img {
+.lux-ad-frame .product-grid .product .product-image img {
   width: 100%;
 }
-.product-grid .product .product-image {
+.lux-ad-frame .product-grid .product .product-image {
   height:175px;
   overflow: hidden;
 }
-.product-grid .product-image a {
+.lux-ad-frame .product-grid .product-image a {
   height: 175px;
   display: block;
 }
-.product-grid .modal-trigger {
+.lux-ad-frame .product-grid .modal-trigger {
   cursor:pointer;
 }
-.product-grid .product-info {
+.lux-ad-frame .product-grid .product-info {
   width:160px;
   padding: 5px;
   text-align: center;
 }
-.product-grid .ad-info {
+.lux-ad-frame .product-grid .ad-info {
   /*margin: 5px 0 10px 0;*/
   text-align: center;
   padding-top: 10px;
 }
-.product-grid .ad-title {
+.lux-ad-frame .product-grid .ad-title {
   border-bottom: 1px solid #CCC;
   padding: 0 5px;
   display: none;
 }
-.product-grid .ad-title-link {
+.lux-ad-frame .product-grid .ad-title-link {
   border-bottom: 1px solid #CCC;
   padding: 0 5px;
 }
 
-.product-grid .product-title {
+.lux-ad-frame .product-grid .product-title {
   display:none;
 }
-.product-grid .product-brand {
+.lux-ad-frame .product-grid .product-brand {
   display: block;
 }
 /* layout styles */
