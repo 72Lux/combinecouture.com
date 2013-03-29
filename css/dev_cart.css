@@ -322,6 +322,20 @@ body.modal-open {
   opacity:1;
 }
 
+.cart .poweredBy {
+  height: 44px;
+  width: 108px;
+  margin-top: -10px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.cart .privacyPolicyLink {
+  font: 14px "Helvetica Neue", Helvetica, sans-serif;
+  padding: 10px 17px;
+  display: inline-block;
+  margin-left: 20px;
+}
 /* empty shopping cart */
 .empty-cart p {
   line-height:140px;
