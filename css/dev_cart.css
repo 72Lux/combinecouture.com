@@ -328,6 +328,7 @@ body.modal-open {
   margin-top: -10px;
   display: inline-block;
   margin-left: 20px;
+  background-repeat: no-repeat;
 }
 
 .cart .privacyPolicyLink {
