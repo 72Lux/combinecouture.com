@@ -39,27 +39,27 @@
 
       shopevent.set_hook('triggerGridModal', 'test_event', function (partNumber, productName, shareURL) {
         $title.text('triggerGridModal event triggered!');
-        $data.html(partNumber + productName + shareURL);
+        $data.html(partNumber + "\n" + productName + "\n" + shareURL);
       });
 
       shopevent.set_hook('addItemToCart', 'test_event', function (cartId, product, productArray) {
         $title.text('addItemToCart event triggered!');
-        $data.html(cartId + product + productArray);
+        $data.html(cartId + "\n" + product + "\n" + productArray);
       });
 
       shopevent.set_hook('removeItemFromCart', 'test_event', function (cartId, product, productArray) {
         $title.text('removeItemFromCart event triggered!');
-        $data.html(cartId + product + productArray);
+        $data.html(cartId + "\n" + product + "\n" + productArray);
       });
 
       shopevent.set_hook('updateItemInCart', 'test_event', function (cartId, product, productArray) {
         $title.text('updateItemInCart event triggered!');
-        $data.html(cartId + product + productArray);
+        $data.html(cartId + "\n" + product + "\n" + productArray);
       });
 
       shopevent.set_hook('emptyCart', 'test_event', function (cartId, productArray) {
         $title.text('emptyCart event triggered!');
-        $data.html(cartId + productArray);
+        $data.html(cartId + "\n" + productArray);
       });
 
     });
