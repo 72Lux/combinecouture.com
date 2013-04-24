@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Test page for single product frame with various config options</title>
+  <script type='text/javascript' id='lux-shop-loader' src='//dev.api.shoppable.co:3000/javascripts/shop.js?token=jj7JfIf9oO177lqX7c5503611'></script>
+  <link href="/css/frame.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <h2>Testing the single product frame as well as various config options</h2>
+  <p>The following product has the Hero Image and Brand Name hidden.</p>
+  <div
+    class='lux-product-frame'
+    data-frame='single'
+    data-id='150'
+
+    data-hide-hero='1'
+    data-hide-brand='1'
+
+  ></div>
+
+  <p>The following product has the product Title, the Retail Price, the Description and the "Ships From" label hidden.</p>
+  <div
+    class='lux-product-frame'
+    data-frame='single'
+    data-id='4'
+
+    data-hide-title='1'
+    data-hide-retail-price='1'
+    data-hide-description='1'
+    data-hide-ships-from='1'
+  ></div>
+
+</body>
+</html>

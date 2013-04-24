@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Test page for Events API</title>
+  <script type='text/javascript' id='lux-shop-loader' src='//dev.api.shoppable.co:3000/javascripts/shop.js?token=jj7JfIf9oO177lqX7c5503611'></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <link href="http://combinecouture.com/css/frame.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <h2>Testing Events API with a Grid Frame</h2>
+  <p>Page contains all the various Events API hooks for testing purposes.</p>
+
+  <h4 id="code-title"></h4>
+  <pre id="code-data"></pre>
+
+  <div class='lux-product-frame' data-frame='grid' data-id='4' data-share='1'></div>
+
+  <script type="text/javascript">
+    function getRandomInt (min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    $(document).ready(function() {
+
+      var $title = $("#code-title");
+      var $data = $("#code-data");
+
+      shopevent.set_hook('allFramesLoaded','cageify', function () {
+        //$('.blank-cell').each(function () {
+        //  var $img = $('<img>');
+        //  var _height = getRandomInt(100, 442);
+        //  var _width = getRandomInt(100, 230);
+        //  $img.attr('src', 'http://placekitten.com/' + _width + '/' + _height);
+        //  $(this).append($img);
+        //});
+        $title.text('allFramesLoaded event triggered!');
+      });
+
+      shopevent.set_hook('triggerGridModal', 'test_event', function (partNumber, productName, shareURL) {
+        $title.text('triggerGridModal event triggered!');
+        $data.html(partNumber + "\n" + productName + "\n" + shareURL);
+      });
+
+      shopevent.set_hook('addItemToCart', 'test_event', function (cartId, product, productArray) {
+        $title.text('addItemToCart event triggered!');
+        $data.html(cartId + "\n" + product + "\n" + productArray);
+      });
+
+      shopevent.set_hook('removeItemFromCart', 'test_event', function (cartId, product, productArray) {
+        $title.text('removeItemFromCart event triggered!');
+        $data.html(cartId + "\n" + product + "\n" + productArray);
+      });
+
+      shopevent.set_hook('updateItemInCart', 'test_event', function (cartId, product, productArray) {
+        $title.text('updateItemInCart event triggered!');
+        $data.html(cartId + "\n" + product + "\n" + productArray);
+      });
+
+      shopevent.set_hook('emptyCart', 'test_event', function (cartId, productArray) {
+        $title.text('emptyCart event triggered!');
+        $data.html(cartId + "\n" + productArray);
+      });
+
+    });
+
+  </script>
+</body>
+</html>

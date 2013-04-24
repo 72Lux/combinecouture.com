@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Test page for overrides and custom classes</title>
+  <script type='text/javascript' id='lux-shop-loader' src='//dev.api.shoppable.co:3000/javascripts/shop.js?token=jj7JfIf9oO177lqX7c5503611'></script>
+  <link href="/css/frame.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    .glorious.product .product-info:after {
+      content: "Yaaaaaaaaaay";
+    }
+
+    .featured-product.product .product-info {
+      background:#ccff66;
+    }
+
+    .booo.product .product-info:after {
+      content: "BOOOOOOOO";
+    }
+
+  </style>
+</head>
+<body>
+
+  <h2>Testing various overrides and custom classes</h2>
+  <p>For this test page, participating products demonstrate behaviors of:</p>
+  <ul>
+    <li>Product that contains custom classes.</li>
+    <li>Product with copy overrides and a leading color with its image overridden.</li>
+    <li>Product with 2 of 3 colors disabled.</li>
+    <li>Product with a custom class.</li>
+  </ul>
+  <div class='lux-product-frame' data-frame='grid' data-id='150'></div>
+
+</body>
+</html>
