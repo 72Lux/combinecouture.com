@@ -128,7 +128,7 @@
 
       shopevent.set_hook('addItemToCart', 'test_event', function (cartId, product, productArray) {
         $title.text('addItemToCart event triggered!');
-        $data.html(cartId + "\n" + print_r(product, TRUE) + "\n" + print_r(productArray, TRUE));
+        $data.html(cartId + "\n" + print_r(product, 1) + "\n" + print_r(productArray, 1));
       });
 
       shopevent.set_hook('removeItemFromCart', 'test_event', function (cartId, product, productArray) {
