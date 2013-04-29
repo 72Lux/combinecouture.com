@@ -78,12 +78,20 @@
 
     $(document).ready(function() {
 
+      function wipeOutputBlocks() {
+        $title.html('');
+        $data.html('');
+        $object.html('');
+        $array.html('');
+      }
+
       var $title = $("#code-title");
       var $data = $("#code-data");
       var $object = $("#object-data");
       var $array = $("#array-data");
 
       shopevent.set_hook('allFramesLoaded','cageify', function (cartId) {
+        wipeOutputBlocks();
         //$('.blank-cell').each(function () {
         //  var $img = $('<img>');
         //  var _height = getRandomInt(100, 442);
@@ -96,11 +104,13 @@
       });
 
       shopevent.set_hook('triggerGridModal', 'test_event', function (cartId, partNumber, productName, shareURL) {
+        wipeOutputBlocks();
         $title.text('triggerGridModal event triggered!');
         $data.html(cartId + "\n" + partNumber + "\n" + productName + "\n" + shareURL);
       });
 
       shopevent.set_hook('addItemToCart', 'test_event', function (cartId, product, productArray) {
+        wipeOutputBlocks();
         $title.text('addItemToCart event triggered!');
         $data.html(cartId);
         $object.dump(product);
@@ -108,6 +118,7 @@
       });
 
       shopevent.set_hook('removeItemFromCart', 'test_event', function (cartId, product, productArray) {
+        wipeOutputBlocks();
         $title.text('removeItemFromCart event triggered!');
         $data.html(cartId);
         $object.dump(product);
@@ -115,6 +126,7 @@
       });
 
       shopevent.set_hook('updateItemInCart', 'test_event', function (cartId, product, productArray) {
+        wipeOutputBlocks();
         $title.text('updateItemInCart event triggered!');
         $data.html(cartId);
         $object.dump(product);
@@ -122,6 +134,7 @@
       });
 
       shopevent.set_hook('emptyCart', 'test_event', function (cartId, productArray) {
+        wipeOutputBlocks();
         $title.text('emptyCart event triggered!');
         $data.html(cartId);
         $array.dump(productArray);
