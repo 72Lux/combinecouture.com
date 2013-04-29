@@ -8,83 +8,53 @@
   <link href="http://combinecouture.com/css/frame.css" rel="stylesheet" type="text/css">
   <link href="/css/test_cart.css" rel="stylesheet" type="text/css">
   <script type="text/javascript">
-    function print_r (array, return_val) {
-      // http://kevin.vanzonneveld.net
-      // +   original by: Michael White (http://getsprink.com)
-      // +   improved by: Ben Bryan
-      // +      input by: Brett Zamir (http://brett-zamir.me)
-      // +      improved by: Brett Zamir (http://brett-zamir.me)
-      // +   improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-      // -    depends on: echo
-      // *     example 1: print_r(1, true);
-      // *     returns 1: 1
-      var output = '',
-        pad_char = ' ',
-        pad_val = 4,
-        d = this.window.document,
-        getFuncName = function (fn) {
-          var name = (/\W*function\s+([\w\$]+)\s*\(/).exec(fn);
-          if (!name) {
-            return '(Anonymous)';
-          }
-          return name[1];
-        },
-        repeat_char = function (len, pad_char) {
-          var str = '';
-          for (var i = 0; i < len; i++) {
-            str += pad_char;
-          }
-          return str;
-        },
-        formatArray = function (obj, cur_depth, pad_val, pad_char) {
-          if (cur_depth > 0) {
-            cur_depth++;
-          }
+    /*
+     *  Made by Tomas van Rijsse - Pionect at Rotterdam, Netherlands
+     *
+     *  This work is licensed under a Creative Commons Attribution 3.0 Unported License.
+     *  http://creativecommons.org/licenses/by/3.0/
+     *
+     *  The result will be equivalent to the PHP function print_r.
+     *  echo '<pre>' . print_r($data) . '</pre>';
+     *
+     *  USAGE:
+     *  var data = [{'id':1,'name':'hello'},'world'];
+     *  $('#element').dump(data);
+     */
 
-          var base_pad = repeat_char(pad_val * cur_depth, pad_char);
-          var thick_pad = repeat_char(pad_val * (cur_depth + 1), pad_char);
-          var str = '';
-
-          if (typeof obj === 'object' && obj !== null && obj.constructor && getFuncName(obj.constructor) !== 'PHPJS_Resource') {
-            str += 'Array\n' + base_pad + '(\n';
-            for (var key in obj) {
-              if (Object.prototype.toString.call(obj[key]) === '[object Array]') {
-                str += thick_pad + '[' + key + '] => ' + formatArray(obj[key], cur_depth + 1, pad_val, pad_char);
-              }
-              else {
-                str += thick_pad + '[' + key + '] => ' + obj[key] + '\n';
-              }
+    (function($){
+        $.fn.dump = function(variable){
+            return this.each(function(){
+            if(typeof variable == 'object'){
+                var string = $.dump.objectToString(variable,0);
+                $(this).html(string);
+            } else {
+                $(this).html('<pre>'+variable.toString()+'</pre>');
             }
-            str += base_pad + ')\n';
-          }
-          else if (obj === null || obj === undefined) {
-            str = '';
-          }
-          else { // for our "resource" class
-            str = obj.toString();
-          }
-
-          return str;
-        };
-
-      output = formatArray(array, 0, pad_val, pad_char);
-
-      if (return_val !== true) {
-        if (d.body) {
-          this.echo(output);
-        }
-        else {
-          try {
-            d = XULDocument; // We're in XUL, so appending as plain text won't work; trigger an error out of XUL
-            this.echo('<pre xmlns="http://www.w3.org/1999/xhtml" style="white-space:pre;">' + output + '</pre>');
-          } catch (e) {
-            this.echo(output); // Outputting as plain text may work in some plain XML
-          }
-        }
-        return true;
-      }
-      return output;
+      });
     }
+
+    $.dump = {
+      objectToString : function (variable,i){
+              var string = '';
+              if(typeof variable == 'object' && i < 3){ // 3 is to prevent endless recursion, set higher for more depth
+                  string += 'Object ( <ul style="list-style:none;">';
+                  var key;
+                  for(key in variable) {
+                      if (variable.hasOwnProperty(key)) {
+                        string += '<li>['+key+'] => ';
+                        string += $.dump.objectToString(variable[key],i+1);
+                        string += '</li>';
+                      }
+                  }
+                  string += '</ul> )';
+              } else {
+                  string = variable.toString();
+              }
+              return string;
+        }
+    }
+    })(jQuery)
   </script>
 </head>
 <body>
@@ -96,6 +66,8 @@
 
   <h4 id="code-title"></h4>
   <pre id="code-data"></pre>
+  <pre id="object-data"></pre>
+  <pre id="array-data"></pre>
 
   <div class='lux-product-frame' data-frame='grid' data-id='4' data-share='1'></div>
 
@@ -108,6 +80,8 @@
 
       var $title = $("#code-title");
       var $data = $("#code-data");
+      var $object = $("#object-data");
+      var $array = $("#array-data");
 
       shopevent.set_hook('allFramesLoaded','cageify', function (cartId) {
         //$('.blank-cell').each(function () {
@@ -128,22 +102,29 @@
 
       shopevent.set_hook('addItemToCart', 'test_event', function (cartId, product, productArray) {
         $title.text('addItemToCart event triggered!');
-        $data.html(cartId + "\n" + print_r(product, 1) + "\n" + print_r(productArray, 1));
+        $data.html(cartId);
+        $object.dump(product);
+        $array.dump(productArray);
       });
 
       shopevent.set_hook('removeItemFromCart', 'test_event', function (cartId, product, productArray) {
         $title.text('removeItemFromCart event triggered!');
-        $data.html(cartId + "\n" + product + "\n" + productArray);
+        $data.html(cartId);
+        $object.dump(product);
+        $array.dump(productArray);
       });
 
       shopevent.set_hook('updateItemInCart', 'test_event', function (cartId, product, productArray) {
         $title.text('updateItemInCart event triggered!');
-        $data.html(cartId + "\n" + product + "\n" + productArray);
+        $data.html(cartId);
+        $object.dump(product);
+        $array.dump(productArray);
       });
 
       shopevent.set_hook('emptyCart', 'test_event', function (cartId, productArray) {
         $title.text('emptyCart event triggered!');
-        $data.html(cartId + "\n" + productArray);
+        $data.html(cartId);
+        $array.dump(productArray);
       });
 
     });
