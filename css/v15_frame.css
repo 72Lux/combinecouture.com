@@ -106,14 +106,16 @@ a {
   max-height:160px;
   overflow:auto;
 }
-.single-product .product-info-wrapper .add-to-cart .colors,
-.single-product .product-info-wrapper .add-to-cart .sizes {
-  margin:0 0 5px 0;
+.single-product .product-info-wrapper .colors,
+.single-product .product-info-wrapper .sizes {
   color:#333;
   font: 14px/14px "Futura", sans-serif;
-  text-transform:lowercase;
+  text-transform:uppercase;
 }
-
+.single-product .product-info-wrapper .select-color,
+.single-product .product-info-wrapper .select-size {
+  width:100px;
+}
 
 
 /* in progress */
