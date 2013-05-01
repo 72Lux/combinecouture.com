@@ -57,16 +57,24 @@ a {
 .single-product .product-image-wrapper .product-image-slides {
   width: 100%;
 }
-.single-product .product-image-wrapper .product-image-slides img {
+.single-product .product-image-wrapper .product-image-slides ul li {
+  height: 50px;
+  width: 50px;
   float: left;
   margin-top: 10px;
   margin-right: 10px;
   border: 1px solid #CCC;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-.single-product .product-image-wrapper .product-image-slides img.active {
+.single-product .product-image-wrapper .product-image-slides ul li.active {
   border: 1px solid black;
 }
-.single-product .product-image-wrapper .product-image-slides img.last {
+.single-product .product-image-wrapper .product-image-slides ul li.last {
   margin-right: 0px;
 }
 
@@ -153,11 +161,17 @@ a {
 }
 .single-product .product-info-wrapper .colors,
 .single-product .product-info-wrapper .sizes {
-  width:200px;
-  color:#333;
-  font: 14px/14px "Futura", sans-serif;
-  text-transform:uppercase;
+  width: 165px;
+  height: 22px;
+  color: #333;
+  font: 14px/22px "Futura", sans-serif;
+  text-transform:lowercase;
   float:left;
+}
+.single-product .product-info-wrapper .colors-label,
+.single-product .product-info-wrapper .sizes-label {
+  color: #9a9a9a;
+  text-transform:uppercase;
 }
 .single-product .product-info-wrapper .select-color,
 .single-product .product-info-wrapper .select-size {
