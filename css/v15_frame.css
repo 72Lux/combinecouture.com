@@ -76,11 +76,21 @@ a {
   float: right;
   position: relative;
 }
+
 .single-product .product-info-wrapper .see-reviews {
-  width: 145px; /* find %? */
+  width: 150px; /* find %? */
   position: absolute;
   right: 0px;
 }
+.single-product .product-info-wrapper .see-reviews-review {
+  float:left;
+  height: 15px;
+}
+.single-product .product-info-wrapper .see-reviews-label {
+  float:right;
+  font: 12px/15px 'HelveticaNeue', sans-serif;
+}
+
 .single-product .product-info-wrapper .product-brand-name {
   margin-bottom: 5px;
 }
@@ -126,7 +136,7 @@ a {
 
 .single-product .product-info-wrapper .product-description-text {
   font:16px/21px Calibri, Times New Roman, serif;
-  max-height:160px;
+  max-height:84px;
   overflow:auto;
 }
 
@@ -256,7 +266,6 @@ a {
 
 
 .zoomImg {
-  display:none;
 }
 
 
@@ -309,6 +318,7 @@ a {
 
 .nav-tabs {
   border-bottom: 1px solid #ddd;
+  margin-bottom:10px;
 }
 
 .nav-tabs > li {
