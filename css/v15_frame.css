@@ -138,13 +138,16 @@ a {
   color:#F70C0C;
 }
 
+.single-product .product-info-wrapper .product-ships-from {
+  margin-bottom: 15px;
+}
 .single-product .product-info-wrapper .product-ships-from-text {
   font: 16px/16px "Futura", sans-serif;
   color: #333;
 }
 
 .single-product .product-info-wrapper .product-description-text {
-  font:16px/21px Calibri, Times New Roman, serif;
+  font:13px/17px "HelveticaNeue", sans-serif;
   height:84px;
   overflow:auto;
 }
