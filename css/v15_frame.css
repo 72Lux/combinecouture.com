@@ -113,6 +113,7 @@ a {
 }
 
 .single-product .product-info-wrapper .product-price {
+  height: 31px;
   margin-bottom: 15px;
 }
 .single-product .product-info-wrapper .price-1 {
