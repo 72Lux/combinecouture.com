@@ -1,3 +1,9 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
 /* prevent body from scrolling when modal is up */
 body.modal-open {
   overflow:hidden;
@@ -6,6 +12,7 @@ body.modal-open {
 .lux-ad-frame .product-grid {
   text-align: center;
   background: #EEE;
+  font-size: 85%;
 }
 /* grid styles */
 
