@@ -12,14 +12,25 @@
  -->  <br /><br />
 
   <h2>Testing a basic adFrame</h2>
-<!--   <p>For this test page, participating products demonstrate behaviors of:</p>
-  <ul>
-    <li>Product that contains custom classes.</li>
-    <li>Product with copy overrides and a leading color with its image overridden.</li>
-    <li>Product with 2 of 3 colors disabled.</li>
-    <li>Product with a custom class.</li>
-  </ul>
- -->  <div class='lux-ad-frame' data-id='4' data-page='http://combinecouture.com/test/ad-destination.html' data-ad-title="Ad Title" data-ad-sub-title="Ad Sub-title"></div>
+  <p>Tracking parameters found: <span id="tracking-params">Loading...</span></p>
+  <div class='lux-ad-frame' data-id='4' data-page='http://combinecouture.com/test/ad-destination.html' data-ad-title="Ad Title" data-ad-sub-title="Ad Sub-title" data-tracking="abc=123&xyz=789"></div>
 
+
+
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+
+      $('#tracking-params').text(getURLParameters());
+
+    });
+
+    function getURLParameters() {
+      return decodeURIComponent(
+        (RegExp('(.+?)(&|$)').exec(location.search)||[,null])[1]
+      );
+    }
+
+  </script>
 </body>
 </html>
