@@ -15,11 +15,14 @@
   <p>This is the ad frame's destination page.</p>
   <p>Tracking parameters: <span id="tracking-params">NONE</span></p>
 
-  <div class='lux-product-frame' data-frame='grid' data-id='4'></div>
+  <div class='lux-product-frame' data-frame='grid' data-id='152'></div>
 
   <script type="text/javascript">
     $(document).ready(function() {
-      $('#tracking-params').text(getURLParameters());
+      var params = getURLParameters();
+      if(params) {
+        $('#tracking-params').text(params);
+      }
     });
 
     function getURLParameters() {

@@ -8,18 +8,32 @@
   <link href="/css/test_cart.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<!--   <a href="#" class="lux-cart-frame" data-style="modal" data-checkout="http://combinecouture.com/test/checkout.html">SHOPPING BAG</a> <span class="lux-cart-label">&nbsp;</span>
- -->  <br /><br />
 
-  <h2>Testing a basic adFrame</h2>
-<!--   <p>For this test page, participating products demonstrate behaviors of:</p>
-  <ul>
-    <li>Product that contains custom classes.</li>
-    <li>Product with copy overrides and a leading color with its image overridden.</li>
-    <li>Product with 2 of 3 colors disabled.</li>
-    <li>Product with a custom class.</li>
-  </ul>
- -->  <div class='lux-ad-frame' data-id='4' data-page='http://combinecouture.com/test/ad-destination.html' data-ad-title="Ad Title" data-ad-sub-title="Ad Sub-title"></div>
+  <h2>Testing an Ad Frame</h2>
+
+  <p>With only required attributes. Frame name appears as title. No sub-title.</p>
+  <div class='lux-ad-frame' data-id='152' data-page='http://combinecouture.com/test/ad-destination.html'></div>
+
+  <p>With only data-ad-title and data-ad-sub-title. Frame name is overridden.</p>
+  <div class='lux-ad-frame' data-id='152' data-page='http://combinecouture.com/test/ad-destination.html' data-ad-title="Ad Title" data-ad-sub-title="Ad Sub-title"></div>
+
+  <p>With only data-hide-title enabled. No frame title appears.</p>
+  <div class='lux-ad-frame' data-id='152' data-page='http://combinecouture.com/test/ad-destination.html' data-ad-title="Ad Title" data-ad-sub-title="Ad Sub-title" data-hide-title='1'></div>
+
+  <p>With only data-product-count set to 2. Only 2 products appear.</p>
+  <div class='lux-ad-frame' data-id='152' data-page='http://combinecouture.com/test/ad-destination.html' data-ad-title="Ad Title" data-ad-sub-title="Ad Sub-title" data-product-count='2'></div>
+
+  <p>With only data-product-count set to 4 and data-hide-out-of-stock set to 0. 4 products appear.</p>
+  <div class='lux-ad-frame' data-id='152' data-page='http://combinecouture.com/test/ad-destination.html' data-ad-title="Ad Title" data-ad-sub-title="Ad Sub-title" data-product-count='2'></div>
+
+  <p>With only data-product-count set to 4 and data-hide-out-of-stock set to 1. 3 products appear.</p>
+  <div class='lux-ad-frame' data-id='152' data-page='http://combinecouture.com/test/ad-destination.html' data-ad-title="Ad Title" data-ad-sub-title="Ad Sub-title" data-product-count='2'></div>
+
+  <p>With data-click-target set to '_self' instead of the default of '_blank'. Clicking on a product opens destination frame in same tab.</p>
+  <div class='lux-ad-frame' data-id='152' data-page='http://combinecouture.com/test/ad-destination.html' data-ad-title="Ad Title" data-ad-sub-title="Ad Sub-title" data-product-count='2'></div>
+
+  <p>With data-tracking set to "abc=123&xyz=789". Clicking on a product will open destination frame and parsed parameters will be vibile under page description.</p>
+  <div class='lux-ad-frame' data-id='152' data-page='http://combinecouture.com/test/ad-destination.html' data-ad-title="Ad Title" data-ad-sub-title="Ad Sub-title" data-tracking="abc=123&xyz=789"></div>
 
 </body>
 </html>
