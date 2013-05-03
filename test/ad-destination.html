@@ -11,9 +11,22 @@
   <a href="#" class="lux-cart-frame" data-style="modal" data-checkout="http://combinecouture.com/test/checkout.html">SHOPPING BAG</a> <span class="lux-cart-label">&nbsp;</span>
   <br /><br />
 
-  <h2>Testing slideshow frame</h2>
-  <p>For this test page, a simple test of the slideshow frame</p>
+  <h2>Testing ad frame</h2>
+  <p>This is the ad frame's destination page.</p>
   <div class='lux-product-frame' data-frame='grid' data-id='4'></div>
+  <p>Tracking parameters: <span id="tracking-params">NONE</span></p>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#tracking-params').text(getURLParameters());
+    });
+
+    function getURLParameters() {
+      return decodeURIComponent(
+        (RegExp('(.+?)(&|$)').exec(location.search)||[,null])[1]
+      );
+    }
+  </script>
 
 </body>
 </html>
