@@ -305,8 +305,7 @@ a {
 .product-grid .blank-cell,
 .product-grid .product {
   float:left;
-  /*width:230px;*/
-  width: 23%;
+  width: 230px;
   height:442px;
   clear:none;
   margin:5px;
@@ -413,11 +412,10 @@ a {
   }
   .single-product .add-to-cart {
     clear:both;
-    width:307px;
     margin: auto;
   }
   .single-product .product-info-wrapper .add-to-cart-button {
-    width: 302px;
+    width: 334px;
   }
   .single-product .product-info-wrapper .share-block {
     position: static;
@@ -443,6 +441,11 @@ a {
     position: static;
     float: right;
   }
+
+  .product-grid {
+    width: auto;
+  }
+
 
   .singleProductModal {
     width:440px;
