@@ -315,16 +315,38 @@ a {
   height:320px;
   overflow:hidden;
 }
-.product-grid .product .product-image img {
+.product-grid .product-image img {
   width:228px;
 }
 .product-grid .unavailable-text {
   display: none;
 }
-.product-grid .product .product-info {
+.product-grid .product-info {
   width:232px;
   min-height:110px;
   overflow:hidden;
+}
+.product-grid .product-brand-name {
+  font: 16px/16px 'HelveticaNeue', Helvetica, sans-serif;
+  line-height: 18px;
+  color: #333;
+  font-weight: bold;
+}
+.product-grid .product-name {
+  display:none;
+}
+.product-grid .product-retail-price .price-label,
+.product-grid .product-sale-price .price-label {
+  color:#9a9a9a;
+}
+.product-grid .price-1 {
+  font: 16px/16px 'Futura', Helvetica, sans-serif;
+  color: #333;
+  margin: 5px 0 0 0;
+  text-transform: uppercase;
+}
+.product-grid .price-2 {
+  display:none;
 }
 .product-grid .modal-trigger {
   cursor:pointer;
@@ -445,7 +467,6 @@ a {
   .product-grid {
     width: auto;
   }
-
 
   .singleProductModal {
     width:440px;
