@@ -579,11 +579,21 @@ a {
   .linkFrameModal,
   .singleProductModal {
     width:440px;
-    margin: -220px 0 0 -271px;
+    margin: -220px 0 0 -240px;
   }
 }
 
+@media only screen and (max-height: 690px) {
+  .single-product {
+    height: 250px;
+  }
 
+  .linkFrameModal,
+  .singleProductModal {
+    margin-top:0px;
+    top:10px;
+  }
+}
 
 /* misc */
 .clear {
@@ -595,4 +605,7 @@ a {
 .spacer {
   width: 100%;
   height: 20px;
+}
+body.modal-open {
+  overflow: hidden !important;
 }
