@@ -17,21 +17,525 @@
 
   <body id="home">
 
+  <div id="fb-root"></div>
+
+
     <div id="background"></div>
-      <div id="header">
-        <div id="shoppingBagLinkHolder">
-          <a href="#" class="lux-cart-frame" data-style="modal" data-checkout="#">YOUR CART</a> <span class="lux-cart-label">1</span>
-        </div>
+
+
+    <div id="mainHeaderContainer">
+
+  <!-- module hatRegistered -->
+      <div class="mainHeader">
+          <div class="hatWSJ_c">
+              <div id="hat_div" class="hat_wsjdn">
+                  <div class="hat_logo">
+                  </div>
+                  <ul id="hattabs" class="hat_tabs">
+                      <li class="hat_tab" id="hat_tab_wsj"><a href="http://online.wsj.com/" class="hat_site_title">WSJ</a>
+                          <ul>
+                              <li><a href="http://online.wsj.com/" class="hat_site_link">WSJ.COM</a></li>
+                              <li class="hat_social_tab"><a href="#" class="hat_fb_link">facebook</a></li>
+                              <li class="hat_social_tab"><a href="#" class="hat_twitter_link">twitter</a></li>
+                          </ul>
+                          <div class="hat_overlay hat_overlay_fb hidden">
+                              <ul>
+                                  <li>
+                                      <h4>
+                                          <span class="icon"></span>WSJ on Facebook
+                                      </h4>
+                                      <fb:like layout="button_count" width="80" height="21" show_faces="false" class=" fb_edge_widget_with_comment fb_iframe_widget"><span><iframe id="f30b9ee6b" name="ff1f08104" scrolling="no" style="border: none; overflow-x: hidden; overflow-y: hidden; height: 20px; width: 90px;background-color:#0C0; " title="Like this content on Facebook." class="fb_ltr"></iframe></span>
+                                      </fb:like>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="hat_overlay hat_overlay_twitter hidden">
+                              <ul>
+                                  <li class="hat_overlay_li">
+                                      <h4>
+                                          <span class="icon"></span>WSJ on Twitter
+                                      </h4>
+                                      <iframe frameborder="0" src="" style="width: 250px; height: 21px;"></iframe>
+                                  </li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li class="hat_tab" id="hat_tab_live">
+                          <a href="http://live.wsj.com" class="hat_site_title">WSJ Live</a>
+                          <ul>
+                              <li>
+                                  <a href="http://live.wsj.com" class="hat_site_link">WSJ Live</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li class="hat_tab" id="hat_tab_mw">
+                          <a href="http://www.marketwatch.com/" class="hat_site_title">Marketwatch</a>
+                          <ul>
+                              <li>
+                                  <a href="http://www.marketwatch.com/" class="hat_site_link">Marketwatch</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li class="hat_tab" id="hat_tab_bol">
+                          <a href="http://online.barrons.com/home" class="hat_site_title">Barron's</a>
+                          <ul>
+                              <li>
+                                  <a href="http://online.barrons.com/home" class="hat_site_link">Barron's</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li class="hat_tab" id="hat_tab_atd">
+                          <a href="http://allthingsd.com/" class="hat_site_title">All Things D</a>
+                          <ul>
+                              <li>
+                                  <a href="http://allthingsd.com/" class="hat_site_link">AllThingsD</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li class="hat_tab" id="hat_tab_fact">
+                          <a href="http://global.factiva.com/du/factiva.aspx" class="hat_site_title">Factiva</a>
+                          <ul>
+                              <li>
+                                  <a href="http://global.factiva.com/du/factiva.aspx" class="hat_site_link">Factiva</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li class="hat_tab" id="hat_tab_risk">
+                          <a href="https://djrc.portal.dowjones.com/" class="hat_site_title">Risk</a>
+                          <ul>
+                              <li>
+                                  <a href="https://djrc.portal.dowjones.com/" class="hat_site_link">Risk</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <!-- <li id="hat_tab_dropdown" class="hat_tab_dropdown">
+                          <a href="#" class="moreTarget" id="partyhat_more_dropdown">More</a>
+                          <ul class="hat_dd_list">
+                              <li class="hat_dd_item"><a href="http://bigcharts.marketwatch.com">BigCharts</a></li>
+                              <li class="hat_dd_item"><a href="http://www.efinancialnews.com">Financial News</a></li>
+                              <li class="hat_dd_item"><a href="http://professor.wsj.com">Professor Journal</a></li>
+                              <li class="hat_dd_item"><a href="http://www.smartmoney.com">SmartMoney</a></li>
+                              <li class="hat_dd_item"><a href="http://wsjstudent.com">Student Journal</a></li>
+                              <li class="hat_dd_item"><a href="http://www.marketwatch.com/game">Virtual Stock Exchange</a></li>
+                              <li class="hat_dd_item"><a href="https://classifieds.wsj.com/search">WSJ Classifieds</a></li>
+                              <li class="hat_dd_item"><a href="http://classroom.wsj.com/">WSJ Classroom</a></li>
+                              <li class="hat_dd_item"><a href="http://www.wsjradio.com/">WSJ Radio</a></li>
+                              <li class="hat_dd_item"><a href="http://www.wsjwine.com/">WSJ Wine</a></li>
+                          </ul>
+                      </li>
+            -->
+                  </ul>
+                  <div class="hdrSearch" id="searchBlingBox">
+                      <div id="searchInputEle" class="hdrSearchC">
+                          <div>
+                              <form method="post" action="http://online.wsj.com/search/term.html" >
+                                  <input type="text" name="KEYWORDS" size="28" class="hdrSearchInput unUsed" onfocus="this.value='';"  value="News, Quotes, Companies, Videos" id="globalHeaderSearchInput" autocomplete="off" style="height:27px;">
+                                  <button type="button" class="hdrSearchBtn" onclick="form.submit()">Search</button>
+                              </form>
+                          </div>
+                      </div>
+                      <div id="globalHeaderAutoComplete" class="hdrSearchList hidden">
+                          <div class="autocompleteContent">
+                              <div>
+                                  <div class="acHeadline hidden"></div>
+                                  <div class="dropdownContainerClass">
+                                      <div class="suggestionblock hidden" templatetype="C1">
+                                          <ul role="listbox" class="">
+                                              <li role="menuitem" class="hdrSearchListName">headline</li>
+                                              <li role="menuitem" class="lineItem">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <span class="searchTerm">gold</span>man
+                                                  </a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                      <div class="suggestionblock hidden" templatetype="C3">
+                                          <ul role="listbox" class="hdrSearchListComp">
+                                              <li role="menuitem" class="hdrSearchListName">
+                                                  Companies
+                                              </li>
+                                              <li role="menuitem" class="lineItem">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <div class="searchListCompTicker">
+                                                          <span class="searchTerm">GOLD</span>
+                                                      </div>
+                                                      <div class="searchListCompName">
+                                                          Ran
+                                                          <span class="searchTerm">gold</span> Resources Ltd. ADS
+                                                      </div>
+                                                      <div class="searchListCompMarkets">
+                                                          U.S.
+                                                      </div>
+                                                  </a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                      <div class="suggestionblock hidden concrete" categoryindex="0">
+                                          <ul role="listbox" class="">
+                                              <li role="menuitem" class="hdrSearchListName hidden"></li>
+                                              <li role="menuitem" class="lineItem" categoryindex="0" categoryitemindex="0">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <span class="searchTerm">gold</span>man
+                                                  </a>
+                                              </li>
+                                              <li role="menuitem" class="lineItem" categoryindex="0" categoryitemindex="1">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <span class="searchTerm">gold</span>man
+                                                  </a>
+                                              </li>
+                                              <li role="menuitem" class="lineItem" categoryindex="0" categoryitemindex="2">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <span class="searchTerm">gold</span>man
+                                                  </a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                      <div class="suggestionblock hidden concrete" categoryindex="1">
+                                          <ul role="listbox" class="hdrSearchListComp">
+                                              <li role="menuitem" class="hdrSearchListName">COMPANIES &amp; QUOTES</li>
+                                              <li role="menuitem" class="lineItem" categoryindex="1" categoryitemindex="0">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <div class="searchListCompTicker">
+                                                          <span class="searchTerm">GOLD</span>
+                                                      </div>
+                                                      <div class="searchListCompName">
+                                                          Ran
+                                                          <span class="searchTerm">gold</span> Resources Ltd. ADS
+                                                      </div>
+                                                      <div class="searchListCompMarkets">
+                                                          U.S.
+                                                      </div>
+                                                  </a>
+                                              </li>
+                                              <li role="menuitem" class="lineItem" categoryindex="1" categoryitemindex="1">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <div class="searchListCompTicker">
+                                                          <span class="searchTerm">GOLD</span>
+                                                      </div>
+                                                      <div class="searchListCompName">
+                                                          Ran
+                                                          <span class="searchTerm">gold</span> Resources Ltd. ADS
+                                                      </div>
+                                                      <div class="searchListCompMarkets">
+                                                          U.S.
+                                                      </div>
+                                                  </a>
+                                              </li>
+                                              <li role="menuitem" class="lineItem" categoryindex="1" categoryitemindex="2">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <div class="searchListCompTicker">
+                                                          <span class="searchTerm">GOLD</span>
+                                                      </div>
+                                                      <div class="searchListCompName">
+                                                          Ran
+                                                          <span class="searchTerm">gold</span> Resources Ltd. ADS
+                                                      </div>
+                                                      <div class="searchListCompMarkets">
+                                                          U.S.
+                                                      </div>
+                                                  </a>
+                                              </li>
+                                              <li role="menuitem" class="lineItem" categoryindex="1" categoryitemindex="3">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <div class="searchListCompTicker">
+                                                          <span class="searchTerm">GOLD</span>
+                                                      </div>
+                                                      <div class="searchListCompName">
+                                                          Ran
+                                                          <span class="searchTerm">gold</span> Resources Ltd. ADS
+                                                      </div>
+                                                      <div class="searchListCompMarkets">
+                                                          U.S.
+                                                      </div>
+                                                  </a>
+                                              </li>
+                                              <li role="menuitem" class="lineItem" categoryindex="1" categoryitemindex="4">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <div class="searchListCompTicker">
+                                                          <span class="searchTerm">GOLD</span>
+                                                      </div>
+                                                      <div class="searchListCompName">
+                                                          Ran
+                                                          <span class="searchTerm">gold</span> Resources Ltd. ADS
+                                                      </div>
+                                                      <div class="searchListCompMarkets">
+                                                          U.S.
+                                                      </div>
+                                                  </a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                      <div class="suggestionblock hidden concrete" categoryindex="2">
+                                          <ul role="listbox" class="hdrSearchListComp hdrSearchListCompPrivate">
+                                              <li role="menuitem" class="hdrSearchListName">Private Companies</li>
+                                              <li role="menuitem" class="lineItem" categoryindex="2" categoryitemindex="0">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <span class="searchTerm">gold</span>man
+                                                  </a>
+                                              </li>
+                                              <li role="menuitem" class="lineItem" categoryindex="2" categoryitemindex="1">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <span class="searchTerm">gold</span>man
+                                                  </a>
+                                              </li>
+                                              <li role="menuitem" class="lineItem" categoryindex="2" categoryitemindex="2">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <span class="searchTerm">gold</span>man
+                                                  </a>
+                                              </li>
+                                              <li role="menuitem" class="lineItem" categoryindex="2" categoryitemindex="3">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <span class="searchTerm">gold</span>man
+                                                  </a>
+                                              </li>
+                                              <li role="menuitem" class="lineItem" categoryindex="2" categoryitemindex="4">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <span class="searchTerm">gold</span>man
+                                                  </a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                      <div class="suggestionblock hidden concrete" categoryindex="3">
+                                          <ul role="listbox" class="hdrSearchListTopicPpl">
+                                              <li role="menuitem" class="hdrSearchListName">Topics and People In The News</li>
+                                              <li role="menuitem" class="lineItem" categoryindex="3" categoryitemindex="0">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <span class="searchTerm">gold</span>man
+                                                  </a>
+                                              </li>
+                                              <li role="menuitem" class="lineItem" categoryindex="3" categoryitemindex="1">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <span class="searchTerm">gold</span>man
+                                                  </a>
+                                              </li>
+                                              <li role="menuitem" class="lineItem" categoryindex="3" categoryitemindex="2">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <span class="searchTerm">gold</span>man
+                                                  </a>
+                                              </li>
+                                              <li role="menuitem" class="lineItem" categoryindex="3" categoryitemindex="3">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <span class="searchTerm">gold</span>man
+                                                  </a>
+                                              </li>
+                                              <li role="menuitem" class="lineItem" categoryindex="3" categoryitemindex="4">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <span class="searchTerm">gold</span>man
+                                                  </a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                      <div class="suggestionblock hidden concrete" categoryindex="4">
+                                          <ul role="listbox" class="hdrSearchListRecent">
+                                              <li role="menuitem" class="hdrSearchListName">Recent Searches</li>
+                                              <li role="menuitem" class="lineItem" categoryindex="4" categoryitemindex="0">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <span class="searchTerm">gold</span>man
+                                                  </a>
+                                              </li>
+                                              <li role="menuitem" class="lineItem" categoryindex="4" categoryitemindex="1">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <span class="searchTerm">gold</span>man
+                                                  </a>
+                                              </li>
+                                              <li role="menuitem" class="lineItem" categoryindex="4" categoryitemindex="2">
+                                                  <a class="searchResult" href="javascript:void(0);">
+                                                      <span class="searchTerm">gold</span>man
+                                                  </a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="acFooter">
+                                      <ul role="listbox" class="hdrSearchListSearch">
+                                          <li role="menuitem" class="">
+                                              <a class="footer" href="#">View All Search Results »</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div id="SearchSponsorBox" class="sponsorBox"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
       </div>
+
+
+  </div><!--/mainHeaderContainer-->
+
+
+
+    <div id="container">
+
+      <div id="header">
+
+      <!--Editorial Disclaimer-->
+      <div class="edDis">WSJ SELECT is operated independently of The Wall Street Journal news department.</div
+      >
+      <!--/Editorial Disclaimer-->
+
+
+        <div id="headerContent">
+
+          <a href="index.html" id="logoLink">WSJ SELECT</a>
+
+          <div id="sharingHolder" class="cf">
+            <p>SHARE</p>
+            <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.wsjselect.com%2Ffashion-favorites.html" id="facebookLink" target="_blank">FACEBOOK</a>
+            <a href="https://twitter.com/intent/tweet?related=WSJSELECT,WSJ&hashtags=SELECT4U,WSJ&url=http://on.wsj.com/S6wiXd&text=I'm%20shopping%20%40WSJSELECT%20Shop%204%20me%20now!" id="twitterLink" target="_blank">TWITTER</a>
+          </div>
+
+          <div id="categorySelectHolder">
+            <select id="categorySelect" tabindex="1">
+                <option value="0">SELECT SHOPS CATEGORY</option>
+                                  <option value="1">EMERALD ISLE</option>
+            <option value="2">FASHION FAVORITES</option>
+            <option value="3">HOSPITALITY</option>
+            <option value="4">TECH &amp; GADGETS</option>
+            <option value="5">OFFICE &amp; BOOKS</option>
+            <option value="6">FITNESS</option>
+            <option value="7">MEN'S LUXURY</option>
+          </select>
+        </div>
+
+        <div id="shoppingBagLinkHolder">
+          <a href="#" class="lux-cart-frame" data-style="modal" data-checkout="https://secure.wsjselect.com/checkout.html">YOUR CART</a> <span class="lux-cart-label">&nbsp;</span>
+        </div>
+
+      </div><!--/headerContent-->
+
+      </div><!--/header-->
 
       <div id="mainContent">
 
+        <div id="sliderArea">
+
+          <div id="slides">
+            <!-- slide -->
+            <div class="slide slideDarkText" id="slideCat1">
+              <h2>FASHION FAVORITES</h2>
+              <p>Shop the perfect selection the must-have treading times for the season.  Fashionable suiting, stylish ready-to-wear, and  sensational seasonal separates; We've selected the most luxurious and fashionable items for the season.</p>
+            </div>
+          </div><!--/slides-->
+
+        </div><!--/sliderArea-->
+
+        <a href="http://www.wsj.com/holiday" id="sliderBadge" target="_blank">WSJ Holiday Subscription Offer</a>
+
         <div id="productGridArea" class="cf">
 
-          <div class="lux-product-frame" data-frame="grid" data-id="156" data-share="1"></div>
+          <div class='lux-product-frame' data-frame='grid' data-id='156' data-share='1'></div>
 
-        </div>
+
+        </div><!--/categoriesArea-->
+
+        <div id="faqLinkArea">
+          <a href="faq.html">FAQ</a>
+        </div><!-- /faqLinkArea  -->
+
+        <div id="bannerArea">
+          <a href="#" target="_blank"><img src="images/banner_728x90.jpg" border="0"/></a>
+        </div><!-- /bannerArea  -->
+
+      </br>
+
+
+      </div><!--/mainContent-->
+
+    </div><!--/container-->
+
+
+    <div id="footer">
+    <div id="footerWrapper" class="newFooterWrap">
+      <div class="newFooter">
+        <!--TOP BAR LINKS-->
+        <ul class="topLinks clearFix">
+          <li class="wsjLogo"><a href="http://online.wsj.com/?mod=WSJDE_footer">Wall Street Journal</a></li>
+          <li class="socialLogo"><a title="Facebook" href="http://www.facebook.com/wsj" class="facebook">Facebook</a></li>
+          <li class="socialLogo"><a title="Twitter" href="http://twitter.com/WSJ" class="twitter">Twitter</a></li>
+          <li class="socialLogo"><a title="LinkedIn" href="http://www.linkedin.com/today/online.wsj.com" class="linkedin">LinkedIn</a></li>
+          <li class="socialLogo"><a title="FourSquare" href="https://foursquare.com/wsj" class="foursquare">FourSquare</a></li>
+          <li class="socialLogo"><a title="Google+" href="https://plus.google.com/117720626238470886461/posts" class="gplus">Google+</a></li>
+          <li class="socialLogo"><a title="YouTube" href="http://www.youtube.com/user/WSJDigitalNetwork" class="youtube">YouTube</a></li>
+          <li class="socialLogo"><a title="Podcasts" href="http://online.wsj.com/public/page/podcast.html?mod=WSJ_footer" class="podcast">Podcasts</a></li>
+          <li class="socialLogo"><a title="RSS" href="http://online.wsj.com/public/page/rss_news_and_feeds.html?mod=WSJ_footer" class="rssfeed">RSS Feed</a></li>
+          <li class="socialLogo"><a title="AppStore" href="http://itunes.apple.com/us/app/the-wall-street-journal./id364387007?mt=8" class="appstore">AppStore</a></li>
+          <li class="login_sub">
+            <ul class="clearFix">
+              <li class="subscribe"><a href="https://buy.wsj.com/offers/html/offerN.html?trackCode=aap3ejh6" rel="nofollow">Subscribe</a></li>
+              <li class="login"><span>/</span><a href="https://id.wsj.com/auth/log-in" class="">Login</a></li> <!--- https://id.wsj.com/auth/log-in for scrim use: loginClass--->
+            </ul>
+          </li>
+          <li class="backToTop"><a href="#top">Back to Top<span class="rotate">«</span></a></li>
+        </ul>
+        <!--MIDDLE COLUMN LINKS-->
+        <ul class="contentLinks clearFix">
+          <li class="linksCol">
+            <h4>Customer Service</h4>
+            <ul>
+              <li><a href="http://help.wsj.com/customer-service/?mod=WSJ_footer">Customer Center</a></li>
+              <li><a href="https://customercenter.wsj.com/view/contactus.html?mod=WSJ_footer" rel="nofollow">Contact Us</a></li>
+              <li><a href="https://customercenter.wsj.com/view/ctdir/contactdirectory.html?mod=WSJ_footer" rel="nofollow">Contact Directory</a></li>
+              <li><a href="http://online.wsj.com/article/Corrections.html?mod=WSJ_footer" rel="nofollow">Corrections</a></li>
+            </ul>
+          </li>
+          <li class="linksCol">
+            <h4>Policy</h4>
+            <ul>
+              <li><a href="http://online.wsj.com/public/page/privacy-policy.html?mod=WSJ_footer" rel="nofollow">Privacy Policy</a></li>
+              <li><a href="http://online.wsj.com/public/page/data-policy.html?mod=WSJ_footer" rel="nofollow">Data Policy</a></li>
+              <li><a href="http://online.wsj.com/public/page/copyright_policy.html?mod=WSJ_footer" rel="nofollow">Copyright Policy</a></li>
+              <li><a href="http://online.wsj.com/public/page/subscriber_agreement.html?mod=WSJ_footer" rel="nofollow">Subscriber Agreement<br>&amp; Terms of Use</a></li>
+            </ul>
+          </li>
+          <li class="linksCol">
+            <h4>Ads</h4>
+            <ul>
+              <li><a href="http://online.wsj.com/public/page/privacy-policy.html?mod=WSJ_footer#ad_choices" rel="nofollow">Your Ad Choices</a></li>
+              <li><a href="http://www.wsjdigital.com/?mod=WSJ_footer" rel="nofollow">Advertise</a></li>
+              <li><a href="http://www.wsjlocal.com/?mod=WSJ_footer" rel="nofollow">Advertise Locally</a></li>
+              <li><a href="http://classifieds.wsj.com/?mod=WSJ_footer" rel="nofollow">Place a Classified Ad</a></li>
+            </ul>
+          </li>
+          <li class="linksCol">
+            <h4>Tools &amp; Features</h4>
+            <ul>
+              <li><a href="http://online.wsj.com/public/page/designtech-wsjModuleHome.html?mod=WSJ_footer">Apps</a></li>
+              <li><a href="http://online.wsj.com/email?mod=WSJ_footer" rel="nofollow">Newsletters</a></li>
+              <li><a href="http://online.wsj.com/ksemail?mod=WSJ_footer" rel="nofollow">Alerts</a></li>
+              <li><a href="http://online.wsj.com/public/page/news-interactive-features-trends.html?mod=WSJ_footer">Graphics</a></li>
+              <li><a href="http://online.wsj.com/page/columnists.html?mod=WSJ_footer">Columns</a></li>
+              <li><a href="http://topics.wsj.com/?mod=WSJ_footer">Topics</a></li>
+              <li><a href="http://online.wsj.com/public/page/guides.html?mod=WSJ_footer">Guides</a></li>
+            </ul>
+          </li>
+          <li class="linksCol">
+            <h4>More</h4>
+            <ul>
+              <li><a href="#" class="registerUserClass" rel="nofollow">Register for Free</a></li>
+              <li><a href="http://www.djreprints.com/?mod=WSJ_footer" rel="nofollow">Reprints</a></li>
+              <li><a href="http://wsj.iamplify.com">E-books</a></li><!-- online.wsj.com/public/page/2_1150.html -->
+              <li><a href="http://wsj.com/partner/?mod=WSJ_footer" rel="nofollow">Content Partnerships</a></li>
+              <li><a href="http://online.wsj.com/conferences?mod=WSJ_footer">Conferences</a></li>
+              <li><a href="https://www.wsjsafehouse.com/">SafeHouse</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!--FOOTNOTE LINKS-->
+        <ul class="footnoteLinks clearFix">
+          <li class=""><a href="http://www.dowjones.com/careers.asp?mod=WSJ_footer" rel="nofollow">Jobs at WSJ</a></li>
+          <li class="copyright">Copyright ©2012 <a href="">Dow Jones &amp; Company</a>, Inc. All Rights Reserved.</li>
+        </ul>
       </div>
+    <!-- end module newGlobalFooter2012 -->
     </div>
-  </body>
+  </div><!--/footer-->
+
+
+</body>
+
 </html>
