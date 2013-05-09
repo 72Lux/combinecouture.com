@@ -309,19 +309,19 @@ a {
   top:371px;
 }
 .single-product .product-info-wrapper .share-button {
-  width:auto;
-  height:24px;
-  margin-bottom:0px;
-  text-transform:Capitalize;
-  opacity:.4;
+  width: auto;
+  height: 24px;
+  margin-bottom: 0;
+  text-transform: Capitalize;
+  opacity: .4;
   filter: alpha(opacity=40);
   line-height:23px;
-  margin-left:0px;
+  margin-left: 0;
 }
 .share-input {
   width: 300px;
   height: 20px;
-  border:1px solid black;
+  border: 1px solid black;
 }
 /* joe note: this going away? */
 .share-overlay {
@@ -330,9 +330,12 @@ a {
 .single-product .social-buttons-wrapper {
   position: absolute;
   top: 380px;
-  right: 0px;
-
+  right: 0;
   height:20px;
+}
+
+.single-product .social-buttons-wrapper .social-button {
+  display: inline;
 }
 
 .single-product .more-from-brand-wrapper {
