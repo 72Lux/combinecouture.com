@@ -323,8 +323,8 @@ a {
   height: 20px;
   border: 1px solid black;
 }
-/* joe note: this going away? */
 .share-overlay {
+  display: none;
 }
 
 .single-product .social-buttons-wrapper {
