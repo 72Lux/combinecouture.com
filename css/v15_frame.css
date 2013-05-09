@@ -339,11 +339,6 @@ a {
   margin-left: 5px;
 }
 
-.single-product .social-buttons-wrapper .social-button iframe {
-  height: auto !important;
-  width: auto !important;
-}
-
 .single-product .more-from-brand-wrapper {
   width: 48%;
   float:left;
