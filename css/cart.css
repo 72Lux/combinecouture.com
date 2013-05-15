@@ -1,37 +1,40 @@
 body.modal-open {
   overflow: hidden;
 }
-/** Shopping cart trigger label styles */
+
+/** shopping cart trigger label styles **/
 .cart-popover-btn,
 .lux-cart-frame {
-  font-size:12px;
   float: left;
-  line-height:18px;
+
+  line-height: 18px;
+  font-size: 12px;
 }
 .cartlabel,
 .lux-cart-label {
-  float: left;
+  position: relative;
   width: auto;
+  padding: 0 5px;
+  margin: 0 0 0 7px;
+  float: left;
   background: #4ad1a6;
   color: #fff;
   font: 15px/18px 'NeutraDisplayBold',Georgia,Times New Roman,times,serif;
-  padding: 0 5px;
-  position: relative;
-  margin: 0 0 0 7px;
 }
 
-/** Shopping cart modal styles **/
+/** shopping cart modal styles **/
 .cart-modal {
   position: fixed;
-  padding:0 10px;
   top: 40%;
   left: 50%;
   z-index: 1050;
+  max-height: 650px;
   width: 854px;
-  max-height:650px;
+  padding: 0 10px;
+  margin: -250px 0 0 -445px;
   overflow-x:hidden;
   overflow-y:hidden;
-  margin: -250px 0 0 -445px;
+
   background-color: white;
   border: 5px solid #000;
   outline: none;
@@ -44,85 +47,84 @@ body.modal-open {
 }
 .popover .modal-header,
 .cart-modal .modal-header {
-  height:42px;
+  height: 42px;
 }
 .popover .modal-body,
 .cart-modal .modal-body {
   max-height: 500px;
-  overflow-x:hidden;
-  overflow-y:scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 .popover .modal-footer,
 .cart-modal .modal-footer {
-  height:68px;
+  height: 68px;
 }
 .modal-footer-buttons {
   padding: 5px 0;
 }
 .close-cart-modal {
-  width:15px;
-  height:15px;
-  text-indent: -9999px !important;
-  background:url(../images/close.png) no-repeat top center;
   position:absolute;
   top:10px;
   right:10px;
+  height:15px;
+  width:15px;
+  background:url(../images/close.png) no-repeat top center;
+  text-indent: -9999px !important;
 }
-/** Shopping cart popover styles */
+/** shopping cart popover styles **/
 .popover {
-  width:854px;
-  border:1px solid #000;
-  padding:0 20px;
-  background:#fff;
-  display:none;
-  position:absolute;
-  z-index:999;
+  position: absolute;
+  z-index: 999;
+  width: 854px;
+  padding: 0 20px;
+  display: none;
+  background: #fff;
+  border: 1px solid #000;
 }
 .cart {
-  width:854px;
+  width: 854px;
 }
 .popover-title {
-  padding-top:10px;
+  paddig-top: 10px;
 }
-.close_box{
-  float:left;
-  width:100%;
-}
-.close_box .close{
-  width:28px;
-  height:28px;
-  text-indent: -9999px !important;
-  background:url(../images/close.png) no-repeat right center;
-  font:8px/14px arial;
-  color:#9b9b9b;
-  position:absolute;
-  top:5px;
-  right:5px;
-}
-.heading{
+.close_box {
   float: left;
   width: 100%;
-  border-bottom: 3px solid #000;
+}
+.close_box .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 28px;
+  width: 28px;
+  background:url(../images/close.png) no-repeat right center;
+  color:#9b9b9b;
+  font:8px/14px arial;
+  text-indent: -9999px !important;
+}
+.heading {
+  width: 100%;
+  float: left;
   padding: 19px 0 3px 0;
+  border-bottom: 3px solid #000;
 }
-.heading ul{
-  /*float:left;*/
-  width:100%;
-  margin:0;
+.heading ul {
+  width: 100%;
+  margin: 0;
 }
-.heading ul li{
-  float:left;
+.heading ul li {
+  float: left;
   text-align:center;
   font:16px/16px "Helvetica Neue", Helvetica, sans-serif;
   color:#000;
   background:none;
   list-style-type:none;
 }
-.main_heading{
-  float:left;
-  width:100%;
-  background:#000;
-  margin-top:2px;
+.main_heading {
+  float: left;
+  width: 100%;
+  background: #000;
+  margin-top: 2px;
 }
 .main_heading .shipped_from{
   width:300px;
@@ -348,4 +350,206 @@ body.modal-open {
   height:140px;
   text-align:center;
   font-size:20px;
+}
+
+
+@media only screen and (max-width: 860px) {
+  .popover,
+  .cart-modal {
+    width: 475px;
+    margin-left: -250px;
+    padding: 0px;
+  }
+
+  .cart {
+    width: 475px;
+  }
+
+  .heading {
+    display: none;
+  }
+  .main_heading .shipped_from {
+    width: 365px;
+  }
+  .main_heading .customer_service {
+    width: 90px;
+  }
+
+  .popover .modal-header,
+  .cart-modal .modal-header {
+    height: 18px;
+  }
+  .close-cart-modal {
+    top: 2px;
+    right: 2px;
+  }
+
+  .items ul li {
+    float: none;
+    height: auto !important; /* may need to make 10px in case of empty cells */
+    width: auto !important;
+    margin: 5px 10px 5px 150px !important;
+    text-align: left;
+  }
+  .items ul li.item-image {
+    float: left;
+    margin-top: 0px !important;
+    margin-left: 12px !important;
+  }
+  .items ul li.item-brand {
+
+  }
+  .items ul li .item-name {
+
+  }
+  .items ul li .item-color {
+
+  }
+  .items ul li .item-size {
+
+  }
+  .items ul li .item-price {
+
+  }
+  .items ul li .item-qty {
+
+  }
+  .items ul li .item-subtotal {
+
+  }
+  .items ul li .remove_li {
+    margin: auto;
+  }
+}
+
+
+@media only screen and (max-width: 475px) {
+  .popover,
+  .cart-modal {
+    width: 320px;
+    margin-left: -165px;
+    padding: 0px;
+  }
+
+  .cart {
+    width: 320px;
+  }
+
+  .heading {
+    display: none;
+  }
+  .main_heading .shipped_from {
+    width: 215px;
+  }
+
+  .items ul li {
+    float: none;
+    height: auto !important; /* may need to make 10px in case of empty cells */
+    width: auto !important;
+    margin: 5px 10px 5px 150px !important;
+    text-align: left;
+  }
+
+  .popover .modal-footer,
+  .cart-modal .modal-footer {
+    height: 57px;
+  }
+  .popover .modal-footer .main_heading,
+  .cart-modal .modal-footer .main_heading {
+    text-align: center;
+  }
+  .main_heading .sub_total {
+    float: none;
+  }
+
+  ul.right-actions.modal-footer-buttons {
+    margin: 0px;
+    width: 100%;
+  }
+  .popover .row .right-actions,
+  .cart-modal .row .right-actions {
+    margin: 0px;
+    padding: 0px;
+  }
+  .popover .row .right-actions li,
+  .cart-modal .row .right-actions li {
+    width: 100%;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .popover .row .right-actions .continue-link,
+  .cart-modal .row .right-actions .continue-link {
+    display: none;
+  }
+  .popover .row .right-actions .checkout_link,
+  .cart-modal .row .right-actions .checkout_link {
+    float: left;
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .popover .row .left-actions,
+  .cart-modal .row .left-actions {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-height: 650px) {
+  .popover,
+  .cart-modal {
+    max-height: 470px;
+    margin-top: 10px;
+    top: 0px;
+  }
+  .popover .modal-body,
+  .cart-modal .modal-body {
+    max-height:322px;
+  }
+}
+
+
+@media only screen and (max-height: 478px) {
+  .popover,
+  .cart-modal {
+    max-height: 320px;
+    margin-top: 0px;
+    top: 0px;
+  }
+  .popover .modal-body,
+  .cart-modal .modal-body {
+    max-height: 200px;
+  }
+
+  .popover .row .left-actions,
+  .cart-modal .row .left-actions {
+    margin: 4px 0px;
+    padding: 0px;
+  }
+  .popover .row .right-actions,
+  .cart-modal .row .right-actions {
+    margin: 4px 0px;
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-height: 478px) and (max-width: 860px) {
+  .popover .modal-body,
+  .cart-modal .modal-body {
+    max-height: 224px;
+  }
+}
+
+@media only screen and (max-height: 478px) and (max-width:475px) {
+  .popover .modal-body,
+  .cart-modal .modal-body {
+    max-height: 235px;
+  }
+
+  .popover .row .right-actions,
+  .cart-modal .row .right-actions {
+    margin: 0px;
+    padding: 0px;
+  }
 }
