@@ -381,6 +381,11 @@ body.modal-open {
   .cart-modal .modal-header {
     height: 18px;
   }
+  .close_box .popover-close.close {
+    top: 2px;
+    right: 2px;
+    height: 15px;
+  }
   .close-cart-modal {
     top: 2px;
     right: 2px;
