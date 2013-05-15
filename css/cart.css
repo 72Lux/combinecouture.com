@@ -73,6 +73,8 @@ body.modal-open {
 }
 /** shopping cart popover styles **/
 .popover {
+  left: 50% !important;
+  margin-left: -450px;
   position: absolute;
   z-index: 999;
   width: 854px;
