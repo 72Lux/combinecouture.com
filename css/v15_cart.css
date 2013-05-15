@@ -450,6 +450,18 @@ body.modal-open {
     text-align: left;
   }
 
+  .popover .modal-footer,
+  .cart-modal .modal-footer {
+    height: 57px;
+  }
+  .popover .modal-footer .main_heading,
+  .cart-modal .modal-footer .main_heading {
+    text-align: center;
+  }
+  .main_heading .sub_total {
+    float: none;
+  }
+
   ul.right-actions.modal-footer-buttons {
     margin: 0px;
     width: 100%;
@@ -462,18 +474,13 @@ body.modal-open {
   .popover .row .right-actions li,
   .cart-modal .row .right-actions li {
     width: 100%;
-    height: 31px;
+    height: 0px;
     padding: 0px;
     margin: 0px;
   }
-  .popover .row .right-actions li,
-  .cart-modal .row .right-actions li {
-    width: 100%;
-  }
   .popover .row .right-actions .continue-link,
   .cart-modal .row .right-actions .continue-link {
-    float: left;
-    width: 100%;
+    display: none;
   }
   .popover .row .right-actions .checkout_link,
   .cart-modal .row .right-actions .checkout_link {
@@ -484,19 +491,7 @@ body.modal-open {
 
   .popover .row .left-actions,
   .cart-modal .row .left-actions {
-    float: left;
-    height: 33px;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-  }
-  .popover .row .left-actions li,
-  .cart-modal .row .left-actions li {
-    width: 100%;
-  }
-  .popover .row .left-actions li .clear_link,
-  .cart-modal .row .left-actions li .clear_link {
-    width: 100%;
+    display: none;
   }
 
 }
@@ -539,60 +534,22 @@ body.modal-open {
   }
 }
 
+@media only screen and (max-height: 478px) and (max-width: 860px) {
+  .popover .modal-body,
+  .cart-modal .modal-body {
+    max-height: 224px;
+  }
+}
+
 @media only screen and (max-height: 478px) and (max-width:475px) {
-  ul.right-actions.modal-footer-buttons {
-    margin: 0px;
-    width: 100%;
+  .popover .modal-body,
+  .cart-modal .modal-body {
+    max-height: 235px;
   }
-  .popover .row .left-actions,
-  .cart-modal .row .left-actions {
-    margin: 0px;
-    padding: 0px;
-  }
+
   .popover .row .right-actions,
   .cart-modal .row .right-actions {
     margin: 0px;
     padding: 0px;
   }
-  .popover .row .right-actions li,
-  .cart-modal .row .right-actions li {
-    width: 100%;
-    height: 23px;
-    padding: 0px;
-    margin: 0px;
-  }
-  .popover .row .right-actions .continue-link,
-  .cart-modal .row .right-actions .continue-link {
-    line-height:14px !important;
-    float: left;
-    width: 100%;
-  }
-  .popover .row .right-actions .checkout_link,
-  .cart-modal .row .right-actions .checkout_link {
-    float: left;
-    line-height:17px !important;
-    margin-left: 0px;
-    width: 100%;
-  }
-
-  .popover .row .left-actions,
-  .cart-modal .row .left-actions {
-    float: left;
-    height: 23px;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-  }
-  .popover .row .left-actions li,
-  .cart-modal .row .left-actions li {
-    margin-top:2px;
-    width: 100%;
-  }
-  .popover .row .left-actions li .clear_link,
-  .cart-modal .row .left-actions li .clear_link {
-    width: 100%;
-    font-size:12px;
-    line-height: 14px !important;
-  }
-
 }
