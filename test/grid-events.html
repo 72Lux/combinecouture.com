@@ -76,6 +76,13 @@
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
+    var _allFramesLoaded,
+      _triggerGridModal,
+      _addItemToCart,
+      _removeItemFromCart,
+      _updateItemInCart,
+      _emptyCart;
+
     $(document).ready(function() {
 
       function wipeOutputBlocks() {
@@ -101,12 +108,19 @@
         //});
         $title.text('allFramesLoaded event triggered!');
         $data.html(cartId);
+        _allFramesLoaded = {};
+        _allFramesLoaded.cartId = cartId;
       });
 
       shopevent.set_hook('triggerGridModal', 'test_event', function (cartId, partNumber, productName, shareURL) {
         wipeOutputBlocks();
         $title.text('triggerGridModal event triggered!');
         $data.html(cartId + "\n" + partNumber + "\n" + productName + "\n" + shareURL);
+        _triggerGridModal = {};
+        _triggerGridModal.cartId = cartId;
+        _triggerGridModal.partNumber = partNumber;
+        _triggerGridModal.productName = productName;
+        _triggerGridModal.shareUrl = shareUrl;
       });
 
       shopevent.set_hook('addItemToCart', 'test_event', function (cartId, product, productArray) {
@@ -115,6 +129,10 @@
         $data.html(cartId);
         $object.dump(product);
         $array.dump(productArray);
+        _addItemToCart = {};
+        _addItemToCart.cartId = cartId;
+        _addItemToCart.product = product;
+        _addItemToCart.productArray = productArray;
       });
 
       shopevent.set_hook('removeItemFromCart', 'test_event', function (cartId, product, productArray) {
@@ -123,6 +141,10 @@
         $data.html(cartId);
         $object.dump(product);
         $array.dump(productArray);
+        _removeItemFromCart = {};
+        _removeItemFromCart.cartId = cartId;
+        _removeItemFromCart.product = product;
+        _removeItemFromCart.productArray = productArray;
       });
 
       shopevent.set_hook('updateItemInCart', 'test_event', function (cartId, product, productArray) {
@@ -131,6 +153,10 @@
         $data.html(cartId);
         $object.dump(product);
         $array.dump(productArray);
+        _updateItemInCart = {};
+        _updateItemInCart.cartId = cartId;
+        _updateItemInCart.product = product;
+        _updateItemInCart.productArray = productArray;
       });
 
       shopevent.set_hook('emptyCart', 'test_event', function (cartId, productArray) {
@@ -138,6 +164,9 @@
         $title.text('emptyCart event triggered!');
         $data.html(cartId);
         $array.dump(productArray);
+        _emptyCart = {};
+        _emptyCart.cartId = cartId;
+        _emptyCart.productArray = productArray;
       });
 
     });
