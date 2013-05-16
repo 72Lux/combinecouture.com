@@ -179,20 +179,20 @@ a {
 
 
 
-
 .single-product .product-info-wrapper {
   width: 60%; /* 555px */
   margin: 0px;
   float: right;
   position: relative;
 }
-
+.single-product .product-info-wrapper > p {
+  margin-bottom: 0px;
+}
 .single-product .product-info-wrapper .see-reviews {
   width: 75px; /* find %? */
   height: 15px;
   position: absolute;
   right: 0px;
-}
 
 .single-product .product-info-wrapper .product-brand-name {
   margin-bottom: 5px;
