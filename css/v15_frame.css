@@ -414,8 +414,15 @@ a {
   height:320px;
   overflow:hidden;
 }
-.product-grid .product-image img.product-image-src {
-  width:228px;
+.product-grid .product-image .product-image-src {
+  width: 228px;
+  height: 320px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .product-grid .unavailable-text {
   display: none;
