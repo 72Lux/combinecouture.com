@@ -351,7 +351,9 @@ a {
 }
 .single-product .more-from-brand-label,
 .single-product .more-from-category-label {
-  font: 12px/12px "HelveticaNeue", sans-serif;
+  font: 14px/14px 'Futura', sans-serif;
+  text-transform: uppercase;
+  color: #9a9a9a;
   margin-bottom: 5px;
 }
 .single-product .more-from-brand-wrapper ul,
