@@ -1,5 +1,5 @@
 /* prevent body from scrolling when modal is up */
-body.modal-open {
+.modal-open {
   overflow:hidden;
 }
 
@@ -155,7 +155,7 @@ body.modal-open {
 .add-to-cart-button.adding-to-cart:hover {
   -webkit-transition: all 0.1s ease-out;  /* Safari 3.2+, Chrome */
      -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
-       -o-transition: all 0.1s ease-out;  /* Opera 10.5–12.00 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.5-12.00 */
           transition: all 0.1s ease-out;  /* Firefox 16+, Opera 12.50+ */
 
   color:#fff;
@@ -469,7 +469,7 @@ img.zoomImg {
 
   -webkit-transition: all 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
      -moz-transition: all 0.3s ease-out;  /* Firefox 4-15 */
-       -o-transition: all 0.3s ease-out;  /* Opera 10.50–12.00 */
+       -o-transition: all 0.3s ease-out;  /* Opera 10.50-12.00 */
           transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
 }
 .carousel-control.right {

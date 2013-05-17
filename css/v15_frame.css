@@ -158,7 +158,7 @@ a {
 
   -webkit-transition: all 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
      -moz-transition: all 0.3s ease-out;  /* Firefox 4-15 */
-       -o-transition: all 0.3s ease-out;  /* Opera 10.50–12.00 */
+       -o-transition: all 0.3s ease-out;  /* Opera 10.50-12.00 */
           transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
 }
 .single-product .product-image-wrapper .product-image-slideshow .carousel-control.right {
@@ -598,7 +598,7 @@ a {
 
   -webkit-transition: all 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
      -moz-transition: all 0.3s ease-out;  /* Firefox 4-15 */
-       -o-transition: all 0.3s ease-out;  /* Opera 10.50–12.00 */
+       -o-transition: all 0.3s ease-out;  /* Opera 10.50-12.00 */
           transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
 }
 .product-slideshow.carousel .carousel-control.right {
