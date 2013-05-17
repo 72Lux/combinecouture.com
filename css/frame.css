@@ -17,6 +17,7 @@ body.modal-open {
   display: none;
 }
 .single-product .product-image {
+  height: 460px;
   width:350px;
   position: relative;
   float: left;
@@ -28,6 +29,12 @@ body.modal-open {
   position: relative;
 }
 
+.single-product .product-detail-image-wrapper .product-detail-image,
+.single-product .product-detail-image-wrapper {
+  height: 460px;
+  width: 350px;
+  overflow: hidden;
+}
 .single-product .product-detail-image-src {
   max-width: 350px;
 }
@@ -224,10 +231,15 @@ body.modal-open {
 .product-grid .product .product-image {
   border:1px solid #333;
   height:320px;
+  width: 228px;
   overflow:hidden;
 }
+.product-grid .product .product-image span {
+  width: 228px;
+  height: 320px;
+}
 .product-grid .product .product-image img {
-  width:228px;
+  width: 228px;
 }
 .product-grid .unavailable-text {
   display: none;
