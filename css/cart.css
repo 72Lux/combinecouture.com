@@ -433,8 +433,8 @@ body.modal-open {
 @media only screen and (max-width: 475px) {
   .popover,
   .cart-modal {
-    width: 320px;
-    margin-left: -165px;
+    width: 310px;
+    margin-left: -160px;
     padding: 0px;
   }
 
@@ -549,9 +549,14 @@ body.modal-open {
 }
 
 @media only screen and (max-height: 478px) and (max-width:475px) {
+  .popover,
+  .cart-modal {
+    max-height: 390px;
+  }
+
   .popover .modal-body,
   .cart-modal .modal-body {
-    max-height: 235px;
+    max-height: 270px;
   }
 
   .popover .row .right-actions,
