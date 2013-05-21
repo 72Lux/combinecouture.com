@@ -7,55 +7,6 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
   <link href="http://combinecouture.com/css/frame.css" rel="stylesheet" type="text/css">
   <link href="/css/test_cart.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript">
-    /*
-     *  Made by Tomas van Rijsse - Pionect at Rotterdam, Netherlands
-     *
-     *  This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-     *  http://creativecommons.org/licenses/by/3.0/
-     *
-     *  The result will be equivalent to the PHP function print_r.
-     *  echo '<pre>' . print_r($data) . '</pre>';
-     *
-     *  USAGE:
-     *  var data = [{'id':1,'name':'hello'},'world'];
-     *  $('#element').dump(data);
-     */
-
-    (function($){
-        $.fn.dump = function(variable){
-            return this.each(function(){
-            if(typeof variable == 'object'){
-                var string = $.dump.objectToString(variable,0);
-                $(this).html(string);
-            } else {
-                $(this).html('<pre>'+variable.toString()+'</pre>');
-            }
-      });
-    }
-
-    $.dump = {
-      objectToString : function (variable,i){
-              var string = '';
-              if(typeof variable == 'object' && i < 3){ // 3 is to prevent endless recursion, set higher for more depth
-                  string += 'Object ( <ul style="list-style:none;">';
-                  var key;
-                  for(key in variable) {
-                      if (variable.hasOwnProperty(key)) {
-                        string += '<li>['+key+'] => ';
-                        string += $.dump.objectToString(variable[key],i+1);
-                        string += '</li>';
-                      }
-                  }
-                  string += '</ul> )';
-              } else {
-                  string = variable.toString();
-              }
-              return string;
-        }
-    }
-    })(jQuery)
-  </script>
 </head>
 <body>
   <a href="#" class="lux-cart-frame" data-style="modal" data-checkout="http://combinecouture.com/test/checkout.html">SHOPPING BAG</a> <span class="lux-cart-label">&nbsp;</span>
@@ -64,18 +15,9 @@
   <h2>Testing Events API with a Grid Frame</h2>
   <p>Page contains all the various Events API hooks for testing purposes.</p>
 
-  <h4 id="code-title"></h4>
-  <pre id="code-data"></pre>
-  <pre id="object-data"></pre>
-  <pre id="array-data"></pre>
-
   <div class='lux-product-frame' data-frame='grid' data-id='4' data-share='1'></div>
 
   <script type="text/javascript">
-    function getRandomInt (min, max) {
-      return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
     var _allFramesLoaded,
       _triggerGridModal,
       _addItemToCart,
@@ -85,37 +27,12 @@
 
     $(document).ready(function() {
 
-      function wipeOutputBlocks() {
-        $title.html('');
-        $data.html('');
-        $object.html('');
-        $array.html('');
-      }
-
-      var $title = $("#code-title");
-      var $data = $("#code-data");
-      var $object = $("#object-data");
-      var $array = $("#array-data");
-
       shopevent.set_hook('allFramesLoaded','cageify', function (cartId) {
-        wipeOutputBlocks();
-        //$('.blank-cell').each(function () {
-        //  var $img = $('<img>');
-        //  var _height = getRandomInt(100, 442);
-        //  var _width = getRandomInt(100, 230);
-        //  $img.attr('src', 'http://placekitten.com/' + _width + '/' + _height);
-        //  $(this).append($img);
-        //});
-        $title.text('allFramesLoaded event triggered!');
-        $data.html(cartId);
         _allFramesLoaded = {};
         _allFramesLoaded.cartId = cartId;
       });
 
       shopevent.set_hook('triggerGridModal', 'test_event', function (cartId, partNumber, productName, shareURL) {
-        wipeOutputBlocks();
-        $title.text('triggerGridModal event triggered!');
-        $data.html(cartId + "\n" + partNumber + "\n" + productName + "\n" + shareURL);
         _triggerGridModal = {};
         _triggerGridModal.cartId = cartId;
         _triggerGridModal.partNumber = partNumber;
@@ -124,11 +41,6 @@
       });
 
       shopevent.set_hook('addItemToCart', 'test_event', function (cartId, product, productArray) {
-        wipeOutputBlocks();
-        $title.text('addItemToCart event triggered!');
-        $data.html(cartId);
-        $object.dump(product);
-        $array.dump(productArray);
         _addItemToCart = {};
         _addItemToCart.cartId = cartId;
         _addItemToCart.product = product;
@@ -136,11 +48,6 @@
       });
 
       shopevent.set_hook('removeItemFromCart', 'test_event', function (cartId, product, productArray) {
-        wipeOutputBlocks();
-        $title.text('removeItemFromCart event triggered!');
-        $data.html(cartId);
-        $object.dump(product);
-        $array.dump(productArray);
         _removeItemFromCart = {};
         _removeItemFromCart.cartId = cartId;
         _removeItemFromCart.product = product;
@@ -148,11 +55,6 @@
       });
 
       shopevent.set_hook('updateItemInCart', 'test_event', function (cartId, product, productArray) {
-        wipeOutputBlocks();
-        $title.text('updateItemInCart event triggered!');
-        $data.html(cartId);
-        $object.dump(product);
-        $array.dump(productArray);
         _updateItemInCart = {};
         _updateItemInCart.cartId = cartId;
         _updateItemInCart.product = product;
@@ -160,10 +62,6 @@
       });
 
       shopevent.set_hook('emptyCart', 'test_event', function (cartId, productArray) {
-        wipeOutputBlocks();
-        $title.text('emptyCart event triggered!');
-        $data.html(cartId);
-        $array.dump(productArray);
         _emptyCart = {};
         _emptyCart.cartId = cartId;
         _emptyCart.productArray = productArray;
