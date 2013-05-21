@@ -358,8 +358,8 @@ body.modal-open {
 @media only screen and (max-width: 860px) {
   .popover,
   .cart-modal {
-    width: 475px;
-    margin-left: -250px;
+    width: 470px;
+    margin-left: -240px;
     padding: 0px;
   }
 
@@ -528,7 +528,10 @@ body.modal-open {
   .cart-modal .modal-body {
     max-height: 200px;
   }
-
+  .popover .modal-body li.item-price,
+  .cart-modal .modal-body li.item-price{
+    display: none;
+  }
   .popover .row .left-actions,
   .cart-modal .row .left-actions {
     margin: 4px 0px;
@@ -541,6 +544,28 @@ body.modal-open {
   }
 }
 
+@media only screen and (max-height:320px) {
+  .popover,
+  .cart-modal {
+    max-height:209px;
+  }
+
+  .popover .modal-body,
+  .cart-modal .modal-body {
+    max-height: 112px !important; /* no idea what is overriding this style */
+  }
+
+  .popover .row .left-actions button,
+  .cart-modal .row .left-actions button {
+    height: 29px;
+  }
+  .popover .row .right-actions button,
+  .cart-modal .row .right-actions button {
+    height: 29px;
+  }
+
+}
+
 @media only screen and (max-height: 478px) and (max-width: 860px) {
   .popover .modal-body,
   .cart-modal .modal-body {
@@ -548,7 +573,7 @@ body.modal-open {
   }
 }
 
-@media only screen and (max-height: 478px) and (max-width:475px) {
+@media only screen and (max-height: 478px) and (max-width:320px) {
   .popover,
   .cart-modal {
     max-height: 390px;
@@ -557,6 +582,15 @@ body.modal-open {
   .popover .modal-body,
   .cart-modal .modal-body {
     max-height: 270px;
+  }
+  .main_heading .shipped_from {
+    margin-left: 0px;
+    width: 220px;
+  }
+  .main_heading .customer_service {
+    width: 90px;
+    margin-right: 0px;
+    float: none;
   }
 
   .popover .row .right-actions,
