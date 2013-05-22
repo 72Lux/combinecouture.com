@@ -487,13 +487,75 @@ and (max-width : 320px) {
 
 /* tablets! (ipad) */
 @media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
+and (min-width : 768px)
+and (max-width : 1024px) {
+  /* shorten height */
+  .popover,
+  .cart-modal {
+    top: 10px;
+    margin-top: 0px;
+  }
+  /* cut buttons in half */
+  .modal-footer-buttons .checkout_link,
+  .modal-footer-buttons .continue_link,
+  .modal-footer-buttons .clear_link {
+    height: 29px;
+    line-height: 35px;
+  }
+}
+/* ipad landscape */
+@media only screen
+and (min-width: 769px)
+and (max-width: 1024px) {
+  /* don't need any! */
+}
+/* ipad portrait */
+@media only screen
+and (max-width: 768px) {
+  .popover,
+  .cart-modal {
+    width: 738px;
+    left: 0px;
+    top: 10px;
+    margin: 0px;
+  }
+  .cart {
+    width: 751px;
+  }
+
+  /* adjust shipped from and customer service */
+  .main_heading .shipped_from {
+    width: auto;
+  }
+  .main_heading .customer_service {
+    width: 90px;
+  }
+
+  /* adjust table/header elements */
+  .popover div.modal-header,
+  .cart-modal div.modal-header {
+    height: 65px;
+  }
+  div.modal-header ul li {
+    width: 11%;
+    height: 35px;
+  }
+  .items ul li {
+    width: 11%;
+  }
+
+  /* adjust weird widths */
+  .heading,
+  .main_heading,
+  .items {
+    width: 738px;
+  }
+  .popover .row .right-actions,
+  .cart-modal .row .right-actions {
+    margin-right: 13px;
+  }
 
 }
-
-
-
 
 
 
