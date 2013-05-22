@@ -478,10 +478,19 @@ and (max-width: 568px) {
 
 /* Smartphones (portrait) ----------- */
 @media only screen
-and (max-width : 320px) {
+and (max-width : 320px)
+and (max-height : 440px) {
   .popover .modal-body,
   .cart-modal .modal-body {
-    max-height: 285px !important; /* figure out how to make this larger for longer iphones! */
+    max-height: 285px !important;
+  }
+}
+@media only screen
+and (max-width : 320px)
+and (min-height : 441px) {
+  .popover .modal-body,
+  .cart-modal .modal-body {
+    max-height: 374px !important;
   }
 }
 
@@ -511,7 +520,8 @@ and (max-width: 1024px) {
 }
 /* ipad portrait */
 @media only screen
-and (max-width: 768px) {
+and (max-width: 768px)
+and (min-width: 569px){
   .popover,
   .cart-modal {
     width: 738px;
