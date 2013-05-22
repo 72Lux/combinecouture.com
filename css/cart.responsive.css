@@ -358,10 +358,20 @@ body.modal-open {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 568px) {
-  /* remove modal padding */
+  /* have that popover/cart fill up the screen! */
   .popover,
   .cart-modal {
+    width: 100%;
+    margin: 0px;
     padding: 0px;
+    top: 0px;
+    left: 0px;
+    display: none;
+    border: none;
+    height: 100%;
+  }
+  .cart {
+    width: 100%;
   }
 
   /* hide table headers and tighten */
@@ -447,7 +457,7 @@ and (max-device-width : 568px) {
 
   /* modify shipped from width */
   .main_heading .shipped_from {
-    width: 220px;
+    width: auto;
   }
   /* modify customer service width */
   .main_heading .customer_service {
@@ -459,34 +469,19 @@ and (max-device-width : 568px) {
 /* Smartphones (landscape) ----------- */
 @media only screen
 and (min-width : 321px) {
-  /* center everything */
-  .popover,
-  .cart-modal {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    max-height:272px;
-    top: 0px;
-    left: 0px;
-    display:none;
-    border: none;
-    height: 100%;
-  }
-  .cart {
-    width: 100%;
-  }
   .popover .modal-body,
   .cart-modal .modal-body {
     max-height: 137px !important;
   }
-
-
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen
 and (max-width : 320px) {
-  /* center it appropriately */
+  .popover .modal-body,
+  .cart-modal .modal-body {
+    max-height: 285px !important;
+  }
 }
 
 
