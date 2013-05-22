@@ -504,6 +504,7 @@ a {
 }
 
 .last-product-in-modal {
+  display: none;
   z-index:10;
   width:15px;
   height:15px;
