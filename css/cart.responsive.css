@@ -480,7 +480,7 @@ and (min-width : 321px) {
 and (max-width : 320px) {
   .popover .modal-body,
   .cart-modal .modal-body {
-    max-height: 285px !important;
+    max-height: 285px !important; /* figure out how to make this larger for longer iphones! */
   }
 }
 
