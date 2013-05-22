@@ -506,12 +506,14 @@ a {
 .last-product-in-modal {
   display: none;
   z-index:10;
-  width:15px;
-  height:15px;
-  text-indent: -9999px !important;
-  position:absolute;
-  top:10px;
-  left:10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  font-family: helvetica;
+  color: #af0000;
+  font-weight: 100;
+  padding: 5px 10px;
 }
 
 .modal-backdrop {
