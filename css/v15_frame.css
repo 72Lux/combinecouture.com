@@ -497,10 +497,10 @@ a {
   width:25px;
   height:25px;
   text-indent: -9999px !important;
-  background:url(../images/close2.png) no-repeat top center;
+  background:url(../images/close2.png) no-repeat center center;
   position:absolute;
-  top:10px;
-  right:10px;
+  top:5px;
+  right:5px;
 }
 
 /*.last-product-in-modal {
@@ -520,12 +520,18 @@ a {
   z-index:10;
   width:25px;
   height:25px;
-  background:url(../images/back.png) no-repeat top center;
+  background:url(../images/back.png) no-repeat center center;
   position:absolute;
-  top:10px;
-  left:10px;
+  top:5px;
+  left:5px;
 }
 
+.close-product-modal:hover {
+  background: url(../images/close2.png) no-repeat center center #EEE;
+}
+.last-product-in-modal:hover {
+  background: url(../images/back.png) no-repeat center center #EEE;
+}
 
 .modal-backdrop {
   position: fixed;
