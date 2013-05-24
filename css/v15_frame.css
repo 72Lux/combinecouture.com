@@ -497,13 +497,13 @@ a {
   width:15px;
   height:15px;
   text-indent: -9999px !important;
-  background:url(../images/close.png) no-repeat top center;
+  background:url(../images/close2.png) no-repeat top center;
   position:absolute;
   top:10px;
   right:10px;
 }
 
-.last-product-in-modal {
+/*.last-product-in-modal {
   display: none;
   z-index:10;
   position: absolute;
@@ -514,7 +514,18 @@ a {
   color: #af0000;
   font-weight: 100;
   padding: 5px 10px;
+}*/
+
+.last-product-in-modal {
+  z-index:10;
+  width:15px;
+  height:15px;
+  background:url(../images/back.png) no-repeat top center;
+  position:absolute;
+  top:10px;
+  right:10px;
 }
+
 
 .modal-backdrop {
   position: fixed;
