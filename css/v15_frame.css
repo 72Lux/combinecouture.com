@@ -527,11 +527,14 @@ a {
   left:5px;
 }
 
-.close-product-modal:hover {
+.close-product-modal:hover, .close-product-modal:focus {
   background: url(../images/close2.png) no-repeat center center #EEE;
 }
-.last-product-in-modal:hover {
+.last-product-in-modal:hover, .last-product-in-modal:focus {
   background: url(../images/back.png) no-repeat center center #EEE;
+}
+.last-product-in-modal:active {
+  background: url(../images/back.png) no-repeat center center #CCC;
 }
 
 .modal-backdrop {
