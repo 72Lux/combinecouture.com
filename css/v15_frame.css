@@ -494,8 +494,8 @@ a {
 }
 .close-product-modal {
   z-index:10;
-  width:15px;
-  height:15px;
+  width:25px;
+  height:25px;
   text-indent: -9999px !important;
   background:url(../images/close2.png) no-repeat top center;
   position:absolute;
@@ -518,12 +518,12 @@ a {
 
 .last-product-in-modal {
   z-index:10;
-  width:15px;
-  height:15px;
+  width:25px;
+  height:25px;
   background:url(../images/back.png) no-repeat top center;
   position:absolute;
   top:10px;
-  right:10px;
+  left:10px;
 }
 
 
