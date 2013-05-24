@@ -367,7 +367,7 @@ a {
   width:98px;
   float:left;
   overflow: hidden;
-  border: 1px solid #ccc;
+  border: 1px solid #EEE;
   margin: 0 5px;
 
   background-repeat: no-repeat;
@@ -376,6 +376,16 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.single-product .more-from-brand-wrapper ul li:hover, .single-product .more-from-brand-wrapper ul li:focus,
+.single-product .more-from-category-wrapper ul li:hover, .single-product .more-from-category-wrapper ul li:focus {
+  border-color: #CCC;
+}
+
+.single-product .more-from-brand-wrapper ul li:active,
+.single-product .more-from-category-wrapper ul li:active {
+  border-color: #999;
 }
 
 .single-product .poweredBy {
