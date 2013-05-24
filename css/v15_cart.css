@@ -63,13 +63,20 @@ body.modal-open {
   padding: 5px 0;
 }
 .close-cart-modal {
-  position:absolute;
-  top:10px;
-  right:10px;
-  height:15px;
-  width:15px;
-  background:url(../images/close.png) no-repeat top center;
+  z-index:10;
+  width:25px;
+  height:25px;
   text-indent: -9999px !important;
+  background:url(../images/close2.png) no-repeat center center;
+  position:absolute;
+  top:5px;
+  right:5px;
+}
+.close-cart-modal:hover, .close-cart-modal:focus {
+  background: url(../images/close2.png) no-repeat center center #EEE;
+}
+.close-cart-modal:active {
+  background: url(../images/close2.png) no-repeat center center #CCC;
 }
 /** shopping cart popover styles **/
 .popover {
