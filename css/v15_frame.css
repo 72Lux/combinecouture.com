@@ -517,6 +517,7 @@ a {
 }*/
 
 .last-product-in-modal {
+  display: none;
   z-index:10;
   width:25px;
   height:25px;
