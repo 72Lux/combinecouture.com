@@ -354,29 +354,30 @@ body.modal-open {
   font-size:20px;
 }
 
-
-@media only screen and (max-width: 860px) {
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  /* have that popover/cart fill up the screen! */
   .popover,
   .cart-modal {
-    width: 470px;
-    margin-left: -240px;
+    width: 100%;
+    margin: 0px;
     padding: 0px;
-  }
-
-  .cart {
-    width: 475px;
-  }
-
-  .heading {
+    top: 0px;
+    left: 0px;
     display: none;
+    border: none;
+    height: 100%;
   }
-  .main_heading .shipped_from {
-    width: 365px;
-  }
-  .main_heading .customer_service {
-    width: 90px;
+  .cart {
+    width: 100%;
   }
 
+  /* hide table headers and tighten */
+  .heading {
+    display: none !important;
+  }
   .popover .modal-header,
   .cart-modal .modal-header {
     height: 18px;
@@ -391,237 +392,177 @@ body.modal-open {
     right: 2px;
   }
 
+  /* change .items ul li to be stacked */
   .items ul li {
     float: none;
-    height: auto !important; /* may need to make 10px in case of empty cells */
-    width: auto !important;
-    margin: 5px 10px 5px 150px !important;
+    height: auto;
+    width: auto;
+    margin: 5px 10px 5px 150px; /* make the margin-left width of image */
     text-align: left;
   }
+
+  /* hide price */
+  .popover .modal-body li.item-price,
+  .cart-modal .modal-body li.item-price{
+    display: none;
+  }
+
+  /* move the image to the left */
   .items ul li.item-image {
     float: left;
     margin-top: 0px !important;
     margin-left: 12px !important;
   }
-  .items ul li.item-brand {
 
-  }
-  .items ul li .item-name {
-
-  }
-  .items ul li .item-color {
-
-  }
-  .items ul li .item-size {
-
-  }
-  .items ul li .item-price {
-
-  }
-  .items ul li .item-qty {
-
-  }
-  .items ul li .item-subtotal {
-
-  }
-  .items ul li .remove_li {
-    margin: auto;
-  }
-}
-
-
-@media only screen and (max-width: 475px) {
-  .popover,
-  .cart-modal {
-    width: 310px;
-    margin-left: -160px;
-    padding: 0px;
-  }
-
-  .cart {
-    width: 320px;
-  }
-
-  .heading {
-    display: none;
-  }
-  .main_heading .shipped_from {
-    width: 215px;
-  }
-
-  .items ul li {
-    float: none;
-    height: auto !important; /* may need to make 10px in case of empty cells */
-    width: auto !important;
-    margin: 5px 10px 5px 150px !important;
-    text-align: left;
-  }
-
-  .popover .modal-footer,
-  .cart-modal .modal-footer {
-    height: 57px;
-  }
-  .popover .modal-footer .main_heading,
-  .cart-modal .modal-footer .main_heading {
-    text-align: center;
-  }
+  /* center subtotal */
   .main_heading .sub_total {
     float: none;
   }
+  .main_heading {
+    text-align: center;
+  }
 
-  ul.right-actions.modal-footer-buttons {
-    margin: 0px;
-    width: 100%;
+  /* remove clear and continue */
+  .popover .row .right-actions .continue-link,
+  .cart-modal .row .right-actions .continue-link {
+    display: none;
+  }
+  .popover .row .left-actions,
+  .cart-modal .row .left-actions {
+    display: none;
   }
   .popover .row .right-actions,
   .cart-modal .row .right-actions {
     margin: 0px;
     padding: 0px;
+    width: 100%;
   }
   .popover .row .right-actions li,
   .cart-modal .row .right-actions li {
     width: 100%;
     height: 0px;
-    padding: 0px;
-    margin: 0px;
   }
-  .popover .row .right-actions .continue-link,
-  .cart-modal .row .right-actions .continue-link {
-    display: none;
-  }
+  /* center and 100% the checkout */
   .popover .row .right-actions .checkout_link,
   .cart-modal .row .right-actions .checkout_link {
     float: left;
     margin-left: 0px;
     width: 100%;
   }
-
-  .popover .row .left-actions,
-  .cart-modal .row .left-actions {
-    display: none;
-  }
-
-}
-
-@media only screen and (max-height: 650px) {
-  .popover,
-  .cart-modal {
-    max-height: 470px;
-    margin-top: 10px;
-    top: 0px;
-  }
-  .popover .modal-body,
-  .cart-modal .modal-body {
-    max-height:322px;
-  }
-}
-
-
-@media only screen and (max-height: 478px) {
-  .popover,
-  .cart-modal {
-    max-height: 320px;
-    margin-top: 0px;
-    top: 0px;
-  }
-  .popover .modal-body,
-  .cart-modal .modal-body {
-    max-height: 200px;
-  }
-  .popover .modal-body li.item-price,
-  .cart-modal .modal-body li.item-price{
-    display: none;
-  }
-  .popover .row .left-actions,
-  .cart-modal .row .left-actions {
-    margin: 4px 0px;
-    padding: 0px;
-  }
-  .popover .row .right-actions,
-  .cart-modal .row .right-actions {
-    margin: 4px 0px;
-    padding: 0px;
-  }
-}
-
-/* iphone landscape */
-@media only screen and (max-height:320px) and (max-width:568px) {
-  .popover,
-  .cart-modal {
-    max-height:272px;
-    display:none;
-  }
-
-  .popover .modal-body,
-  .cart-modal .modal-body {
-    max-height: 127px !important;
-  }
-
+  /* tighten footer */
   .popover .modal-footer,
   .cart-modal .modal-footer {
-    height: 53px;
+    height: auto;
   }
 
-  .popover .row .left-actions,
-  .cart-modal .row .left-actions {
-    display:none;
+  /* modify shipped from width */
+  .main_heading .shipped_from {
+    width: auto;
   }
-  .popover .row .right-actions,
-  .cart-modal .row .right-actions {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-  }
-  .popover .row .right-actions li,
-  .cart-modal .row .right-actions li {
-    width: 100%;
-    height: 0px;
-  }
-
-  .popover .row .right-actions .continue-link,
-  .cart-modal .row .right-actions .continue-link {
-    display: none;
-  }
-  .popover .row .right-actions .checkout_link,
-  .cart-modal .row .right-actions .checkout_link {
-    margin-left: 0px;
-    float: left;
-    width: 100%;
+  /* modify customer service width */
+  .main_heading .customer_service {
+    width: 90px;
   }
 
 }
 
-@media only screen and (max-height: 478px) and (max-width: 860px) {
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px)
+and (max-width: 568px) {
   .popover .modal-body,
   .cart-modal .modal-body {
-    max-height: 224px;
+    max-height: 137px !important;
   }
 }
 
-/* iphone portrait */
-@media only screen and (max-height: 478px) and (max-width:320px) {
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px)
+and (max-height : 440px) {
+  .popover .modal-body,
+  .cart-modal .modal-body {
+    max-height: 285px !important;
+  }
+}
+@media only screen
+and (max-width : 320px)
+and (min-height : 441px) {
+  .popover .modal-body,
+  .cart-modal .modal-body {
+    max-height: 374px !important;
+  }
+}
+
+/* tablets! (ipad) */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+  /* shorten height */
   .popover,
   .cart-modal {
-    max-height: 390px;
+    top: 10px;
+    margin-top: 0px;
+  }
+  /* cut buttons in half */
+  .modal-footer-buttons .checkout_link,
+  .modal-footer-buttons .continue_link,
+  .modal-footer-buttons .clear_link {
+    height: 29px;
+    line-height: 35px;
+  }
+}
+/* ipad landscape */
+@media only screen
+and (min-width: 769px)
+and (max-width: 1024px) {
+  /* don't need any! */
+}
+/* ipad portrait */
+@media only screen
+and (max-width: 768px)
+and (min-width: 569px){
+  .popover,
+  .cart-modal {
+    width: 738px;
+    left: 0px;
+    top: 10px;
+    margin: 0px;
+  }
+  .cart {
+    width: 751px;
   }
 
-  .popover .modal-body,
-  .cart-modal .modal-body {
-    max-height: 270px;
-  }
+  /* adjust shipped from and customer service */
   .main_heading .shipped_from {
-    margin-left: 0px;
-    width: 220px;
+    width: auto;
   }
   .main_heading .customer_service {
     width: 90px;
-    margin-right: 0px;
-    float: none;
   }
 
+  /* adjust table/header elements */
+  .popover div.modal-header,
+  .cart-modal div.modal-header {
+    height: 65px;
+  }
+  div.modal-header ul li {
+    width: 11%;
+    height: 35px;
+  }
+  .items ul li {
+    width: 11%;
+  }
+
+  /* adjust weird widths */
+  .heading,
+  .main_heading,
+  .items {
+    width: 738px;
+  }
   .popover .row .right-actions,
   .cart-modal .row .right-actions {
-    margin: 0px;
-    padding: 0px;
+    margin-right: 13px;
   }
+
 }
