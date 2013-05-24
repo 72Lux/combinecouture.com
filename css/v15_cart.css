@@ -80,8 +80,6 @@ body.modal-open {
 }
 /** shopping cart popover styles **/
 .popover {
-  left: 50% !important;
-  margin-left: -450px;
   position: absolute;
   z-index: 999;
   width: 854px;
@@ -361,215 +359,204 @@ body.modal-open {
   font-size:20px;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px) {
-  /* have that popover/cart fill up the screen! */
+
+@media only screen and (max-width: 860px) {
   .popover,
   .cart-modal {
-    width: 100%;
-    margin: 0px;
+    width: 475px;
+    margin-left: -250px;
     padding: 0px;
-    top: 0px;
-    left: 0px;
-    display: none;
-    border: none;
-    height: 100%;
-  }
-  .cart {
-    width: 100%;
   }
 
-  /* hide table headers and tighten */
-  .heading {
-    display: none !important;
+  .cart {
+    width: 475px;
   }
+
+  .heading {
+    display: none;
+  }
+  .main_heading .shipped_from {
+    width: 365px;
+  }
+  .main_heading .customer_service {
+    width: 90px;
+  }
+
   .popover .modal-header,
   .cart-modal .modal-header {
     height: 18px;
-  }
-  .close_box .popover-close.close {
-    top: 2px;
-    right: 2px;
-    height: 15px;
   }
   .close-cart-modal {
     top: 2px;
     right: 2px;
   }
 
-  /* change .items ul li to be stacked */
   .items ul li {
     float: none;
-    height: auto;
-    width: auto;
-    margin: 5px 10px 5px 150px; /* make the margin-left width of image */
+    height: auto !important; /* may need to make 10px in case of empty cells */
+    width: auto !important;
+    margin: 5px 10px 5px 150px !important;
     text-align: left;
   }
-
-  /* hide price */
-  .popover .modal-body li.item-price,
-  .cart-modal .modal-body li.item-price{
-    display: none;
-  }
-
-  /* move the image to the left */
   .items ul li.item-image {
     float: left;
     margin-top: 0px !important;
     margin-left: 12px !important;
   }
+  .items ul li.item-brand {
 
-  /* center subtotal */
+  }
+  .items ul li .item-name {
+
+  }
+  .items ul li .item-color {
+
+  }
+  .items ul li .item-size {
+
+  }
+  .items ul li .item-price {
+
+  }
+  .items ul li .item-qty {
+
+  }
+  .items ul li .item-subtotal {
+
+  }
+  .items ul li .remove_li {
+    margin: auto;
+  }
+}
+
+
+@media only screen and (max-width: 475px) {
+  .popover,
+  .cart-modal {
+    width: 320px;
+    margin-left: -165px;
+    padding: 0px;
+  }
+
+  .cart {
+    width: 320px;
+  }
+
+  .heading {
+    display: none;
+  }
+  .main_heading .shipped_from {
+    width: 215px;
+  }
+
+  .items ul li {
+    float: none;
+    height: auto !important; /* may need to make 10px in case of empty cells */
+    width: auto !important;
+    margin: 5px 10px 5px 150px !important;
+    text-align: left;
+  }
+
+  .popover .modal-footer,
+  .cart-modal .modal-footer {
+    height: 57px;
+  }
+  .popover .modal-footer .main_heading,
+  .cart-modal .modal-footer .main_heading {
+    text-align: center;
+  }
   .main_heading .sub_total {
     float: none;
   }
-  .main_heading {
-    text-align: center;
-  }
 
-  /* remove clear and continue */
-  .popover .row .right-actions .continue-link,
-  .cart-modal .row .right-actions .continue-link {
-    display: none;
-  }
-  .popover .row .left-actions,
-  .cart-modal .row .left-actions {
-    display: none;
+  ul.right-actions.modal-footer-buttons {
+    margin: 0px;
+    width: 100%;
   }
   .popover .row .right-actions,
   .cart-modal .row .right-actions {
     margin: 0px;
     padding: 0px;
-    width: 100%;
   }
   .popover .row .right-actions li,
   .cart-modal .row .right-actions li {
     width: 100%;
     height: 0px;
+    padding: 0px;
+    margin: 0px;
   }
-  /* center and 100% the checkout */
+  .popover .row .right-actions .continue-link,
+  .cart-modal .row .right-actions .continue-link {
+    display: none;
+  }
   .popover .row .right-actions .checkout_link,
   .cart-modal .row .right-actions .checkout_link {
     float: left;
     margin-left: 0px;
     width: 100%;
   }
-  /* tighten footer */
-  .popover .modal-footer,
-  .cart-modal .modal-footer {
-    height: auto;
-  }
 
-  /* modify shipped from width */
-  .main_heading .shipped_from {
-    width: auto;
-  }
-  /* modify customer service width */
-  .main_heading .customer_service {
-    width: 90px;
+  .popover .row .left-actions,
+  .cart-modal .row .left-actions {
+    display: none;
   }
 
 }
 
-/* Smartphones (landscape) ----------- */
-@media only screen
-and (min-width : 321px)
-and (max-width: 568px) {
-  .popover .modal-body,
-  .cart-modal .modal-body {
-    max-height: 137px !important;
-  }
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen
-and (max-width : 320px)
-and (max-height : 440px) {
-  .popover .modal-body,
-  .cart-modal .modal-body {
-    max-height: 285px !important;
-  }
-}
-@media only screen
-and (max-width : 320px)
-and (min-height : 441px) {
-  .popover .modal-body,
-  .cart-modal .modal-body {
-    max-height: 374px !important;
-  }
-}
-
-/* tablets! (ipad) */
-@media only screen
-and (min-width : 768px)
-and (max-width : 1024px) {
-  /* shorten height */
+@media only screen and (max-height: 650px) {
   .popover,
   .cart-modal {
-    top: 10px;
+    max-height: 470px;
+    margin-top: 10px;
+    top: 0px;
+  }
+  .popover .modal-body,
+  .cart-modal .modal-body {
+    max-height:322px;
+  }
+}
+
+
+@media only screen and (max-height: 478px) {
+  .popover,
+  .cart-modal {
+    max-height: 320px;
     margin-top: 0px;
+    top: 0px;
   }
-  /* cut buttons in half */
-  .modal-footer-buttons .checkout_link,
-  .modal-footer-buttons .continue_link,
-  .modal-footer-buttons .clear_link {
-    height: 29px;
-    line-height: 35px;
-  }
-}
-/* ipad landscape */
-@media only screen
-and (min-width: 769px)
-and (max-width: 1024px) {
-  /* don't need any! */
-}
-/* ipad portrait */
-@media only screen
-and (max-width: 768px)
-and (min-width: 569px){
-  .popover,
-  .cart-modal {
-    width: 738px;
-    left: 0px;
-    top: 10px;
-    margin: 0px;
-  }
-  .cart {
-    width: 751px;
+  .popover .modal-body,
+  .cart-modal .modal-body {
+    max-height: 200px;
   }
 
-  /* adjust shipped from and customer service */
-  .main_heading .shipped_from {
-    width: auto;
-  }
-  .main_heading .customer_service {
-    width: 90px;
-  }
-
-  /* adjust table/header elements */
-  .popover div.modal-header,
-  .cart-modal div.modal-header {
-    height: 65px;
-  }
-  div.modal-header ul li {
-    width: 11%;
-    height: 35px;
-  }
-  .items ul li {
-    width: 11%;
-  }
-
-  /* adjust weird widths */
-  .heading,
-  .main_heading,
-  .items {
-    width: 738px;
+  .popover .row .left-actions,
+  .cart-modal .row .left-actions {
+    margin: 4px 0px;
+    padding: 0px;
   }
   .popover .row .right-actions,
   .cart-modal .row .right-actions {
-    margin-right: 13px;
+    margin: 4px 0px;
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-height: 478px) and (max-width: 860px) {
+  .popover .modal-body,
+  .cart-modal .modal-body {
+    max-height: 224px;
+  }
+}
+
+@media only screen and (max-height: 478px) and (max-width:475px) {
+  .popover .modal-body,
+  .cart-modal .modal-body {
+    max-height: 235px;
   }
 
+  .popover .row .right-actions,
+  .cart-modal .row .right-actions {
+    margin: 0px;
+    padding: 0px;
+  }
 }

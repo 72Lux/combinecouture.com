@@ -505,7 +505,7 @@ a {
 .close-product-modal:hover, .close-product-modal:focus {
   background: url(../images/close2.png) no-repeat center center #EEE;
 }
-.close-product--modal:active {
+.close-product-modal:active {
   background: url(../images/close2.png) no-repeat center center #CCC;
 }
 
