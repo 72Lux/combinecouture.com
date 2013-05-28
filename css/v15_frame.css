@@ -381,6 +381,7 @@ a {
 .single-product .more-from-brand-wrapper ul li:hover, .single-product .more-from-brand-wrapper ul li:focus,
 .single-product .more-from-category-wrapper ul li:hover, .single-product .more-from-category-wrapper ul li:focus {
   border-color: #CCC;
+  cursor: pointer;
 }
 
 .single-product .more-from-brand-wrapper ul li:active,
