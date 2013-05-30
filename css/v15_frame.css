@@ -513,55 +513,48 @@ a {
   position:absolute;
   top:0;
   right:0;
-  -webkit-transition: 0.25s;
+  opacity:.7;
+  filter: alpha(opacity=70);
+
+/*  -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
-
+*/
 }
 .close-product-modal:hover, .close-product-modal:focus {
-  background: url(../images/close2.png) no-repeat center center #EEE;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
-
+  opacity:1;
+  filter: alpha(opacity=100);
+  cursor: pointer;
 }
 .close-product-modal:active {
-  background: url(../images/close2.png) no-repeat center center #CCC;
+  opacity:.5;
+  filter: alpha(opacity=.5);
 }
-
-/*.last-product-in-modal {
-  display: none;
-  z-index:10;
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 18px;
-  font-family: helvetica;
-  color: #af0000;
-  font-weight: 100;
-  padding: 5px 10px;
-}*/
 
 .last-product-in-modal {
   position: absolute;
   top: 0;
   left: -9999px;
   z-index: 100;
+  opacity:0.7;
+  filter: alpha(opacity=70);
+
 }
 
 .last-product-in-modal.visible:hover, .last-product-in-modal.visible:focus {
-  background: #EEE;
-  -webkit-transition: 0.25s;
+  opacity:1;
+  filter: alpha(opacity=100);
+/*  -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
-  cursor: pointer;
+*/  cursor: pointer;
 }
 
 .last-product-in-modal.visible:active {
-  background: #CCC;
+  opacity:.5;
+  filter: alpha(opacity=.5);
 }
 .last-product-in-modal.visible {
   left: 0;
