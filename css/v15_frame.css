@@ -546,10 +546,9 @@ a {
 
 .last-product-in-modal {
   position: absolute;
-  top:0;
-  left:0;
-  height: 0;
-  z-index:10;
+  top: 0;
+  left: -9999px;
+  z-index: 100;
 }
 
 .last-product-in-modal.visible:hover, .last-product-in-modal.visible:focus {
@@ -558,29 +557,41 @@ a {
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
+  cursor: pointer;
 }
+
 .last-product-in-modal.visible:active {
   background: #CCC;
 }
 .last-product-in-modal.visible {
-  height: 30px;
+  left: 0;
+  height: 30px !important;
 }
 
-.last-product-in-modal-icon {
+.last-product-in-modal.visible .last-product-in-modal-icon {
   width:30px;
   height:30px;
-  background:url(../images/back.png) no-repeat center center;
+  float: left;
+  background-image:url(../images/back.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-color: transparent;
+}
+.last-product-in-modal:hover .last-product-in-modal-icon {
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
 }
 
-.last-product-in-modal-text {
+.last-product-in-modal.visible .last-product-in-modal-text {
   height: 30px;
   line-height: 30px;
+  padding-right: 10px;
   color: #b94a48;
   font-family: "HelveticaNeue", sans-serif;
+  font-size: 10px;
+  background: transparent;
 }
 
 .modal-backdrop {
