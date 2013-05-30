@@ -547,26 +547,29 @@ a {
 .last-product-in-modal {
   display: none;
   z-index:10;
+  top:0;
+  left:0;
+  position:absolute;
+}
+
+.last-product-in-modal-icon {
   width:30px;
   height:30px;
   background:url(../images/back.png) no-repeat center center;
-  position:absolute;
-  top:0;
-  left:0;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
 }
 .last-product-in-modal:hover, .last-product-in-modal:focus {
-  background: url(../images/back.png) no-repeat center center #EEE;
+  background: #EEE;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
 }
 .last-product-in-modal:active {
-  background: url(../images/back.png) no-repeat center center #CCC;
+  background: #CCC;
 }
 
 .last-product-in-modal.visible {
@@ -575,9 +578,6 @@ a {
 
 .last-product-in-modal-text {
   height: 30px;
-  position: absolute;
-  top: 0px;
-  left: 25px;
   line-height: 30px;
   display: none;
   color: #b94a48;
