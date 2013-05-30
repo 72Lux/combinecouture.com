@@ -705,7 +705,7 @@ a {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-width : 320px)
-and (max-width : 767px) {
+and (max-width : 622px) {
   .single-product {
     padding: 0px;
     width: 100%;
@@ -838,7 +838,7 @@ and (min-height : 441px) {
 }
 /* tablets! (ipad) */
 @media only screen
-and (min-width : 768px)
+and (min-width : 623px)
 and (max-width : 900px) {
   .single-product {
     width: 100%;
@@ -881,7 +881,11 @@ and (max-width : 900px) {
   .single-product .product-info-wrapper .colors,
   .single-product .product-info-wrapper .sizes {
     width: 50%;
-    text-align: center;
+  }
+
+  .single-product .product-info-wrapper .select-color,
+  .single-product .product-info-wrapper .select-size {
+    width: 80px;
   }
 
   .single-product .poweredBy-spacer {
