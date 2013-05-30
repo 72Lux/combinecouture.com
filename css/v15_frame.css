@@ -568,12 +568,7 @@ a {
 .last-product-in-modal:active {
   background: url(../images/back.png) no-repeat center center #CCC;
 }
-.last-product-in-modal.visible {
-  display: inline-block;
-  background: url(../images/back.png) no-repeat center center #FFF;
-}
 .last-product-in-modal.attention {
-  display: inline-block;
   background: url(../images/back.png) no-repeat center center #b94a48;
 }
 
@@ -585,26 +580,14 @@ a {
   display: none;
 }
 
-.last-product-in-modal-text.visible {
-  background: #FFF;
-  color: #CCC;
-  display: inline-block;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
-}
-
 .last-product-in-modal-text.attention {
   background: #b94a48;
   color: #FFF;
-  display: inline-block;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
 }
-
 
 .modal-backdrop {
   position: fixed;
