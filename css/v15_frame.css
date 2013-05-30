@@ -502,19 +502,30 @@ a {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
+
 }
 .close-product-modal {
   z-index:10;
-  width:25px;
-  height:25px;
+  width:30px;
+  height:30px;
   text-indent: -9999px !important;
   background:url(../images/close2.png) no-repeat center center;
   position:absolute;
   top:5px;
   right:5px;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+
 }
 .close-product-modal:hover, .close-product-modal:focus {
   background: url(../images/close2.png) no-repeat center center #EEE;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+
 }
 .close-product-modal:active {
   background: url(../images/close2.png) no-repeat center center #CCC;
@@ -536,19 +547,58 @@ a {
 .last-product-in-modal {
   display: none;
   z-index:10;
-  width:25px;
-  height:25px;
+  width:30px;
+  height:30px;
   background:url(../images/back.png) no-repeat center center;
   position:absolute;
   top:5px;
   left:5px;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
 .last-product-in-modal:hover, .last-product-in-modal:focus {
   background: url(../images/back.png) no-repeat center center #EEE;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
 .last-product-in-modal:active {
   background: url(../images/back.png) no-repeat center center #CCC;
 }
+
+.last-product-in-modal.attention {
+  background: url(../images/back.png) no-repeat center center #b94a48;
+}
+
+.last-product-in-modal-text {
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  padding: 3px 5px;
+}
+
+.last-product-in-modal-text.visible {
+  background: #FFF;
+  color: #CCC;
+  display: inline-block;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.last-product-in-modal-text.attention {
+  background: #b94a48;
+  color: #FFF;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
 
 .modal-backdrop {
   position: fixed;
