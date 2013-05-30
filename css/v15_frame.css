@@ -569,6 +569,10 @@ a {
   background: url(../images/back.png) no-repeat center center #CCC;
 }
 
+.last-product-in-modal.visible {
+  display: inline-block;
+}
+
 .last-product-in-modal-text {
   height: 30px;
   position: absolute;
@@ -578,6 +582,10 @@ a {
   display: none;
   color: #b94a48;
   font-family: "HelveticaNeue", sans-serif;
+}
+
+.last-product-in-modal-text.visible {
+  display: inline-block;
 }
 
 .modal-backdrop {
