@@ -633,11 +633,11 @@ a {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px) {
+and (min-width : 320px)
+and (max-width : 568px) {
   .single-product {
+    padding: 0px;
     width: 100%;
-    padding: 0;
     position: relative;
   }
 
@@ -646,9 +646,27 @@ and (max-device-width : 568px) {
     width: 100%;
   }
 
+  .single-product .product-image-wrapper .product-image-slideshow div.product-image-slide.first {
+    margin-left:5%;
+  }
   .single-product .product-image-wrapper .product-image-slideshow div.product-image-slide {
     width: 18%;
-    margin-right: 1%;
+    margin-right: 0px;
+    opacity:.5;
+    filter: alpha(opacity=50);
+    border: 0px;
+  }
+  .single-product .product-image-wrapper .product-image-slideshow div.product-image-slide.active {
+    opacity: 1;
+    filter:(alpha=100);
+    border: 0px;
+  }
+  .single-product .product-image-wrapper .product-image-slideshow div.product-image-slide.last {
+    margin-left: 0px;
+  }
+  .single-product .product-image-wrapper .product-image-slideshow .carousel-control {
+    width: 5%;
+    height: 50px;
   }
 
   .single-product .product-image-wrapper .product-image-slideshow::after {
@@ -665,6 +683,13 @@ and (max-device-width : 568px) {
   .single-product .product-info-wrapper .color-and-size-selects .sizes {
     float: right;
   }
+
+  .single-product .product-info-wrapper .colors,
+  .single-product .product-info-wrapper .sizes {
+    width: 50%;
+    text-align: center;
+  }
+
   .single-product .add-to-cart {
     clear:both;
     margin: auto;
@@ -677,7 +702,7 @@ and (max-device-width : 568px) {
     margin-bottom: 15px;
   }
   .single-product .social-buttons-wrapper {
-    width:307px;
+    width:225px;
     position: static;
     margin: auto;
   }
@@ -689,6 +714,15 @@ and (max-device-width : 568px) {
     margin: auto;
     margin-bottom: 20px;
   }
+  .single-product .more-from-brand-wrapper ul,
+  .single-product .more-from-category-wrapper ul {
+    width: 300px;
+  }
+  .single-product .more-from-brand-wrapper ul li,
+  .single-product .more-from-category-wrapper ul li {
+    margin: 0px;
+  }
+
   .single-product .poweredBy-spacer {
     display:none;
   }
