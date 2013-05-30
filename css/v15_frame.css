@@ -511,8 +511,8 @@ a {
   text-indent: -9999px !important;
   background:url(../images/close2.png) no-repeat center center;
   position:absolute;
-  top:5px;
-  right:5px;
+  top:0;
+  right:0;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
@@ -551,8 +551,8 @@ a {
   height:30px;
   background:url(../images/back.png) no-repeat center center;
   position:absolute;
-  top:5px;
-  left:5px;
+  top:0;
+  left:0;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
@@ -572,8 +572,9 @@ a {
 .last-product-in-modal-text {
   height: 30px;
   position: absolute;
-  top: 5px;
-  left: 35px;
+  top: 0px;
+  left: 30px;
+  padding: 0 2px;
   line-height: 30px;
   display: none;
   color: #b94a48;
