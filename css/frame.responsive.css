@@ -839,7 +839,7 @@ and (min-height : 441px) {
 /* tablets! (ipad) */
 @media only screen
 and (min-width : 768px)
-and (max-width : 1024px) {
+and (max-width : 900px) {
   .single-product {
     width: 100%;
     padding: 0px;
@@ -884,7 +884,9 @@ and (max-width : 1024px) {
     text-align: center;
   }
 
-
+  .single-product .poweredBy-spacer {
+    height: 44px;
+  }
 }
 /* ipad landscape */
 @media only screen
