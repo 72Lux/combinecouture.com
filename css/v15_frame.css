@@ -568,25 +568,16 @@ a {
 .last-product-in-modal:active {
   background: url(../images/back.png) no-repeat center center #CCC;
 }
-.last-product-in-modal.attention {
-  background: url(../images/back.png) no-repeat center center #b94a48;
-}
 
 .last-product-in-modal-text {
   height: 30px;
   position: absolute;
   top: 5px;
-  padding: 3px 5px;
+  left: 30px;
+  line-height: 30px;
   display: none;
-}
-
-.last-product-in-modal-text.attention {
-  background: #b94a48;
-  color: #FFF;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  color: #b94a48;
+  font-family: "HelveticaNeue", sans-serif;
 }
 
 .modal-backdrop {
