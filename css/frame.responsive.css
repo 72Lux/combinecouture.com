@@ -909,7 +909,8 @@ and (max-width : 622px) {
     padding: 0;
   }
 
-  .modal-header {
+  .linkFrameModal .modal-header,
+  .singleProductModal .modal-header {
     height: 20px;
     border-bottom: 1px solid #000;
   }
