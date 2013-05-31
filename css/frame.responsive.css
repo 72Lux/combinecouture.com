@@ -737,7 +737,7 @@ and (max-width : 622px) {
   }
   .single-product .product-image-wrapper .product-image-slideshow div.product-image-slide.active {
     opacity: 1;
-    filter:(alpha=100);
+    filter: alpha(opacity=100);
     border: 0px;
   }
   .single-product .product-image-wrapper .product-image-slideshow div.product-image-slide.last {
