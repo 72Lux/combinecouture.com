@@ -119,7 +119,8 @@ body.modal-open {
 }
 .heading ul {
   width: 100%;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
 }
 .heading ul li {
   float: left;
@@ -166,10 +167,11 @@ body.modal-open {
   width:100%;
 }
 .items ul{
-  float:left;
-  width:100%;
-  border-bottom:1px solid #000;
-  margin:0;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  margin: 0;
+  padding: 0px;
 }
 .items .bordnone{
   border-bottom:none;
@@ -376,8 +378,8 @@ body.modal-open {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px) {
+and (min-width : 320px)
+and (max-width : 568px) {
   /* have that popover/cart fill up the screen! */
   .popover,
   .cart-modal {
@@ -392,6 +394,7 @@ and (max-device-width : 568px) {
   }
   .cart {
     width: 100%;
+
   }
 
   /* hide table headers and tighten */
@@ -410,6 +413,8 @@ and (max-device-width : 568px) {
   .close-cart-modal {
     top: 2px;
     right: 2px;
+    height: 16px;
+    width: 16px;
   }
 
   /* change .items ul li to be stacked */
@@ -493,6 +498,7 @@ and (max-width: 568px) {
   .popover .modal-body,
   .cart-modal .modal-body {
     max-height: 137px !important;
+    overflow: scroll;
   }
 }
 
@@ -503,6 +509,7 @@ and (max-height : 440px) {
   .popover .modal-body,
   .cart-modal .modal-body {
     max-height: 285px !important;
+    overflow: scroll;
   }
 }
 @media only screen
@@ -524,6 +531,12 @@ and (max-width : 1024px) {
     top: 10px;
     margin-top: 0px;
   }
+  .close-cart-modal {
+    top: 2px;
+    right: 2px;
+    height: 16px;
+    width: 16px;
+  }
   /* cut buttons in half */
   .modal-footer-buttons .checkout_link,
   .modal-footer-buttons .continue_link,
@@ -536,21 +549,22 @@ and (max-width : 1024px) {
 @media only screen
 and (min-width: 769px)
 and (max-width: 1024px) {
-  /* don't need any! */
 }
 /* ipad portrait */
 @media only screen
-and (max-width: 768px)
+and (max-width: 875px)
 and (min-width: 569px){
   .popover,
   .cart-modal {
-    width: 738px;
+    width: 100%;
     left: 0px;
-    top: 10px;
     margin: 0px;
+    top: 0px;
+    border: 0px;
+    padding: 0px;
   }
   .cart {
-    width: 751px;
+    width: 100%;
   }
 
   /* adjust shipped from and customer service */
@@ -570,19 +584,29 @@ and (min-width: 569px){
     width: 11%;
     height: 35px;
   }
+  .items ul li.remove_li,
   .items ul li {
     width: 11%;
+  }
+  .items ul li img {
+    width: 100%;
   }
 
   /* adjust weird widths */
   .heading,
   .main_heading,
   .items {
-    width: 738px;
+    width: 100%;
+  }
+  .popover .row .left-actions,
+  .cart-modal .row .left-actions {
+    margin-top: 4px;
+    margin-left: 12px;
   }
   .popover .row .right-actions,
   .cart-modal .row .right-actions {
-    margin-right: 13px;
+    margin-right: 12px;
+    margin-top: 4px;
   }
 
 }
