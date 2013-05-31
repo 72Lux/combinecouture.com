@@ -376,8 +376,8 @@ body.modal-open {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px) {
+and (min-width : 320px)
+and (max-width : 568px) {
   /* have that popover/cart fill up the screen! */
   .popover,
   .cart-modal {
@@ -392,6 +392,7 @@ and (max-device-width : 568px) {
   }
   .cart {
     width: 100%;
+
   }
 
   /* hide table headers and tighten */
@@ -410,6 +411,8 @@ and (max-device-width : 568px) {
   .close-cart-modal {
     top: 2px;
     right: 2px;
+    height: 16px;
+    width: 16px;
   }
 
   /* change .items ul li to be stacked */
@@ -493,6 +496,7 @@ and (max-width: 568px) {
   .popover .modal-body,
   .cart-modal .modal-body {
     max-height: 137px !important;
+    overflow: scroll;
   }
 }
 
@@ -503,6 +507,7 @@ and (max-height : 440px) {
   .popover .modal-body,
   .cart-modal .modal-body {
     max-height: 285px !important;
+    overflow: scroll;
   }
 }
 @media only screen
