@@ -119,7 +119,8 @@ body.modal-open {
 }
 .heading ul {
   width: 100%;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
 }
 .heading ul li {
   float: left;
@@ -166,10 +167,11 @@ body.modal-open {
   width:100%;
 }
 .items ul{
-  float:left;
-  width:100%;
-  border-bottom:1px solid #000;
-  margin:0;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  margin: 0;
+  padding: 0px;
 }
 .items .bordnone{
   border-bottom:none;
