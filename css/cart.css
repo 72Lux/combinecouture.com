@@ -529,6 +529,12 @@ and (max-width : 1024px) {
     top: 10px;
     margin-top: 0px;
   }
+  .close-cart-modal {
+    top: 2px;
+    right: 2px;
+    height: 16px;
+    width: 16px;
+  }
   /* cut buttons in half */
   .modal-footer-buttons .checkout_link,
   .modal-footer-buttons .continue_link,
@@ -545,17 +551,19 @@ and (max-width: 1024px) {
 }
 /* ipad portrait */
 @media only screen
-and (max-width: 768px)
+and (max-width: 875px)
 and (min-width: 569px){
   .popover,
   .cart-modal {
-    width: 738px;
+    width: 100%;
     left: 0px;
-    top: 10px;
     margin: 0px;
+    top: 0px;
+    border: 0px;
+    padding: 0px;
   }
   .cart {
-    width: 751px;
+    width: 100%;
   }
 
   /* adjust shipped from and customer service */
@@ -575,15 +583,19 @@ and (min-width: 569px){
     width: 11%;
     height: 35px;
   }
+  .items ul li.remove_li,
   .items ul li {
     width: 11%;
+  }
+  .items ul li img {
+    width: 100%;
   }
 
   /* adjust weird widths */
   .heading,
   .main_heading,
   .items {
-    width: 738px;
+    width: 100%;
   }
   .popover .row .right-actions,
   .cart-modal .row .right-actions {
