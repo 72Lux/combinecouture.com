@@ -549,7 +549,6 @@ and (max-width : 1024px) {
 @media only screen
 and (min-width: 769px)
 and (max-width: 1024px) {
-  /* don't need any! */
 }
 /* ipad portrait */
 @media only screen
@@ -599,9 +598,15 @@ and (min-width: 569px){
   .items {
     width: 100%;
   }
+  .popover .row .left-actions,
+  .cart-modal .row .left-actions {
+    margin-top: 4px;
+    margin-left: 12px;
+  }
   .popover .row .right-actions,
   .cart-modal .row .right-actions {
-    margin-right: 13px;
+    margin-right: 12px;
+    margin-top: 4px;
   }
 
 }
