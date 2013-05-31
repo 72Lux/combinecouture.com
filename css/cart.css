@@ -57,7 +57,7 @@ body.modal-open {
 }
 .popover .modal-footer,
 .cart-modal .modal-footer {
-  height: 68px;
+  height: 106px;
 }
 .modal-footer-buttons {
   padding: 5px 0;
@@ -251,6 +251,7 @@ body.modal-open {
 .cart-modal .row .right-actions{
   float:right;
   margin:19px 0 0 0;
+  width: 313px;
 }
 .popover .row .right-actions li,
 .cart-modal .row .right-actions li{
@@ -264,7 +265,6 @@ body.modal-open {
   width:176px;
   border:1px solid #000;
   cursor:pointer;
-  float:left;
   color:#000;
   background:#fff;
   text-align:center;
@@ -276,9 +276,9 @@ body.modal-open {
   width:106px;
   border:none;
   cursor:pointer;
-  float:right;
   color:#fff;
   background:#000;
+  border:1px solid black;
   text-align:center;
   text-transform:uppercase;
   font:14px "Helvetica Neue", Helvetica, sans-serif;

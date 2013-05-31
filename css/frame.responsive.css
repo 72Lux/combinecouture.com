@@ -962,6 +962,29 @@ and (max-width : 980px) {
   }
 }
 
+/* responsive styles for shorter display heights
+ ============================================ */
+@media only screen
+and (max-height : 750px) {
+  .linkFrameModal,
+  .singleProductModal {
+    top: 0px;
+    margin-top: 0px;
+  }
+  .single-product .poweredBy {
+    bottom: 9px;
+  }
+}
+@media only screen
+and (max-height : 700px) {
+  .linkFrameModal,
+  .singleProductModal {
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 20px;
+  }
+}
+
 /* misc */
 .clear {
   clear: both;
