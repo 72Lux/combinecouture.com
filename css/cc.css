@@ -1,5 +1,7 @@
 .header-row {
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .header-row li, .footer-row li {
