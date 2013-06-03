@@ -1,8 +1,8 @@
-.header {
+.header-row {
   text-align: center;
 }
 
-.header li, .footer li {
+.header-row li, .footer-row li {
   list-style-type: none;
   display: inline;
 }
