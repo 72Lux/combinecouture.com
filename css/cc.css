@@ -1,0 +1,8 @@
+.header {
+  text-align: center;
+}
+
+.header li, .footer li {
+  list-style-type: none;
+  display: inline;
+}
