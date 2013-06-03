@@ -23,7 +23,7 @@ body {
 
 .fixed {
   position: fixed;
-  z-index: 9999;
+  z-index: 1039;
 }
 
 .fixed-top {
