@@ -3,6 +3,7 @@ body {
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
+  color: #333;
 }
 
 .clearfix {
@@ -27,6 +28,22 @@ body {
 
 div {
   width: 100%;
+}
+
+a {
+  color: #999;
+}
+
+a:hover, a:focus {
+  color: #666;
+}
+
+a:active {
+  color: #333;
+}
+
+.nav-row a:hover {
+  color: #af0000;
 }
 
 .container {
@@ -57,23 +74,9 @@ div {
   margin-top: 70px;
   margin-bottom: 20px;
 }
-
-.footer-row {
+.nav-row, .footer-row {
   color: #CCC;
 }
-
-.footer-row a {
-  color: #999;
-}
-
-.footer-row a:hover {
-  color: #666;
-}
-
-.footer-row a:hover {
-  color: #333;
-}
-
 
 .nav-row li, .header-row li, .footer-row li {
   list-style-type: none;
@@ -85,4 +88,8 @@ hr {
   border: 0;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #ffffff;
+}
+
+.cartlabel, .lux-cart-label {
+  background: #AF0000;
 }
