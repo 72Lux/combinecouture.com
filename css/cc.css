@@ -23,6 +23,10 @@ body {
 
 .fixed {
   position: fixed;
+  z-index: 9999;
+}
+
+.fixed-top {
   top: 0;
 }
 
@@ -92,4 +96,8 @@ hr {
 
 .cartlabel, .lux-cart-label {
   background: #AF0000;
+}
+
+.product-grid .product .product-image {
+  border: 1px solid #CCC;
 }
