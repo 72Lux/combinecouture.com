@@ -557,6 +557,7 @@ a {
   height: 30px !important;
 }
 
+/* contains the 'back' icon when a related (shop more) product is clicked */
 .last-product-in-modal.visible .last-product-in-modal-icon {
   width:30px;
   height:30px;
@@ -573,6 +574,7 @@ a {
   transition: 0.25s;
 }
 
+/* contains the 'back' text when a related (shop more) product is clicked */
 .last-product-in-modal.visible .last-product-in-modal-text {
   height: 30px;
   line-height: 30px;
