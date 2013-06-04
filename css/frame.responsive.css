@@ -784,6 +784,7 @@ and (max-width : 622px) {
     width: 100%;
   }
   .single-product .product-info-wrapper .share-block {
+    text-align: center;
     position: static;
     margin-bottom: 15px;
   }
