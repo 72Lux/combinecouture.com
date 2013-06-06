@@ -239,10 +239,20 @@ iframe#checkout {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 568px) {
-  iframe#checkout {
-    width: 300px;
+  .layout {
+    width: 100%;
+  }
+  .logo {
+    padding: 0;
+    display: block;
+    margin: auto;
+    float: none;
+    width: 378px;
+    height: 100px;
   }
 }
+
+
 /* Smartphones (landscape) ----------- */
 @media only screen
 and (min-width : 321px)
