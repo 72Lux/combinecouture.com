@@ -1,3 +1,13 @@
+/**
+ * Contained:
+ *  Cart and popover modal CSS
+ *  Mobile friendly modal CSS
+ *
+ * In order to take advantage of the responsive css, any extra
+ * css that the page includes needs to be made optimized for
+ * smaller display sizes.
+ */
+
 body.modal-open {
   overflow: hidden;
 }
@@ -78,6 +88,7 @@ body.modal-open {
 .close-cart-modal:active {
   background: url(../images/close2.png) no-repeat center center #CCC;
 }
+
 /** shopping cart popover styles **/
 .popover {
   left: 50% !important;

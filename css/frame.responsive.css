@@ -1,3 +1,13 @@
+/**
+ * Contained:
+ *  Frames version 1.5 CSS
+ *  Mobile friendly frames CSS
+ *
+ * In order to take advantage of the responsive css, any extra
+ * css that the page includes needs to be made optimized for
+ * smaller display sizes.
+ */
+
 /* resets */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
   margin:0;
@@ -42,7 +52,7 @@ a {
 }
 
 .single-product .product-image-wrapper {
-  width: 334px; /* 38% */
+  width: 334px;
   margin: 0px;
   float: left;
 }
@@ -52,7 +62,7 @@ a {
   overflow: hidden;
 }
 .single-product .product-image-wrapper .product-image-src {
-  width: 100%; /* joe todo remove redundancy?? */
+  width: 100%;
   height: 400px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -104,10 +114,6 @@ a {
   -ms-transition: 0.6s ease-in-out left;
   -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
-}
-.product-image-slideshow .thumbnail-item {
-  /*display: block;
-  line-height: 1;*/
 }
 .product-image-slideshow .active,
 .product-image-slideshow .next,
@@ -176,7 +182,7 @@ a {
 }
 
 .single-product .product-info-wrapper {
-  width: 60%; /* 555px */
+  width: 60%;
   margin: 0px;
   float: right;
   position: relative;
@@ -185,7 +191,7 @@ a {
   margin-bottom: 0px;
 }
 .single-product .product-info-wrapper .see-reviews {
-  width: 75px; /* find %? */
+  width: 75px;
   height: 15px;
   position: absolute;
   right: 0px;
@@ -212,7 +218,6 @@ a {
   color: #333;
 }
 .single-product .product-info-wrapper .price-2 {
-  /* joe note: make this same size? */
   font: 12px/12px 'Futura', sans-serif;
   color: #9a9a9a;
 }
@@ -225,7 +230,6 @@ a {
   margin-bottom: 5px;
 }
 .single-product .product-info-wrapper .product-sale-price .price-label {
-  /* joe note: alter the color to gray? */
   color:#F70C0C;
 }
 
@@ -300,6 +304,7 @@ a {
   border-color: #000;
 }
 
+/* sharing button and input */
 .single-product .product-info-wrapper .share-block {
   position:absolute;
   top:371px;
@@ -323,18 +328,19 @@ a {
   display: none;
 }
 
+/* social button styles */
 .single-product .social-buttons-wrapper {
   position: absolute;
   top: 380px;
   right: 0;
   height:20px;
 }
-
 .single-product .social-buttons-wrapper .social-button {
   float: right;
   margin-left: 5px;
 }
 
+/* More from ____ section */
 .single-product .more-from-brand-wrapper {
   width: 48%;
   float:left;
@@ -373,18 +379,17 @@ a {
   -o-background-size: cover;
   background-size: cover;
 }
-
 .single-product .more-from-brand-wrapper ul li:hover, .single-product .more-from-brand-wrapper ul li:focus,
 .single-product .more-from-category-wrapper ul li:hover, .single-product .more-from-category-wrapper ul li:focus {
   border-color: #CCC;
   cursor: pointer;
 }
-
 .single-product .more-from-brand-wrapper ul li:active,
 .single-product .more-from-category-wrapper ul li:active {
   border-color: #999;
 }
 
+/* powered by styles */
 .single-product .poweredBy {
   display:block;
   height:54px;
@@ -396,7 +401,6 @@ a {
 .single-product .poweredBy-spacer {
   height:34px; /* .poweredBy_height - .single-product_padding */
 }
-
 
 /* grid styles! */
 .product-grid {
@@ -474,10 +478,6 @@ a {
 .product-link-trigger {
   text-decoration: underline;
 }
-.product-link .product-link-payload {
-  /* only within .product-modal block */
-  display:none;
-}
 
 /* modal styles */
 .linkFrameModal,
@@ -511,12 +511,6 @@ a {
   right:0;
   opacity:.7;
   filter: alpha(opacity=70);
-
-/*  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
-*/
 }
 .close-product-modal:hover, .close-product-modal:focus {
   opacity:1;
@@ -541,11 +535,7 @@ a {
 .last-product-in-modal.visible:hover, .last-product-in-modal.visible:focus {
   opacity:1;
   filter: alpha(opacity=100);
-/*  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
-*/  cursor: pointer;
+  cursor: pointer;
 }
 
 .last-product-in-modal.visible:active {
@@ -629,10 +619,6 @@ a {
   -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
 }
-.product-slideshow.carousel .item > img {
-/*  display: block;
-  line-height: 1;*/
-}
 .product-slideshow.carousel .active,
 .product-slideshow.carousel .next,
 .product-slideshow.carousel .prev {
@@ -706,6 +692,7 @@ a {
 @media only screen
 and (min-width : 320px)
 and (max-width : 622px) {
+  /* remove padding and expand the whole width */
   .product-slideshow.carousel,
   .single-product {
     padding: 0px;
@@ -713,10 +700,10 @@ and (max-width : 622px) {
     position: relative;
   }
 
+  /* get rid of any absolute width/height values */
   .carousel-inner {
     height: auto;
   }
-
   .product-slideshow.carousel .carousel-control {
     opacity: 1 !important;
     filter: alpha(opacity=100) !important;
@@ -726,10 +713,10 @@ and (max-width : 622px) {
     float: none;
     width: 100%;
   }
-
   .single-product .product-image-wrapper .product-image-slideshow div.product-image-slide.first {
     margin-left:5%;
   }
+  /* change the style of the slideshow when small */
   .single-product .product-image-wrapper .product-image-slideshow div.product-image-slide {
     width: 18%;
     margin-right: 0px;
@@ -754,11 +741,11 @@ and (max-width : 622px) {
     opacity: 1;
     filter:alpha(opacity=100);
   }
-
   .single-product .product-image-wrapper .product-image-slideshow::after {
     clear: both;
   }
 
+  /* more changing of the width to % or < 320px */
   .single-product .product-info-wrapper {
     clear: left;
     float: none;
@@ -905,7 +892,7 @@ and (max-width : 622px) {
     width: 100%;
     height: 100%;
     overflow: auto;
-    margin: 0; /* -220px 0 0 -240px */
+    margin: 0;
     top: 0;
     left: 0;
     border: 0;
@@ -935,7 +922,7 @@ and (max-width : 900px) {
     width: 100%;
     height: 100%;
     overflow: auto;
-    margin: 0; /* -220px 0 0 -240px */
+    margin: 0;
     top: 0;
     left: 0;
     border: 0;
