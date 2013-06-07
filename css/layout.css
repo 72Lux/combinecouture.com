@@ -239,7 +239,10 @@ iframe#checkout {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 960px) {
-  .layout {
+  .layout,
+  .article_sec,
+  #top_head
+  {
     width: 100%;
   }
   .logo {
