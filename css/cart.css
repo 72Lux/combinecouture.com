@@ -504,7 +504,7 @@ and (max-width : 568px) {
   }
   /* modify customer service width */
   .main_heading .customer_service {
-    width: 90px;
+    width: 100px;
   }
 
 }
