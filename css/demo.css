@@ -142,4 +142,8 @@ and (max-width : 622px) {
   .product-grid {
     margin-top: 30px;
   }
+  .product-grid .single-product {
+    float: none;
+    margin: 5px auto;
+  }
 }
