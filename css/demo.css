@@ -4,6 +4,9 @@
 #outer_top_head{float: left; width: 100%; background: url(../images/header_bg.gif) repeat-x 0 bottom; padding: 0 0 10px 0; margin-bottom: 10px;}
 #top_head{width: 965px; margin: 0 auto;}
 
+ul.icons{float: right; width: auto;list-style: none; padding: 4px 0 0 0;}
+ul.icons li{float: left; width: auto; padding: 0 5px 0 0;}
+
 #header{float: left; width: 100%; }
 .logo{float: left; width: auto; padding: 21px 292px 0 293px;}
 
