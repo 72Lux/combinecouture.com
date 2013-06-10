@@ -772,12 +772,21 @@ and (max-width : 622px) {
     margin: auto;
   }
   .single-product .product-info-wrapper .add-to-cart-button {
-    width: 100%;
+    display: block;
+    margin: auto;
+    width: 140px;
   }
+  .single-product .product-info-wrapper .unavailable-text {
+    text-align: center;
+  }
+
   .single-product .product-info-wrapper .share-block {
     text-align: center;
     position: static;
     margin-bottom: 15px;
+  }
+  .single-product .product-info-wrapper .share-button {
+    width: 140px;
   }
   .single-product .social-buttons-wrapper {
     width:225px;
@@ -794,7 +803,7 @@ and (max-width : 622px) {
   }
   .single-product .more-from-brand-wrapper ul,
   .single-product .more-from-category-wrapper ul {
-    width: 300px;
+    width: 306px;
   }
   .single-product .more-from-brand-wrapper ul li,
   .single-product .more-from-category-wrapper ul li {
