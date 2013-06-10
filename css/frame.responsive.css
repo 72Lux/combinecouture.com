@@ -584,7 +584,7 @@ a {
   z-index: 1040;
   background-color:#000;
 }
-.modal-backdrop.fade.in {
+.modal-backdrop.in {
   opacity:0.7;
   filter: alpha(opacity=70);
 }
