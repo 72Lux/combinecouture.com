@@ -949,13 +949,6 @@ and (max-width : 900px) {
     height: 20px;
   }
 
-  .last-product-in-modal.visible .last-product-in-modal-icon,
-  .last-product-in-modal.visible .last-product-in-modal-text,
-  .close-product-modal {
-    line-height: 20px;
-    width: 20px;
-    height: 20px;
-  }
 }
 @media only screen
 and (min-width : 901px)
