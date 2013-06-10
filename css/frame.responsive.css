@@ -713,6 +713,10 @@ and (max-width : 622px) {
     float: none;
     width: 100%;
   }
+  /* hide the zoomed image */
+  .single-product .product-image-wrapper .zoomImg {
+    display: none;
+  }
   .single-product .product-image-wrapper .product-image-slideshow div.product-image-slide.first {
     margin-left:5%;
   }
