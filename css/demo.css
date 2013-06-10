@@ -27,7 +27,7 @@ ul.icons li{float: left; width: auto; padding: 0 5px 0 0;}
 .article_sec h2{color: #000; text-align: center; font: 56px/65px 'MonotypeModernStdBoldItalic',Georgia,Times New Roman,times,serif; border-bottom: 1px solid #000; letter-spacing: -4px;}
 .article_sec h3{color: #000; text-align: center; font: 40px/40px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif; }
 .article_sec h3 strong{ display: block; font: 27px/29px 'MonotypeModernStdBoldItalic',Georgia,Times New Roman,times,serif; padding: 9px 0 0 0; }
-.article_sec p{color: #000; font: italic 15px/22px Georgia,Times New Roman,times,serif; }
+.article_sec p{color: #000; font: italic 15px/22px Georgia,Times New Roman,times,serif; margin: 15px 0;}
 .article_sec .img{float: left; width: auto; padding: 0 9px 0 9px;}
 .article_sec .look{position: absolute; width: 148px; left: 0; top: 0; height: 100%; background: url(../images/look_of_the_day.png) no-repeat 0 0;}
 .article_sec .look strong{display: block;text-align: center; font: 20px/24px 'ModernMTStdExtendedRegular',Georgia,Times New Roman,times,serif; padding: 13px 0 0 0;}
@@ -128,4 +128,18 @@ and (max-width: 1024px) {
 @media only screen
 and (max-width: 768px)
 and (min-width: 569px){
+}
+
+
+/** frame.responsive.css overrides **/
+
+/* responsive styles for non-modals
+ =================================== */
+/* Smartphones (portrait and landscape) */
+@media only screen
+and (min-width : 320px)
+and (max-width : 622px) {
+  .product-grid {
+    margin-top: 30px;
+  }
 }
