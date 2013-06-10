@@ -769,7 +769,7 @@ and (max-width : 622px) {
 
   .single-product .add-to-cart {
     clear:both;
-    margin: auto;
+    margin: 15px auto;
   }
   .single-product .product-info-wrapper .add-to-cart-button {
     display: block;
@@ -791,7 +791,7 @@ and (max-width : 622px) {
   .single-product .social-buttons-wrapper {
     width:225px;
     position: static;
-    margin: auto;
+    margin: 15px auto;
   }
   .single-product .more-from-brand-wrapper,
   .single-product .more-from-category-wrapper {
