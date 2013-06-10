@@ -425,8 +425,15 @@ and (max-width : 568px) {
     top: 2px;
     right: 2px;
     height: 16px;
-    width: 16px;
+    width: 50px;
+    background-position-x: 34px, right;
   }
+  .close-cart-modal:hover, .close-cart-modal:focus,
+  .close-cart-modal:active {
+    background-position-x: 34px, right;
+    background-color: #fff;
+  }
+
 
   /* change .items ul li to be stacked */
   .items ul li {
