@@ -773,8 +773,9 @@ and (max-width : 622px) {
   }
   .single-product .product-info-wrapper .add-to-cart-button {
     display: block;
-    margin: auto;
+    margin: 15px auto;
     width: 140px;
+    line-height: 45px;
   }
   .single-product .product-info-wrapper .unavailable-text {
     text-align: center;
@@ -784,9 +785,6 @@ and (max-width : 622px) {
     text-align: center;
     position: static;
     margin-bottom: 15px;
-  }
-  .single-product .product-info-wrapper .share-button {
-    width: 140px;
   }
   .single-product .social-buttons-wrapper {
     width:225px;
