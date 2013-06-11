@@ -515,6 +515,7 @@ and (max-width: 568px) {
   .popover .modal-body,
   .cart-modal .modal-body {
     overflow: scroll;
+    max-height: none;
   }
 }
 
@@ -525,6 +526,7 @@ and (max-height : 440px) {
   .popover .modal-body,
   .cart-modal .modal-body {
     overflow: scroll;
+    max-height: none;
   }
 }
 @media only screen
@@ -533,6 +535,7 @@ and (min-height : 441px) {
   .popover .modal-body,
   .cart-modal .modal-body {
     overflow: scroll;
+    max-height: none;
   }
 }
 
