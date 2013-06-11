@@ -898,6 +898,7 @@ and (max-width : 900px) {
 
   .product-grid {
     width: auto;
+    margin: 0 auto;
   }
 
   .carousel {
