@@ -924,8 +924,8 @@ and (max-width : 622px) {
     position: relative;
   }
 
-  .last-product-in-modal.visible .last-product-in-modal-icon,
-  .last-product-in-modal.visible .last-product-in-modal-text,
+  /*.last-product-in-modal.visible .last-product-in-modal-icon,
+  .last-product-in-modal.visible .last-product-in-modal-text,*/
   .close-product-modal {
     top: 0px;
     right: 0px;
