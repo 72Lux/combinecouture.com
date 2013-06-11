@@ -188,7 +188,7 @@ a {
   position: relative;
 }
 .single-product .product-info-wrapper p {
-  margin-bottom: 0px;
+  margin: 0px;
 }
 .single-product .product-info-wrapper .see-reviews {
   width: 75px;
