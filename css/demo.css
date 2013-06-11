@@ -99,6 +99,7 @@ and (max-device-width : 960px) {
   }
   .logo img {
     width: 100%;
+    height: auto;
   }
 }
 
