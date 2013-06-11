@@ -947,6 +947,30 @@ and (max-width : 900px) {
     height: 20px;
   }
 
+  .single-product .product-info-wrapper .share-block {
+    position: relative;
+    top: 0px;
+    float: left;
+    width: 80px;
+  }
+  .single-product .product-info-wrapper .share-button {
+    width: 80px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .single-product .social-buttons-wrapper {
+    position: relative;
+    top: 0px;
+    width: 230px;
+    float: right;
+  }
+
+  .single-product .more-from-brand-wrapper ul li,
+  .single-product .more-from-category-wrapper ul li {
+    margin: 0px;
+  }
+
 }
 @media only screen
 and (min-width : 901px)
