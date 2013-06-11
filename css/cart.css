@@ -590,7 +590,7 @@ and (min-width: 569px){
     width: auto;
   }
   .main_heading .customer_service {
-    width: 90px;
+    width: 100px;
   }
 
   /* adjust table/header elements */
@@ -623,6 +623,7 @@ and (min-width: 569px){
   }
   .popover .row .right-actions,
   .cart-modal .row .right-actions {
+    width: 317px;
     margin-right: 12px;
     margin-top: 4px;
   }
