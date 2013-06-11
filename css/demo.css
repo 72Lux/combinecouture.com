@@ -97,8 +97,10 @@ and (max-device-width : 960px) {
     float: none;
     width: 95%;
   }
+  .logo img {
+    width: 100%;
+  }
 }
-
 
 /* Smartphones (landscape) ----------- */
 @media only screen
