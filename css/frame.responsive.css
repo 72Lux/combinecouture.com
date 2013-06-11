@@ -919,6 +919,9 @@ and (max-width : 622px) {
   .singleProductModal .modal-header {
     height: 25px;
     border-bottom: 1px solid #000;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
   }
 
   .last-product-in-modal.visible .last-product-in-modal-icon,
@@ -927,8 +930,8 @@ and (max-width : 622px) {
     top: 0px;
     right: 0px;
     height: 25px;
-    width: 50px;
-    background-position-x: 30px, right;
+    width: 70px;
+    background-position-x: 50px, right;
 
   }
 }
