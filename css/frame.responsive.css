@@ -696,8 +696,9 @@ and (max-width : 622px) {
   .product-slideshow.carousel,
   .single-product {
     padding: 0px;
-    width: 100%;
+    width: 95%;
     position: relative;
+    margin: 0 auto;
   }
 
   /* get rid of any absolute width/height values */
@@ -760,7 +761,10 @@ and (max-width : 622px) {
   .single-product .product-info-wrapper .color-and-size-selects .sizes {
     float: right;
   }
-
+  .single-product .product-info-wrapper .select-color,
+  .single-product .product-info-wrapper .select-size {
+    width: 90px;
+  }
   .single-product .product-info-wrapper .colors,
   .single-product .product-info-wrapper .sizes {
     width: 50%;
@@ -831,8 +835,9 @@ and (min-width : 623px)
 and (max-width : 900px) {
   .product-slideshow.carousel,
   .single-product {
-    width: 100%;
+    width: 95%;
     padding: 0px;
+    margin: 0 auto;
   }
 
   .carousel-inner {
