@@ -87,15 +87,14 @@ and (max-device-width : 960px) {
   .article_sec,
   #top_head
   {
-    width: 100%;
+    width: 95%;
   }
   .logo {
     padding: 0;
     display: block;
     margin: auto;
     float: none;
-    width: 378px;
-    height: 100px;
+    width: 95%;
   }
 }
 
