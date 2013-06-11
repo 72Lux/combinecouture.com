@@ -88,6 +88,7 @@ and (max-device-width : 960px) {
   #top_head
   {
     width: 95%;
+    clear: both;
   }
   .logo {
     padding: 0;
