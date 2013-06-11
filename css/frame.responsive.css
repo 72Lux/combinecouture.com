@@ -932,7 +932,10 @@ and (max-width : 622px) {
     height: 25px;
     width: 70px;
     background-position-x: 50px, right;
-
+  }
+  .last-product-in-modal.visible .last-product-in-modal-icon {
+    width: 20px;
+    height: 24px;
   }
 }
 /* tablets! (ipad) */
