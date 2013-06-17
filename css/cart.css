@@ -281,6 +281,8 @@ body.modal-open {
   text-transform:uppercase;
   font:14px "Helvetica Neue", Helvetica, sans-serif;
 }*/
+.popover .row .left-actions li .clear_link,
+.cart-modal .row .left-actions li .clear_link,
 .popover .row .right-actions .continue-link,
 .cart-modal .row .right-actions .continue-link,
 .popover .row .right-actions .checkout_link,
@@ -376,7 +378,7 @@ body.modal-open {
   color:#818181;
   text-indent:5px;
 }
-.popover .row .left-actions li .clear_link,
+/*.popover .row .left-actions li .clear_link,
 .cart-modal .row .left-actions li .clear_link{
   cursor:pointer;
   float:left;
@@ -386,7 +388,20 @@ body.modal-open {
   text-transform:uppercase;
   font:14px "Helvetica Neue", Helvetica, sans-serif;
   color:#fff;
+}*/
+.popover .row .left-actions li .clear_link,
+.cart-modal .row .left-actions li .clear_link {
+  background-color: rgb(73,77,78);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(73,77,78)), to(rgb(73,77,78)));
+  float: left;
+  width: 106px;
 }
+.popover .row .left-actions li .clear_link:hover,
+.cart-modal .row .left-actions li .clear_link:hover {
+  background-color: rgb(122, 130, 132);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(122, 130, 132)), to(rgb(122, 130, 132)));
+}
+
 
 .clear_link,
 .continue_link,
