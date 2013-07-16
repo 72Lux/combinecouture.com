@@ -1140,6 +1140,9 @@ ul.opportunities {
 .cycle-info {
   display: none;
 }
+.cycle-title {
+  text-align: center;
+}
 .lux-dot-pager span {
   font-family: arial; font-size: 43px; width: 16px; height: 20px;
   display: inline-block; color: #999; cursor: pointer;
