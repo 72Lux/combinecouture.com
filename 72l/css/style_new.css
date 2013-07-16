@@ -120,7 +120,7 @@ ul#header-nav li a {
 }
 
 ul#header-nav li a:hover, .header-social .text-link:hover {
-  color: #af0000;
+  color: #222;
 }
 ul#header-nav li a:active, .header-social .text-link:active {
   background: #CCC;
@@ -1112,7 +1112,7 @@ ul.opportunities {
   margin: 0;
   padding:0 10px;
   cursor:pointer;
-  background: #FAFAFA;
+  background: #FFF;
   color: #222;
   border: 0;
   display: block;
@@ -1122,7 +1122,7 @@ ul.opportunities {
   cursor: pointer;
 }
 .lux-cycle-chapter.cycle-pager-active p:hover, .lux-cycle-chapter.cycle-pager-active p {
-  background: #AF0000;
+  background: #222 !important;
   color:white;
 }
 
@@ -1148,7 +1148,7 @@ ul.opportunities {
 div.cycle-pager-active .lux-dot-pager { opacity: 1; }
 
 .cycle-pager-active {
-  background: #EEE;
+  background: #FFF;
 }
 .lux-cycle-pager > * { cursor:pointer; }
 
