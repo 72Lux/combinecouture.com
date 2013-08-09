@@ -31,6 +31,10 @@ body.modal-open {
   color: #fff;
   font: 15px/18px 'NeutraDisplayBold',Georgia,Times New Roman,times,serif;
 }
+.cart-attention {
+  color: red;
+  font-size: 16px;
+}
 
 /** shopping cart modal styles **/
 .cart-modal {
