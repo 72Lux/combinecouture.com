@@ -1,0 +1,52 @@
+[
+  {
+    "part_number": "88",
+    "name": "Small Pug",
+    "url": "http://afilliate.com/product/1234-5678",
+    "description": "This is a tiny little pug.",
+    "category": "Home > Outdoor",
+    "brand": "Pugs brand",
+    "keywords": "pug, pet, tan",
+    "variants": [
+      {
+        "sku": "1",
+        "price": "50.00",
+        "sale_price": "20.00",
+        "color": "Tan",
+        "size": "Small",
+        "image": "http://27.media.tumblr.com/tumblr_ls6tpnEwe71r3ip8io1_500.jpg",
+        "alternate_images": [
+          "http://25.media.tumblr.com/tumblr_lm1gf8IEiu1qko977o1_500.jpg"
+        ]
+      },
+      {
+        "sku": "2",
+        "price": "50.00",
+        "sale_price": "40.00",
+        "color": "Tan",
+        "size": "Large",
+        "image": "http://27.media.tumblr.com/tumblr_ls6tpnEwe71r3ip8io1_500.jpg",
+        "alternate_images": [
+          "http://25.media.tumblr.com/tumblr_lm1gf8IEiu1qko977o1_500.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "part_number": "99",
+    "name": "Soy candle",
+    "url": "http://afilliate.com/product/1234-0001",
+    "description": "Blah blah blah.",
+    "category": "Home > Decor & Accessories",
+    "brand": "Joe's Candles",
+    "keywords": "soy, organic, aromatherapy",
+    "variants": [
+      {
+        "sku": "1234-0001-sandalwood",
+        "price": "20.00",
+        "material": "100% Soy",
+        "image": "http://24.media.tumblr.com/tumblr_mbnh52cctT1r3ip8io1_500.jpg"
+      }
+    ]
+  }
+]
