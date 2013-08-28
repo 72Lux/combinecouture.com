@@ -106,39 +106,10 @@
   </div>
   <script type="text/javascript">
   shopevent.set_hook('allFramesLoaded', 'console.log', function() {
-    console.log('allFramesLoaded');
-
     jQuery('.featured-product').each(function () {
       jQuery(this).prepend('<div class="ribbon"><span class="ribbon-content">Featured Product</span></div>');
     });
-
   });
-
-  shopevent.set_hook('triggerGridModal', 'console.log', function(partNumber, name, shareURL) {
-    console.log('triggerGridModal');
-    console.log(arguments);
-  });
-
-  shopevent.set_hook('addItemToCart', 'console.log', function(cartId, sku, skusArray) {
-    console.log('addItemToCart');
-    console.log(arguments);
-  });
-
-  shopevent.set_hook('removeItemFromCart', 'console.log', function(cartId, sku, skusArray) {
-    console.log('removeItemFromCart');
-    console.log(arguments);
-  });
-
-  shopevent.set_hook('updateItemInCart', 'console.log', function(cartId, sku, skusArray) {
-    console.log('updateItemInCart');
-    console.log(arguments);
-  });
-
-  shopevent.set_hook('emptyCart', 'console.log', function(cartId, skusArray) {
-    console.log('emptyCart');
-    console.log(arguments);
-  });
-
   </script>
 </body>
 </html>
