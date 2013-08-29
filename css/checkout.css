@@ -1,0 +1,6 @@
+/* checkout frame styles */
+iframe#checkout {
+  border:none;
+  overflow:hidden;
+  width:100%;
+}
