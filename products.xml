@@ -12,6 +12,7 @@
       <sku>1</sku>
       <price>50.00</price>
       <sale_price>40.00</sale_price>
+      <shipping_charge>222.22</shipping_charge>
       <color>Tan</color>
       <size>Small</size>
       <image>http://27.media.tumblr.com/tumblr_ls6tpnEwe71r3ip8io1_500.jpg</image>
