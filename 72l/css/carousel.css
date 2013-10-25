@@ -1,0 +1,369 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #222;
+  background-color: #f8f8f8;
+}
+
+a, .btn-link {
+  color: #3099B0;
+}
+
+a:hover, a:focus {
+  color: #257688;
+  text-decoration: none;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+a:active {
+  color: #666;
+  text-decoration: none;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: relative;
+  z-index: 15;
+}
+
+.nav-brand {
+  margin: 40px 40px 0 40px;
+  display: inline-block;
+}
+
+.navbar-brand {
+  padding: 0 20px;
+  line-height: 50px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 17px;
+}
+
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: transparent;
+}
+
+.navbar-default.topnav {
+  background-color: #fff; /* #f8f8f8; */
+  margin: 0;
+}
+
+.navbar-default .hide-for-scroll {
+  display: none;
+}
+
+.navbar-default.affix, .navbar-default.affix-top {
+  width: 100%;
+  top: 0;
+  z-index: 1030;
+  border-bottom: 1px solid #e7e7e7;
+  border-top: 0;
+  height: 52px;
+}
+
+.navbar-default.affix-top {
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+.navbar-default.affix .hide-for-scroll {
+  display: inline-block;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+
+}
+
+.fixed-right {
+  margin-top: -57px;
+}
+
+.subnav-outer {
+  height: 50px;
+}
+
+/* HEADER BLOCK */
+
+.header-info {
+  padding-top: 40px;
+  padding-bottom: 75px;
+}
+
+.header-info-outer {
+  width: 100%;
+  background-color: #fff;
+}
+
+/* SIDENAV */
+
+nav {
+  position: fixed;
+  top: 0;
+  right: -20em;
+  width: 20em;
+  height: 100%;
+  background-color: #E7F5F8;
+  color: #eee;
+  display: block;
+  z-index: 1031;
+  -webkit-transition: right 0.3s;
+  -moz-transition: right 0.3s;
+  -ms-transition: right 0.3s;
+  -o-transition: right 0.3s;
+  transition: right 0.3s;
+  overflow: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+
+nav .social li {
+  display: inline;
+}
+
+nav .social li a {
+  padding: 20px;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav.open {
+  right: 0;
+}
+
+.topnav.open {
+  margin-right: 20em;
+  margin-left: -20em;
+}
+
+body.nav-open {
+  margin-left: -20em;
+}
+
+.nav-inner {
+  margin: 50px 0;
+}
+
+.nav-title {
+  color: #222;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+nav li a {
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 5px 0;
+}
+
+.close-nav {
+  float: right;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: #222;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.close-nav:hover, .close-nav:focus {
+  color: #222;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  text-decoration: none;
+}
+
+.close-nav:active {
+  color: #222;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px;
+
+  /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  /*margin-top: -90px;*/
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  border-top: 1px solid #f8f8f8; /* same color as body */
+}
+
+.featurette-heading.page-heading {
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  color: #999; /* default to muted */
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 40px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 0;
+  }
+}
+
+/* overrides */
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.plan-col {
+  text-align: center;
+}
+
+.plan-element, .plan-header {
+  background: #e0e0e0;
+  padding: 20px 10px;
+  margin-bottom: 1px;
+}
+
+.emphasis .plan-element, .emphasis .plan-header {
+  background: #666;
+  color: #eee;
+}
+
+.content-footer {
+  margin-bottom: 40px;
+}
+
+.btn-fixed {
+  width: 150px;
+}
+
+.centered-subnav {
+  float: none;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.btn-lux {
+  color: #ffffff;
+  background-color: #3099B0;
+  border-color: #3099B0;
+}
+
+.btn-lux:hover, .btn-lux:focus, .btn-lux:active, .btn-lux.active {
+  color: #fff;
+  background-color: #2B879C;
+  border-color: #2B879C;
+}
