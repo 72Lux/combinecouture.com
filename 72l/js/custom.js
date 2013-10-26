@@ -2,9 +2,7 @@ $(document).ready(function () {
 
   $('.show-side-nav, .close-nav').on('click', function(e) {
     e.preventDefault();
-    $('.topnav').toggleClass('open');
-    $('nav').toggleClass('open');
-    $('body').toggleClass('nav-open');
+    setupNav();
   });
 
   $('#pub-header-image').anystretch();
@@ -19,6 +17,14 @@ $(document).ready(function () {
     showMore();
   });
 
+  $('#footer-container').load('footer.html');
+  $('#navigation').load('navigation.html', { active_link: 'Hello World' }, function() {
+    $('.close-nav').on('click', function(e) {
+      e.preventDefault();
+      setupNav();
+    });
+  });
+
 });
 
 function showMore() {
@@ -30,4 +36,10 @@ function showMore() {
 function scrollToAnchor(aid){
   var aTag = $(aid);
   $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
+
+function setupNav() {
+  $('.topnav').toggleClass('open');
+  $('nav').toggleClass('open');
+  $('body').toggleClass('nav-open');
 }
