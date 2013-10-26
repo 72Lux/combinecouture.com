@@ -5,7 +5,7 @@
 body {
   padding-bottom: 40px;
   color: #222;
-  background-color: #f8f8f8;
+  background-color: #f9f9f9; /*#f8f8f8;*/
 }
 
 a, .btn-link {
@@ -53,7 +53,7 @@ a:active {
 }
 
 .nav-brand {
-  margin: 40px 40px 0 40px;
+  margin: 40px 40px 0 30px;
   display: inline-block;
 }
 
@@ -113,8 +113,9 @@ a:active {
 /* HEADER BLOCK */
 
 .header-image {
-
+  background: #fff;
 }
+
 .header-info {
   padding-top: 40px;
   padding-bottom: 75px;
@@ -147,7 +148,8 @@ nav {
 
 nav ul {
   list-style-type: none;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  padding-left: 30px;
 }
 
 nav .social li {
@@ -190,7 +192,7 @@ body.nav-open {
 }
 
 .nav-inner {
-  margin: 50px 0;
+  margin: 30px 0;
 }
 
 .nav-title {
@@ -199,6 +201,15 @@ body.nav-open {
   letter-spacing: 1px;
   font-size: 21px;
   line-height: 1.4;
+}
+
+nav li {
+  color: #222;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 5px 0;
 }
 
 nav li a {
@@ -248,6 +259,8 @@ nav li a {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
+  right: auto;
+  width: 20%;
 }
 
 /* Declare heights because of positioning of img element */
@@ -263,7 +276,10 @@ nav li a {
   height: 500px;
 }
 
-
+.carousel-indicators {
+  left: auto;
+  right: 5%;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -422,8 +438,7 @@ nav li a {
 .popover-lux {
   border-radius: 0;
   display: inline-block;
-  margin-right: 10px;
-  margin-left: 10px;
+  padding: 10px;
   background: #eee;
   border: 0;
   -webkit-box-shadow: none;
