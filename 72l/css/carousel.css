@@ -418,3 +418,11 @@ nav li a {
 .lead {
   color: #666;
 }
+
+.visible {
+  display: inline-block;
+}
+
+.popover {
+  border-radius: 0;
+}
