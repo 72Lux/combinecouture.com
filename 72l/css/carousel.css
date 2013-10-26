@@ -30,6 +30,19 @@ a:active {
   transition: 0.25s;
 }
 
+.show-side-nav {
+  color: #222 !important;
+}
+
+.show-side-nav:hover, .show-side-nav:focus {
+  color: #257688 !important;
+  text-decoration: none;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -59,7 +72,7 @@ a:active {
 }
 
 .navbar-default.topnav {
-  background-color: #fff; /* #f8f8f8; */
+  background-color: transparent; /* #f8f8f8; */
   margin: 0;
 }
 
@@ -99,6 +112,9 @@ a:active {
 
 /* HEADER BLOCK */
 
+.header-image {
+
+}
 .header-info {
   padding-top: 40px;
   padding-bottom: 75px;
@@ -106,7 +122,7 @@ a:active {
 
 .header-info-outer {
   width: 100%;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 /* SIDENAV */
@@ -139,8 +155,22 @@ nav .social li {
 }
 
 nav .social li a {
-  padding: 20px;
+  padding: 10px 0;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  margin-right: 20px;
 }
+
+nav .social li a:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=90);
+}
+
+nav .social li a:active {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
 
 nav a:hover {
   text-decoration: none;
@@ -262,24 +292,34 @@ nav li a {
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 120px 0; /* Space out the Bootstrap <hr> more */
   border-top: 1px solid #f8f8f8; /* same color as body */
 }
 
+.featurette-divider.first {
+  margin: 60px 0; /* Space out the Bootstrap <hr> more */
+}
+
 .featurette-heading.page-heading {
-  color: #000;
   margin-bottom: 10px;
 }
 
 /* Thin out the marketing headings */
 .featurette-heading {
-  color: #999; /* default to muted */
+  color: #000;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
   margin-bottom: 20px;
 }
 
+.big-num {
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
 
 
 /* RESPONSIVE CSS
@@ -366,4 +406,15 @@ nav li a {
   color: #fff;
   background-color: #2B879C;
   border-color: #2B879C;
+}
+.navbar {
+  border-radius: 0;
+}
+
+.span-half {
+  width: 50%;
+}
+
+.lead {
+  color: #666;
 }
