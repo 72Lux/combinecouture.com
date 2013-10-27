@@ -68,7 +68,7 @@ a:active {
 }
 
 .navbar-default.topnav {
-  background-color: transparent; /* #f8f8f8; */
+  background-color: #fff; /* #f8f8f8; */
   margin: 0;
 }
 
@@ -123,7 +123,7 @@ a:active {
 
 .header-info-outer {
   width: 100%;
-  background-color: transparent;
+  background-color: #fff;
 }
 
 /* SIDENAV */
@@ -559,4 +559,26 @@ nav li a {
 
 .text-muted {
   color: #999999 !important;
+}
+
+.shoppable-app-container {
+  height: 550px;
+  background: #fff url('../images/shoppable-app.png') no-repeat 0 0;
+}
+
+.shoppable-merchants-app-container {
+  height: 550px;
+  background: #fff url('../images/shoppable-merchants-app.png') no-repeat 0 0;
+}
+
+.page-heading {
+  margin-top: 100px;
+}
+
+.header-info .btn {
+  margin-top: 20px;
+}
+
+iframe {
+  border: 0;
 }

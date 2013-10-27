@@ -5,8 +5,7 @@ $(document).ready(function () {
     setupNav();
   });
 
-  $('#pub-header-image').anystretch();
-  $('.item-stretch').anystretch();
+  $('.stretch-image').anystretch();
 
   $('.scroll-link').on('click', function(e) {
     e.preventDefault();
