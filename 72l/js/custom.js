@@ -6,6 +6,7 @@ $(document).ready(function () {
   });
 
   $('#pub-header-image').anystretch();
+  $('.item-stretch').anystretch();
 
   $('.scroll-link').on('click', function(e) {
     e.preventDefault();
