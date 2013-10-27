@@ -7,6 +7,8 @@ $(document).ready(function () {
 
   $('.stretch-image').anystretch();
 
+  $('.popover-lux-trigger').popover();
+
   $('.scroll-link').on('click', function(e) {
     e.preventDefault();
     scrollToAnchor($(this).attr('href'));
@@ -25,6 +27,10 @@ $(document).ready(function () {
     });
   });
 
+  $('.prevent-default').on('click', function(e) {
+    e.preventDefault();
+  });
+
 });
 
 function showMore() {
@@ -39,7 +45,6 @@ function scrollToAnchor(aid){
 }
 
 function setupNav() {
-  $('.topnav').toggleClass('open');
-  $('nav').toggleClass('open');
-  $('body').toggleClass('nav-open');
+  $('nav').toggleClass('open', 500, "swing");
+  $('body').toggleClass('nav-open', 500, "swing");
 }

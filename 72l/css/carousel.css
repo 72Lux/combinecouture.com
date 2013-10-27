@@ -138,11 +138,6 @@ nav {
   color: #eee;
   display: block;
   z-index: 1031;
-  -webkit-transition: right 0.3s;
-  -moz-transition: right 0.3s;
-  -ms-transition: right 0.3s;
-  -o-transition: right 0.3s;
-  transition: right 0.3s;
   overflow: auto;
 }
 
@@ -200,6 +195,7 @@ nav.open {
 
 body.nav-open {
   margin-left: -20em;
+  margin-right: 20em;
 }
 
 .nav-inner {
@@ -413,11 +409,15 @@ nav li a {
 
 .plan-element, .plan-header {
   background: #e0e0e0;
-  padding: 20px 10px;
+  padding: 10px;
   margin-bottom: 1px;
 }
 
-.emphasis .plan-element, .emphasis .plan-header {
+.plan-element p {
+  margin: 0;
+}
+
+.emphasis .plan-element, .emphasis .plan-header, .emphasis .plan-header h2 {
   background: #666;
   color: #eee;
 }
@@ -465,38 +465,74 @@ nav li a {
   box-shadow: none;
 }
 
-.popover-lux.bottom .arrow {
-  border-bottom-color: #eee;
+.popover-title {
+  background: #999 !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  color: #fff !important;
+  font-weight: 200 !important;
+  letter-spacing: 1px !important;
+  border: 0;
+  text-shadow: none !important;
+  padding-bottom: 0;
+  font-size: 15px !important;
 }
 
+.popover {
+  font-weight: 100 !important;
+  letter-spacing: 1px !important;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #999 !important;
+  z-index: 1045;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  max-width: 220px;
+  width: auto;
+  text-shadow: none !important;
+}
+
+.popover-content {
+  width: 220px;
+  color: #eee !important;
+  font-size: 13px !important;
+}
 .popover.right .arrow:after {
-  border-right-color: #eee;
+  border-right-color: #999;
 }
 .popover.left .arrow {
-  border-left-color: #eee;
+  border-left-color: #999;
 }
 
 .popover.left .arrow:after {
-  border-left-color: #eee;
+  border-left-color: #999;
 }
 
 .popover.right .arrow:after {
-  border-right-color: #eee;
+  border-right-color: #999;
 }
 
 .popover.bottom .arrow {
-  border-bottom-color: #eee;
+  border-bottom-color: #999;
 }
 .popover.bottom .arrow:after {
-  border-bottom-color: #eee;
+  border-bottom-color: #999;
 }
 
 .popover.top .arrow {
-  border-top-color: #eee;
+  border-top-color: #999;
 }
 
 .popover.top .arrow:after {
-  border-top-color: #eee;
+  border-top-color: #999;
+}
+
+.popover.right .arrow {
+  border-right-color: #999;
 }
 
 .footer-container-outer {
