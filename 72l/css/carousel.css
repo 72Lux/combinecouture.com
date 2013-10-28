@@ -589,12 +589,12 @@ body.nav-open {
 }
 
 .shoppable-app-container {
-  height: 550px;
+  height: 750px;
   background: #fff url('../images/fi/ipad-and-iphone.png') no-repeat top right;
 }
 
 .shoppable-merchants-app-container {
-  height: 550px;
+  height: 750px;
   background: #fff url('../images/ipad-and-iphone.png') no-repeat top right;
 }
 
