@@ -117,7 +117,7 @@ a:active {
 }
 
 .header-info {
-  padding-top: 40px;
+  padding-top: 0;
   padding-bottom: 0;
 }
 
@@ -590,12 +590,12 @@ body.nav-open {
 
 .shoppable-app-container {
   height: 550px;
-  background: #fff url('../images/fi/72Lux_final_ipad.png') no-repeat 0 0;
+  background: #fff url('../images/fi/ipad-and-iphone.png') no-repeat top right;
 }
 
 .shoppable-merchants-app-container {
   height: 550px;
-  background: #fff url('../images/shoppable-merchants-app.png') no-repeat 0 0;
+  background: #fff url('../images/ipad-and-iphone.png') no-repeat top right;
 }
 
 .page-heading {
