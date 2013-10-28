@@ -42,8 +42,23 @@
   z-index: 3;
   bottom: 0;
   text-align: center;
-  width: 100%;
+  background: #FFF;
+  filter: alpha(opacity=70);
+  opacity: .7;
+  display: inline-block;
+  left: 50%;
+  padding: 3px 5px;
 }
+
+.slides-pagination:hover, .slideshow-caption:hover {
+  filter: alpha(opacity=90);
+  opacity: .9;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
 .slides-pagination a {
   border: 2px solid #222;
   border-radius: 15px;
@@ -59,6 +74,7 @@
   margin: 2px;
   overflow: hidden;
   text-indent: -100%;
+
 }
 .slides-pagination a.current {
   background: #222;

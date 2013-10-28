@@ -5,7 +5,7 @@
 body {
 /*  padding-bottom: 40px; */
   color: #222;
-  background-color: #f8f8f8; /*#f8f8f8;*/
+  background-color: #fff; /*#f8f8f8;*/
 }
 
 a, .btn-link {
@@ -63,7 +63,7 @@ a:active {
 }
 
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: #fff;
   border-color: transparent;
 }
 
@@ -118,7 +118,7 @@ a:active {
 
 .header-info {
   padding-top: 40px;
-  padding-bottom: 75px;
+  padding-bottom: 0;
 }
 
 .header-info-outer {
@@ -189,8 +189,8 @@ a:active {
 }
 
 body.nav-open {
-  margin-left: -20em !important;
-  margin-right: 20em !important;
+  margin-left: -20em;
+  margin-right: 20em;
 }
 
 .nav-inner {
@@ -313,7 +313,7 @@ body.nav-open {
 
 .featurette-divider {
   margin: 120px 0; /* Space out the Bootstrap <hr> more */
-  border-top: 1px solid #f8f8f8; /* same color as body */
+  border-top: 1px solid #fff; /* same color as body */
 }
 
 .featurette-divider.first {
@@ -325,7 +325,7 @@ body.nav-open {
 }
 
 /* Thin out the marketing headings */
-.featurette-heading {
+.featurette-heading, .featurette-subheading {
   color: #000;
   font-weight: 300;
   line-height: 1;
@@ -373,10 +373,13 @@ body.nav-open {
     font-size: 40px;
   }
 
+  .featurette-subheading {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 992px) {
-  .featurette-heading {
+  .featurette-heading, .featurette-heading {
     margin-top: 0;
   }
 }
@@ -587,7 +590,7 @@ body.nav-open {
 
 .shoppable-app-container {
   height: 550px;
-  background: #fff url('../images/shoppable-app.png') no-repeat 0 0;
+  background: #fff url('../images/fi/72Lux_final_ipad.png') no-repeat 0 0;
 }
 
 .shoppable-merchants-app-container {
@@ -646,17 +649,21 @@ iframe {
   z-index: 1050;
   right: auto;
   width: 30%;
-  background: #fff;
-  opacity: .9;
-  color: #222;
+  background: #222;
+  filter: alpha(opacity=80);
+  opacity: .8;
+  color: #fff;
   font-weight: 200;
   letter-spacing: 1px;
   text-shadow: none;
   padding: 20px;
   left: 15%;
-  bottom: 2%;
-  max-height: 225px;
+  bottom: 0;
+  max-height: 460px;
+  overflow: hidden;
+  width: 300px;
   position: absolute;
+  margin-bottom: 20px;
 }
 
 .slides-container img {
