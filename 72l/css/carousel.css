@@ -128,7 +128,7 @@ a:active {
 
 /* SIDENAV */
 
-nav {
+.sidenav {
   position: fixed;
   top: 0;
   right: -20em;
@@ -141,7 +141,7 @@ nav {
   overflow: auto;
 }
 
-nav ul {
+.sidenav ul {
   list-style-type: none;
   margin-bottom: 30px;
   padding-left: 30px;
@@ -151,7 +151,7 @@ nav ul {
   display: inline;
 }
 
-nav .social li a {
+.sidenav .social li a {
   padding: 10px 0;
   opacity: 0.4;
   filter: alpha(opacity=40);
@@ -180,11 +180,11 @@ nav .social li a {
 }
 
 
-nav a:hover {
+.sidenav a:hover {
   text-decoration: none;
 }
 
-nav.open {
+.sidenav.open {
   right: 0;
 }
 
@@ -210,7 +210,7 @@ body.nav-open {
   line-height: 1.4;
 }
 
-nav li {
+.sidenav li {
   color: #222;
   font-weight: 300;
   letter-spacing: 1px;
@@ -219,7 +219,7 @@ nav li {
   padding: 5px 0;
 }
 
-nav li a {
+.sidenav li a {
   font-weight: 300;
   letter-spacing: 1px;
   font-size: 18px;
@@ -631,4 +631,29 @@ iframe {
 .container-block.stretch-image {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.slides-container-outer {
+  height: 500px;
+}
+
+.slides-navigation a {
+  padding: 20px 40px;
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.slides-navigation a:hover, .slides-navigation a:focus {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.slides-navigation a:active {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }

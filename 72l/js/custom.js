@@ -9,6 +9,8 @@ $(document).ready(function () {
 
   $('.popover-lux-trigger').popover();
 
+  $('#slides').superslides({'inherit_height_from' : '.slides-container-outer'});
+
   $('.scroll-link').on('click', function(e) {
     e.preventDefault();
     scrollToAnchor($(this).attr('href'));

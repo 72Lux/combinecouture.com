@@ -19,13 +19,14 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
+    <link href="css/superslides.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
   <body id="top" data-spy="scroll" data-offset="140" data-target="#page-nav">
-    <nav id="navigation">
-    </nav>
+    <div class="sidenav" id="navigation">
+    </div>
 
     <!-- <div id="pub-header-image" class="header-image" data-stretch="images/pub-header-grain.jpg"> -->
     <div id="pub-header-image">
@@ -122,45 +123,38 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="images/slideshow/lll-001.jpg" alt="Third slide" class="img-responsive" />
-          <div class="container">
+
+    <div class="slides-container-outer">
+      <div id="slides">
+        <ul class="slides-container">
+          <li>
+            <img src="images/slideshow/lll-001.jpg" alt="">
             <div class="carousel-caption">
               <p><strong>Look, Love & Live</strong> at <strong>LooLoLi.com</strong>, where designer and stylist Claire Florence shares her inspirations and collections with her readers. She sells her exclusive scarf line along with products from many of our other retailers on her beautifully designed, Shoppable site!</p>
-              <p class="no-margin"><a class="btn btn-large btn-danger" href="#">Browse gallery</a></p>
+              <p class="no-margin"><a class="btn btn-large btn-danger" href="#lll-slideshow-modal" data-toggle="modal">Browse gallery</a></p>
             </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="images/slideshow/tv-001.jpg" glyphicon-align-justify="Teen Vogue" class="img-responsive" />
-          <div class="container">
+          </li>
+          <li>
+            <img src="images/slideshow/tv-001.jpg" alt="">
             <div class="carousel-caption">
               <p><strong>Teen Vogue</strong> collaborated with 72Lux to create Shoppable slideshows across their site, along with a fully-curated Back-to-School Shop! With categories like clothing, shoes & accessories, beauty and school & dorm, their editors covered all the Back-to-School essentials for their readers to shop right from their site.</p>
               <p class="no-margin"><a class="btn btn-large btn-danger" href="#">Sign up today</a></p>
             </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="images/slideshow/wsj-001.jpg" alt="WSJ" class="img-responsive">
-          <div class="container">
+          </li>
+          <li>
+            <img src="images/slideshow/wsj-001.jpg" alt="">
             <div class="carousel-caption">
               <p>The Wall Street Journal worked with 72Lux to create a Shoppable holiday gift guide called 'WSJ Select'. By leveraging 72Lux's flexible grid frames they were able to execute their vision of a store experience.</p>
               <p class="no-margin"><a class="btn btn-large btn-danger" href="#">Learn more</a></p>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
+        <nav class="slides-navigation">
+          <a href="#" class="next">Next</a>
+          <a href="#" class="prev">Prev</a>
+        </nav>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
+    </div>
 
     <div class="container">
 
@@ -530,14 +524,13 @@
     <div id="footer-container" class="footer-container-outer">
     </div>
 
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/holder.js"></script>
+    <script src="js/jquery.superslides.min.js"></script>
     <script src="js/anystretch.js"></script>
     <script src="js/custom.js"></script>
   </body>
