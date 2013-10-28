@@ -618,3 +618,8 @@ nav li a {
 iframe {
   border: 0;
 }
+
+.text-block-110 {
+  height: 110px;
+  overflow: hidden;
+}
