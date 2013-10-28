@@ -374,7 +374,7 @@ body.nav-open {
   }
 
   .featurette-subheading {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 
@@ -415,6 +415,10 @@ body.nav-open {
 
 .btn-fixed {
   width: 150px;
+}
+
+.btn-lg.btn-fixed {
+  width: 200px;
 }
 
 .centered-subnav {
@@ -599,7 +603,7 @@ body.nav-open {
 }
 
 .page-heading {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .header-info .btn {
