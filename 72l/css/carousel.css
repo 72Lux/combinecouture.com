@@ -597,6 +597,10 @@ nav li a {
   color: #999999 !important;
 }
 
+.text-light {
+  color: #fff !important;
+}
+
 .shoppable-app-container {
   height: 550px;
   background: #fff url('../images/shoppable-app.png') no-repeat 0 0;
