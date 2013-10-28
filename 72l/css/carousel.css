@@ -623,3 +623,8 @@ iframe {
   height: 110px;
   overflow: hidden;
 }
+
+.container-block.stretch-image {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
