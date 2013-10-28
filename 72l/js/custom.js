@@ -10,6 +10,9 @@ $(document).ready(function () {
   $('.popover-lux-trigger').popover();
 
   $('#slides').superslides({'inherit_height_from' : '.slides-container-outer'});
+  $('#slides').on('updated.slides', function() {
+    alert('x');
+  });
 
   $('.scroll-link').on('click', function(e) {
     e.preventDefault();
@@ -22,6 +25,7 @@ $(document).ready(function () {
   });
 
   $('#footer-container').load('footer.html');
+
   $('#navigation').load('navigation.html', { active_link: 'Hello World' }, function() {
     $('.close-nav').on('click', function(e) {
       e.preventDefault();
@@ -32,6 +36,8 @@ $(document).ready(function () {
   $('.prevent-default').on('click', function(e) {
     e.preventDefault();
   });
+
+
 
 });
 
@@ -47,6 +53,6 @@ function scrollToAnchor(aid){
 }
 
 function setupNav() {
-  $('nav').toggleClass('open', 500, "swing");
+  $('.sidenav').toggleClass('open', 500, "swing");
   $('body').toggleClass('nav-open', 500, "swing");
 }

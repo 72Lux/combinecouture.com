@@ -188,14 +188,9 @@ a:active {
   right: 0;
 }
 
-.topnav.open {
-  margin-right: 20em;
-  margin-left: -20em;
-}
-
 body.nav-open {
-  margin-left: -20em;
-  margin-right: 20em;
+  margin-left: -20em !important;
+  margin-right: 20em !important;
 }
 
 .nav-inner {
@@ -264,18 +259,7 @@ body.nav-open {
   /*margin-top: -90px;*/
 }
 /* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-  right: auto;
-  width: 30%;
-  background: #fff;
-  opacity: .9;
-  color: #222;
-  font-weight: 200;
-  letter-spacing: 1px;
-  text-shadow: none;
-  padding: 20px;
-}
+
 
 .carousel-indicators {
   left: auto;
@@ -656,4 +640,25 @@ iframe {
 .slides-navigation a:active {
   opacity: 0.8;
   filter: alpha(opacity=80);
+}
+
+.slideshow-caption {
+  z-index: 1050;
+  right: auto;
+  width: 30%;
+  background: #fff;
+  opacity: .9;
+  color: #222;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-shadow: none;
+  padding: 20px;
+  left: 15%;
+  bottom: 2%;
+  max-height: 225px;
+  position: absolute;
+}
+
+.slides-container img {
+  -webkit-backface-visibility: visible !important;
 }
