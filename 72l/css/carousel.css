@@ -681,3 +681,13 @@ iframe {
 .slides-container img {
   -webkit-backface-visibility: visible !important;
 }
+
+.modal-slideshow .modal-dialog {
+  width: 90%;
+  height: 90%;
+}
+
+.modal-slideshow .modal-content {
+  width: 100%;
+  height: 100%;
+}
