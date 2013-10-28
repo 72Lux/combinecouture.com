@@ -8,7 +8,11 @@ $(document).ready(function () {
   $('.stretch-image').anystretch();
 
   $('.popover-lux-trigger').popover();
-  $('#slides').superslides({'inherit_height_from' : '.slides-container-outer'});
+
+  if ($('#slides').length > 0) {
+    $('#slides').superslides({'inherit_height_from' : '.slides-container-outer'});
+  }
+
 
   $('body').removeAttr('style');
   $('.scroll-link').on('click', function(e) {
