@@ -10,6 +10,7 @@ body {
 
 body.modal-open {
   overflow: hidden;
+  scroll: none;
 }
 
 a, .btn-link {
@@ -501,6 +502,11 @@ body.nav-open, .page-nav.nav-open {
   width: 50%;
 }
 
+.popover-lux-trigger:hover {
+  background: #999;
+  color: #fff;
+}
+
 .popover-lux {
   border-radius: 0;
   display: inline-block;
@@ -668,7 +674,7 @@ body.nav-open, .page-nav.nav-open {
 }
 
 .page-heading {
-  margin-top: 45px;
+  margin-top: 70px;
 }
 
 .header-info .btn {
