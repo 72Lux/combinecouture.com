@@ -192,7 +192,7 @@ a:active {
   right: 0;
 }
 
-body.nav-open {
+body.nav-open, .page-nav.nav-open {
   margin-left: -20em;
   margin-right: 20em;
 }
@@ -647,14 +647,24 @@ body.nav-open {
   color: #fff !important;
 }
 
-.shoppable-app-container {
+.publishers-header-container {
   height: 715px;
   background: #fff url('../images/fi/ipad-and-iphone-vivek.png') no-repeat 5px 40px;
 }
 
-.shoppable-merchants-app-container {
+.merchants-header-container {
   height: 715px;
   background: #fff url('../images/fi/ipad-and-iphone.png-vivek') no-repeat 5px 40px;
+}
+
+.shoppable-screencap-container {
+  height: 550px;
+  background: #fff url('../images/fi/shoppable-app.png') no-repeat 5px 40px;
+}
+
+.shoppable-for-merchants-screencap-container {
+  height: 550px;
+  background: #fff url('../images/fi/shoppable-for-merchants-app.png') no-repeat 5px 40px;
 }
 
 .page-heading {
