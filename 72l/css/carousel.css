@@ -466,7 +466,7 @@ body.nav-open, .page-nav.nav-open {
 }
 
 .content-footer {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .btn-fixed {
@@ -620,6 +620,15 @@ body.nav-open, .page-nav.nav-open {
 .logo-box {
   height: 40px;
   margin: 10px 0 20px 0;
+}
+
+.logo-box.tall {
+  height: 180px;
+  display: inline-block;
+}
+
+.logo-box.tall a {
+  line-height: 180px;
 }
 
 .footer-copyright {
@@ -795,4 +804,24 @@ iframe {
 .modal-backdrop.in {
   opacity: 0.9;
   filter: alpha(opacity=90);
+}
+
+.plan-label {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  background-color: #257688;
+  font-weight: 100;
+  letter-spacing: 1px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  display: inline-block;
+  padding: 3px 7px;
+  font-size: 12px;
+  line-height: 14px;
+  color: white;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
