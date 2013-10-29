@@ -13,8 +13,16 @@ $(document).ready(function () {
     $('#slides').superslides({'inherit_height_from' : '.slides-container-outer'});
   }
 
-  if ($('#slides-modal').length > 0) {
-    $('#slides-modal').superslides({'inherit_height_from' : '.modal-content'});
+  if ($('#slides-modal-lll').length > 0) {
+    $('#slides-modal-lll').superslides({'inherit_height_from' : '.slides-container-outer'});
+  }
+
+  if ($('#slides-modal-wsj').length > 0) {
+    $('#slides-modal-wsj').superslides({'inherit_height_from' : '.slides-container-outer'});
+  }
+
+  if ($('#slides-modal-tv').length > 0) {
+    $('#slides-modal-tv').superslides({'inherit_height_from' : '.slides-container-outer'});
   }
 
   $('body').removeAttr('style');
