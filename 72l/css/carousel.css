@@ -12,7 +12,7 @@ a, .btn-link {
   color: #3099B0;
 }
 
-a:hover, a:focus {
+a:hover, a:focus, .btn-link {
   color: #257688;
   text-decoration: none;
   -webkit-transition: 0.25s;
@@ -593,17 +593,17 @@ body.nav-open {
 }
 
 .shoppable-app-container {
-  height: 750px;
-  background: #fff url('../images/fi/ipad-and-iphone.png') no-repeat top right;
+  height: 715px;
+  background: #fff url('../images/fi/ipad-and-iphone-vivek.png') no-repeat 5px 40px;
 }
 
 .shoppable-merchants-app-container {
-  height: 750px;
-  background: #fff url('../images/fi/ipad-and-iphone.png') no-repeat top right;
+  height: 715px;
+  background: #fff url('../images/fi/ipad-and-iphone.png-vivek') no-repeat 5px 40px;
 }
 
 .page-heading {
-  margin-top: 80px;
+  margin-top: 45px;
 }
 
 .header-info .btn {
@@ -682,6 +682,23 @@ iframe {
   -webkit-backface-visibility: visible !important;
 }
 
+.modal-slideshow .modal-header {
+  background: #222;
+  color: #fff;
+  border-bottom: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1050;
+}
+
+.modal-slideshow .modal-body {
+  height: 100%;
+  padding: 0;
+  background: #222;
+  color: #eee;
+}
+
 .modal-slideshow .modal-dialog {
   width: 90%;
   height: 90%;
@@ -690,4 +707,9 @@ iframe {
 .modal-slideshow .modal-content {
   width: 100%;
   height: 100%;
+  border-radius: 0;
+}
+
+.hidden-detail {
+  display: none;
 }

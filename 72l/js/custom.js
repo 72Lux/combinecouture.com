@@ -13,6 +13,9 @@ $(document).ready(function () {
     $('#slides').superslides({'inherit_height_from' : '.slides-container-outer'});
   }
 
+  if ($('#slides-modal').length > 0) {
+    $('#slides-modal').superslides({'inherit_height_from' : '.modal-dialog'});
+  }
 
   $('body').removeAttr('style');
   $('.scroll-link').on('click', function(e) {
