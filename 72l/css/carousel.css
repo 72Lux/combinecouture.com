@@ -8,11 +8,15 @@ body {
   background-color: #fff; /*#f8f8f8;*/
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a, .btn-link {
   color: #3099B0;
 }
 
-a:hover, a:focus, .btn-link {
+a:hover, a:focus, .btn-link:hover {
   color: #257688;
   text-decoration: none;
   -webkit-transition: 0.25s;
@@ -222,6 +226,11 @@ body.nav-open {
   padding: 5px 0;
 }
 
+.sidenav .close-nav {
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
 .close-nav {
   float: right;
   font-size: 30px;
@@ -231,8 +240,7 @@ body.nav-open {
   color: #222;
   opacity: 0.6;
   filter: alpha(opacity=60);
-  margin-right: 20px;
-  margin-top: 10px;
+
 }
 
 .close-nav:hover, .close-nav:focus {
@@ -247,6 +255,35 @@ body.nav-open {
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
+
+.close-modal {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: #fff;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  background: transparent;
+  border: none;
+}
+
+.close-modal:hover, .close-modal:focus {
+  color: #fff;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  text-decoration: none;
+}
+
+.close-modal:active {
+  color: #fff;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
