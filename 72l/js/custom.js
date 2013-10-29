@@ -14,7 +14,7 @@ $(document).ready(function () {
   }
 
   if ($('#slides-modal').length > 0) {
-    $('#slides-modal').superslides({'inherit_height_from' : '.modal-dialog'});
+    $('#slides-modal').superslides({'inherit_height_from' : '.modal-content'});
   }
 
   $('body').removeAttr('style');
