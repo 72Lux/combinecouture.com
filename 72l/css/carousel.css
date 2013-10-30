@@ -5,7 +5,7 @@
 body {
 /*  padding-bottom: 40px; */
   color: #222;
-  background-color: #f8f8f8; /*#f8f8f8;*/
+  background-color: #fff; /*#f8f8f8;*/
 }
 
 body.modal-open {
@@ -393,8 +393,9 @@ body.nav-open, .page-nav.nav-open {
 }
 
 .featurette-heading.page-heading {
-  padding-top: 10px;
+  padding-top: 50px;
   margin-bottom: 10px;
+  font-size: 32px;
 }
 
 .featurette-heading {
@@ -515,6 +516,10 @@ body.nav-open, .page-nav.nav-open {
   float: none;
   margin: 0 auto;
   display: inline-block;
+}
+
+.navbar-default > .active > a:hover, .navbar-default > .active > a:focus {
+  background-color: #3099B0;
 }
 
 .btn-lux {
@@ -715,7 +720,7 @@ body.nav-open, .page-nav.nav-open {
 }
 
 .merchants-header-container {
-  height: 538px;
+  height: 669px;
   background: #222 url('../images/fi/merchants-header.png') no-repeat top right;
 }
 
@@ -903,4 +908,8 @@ iframe {
 
 .container-feature.dark {
   background: #eee;
+}
+
+.container-feature.super-dark {
+  background: #222;
 }
