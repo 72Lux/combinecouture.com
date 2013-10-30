@@ -22,15 +22,20 @@
     <link href="css/superslides.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
   </head>
-<!-- NAVBAR
-================================================== -->
+
+  <!-- NAVBAR -->
+
   <body id="top" data-spy="scroll" data-offset="140" data-target="#page-nav">
+
+    <!-- SIDENAV -->
+    <!-- populated using load() -->
+
     <nav class="sidenav" id="navigation">
     </nav>
 
-    <!-- <div id="pub-header-image" class="header-image" data-stretch="images/pub-header-grain.jpg"> -->
+    <!-- TOPNAV -->
+
     <div id="pub-header-image">
-      <!-- Fixed navbar -->
       <div class="navbar navbar-default topnav">
 
           <div class="navbar-header">
@@ -40,22 +45,22 @@
             <ul class="nav navbar-nav navbar-right">
               <li class=""><a href="#" class="show-side-nav"><span class="glyphicon glyphicon-align-justify"></span> MENU</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
 
       </div>
 
-      <!-- Main page header
-      ================================================== -->
+      <!-- HEADER -->
+
       <div class="header-info-outer">
         <div class="container header-info">
 
           <div class="row featurette">
             <div class="col-md-5 text-center">
-              <h2 class="featurette-subheading page-heading">GENERATE REVENUE THROUGH</h2>
-                <p><img src="images/shoppable-logo.png" width="400px" /></p>
+              <h2 class="featurette-heading page-heading">GENERATE REVENUE THROUGH</h2>
+              <p><img src="images/shoppable-logo.png" width="400px" /></p>
 
-                <p class=""><a href="#features-and-pricing" class="scroll-link btn btn-lg btn-fixed btn-lux">Get STARTED</a></p>
-                <p><a href="#featured-clients" class="lead no-margin scroll-link">Learn more</a></p>
+              <p class=""><a href="#features-and-pricing" class="scroll-link btn btn-lg btn-fixed btn-lux">Get STARTED</a></p>
+              <p><a href="#featured-clients" class="lead no-margin scroll-link">Learn more</a></p>
 
             </div>
             <div class="col-md-7 publishers-header-container">
@@ -91,109 +96,86 @@
       </div>
     </div>
 
-    <div class="container">
-
-      <!-- FEATURED CLIENTS -->
-
-      <hr id="featured-clients" class="featurette-divider first">
-
-      <div class="col-md-12 text-center">
-        <h2 class="featurette-heading">Featured Clients</h2>
-        <p>&nbsp;</p>
-      </div>
-      <!-- Three columns of text below the carousel -->
-      <div class="row text-center">
-        <div class="col-lg-3 content-footer logo-box tall">
-          <a target="_blank" class="first" href="http://wsjselect.com"><img width="140" src="images/logos/wsj.jpg"></a>
-        </div><!-- /.col-lg-3 -->
-        <div class="col-lg-3 content-footer logo-box tall">
-          <!-- <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image"> -->
-          <a target="_blank" href="http://www.essence.com/beautymatchmaker"><img width="190" src="images/logos/essence.png"></a>
-        </div><!-- /.col-lg-3 -->
-        <div class="col-lg-3 content-footer logo-box tall">
-          <a target="_blank" href="http://teenvogue.com/shop"><img width="210" src="images/logos/teenvogue.png"></a>
-        </div><!-- /.col-lg-3 -->
-        <div class="col-lg-3 content-footer logo-box tall">
-          <a target="_blank" class="last" href="http://www.essentialstyleformen.com/style/style-swims/"><img width="150" src="images/logos/esm.jpg"></a>
-        </div><!-- /.col-lg-3 -->
-      </div><!-- /.row -->
-
-    </div> <!-- close container for full width slideshow. open after. -->
-
-    <!-- Carousel
-    ================================================== -->
-
-    <div class="slides-container-outer">
-      <div id="slides">
-        <div class="slides-container">
-          <div>
-            <img src="images/slideshow/lll-001.png" alt="">
-            <div class="slideshow-caption">
-              <p class="caption-text"><strong>Look, Love & Live</strong> at <strong>LooLoLi.com</strong>, where designer and stylist Claire Florence shares her inspirations and collections with her readers. She sells her exclusive scarf line along with products from many of our other retailers on her beautifully designed, Shoppable site!</p>
-              <p class="no-margin text-right caption-buttons"><a class="btn btn-lg btn-danger" href="#slideshow-modal-lll" data-toggle="modal">More</a></p>
-            </div>
-          </div>
-          <div>
-            <img src="images/slideshow/tv-001.png" alt="">
-            <div class="slideshow-caption">
-              <p class="caption-text"><strong>Teen Vogue</strong> collaborated with 72Lux to create Shoppable slideshows across their site, along with a fully-curated Back-to-School Shop! With categories like clothing, shoes & accessories, beauty and school & dorm, their editors covered all the Back-to-School essentials for their readers to shop right from their site.</p>
-              <p class="no-margin text-right caption-buttons"><a class="btn btn-lg btn-danger" href="#slideshow-modal-tv" data-toggle="modal">More</a></p>
-            </div>
-          </div>
-          <div>
-            <img src="images/slideshow/wsj-001.png" alt="">
-            <div class="slideshow-caption">
-              <p class="caption-text">The Wall Street Journal worked with 72Lux to create a Shoppable holiday gift guide called 'WSJ Select'. By leveraging 72Lux's flexible grid frames they were able to execute their vision of a store experience.</p>
-              <p class="no-margin text-right caption-buttons"><a class="btn btn-lg btn-danger" href="#slideshow-modal-wsj" data-toggle="modal">More</a></p>
-            </div>
+    <!-- FEATURED CLIENTS -->
+    <div id="featured-clients" class="container-feature">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="featurette-heading">Featured Clients</h2>
+            <p>&nbsp;</p>
           </div>
         </div>
-        <nav class="slides-navigation">
-          <a href="#" class="next">Next</a>
-          <a href="#" class="prev">Prev</a>
-        </nav>
       </div>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-3">
+            <div class="logo-box tall">
+              <a target="_blank" class="first" href="http://wsjselect.com"><img width="140" src="images/logos/wsj.jpg"></a>
+            </div>
+          </div><!-- /.col-lg-3 -->
+          <div class="col-lg-3">
+            <div class="logo-box tall">
+              <!-- <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image"> -->
+              <a target="_blank" href="http://www.essence.com/beautymatchmaker"><img width="190" src="images/logos/essence.png"></a>
+            </div>
+          </div><!-- /.col-lg-3 -->
+          <div class="col-lg-3">
+            <div class="logo-box tall">
+              <a target="_blank" href="http://teenvogue.com/shop"><img width="210" src="images/logos/teenvogue.png"></a>
+            </div>
+          </div><!-- /.col-lg-3 -->
+          <div class="col-lg-3">
+            <div class="logo-box tall">
+              <a target="_blank" class="last" href="http://www.essentialstyleformen.com/style/style-swims/"><img width="150" src="images/logos/esm.jpg"></a>
+            </div>
+          </div><!-- /.col-lg-3 -->
+        </div><!-- /.row -->
+      </div>
+
+      <div class="slides-container-outer">
+        <div id="slides">
+          <div class="slides-container">
+            <div>
+              <img src="images/slideshow/lll-001.png" alt="">
+              <div class="slideshow-caption">
+                <p class="caption-text"><strong>Look, Love & Live</strong> at <strong>LooLoLi.com</strong>, where designer and stylist Claire Florence shares her inspirations and collections with her readers. She sells her exclusive scarf line along with products from many of our other retailers on her beautifully designed, Shoppable site!</p>
+                <p class="no-margin text-right caption-buttons"><a class="btn btn-lg btn-danger" href="#slideshow-modal-lll" data-toggle="modal">More</a></p>
+              </div>
+            </div>
+            <div>
+              <img src="images/slideshow/tv-001.png" alt="">
+              <div class="slideshow-caption">
+                <p class="caption-text"><strong>Teen Vogue</strong> collaborated with 72Lux to create Shoppable slideshows across their site, along with a fully-curated Back-to-School Shop! With categories like clothing, shoes & accessories, beauty and school & dorm, their editors covered all the Back-to-School essentials for their readers to shop right from their site.</p>
+                <p class="no-margin text-right caption-buttons"><a class="btn btn-lg btn-danger" href="#slideshow-modal-tv" data-toggle="modal">More</a></p>
+              </div>
+            </div>
+            <div>
+              <img src="images/slideshow/wsj-001.png" alt="">
+              <div class="slideshow-caption">
+                <p class="caption-text">The Wall Street Journal worked with 72Lux to create a Shoppable holiday gift guide called 'WSJ Select'. By leveraging 72Lux's flexible grid frames they were able to execute their vision of a store experience.</p>
+                <p class="no-margin text-right caption-buttons"><a class="btn btn-lg btn-danger" href="#slideshow-modal-wsj" data-toggle="modal">More</a></p>
+              </div>
+            </div>
+          </div>
+          <nav class="slides-navigation">
+            <a href="#" class="next">Next</a>
+            <a href="#" class="prev">Prev</a>
+          </nav>
+        </div>
+      </div>
+
     </div>
-
-    <div class="container">
-
-      <hr id="how-it-works" class="featurette-divider">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-12 text-center">
+    <!-- HOW IT WORKS -->
+    <div id="how-it-works" class="container-feature dark">
+      <div class="container">
+        <div class="col-md-12 text-center">
           <h2 class="featurette-heading">How it works</h2>
           <p>&nbsp;</p>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-lg-5">
-          <p class="lead">72Lux's technology, Shoppable, enables digital publishers to sell the products featured within your editorial. This ecommerce platform solution is the optimal way to monetize your content.</p>
-
-          <p class="lead">72Lux makes the process of incorporating shopping functionality easy and inexpensive, leading to quick profitability from a new revenue stream. Visitors can purchase the looks they see in your content without ever leaving your site.</p>
-
-          <p class="lead">The opportunity leverages technology that enables customers—your visitors—to buy from multiple retailers with only one check-out interface. This interface is customized and branded by your website.</p>
-
-          <p class="lead">There are multiple options for integration depending on your site, your needs, and your vision for the retail possibilities.</p>
-        </div>
-        <div class="col-lg-7 shoppable-screencap-container">
-        </div>
-      </div>
-
-    </div>
-
-
-    <hr class="featurette-divider">
-
-    <div class="container-block stretch-image" data-stretch="images/fi/hands-on-ipad-01.jpg">
       <div class="container">
-
-        <!-- LEADING FEATURETTE -->
-
         <div class="row featurette">
-          <div class="col-md-5 col-md-offset-7">
-            <h2 class="featurette-subheading">Leader in Content & Commerce</h2>
+          <div class="col-md-5">
             <p class="lead">Shoppable, 72Lux’s technology, enables  site owners to sell the products  you feature. This ecommerce platform and universal checkout is the optimal way to monetize your content and increase engagement.</p>
 
             <p class="lead">The setup is easy and inexpensive, leading to quick profitability from a new revenue stream. The user experience can be customized and branded by your website. Visitors can purchase the products they see in your content without ever leaving your site.</p>
@@ -201,371 +183,391 @@
             <p class="lead">With drag and drop technology, 72Lux makes the process of incorporating shopping functionality easy to use.</p>
             </p>
           </div>
+          <div class="col-md-7 text-center">
+            <h2 class="featurette-subheading">Leader in Content & Commerce</h2>
+            <iframe src="http://player.vimeo.com/video/47863754?title=0&amp;byline=0&amp;portrait=0" width="487" height="274" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </div>
         </div>
       </div>
-    </div>
-
-    </div>
-    <div class="container">
-
-      <div class="row text-center">
-        <div class="col-lg-3">
-          <h2 class="big-num">1</h2>
-          <p class="lead text-block-110">LOGIN and choose from millions of pre-integrated products (or add new merchandise <a href="https://home.shoppable.co/account/login/" target="_blank">here</a>).</p>
-          <p class=""><img class="featurette-image img-responsive" src="images/fi/step-1.jpg" alt=""></p>
-        </div><!-- /.col-lg-3 -->
-        <div class="col-lg-3">
-          <h2 class="big-num">2</h2>
-          <p class="lead text-block-110">SELECT how you want the products displayed.</p>
-          <p class=""><img class="featurette-image img-responsive" src="images/fi/step-2.jpg" alt=""></p>
-        </div><!-- /.col-lg-3 -->
-        <div class="col-lg-3">
-          <h2 class="big-num">3</h2>
-          <p class="lead text-block-110">LAUNCH on your site by pasting the code we give into your CMS.</p>
-          <p class=""><img class="featurette-image img-responsive" src="images/fi/step-3.jpg" alt=""></p>
-        </div><!-- /.col-lg-3 -->
-        <div class="col-lg-3">
-          <h2 class="big-num">4</h2>
-          <h2 class="featurette-heading text-block-110">Start selling!</h2>
-          <p class=""><img class="featurette-image img-responsive" src="images/fi/step-4.jpg" alt=""></p>
-        </div><!-- /.col-lg-3 -->
-      </div>
-
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="video-container-outer stretch-image" data-stretch="images/pub-header-grain.jpg">
+      <hr class="featurette-divider dark">
       <div class="container">
-      <!-- Three columns of text below the carousel -->
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <iframe src="http://player.vimeo.com/video/47863754?title=0&amp;byline=0&amp;portrait=0" width="487" height="274" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        <div class="row text-center">
+          <div class="col-lg-3">
+            <h2 class="big-num">1</h2>
+            <p class="lead text-block-110">LOGIN and choose from millions of pre-integrated products (or add new merchandise <a href="https://home.shoppable.co/account/login/" target="_blank">here</a>).</p>
+            <p class=""><img class="featurette-image img-responsive" src="images/fi/step-1.jpg" alt=""></p>
+          </div><!-- /.col-lg-3 -->
+          <div class="col-lg-3">
+            <h2 class="big-num">2</h2>
+            <p class="lead text-block-110">SELECT how you want the products displayed.</p>
+            <p class=""><img class="featurette-image img-responsive" src="images/fi/step-2.jpg" alt=""></p>
+          </div><!-- /.col-lg-3 -->
+          <div class="col-lg-3">
+            <h2 class="big-num">3</h2>
+            <p class="lead text-block-110">LAUNCH on your site by pasting the code we give into your CMS.</p>
+            <p class=""><img class="featurette-image img-responsive" src="images/fi/step-3.jpg" alt=""></p>
+          </div><!-- /.col-lg-3 -->
+          <div class="col-lg-3">
+            <h2 class="big-num">4</h2>
+            <h2 class="featurette-subheading text-block-110">Start selling!</h2>
+            <p class=""><img class="featurette-image img-responsive" src="images/fi/step-4.jpg" alt=""></p>
           </div><!-- /.col-lg-3 -->
         </div>
       </div>
     </div>
-
-    <div class="container">
-      <hr id="product-catalog" class="featurette-divider">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-12 ">
-          <h2 class="featurette-heading text-center">72Lux's Universal Checkout and Product Categories</h2>
-          <p class="lead">72Lux offers a white label, universal checkout that is pre-integrated with over a 150 merchants in apparel, home, health and beauty, electronics and gadgets, sporting goods, children's books, and men's grooming and skincare. You can also add new merchants too via TODO: Shoppable for Merchants, 72Lux's self-serve merchant platform. Current categories include:</p>
-        </div>
-        <div class="col-lg-4 text-center">
-          <p class="lead">Gadgets & Electronics</p>
-          <p class="lead">Men's Apparel</p>
-          <p class="lead">Women's Apparel</p>
-        </div><!-- /.col-lg-3 -->
-        <div class="col-lg-4 text-center">
-          <p class="lead">Health & Beauty</p>
-          <p class="lead">Home Goods</p>
-          <p class="lead">Books</p>
-        </div><!-- /.col-lg-3 -->
-        <div class="col-lg-4 text-center">
-          <p class="lead">Gadgets & Electronics</p>
-          <p class="lead">Men's Apparel</p>
-          <p class="lead">Women's Apparel</p>
-        </div><!-- /.col-lg-3 -->
-      </div><!-- /.row -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
+    <!-- PRODUCT CATALOG -->
+    <div id="product-catalog" class="container-feature">
+      <div class="container">
         <div class="col-md-12 text-center">
-          <h2 class="featurette-heading">72Lux's growing Shoppable marketplace already includes</h2>
-        </div>
-
-        <div class="col-md-4 text-center">
-          <h2 class="featurette-subheading">Brands</h2>
-          <iframe src="https://72lux.geckoboard.com/dashboard/B7CB2778F0F4812B/" width="160" height="55"></iframe>
-        </div>
-        <div class="col-md-4 text-center">
-          <h2 class="featurette-subheading">Products</h2>
-          <iframe src="https://72lux.geckoboard.com/dashboard/348DEFC55F3284EC/" width="175" height="55"></iframe>
-        </div>
-        <div class="col-md-4 text-center">
-          <h2 class="featurette-subheading">Reach</h2>
-          <h2 class="big-num text-center">70M+</h2>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-12 text-center">
-          <h2 class="featurette-heading">Turn Readers into Customers</h2>
+          <h2 class="featurette-heading">Product Catalog</h2>
           <p>&nbsp;</p>
         </div>
+      </div>
+      <div class="container">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="featurette-subheading text-center">72Lux's Universal Checkout and Product Categories</h2>
+            <p class="lead no-margin">72Lux offers a white label, universal checkout that is pre-integrated with over a 150 merchants in apparel, home, health and beauty, electronics and gadgets, sporting goods, children's books, and men's grooming and skincare. You can also add new merchants too via TODO: Shoppable for Merchants, 72Lux's self-serve merchant platform. Current categories include:</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 text-center">
+            <div class="content-block">
+              <p class="lead">Gadgets & Electronics</p>
+              <p class="lead">Men's Apparel</p>
+              <p class="lead">Women's Apparel</p>
+            </div>
+          </div><!-- /.col-lg-3 -->
+          <div class="col-lg-4 text-center">
+            <div class="content-block">
+              <p class="lead">Health & Beauty</p>
+              <p class="lead">Home Goods</p>
+              <p class="lead">Books</p>
+            </div>
+          </div><!-- /.col-lg-3 -->
+          <div class="col-lg-4 text-center">
+            <div class="content-block">
+              <p class="lead">Gadgets & Electronics</p>
+              <p class="lead">Men's Apparel</p>
+              <p class="lead">Women's Apparel</p>
+            </div>
+          </div><!-- /.col-lg-3 -->
+        </div><!-- /.row -->
+      </div>
 
-        <div class="col-md-4 text-center">
-          <p><img src="images/fi/info-1.png" /></p>
+      <hr class="featurette-divider">
+
+      <div class="container">
+        <div class="row featurette">
+          <div class="col-md-12 text-center">
+            <h2 class="featurette-subheading">72Lux's growing Shoppable marketplace already includes</h2>
+          </div>
         </div>
-        <div class="col-md-4 text-center">
-          <p><img src="images/fi/info-2.png" /></p>
-        </div>
-        <div class="col-md-4 text-center">
-          <p><img src="images/fi/info-3.png" /></p>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <h2 class="featurette-subheading">Brands</h2>
+            <iframe src="https://72lux.geckoboard.com/dashboard/B7CB2778F0F4812B/" width="160" height="55"></iframe>
+          </div>
+          <div class="col-md-4 text-center">
+            <h2 class="featurette-subheading">Products</h2>
+            <iframe src="https://72lux.geckoboard.com/dashboard/348DEFC55F3284EC/" width="175" height="55"></iframe>
+          </div>
+          <div class="col-md-4 text-center">
+            <h2 class="featurette-subheading">Reach</h2>
+            <h2 class="big-num text-center">70M+</h2>
+          </div>
         </div>
       </div>
 
-    <hr id="features-and-pricing"  class="featurette-divider">
+      <hr class="featurette-divider">
 
-    <div class="row featurette">
+      <div class="container">
+        <div class="row featurette">
+          <div class="col-md-12 text-center">
+            <h2 class="featurette-subheading">Turn Readers into Customers</h2>
+            <p>&nbsp;</p>
+          </div>
 
-      <div class="col-md-12 text-center">
-        <h2 class="featurette-heading">Features and Pricing</h2>
-        <p class="lead no-margin">Monetize your content through commerce. Get started and start earning today.</p>
-        <p class="lead">All plans come with access to the Shoppable CMS, Analytics, Responsive Design, and a FREE Wordpress Plugin.</p>
-      </div>
-
-      <div class="col-md-3 plan-col">
-        <div class="plan-header">
-          <h2 class="featurette-heading no-margin">Starter</h2>
-          <p class="">For small blogs</p>
-          <a href="https://home.shoppable.co/signup?p=starter" role="btn" data-toggle="modal" class="btn btn-fixed btn-success">Try Starter for free</a>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This is the maximum number of user logins for you and your colleagues." data-original-title="Accounts">
-          <p class="lead">1</p>
-          <p class="">Account</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="A product view occurs when an end-user views a page on your site. If that page has 10 products on it and it is viewed 10,000 times in month, that would be 100,000 product views." data-original-title="Product Views">
-          <p class="lead">Up to 250K</p>
-          <p class="">product views / mo</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This is a single checkout form for multiple retailers. An end-user will complete the checkout form to purchase the products in their shopping bag. Higher level plans allow you to host the checkout form on your own domain." data-original-title="Universal Checkout">
-          <p class="">Universal Checkout</p>
-          <p class="lead">Hosted at Shoppable.co</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This feature allows you secured access to the end-user order data, including: name, email address, shipping address, billing address and the products that were purchased after being featured on your site." data-original-title="Data Access">
-          <p class="lead">No</p>
-          <p class="">Data Access</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This determines whether you have access to an account manager at 72Lux who can provide you with personalized support." data-original-title="Account Management">
-          <p class="lead">No</p>
-          <p class="">Account Management</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This determines the level of technical support received for each plan. Certain plans are restricted to the number of support emails per month." data-original-title="Dev Support">
-          <p class="">Dev Support</p>
-          <p class="lead">Forum + 2 Emails</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Whenever a product is purchased from your site you will receive a commission based on the merchant agreement between 72Lux and the merchant. The commission split is the percentage of those earnings that you keep, versus the amount that 72Lux keeps. You keep the larger amount." data-original-title="Commission Split">
-          <p class="lead">60/40</p>
-          <p class="">Commission Split</p>
-        </div>
-        <div class="plan-element">
-          <p class="">One-time Setup Fee</p>
-          <p class="lead">FREE</p>
-        </div>
-        <div class="plan-element">
-          <p class="lead">$417 / month<sup>*</sup></p>
-          <p class="lead">$4,000 / year</p>
-        </div>
-        <div class="plan-element content-footer">
-          <a href="https://home.shoppable.co/signup?p=starter" role="btn" data-toggle="modal" class="btn btn-fixed btn-success">Try Starter for free</a>
+          <div class="col-md-4 text-center">
+            <p><img src="images/fi/info-1.png" /></p>
+          </div>
+          <div class="col-md-4 text-center">
+            <p><img src="images/fi/info-2.png" /></p>
+          </div>
+          <div class="col-md-4 text-center">
+            <p><img src="images/fi/info-3.png" /></p>
+          </div>
         </div>
       </div>
 
-      <div class="col-md-3 plan-col">
-        <div class="plan-header">
-          <h2 class="featurette-heading no-margin">Plus</h2>
-          <p class="">For midsize etc</p>
-          <a href="https://home.shoppable.co/signup?p=plus" role="btn" data-toggle="modal" class="btn btn-fixed btn-success">Sign up</a>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This is the maximum number of user logins for you and your colleagues." data-original-title="Accounts">
-          <p class="lead">10</p>
-          <p class="">Accounts</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="A product view occurs when an end-user views a page on your site. If that page has 10 products on it and it is viewed 10,000 times in month, that would be 100,000 product views." data-original-title="Product Views">
-          <p class="lead">Up to 500K</p>
-          <p class="">product views / mo</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This is a single checkout form for multiple retailers. An end-user will complete the checkout form to purchase the products in their shopping bag. Higher level plans allow you to host the checkout form on your own domain." data-original-title="Universal Checkout">
-          <p class="">Universal Checkout</p>
-          <p class="lead">On your own domain</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This feature allows you secured access to the end-user order data, including: name, email address, shipping address, billing address and the products that were purchased after being featured on your site." data-original-title="Data Access">
-          <p class="lead">No</p>
-          <p class="">Data Access</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This determines whether you have access to an account manager at 72Lux who can provide you with personalized support." data-original-title="Account Management">
-          <p class="lead">No</p>
-          <p class="">Account Management</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This determines the level of technical support received for each plan. Certain plans are restricted to the number of support emails per month." data-original-title="Dev Support">
-          <p class="">Dev Support</p>
-          <p class="lead">Forum + 5 Emails</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Whenever a product is purchased from your site you will receive a commission based on the merchant agreement between 72Lux and the merchant. The commission split is the percentage of those earnings that you keep, versus the amount that 72Lux keeps. You keep the larger amount." data-original-title="Commission Split">
-          <p class="lead">60/40</p>
-          <p class="">Commission Split</p>
-        </div>
-        <div class="plan-element">
-          <p class="">One-time Setup Fee</p>
-          <p class="lead">FREE</p>
-        </div>
-        <div class="plan-element">
-          <p class="lead">$833 / month<sup>*</sup></p>
-          <p class="lead">$8,000 / year</p>
-        </div>
-        <div class="plan-element content-footer">
-          <a href="https://home.shoppable.co/signup?p=plus" role="btn" data-toggle="modal" class="btn btn-fixed btn-success">Sign up</a>
+
+    </div>
+    <!-- FEATURES & PRICING -->
+
+    <div id="features-and-pricing" class="container-feature dark">
+      <div class="container">
+        <div class="col-md-12 text-center">
+          <h2 class="featurette-heading">features & pricing</h2>
+          <p>&nbsp;</p>
         </div>
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="lead no-margin">Monetize your content through commerce. Get started and start earning today.</p>
+            <p class="lead">All plans come with access to the Shoppable CMS, Analytics, Responsive Design, and a FREE Wordpress Plugin.</p>
+          </div>
+        </div>
+        <div class="row featurette">
+          <div class="col-md-3 plan-col">
+            <div class="plan-header">
+              <h2 class="featurette-subheading no-margin">Starter</h2>
+              <p class="">For small blogs</p>
+              <a href="https://home.shoppable.co/signup?p=starter" role="btn" data-toggle="modal" class="btn btn-fixed btn-success">Try Starter for free</a>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This is the maximum number of user logins for you and your colleagues." data-original-title="Accounts">
+              <p class="lead">1</p>
+              <p class="">Account</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="A product view occurs when an end-user views a page on your site. If that page has 10 products on it and it is viewed 10,000 times in month, that would be 100,000 product views." data-original-title="Product Views">
+              <p class="lead">Up to 250K</p>
+              <p class="">product views / mo</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This is a single checkout form for multiple retailers. An end-user will complete the checkout form to purchase the products in their shopping bag. Higher level plans allow you to host the checkout form on your own domain." data-original-title="Universal Checkout">
+              <p class="">Universal Checkout</p>
+              <p class="lead">Hosted at Shoppable.co</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This feature allows you secured access to the end-user order data, including: name, email address, shipping address, billing address and the products that were purchased after being featured on your site." data-original-title="Data Access">
+              <p class="lead">No</p>
+              <p class="">Data Access</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This determines whether you have access to an account manager at 72Lux who can provide you with personalized support." data-original-title="Account Management">
+              <p class="lead">No</p>
+              <p class="">Account Management</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This determines the level of technical support received for each plan. Certain plans are restricted to the number of support emails per month." data-original-title="Dev Support">
+              <p class="">Dev Support</p>
+              <p class="lead">Forum + 2 Emails</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Whenever a product is purchased from your site you will receive a commission based on the merchant agreement between 72Lux and the merchant. The commission split is the percentage of those earnings that you keep, versus the amount that 72Lux keeps. You keep the larger amount." data-original-title="Commission Split">
+              <p class="lead">60/40</p>
+              <p class="">Commission Split</p>
+            </div>
+            <div class="plan-element">
+              <p class="">One-time Setup Fee</p>
+              <p class="lead">FREE</p>
+            </div>
+            <div class="plan-element">
+              <p class="lead">$417 / month<sup>*</sup></p>
+              <p class="lead">$4,000 / year</p>
+            </div>
+            <div class="plan-element content-footer">
+              <a href="https://home.shoppable.co/signup?p=starter" role="btn" data-toggle="modal" class="btn btn-fixed btn-success">Try Starter for free</a>
+            </div>
+          </div>
 
-      <div class="col-md-3 plan-col emphasis">
-        <div class="plan-header">
-          <span class="plan-label">Most Popular</span>
-          <h2 class="featurette-heading no-margin">Pro</h2>
-          <p class="">For high traffic sites</p>
-          <a href="https://home.shoppable.co/signup?p=pro" role="btn" data-toggle="modal" class="btn btn-fixed btn-danger">Sign up</a>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This is the maximum number of user logins for you and your colleagues." data-original-title="Accounts">
-          <p class="lead">Unlimited</p>
-          <p class="">Accounts</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="A product view occurs when an end-user views a page on your site. If that page has 10 products on it and it is viewed 10,000 times in month, that would be 100,000 product views." data-original-title="Product Views">
-          <p class="lead">Up to 1MM</p>
-          <p class="">product views / mo</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This is a single checkout form for multiple retailers. An end-user will complete the checkout form to purchase the products in their shopping bag. Higher level plans allow you to host the checkout form on your own domain." data-original-title="Universal Checkout">
-          <p class="">Universal Checkout</p>
-          <p class="lead">at your own domain</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This feature allows you secured access to the end-user order data, including: name, email address, shipping address, billing address and the products that were purchased after being featured on your site." data-original-title="Data Access">
-          <p class="lead">Complete</p>
-          <p class="">Data Access</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This determines whether you have access to an account manager at 72Lux who can provide you with personalized support." data-original-title="Account Management">
-          <p class="lead">Personal</p>
-          <p class="">Account Management</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This determines the level of technical support received for each plan. Certain plans are restricted to the number of support emails per month." data-original-title="Dev Support">
-          <p class="lead">Full</p>
-          <p class="">Dev Support</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Whenever a product is purchased from your site you will receive a commission based on the merchant agreement between 72Lux and the merchant. The commission split is the percentage of those earnings that you keep, versus the amount that 72Lux keeps. You keep the larger amount." data-original-title="Commission Split">
-          <p class="lead">70/30</p>
-          <p class="">Commission Split</p>
-        </div>
-        <div class="plan-element">
-          <p class="lead">$2,500</p>
-          <p class="">One-time Setup Fee</p>
-        </div>
-        <div class="plan-element">
-          <p class="lead">$1,499 / month<sup>*</sup></p>
-          <p class="lead">$14,400 / year</p>
-        </div>
-        <div class="plan-element content-footer">
-          <a href="#modal-starter_monthly" role="btn" data-toggle="modal" class="btn btn-fixed btn-danger">Sign up</a>
-        </div>
-      </div>
+          <div class="col-md-3 plan-col">
+            <div class="plan-header">
+              <h2 class="featurette-subheading no-margin">Plus</h2>
+              <p class="">For midsize etc</p>
+              <a href="https://home.shoppable.co/signup?p=plus" role="btn" data-toggle="modal" class="btn btn-fixed btn-success">Sign up</a>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This is the maximum number of user logins for you and your colleagues." data-original-title="Accounts">
+              <p class="lead">10</p>
+              <p class="">Accounts</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="A product view occurs when an end-user views a page on your site. If that page has 10 products on it and it is viewed 10,000 times in month, that would be 100,000 product views." data-original-title="Product Views">
+              <p class="lead">Up to 500K</p>
+              <p class="">product views / mo</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This is a single checkout form for multiple retailers. An end-user will complete the checkout form to purchase the products in their shopping bag. Higher level plans allow you to host the checkout form on your own domain." data-original-title="Universal Checkout">
+              <p class="">Universal Checkout</p>
+              <p class="lead">On your own domain</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This feature allows you secured access to the end-user order data, including: name, email address, shipping address, billing address and the products that were purchased after being featured on your site." data-original-title="Data Access">
+              <p class="lead">No</p>
+              <p class="">Data Access</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This determines whether you have access to an account manager at 72Lux who can provide you with personalized support." data-original-title="Account Management">
+              <p class="lead">No</p>
+              <p class="">Account Management</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This determines the level of technical support received for each plan. Certain plans are restricted to the number of support emails per month." data-original-title="Dev Support">
+              <p class="">Dev Support</p>
+              <p class="lead">Forum + 5 Emails</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Whenever a product is purchased from your site you will receive a commission based on the merchant agreement between 72Lux and the merchant. The commission split is the percentage of those earnings that you keep, versus the amount that 72Lux keeps. You keep the larger amount." data-original-title="Commission Split">
+              <p class="lead">60/40</p>
+              <p class="">Commission Split</p>
+            </div>
+            <div class="plan-element">
+              <p class="">One-time Setup Fee</p>
+              <p class="lead">FREE</p>
+            </div>
+            <div class="plan-element">
+              <p class="lead">$833 / month<sup>*</sup></p>
+              <p class="lead">$8,000 / year</p>
+            </div>
+            <div class="plan-element content-footer">
+              <a href="https://home.shoppable.co/signup?p=plus" role="btn" data-toggle="modal" class="btn btn-fixed btn-success">Sign up</a>
+            </div>
+          </div>
 
-      <div class="col-md-3 plan-col">
-        <div class="plan-header">
-          <h2 class="featurette-heading no-margin">Enterprise</h2>
-          <p class="">For high traffic sites</p>
-          <a href="#contact-form" role="btn" data-toggle="modal" class="btn btn-fixed btn-success">Contact us</a>
+          <div class="col-md-3 plan-col emphasis">
+            <div class="plan-header">
+              <span class="plan-label">Most Popular</span>
+              <h2 class="featurette-subheading no-margin">Pro</h2>
+              <p class="">For high traffic sites</p>
+              <a href="https://home.shoppable.co/signup?p=pro" role="btn" data-toggle="modal" class="btn btn-fixed btn-danger">Sign up</a>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This is the maximum number of user logins for you and your colleagues." data-original-title="Accounts">
+              <p class="lead">Unlimited</p>
+              <p class="">Accounts</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="A product view occurs when an end-user views a page on your site. If that page has 10 products on it and it is viewed 10,000 times in month, that would be 100,000 product views." data-original-title="Product Views">
+              <p class="lead">Up to 1MM</p>
+              <p class="">product views / mo</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This is a single checkout form for multiple retailers. An end-user will complete the checkout form to purchase the products in their shopping bag. Higher level plans allow you to host the checkout form on your own domain." data-original-title="Universal Checkout">
+              <p class="">Universal Checkout</p>
+              <p class="lead">at your own domain</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This feature allows you secured access to the end-user order data, including: name, email address, shipping address, billing address and the products that were purchased after being featured on your site." data-original-title="Data Access">
+              <p class="lead">Complete</p>
+              <p class="">Data Access</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This determines whether you have access to an account manager at 72Lux who can provide you with personalized support." data-original-title="Account Management">
+              <p class="lead">Personal</p>
+              <p class="">Account Management</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This determines the level of technical support received for each plan. Certain plans are restricted to the number of support emails per month." data-original-title="Dev Support">
+              <p class="lead">Full</p>
+              <p class="">Dev Support</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Whenever a product is purchased from your site you will receive a commission based on the merchant agreement between 72Lux and the merchant. The commission split is the percentage of those earnings that you keep, versus the amount that 72Lux keeps. You keep the larger amount." data-original-title="Commission Split">
+              <p class="lead">70/30</p>
+              <p class="">Commission Split</p>
+            </div>
+            <div class="plan-element">
+              <p class="lead">$2,500</p>
+              <p class="">One-time Setup Fee</p>
+            </div>
+            <div class="plan-element">
+              <p class="lead">$1,499 / month<sup>*</sup></p>
+              <p class="lead">$14,400 / year</p>
+            </div>
+            <div class="plan-element content-footer">
+              <a href="#modal-starter_monthly" role="btn" data-toggle="modal" class="btn btn-fixed btn-danger">Sign up</a>
+            </div>
+          </div>
+
+          <div class="col-md-3 plan-col">
+            <div class="plan-header">
+              <h2 class="featurette-subheading no-margin">Enterprise</h2>
+              <p class="">For high traffic sites</p>
+              <a href="#contact-form" role="btn" data-toggle="modal" class="btn btn-fixed btn-success">Contact us</a>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This is the maximum number of user logins for you and your colleagues." data-original-title="Accounts">
+              <p class="lead">Unlimited</p>
+              <p class="">Accounts</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="A product view occurs when an end-user views a page on your site. If that page has 10 products on it and it is viewed 10,000 times in month, that would be 100,000 product views." data-original-title="Product Views">
+              <p class="lead">Up to 1MM</p>
+              <p class="">product views / mo</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This is a single checkout form for multiple retailers. An end-user will complete the checkout form to purchase the products in their shopping bag. Higher level plans allow you to host the checkout form on your own domain." data-original-title="Universal Checkout">
+              <p class="">Universal Checkout</p>
+              <p class="lead">at your own domain</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This feature allows you secured access to the end-user order data, including: name, email address, shipping address, billing address and the products that were purchased after being featured on your site." data-original-title="Data Access">
+              <p class="lead">Complete</p>
+              <p class="">Data Access</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This determines whether you have access to an account manager at 72Lux who can provide you with personalized support." data-original-title="Account Management">
+              <p class="lead">Personal</p>
+              <p class="">Account Management</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This determines the level of technical support received for each plan. Certain plans are restricted to the number of support emails per month." data-original-title="Dev Support">
+              <p class="lead">Full</p>
+              <p class="">Dev Support</p>
+            </div>
+            <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Whenever a product is purchased from your site you will receive a commission based on the merchant agreement between 72Lux and the merchant. The commission split is the percentage of those earnings that you keep, versus the amount that 72Lux keeps. You keep the larger amount." data-original-title="Commission Split">
+              <p class="lead">70/30+</p>
+              <p class="">Commission Split</p>
+            </div>
+            <div class="plan-element">
+              <p class="lead">One-time Setup Fee</p>
+              <p class="">Yes</p>
+            </div>
+            <div class="plan-element">
+              <p class="lead">Contact us<br/>for a quote</p>
+            </div>
+            <div class="plan-element content-footer">
+              <a href="#contact-form" role="btn" data-toggle="modal" class="btn btn-fixed btn-success">Contact us</a>
+            </div>
+          </div>
         </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This is the maximum number of user logins for you and your colleagues." data-original-title="Accounts">
-          <p class="lead">Unlimited</p>
-          <p class="">Accounts</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="A product view occurs when an end-user views a page on your site. If that page has 10 products on it and it is viewed 10,000 times in month, that would be 100,000 product views." data-original-title="Product Views">
-          <p class="lead">Up to 1MM</p>
-          <p class="">product views / mo</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This is a single checkout form for multiple retailers. An end-user will complete the checkout form to purchase the products in their shopping bag. Higher level plans allow you to host the checkout form on your own domain." data-original-title="Universal Checkout">
-          <p class="">Universal Checkout</p>
-          <p class="lead">at your own domain</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This feature allows you secured access to the end-user order data, including: name, email address, shipping address, billing address and the products that were purchased after being featured on your site." data-original-title="Data Access">
-          <p class="lead">Complete</p>
-          <p class="">Data Access</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This determines whether you have access to an account manager at 72Lux who can provide you with personalized support." data-original-title="Account Management">
-          <p class="lead">Personal</p>
-          <p class="">Account Management</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="This determines the level of technical support received for each plan. Certain plans are restricted to the number of support emails per month." data-original-title="Dev Support">
-          <p class="lead">Full</p>
-          <p class="">Dev Support</p>
-        </div>
-        <div class="plan-element popover-lux-trigger" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Whenever a product is purchased from your site you will receive a commission based on the merchant agreement between 72Lux and the merchant. The commission split is the percentage of those earnings that you keep, versus the amount that 72Lux keeps. You keep the larger amount." data-original-title="Commission Split">
-          <p class="lead">70/30+</p>
-          <p class="">Commission Split</p>
-        </div>
-        <div class="plan-element">
-          <p class="lead">One-time Setup Fee</p>
-          <p class="">Yes</p>
-        </div>
-        <div class="plan-element">
-          <p class="lead">Contact us<br/>for a quote</p>
-        </div>
-        <div class="plan-element content-footer">
-          <a href="#contact-form" role="btn" data-toggle="modal" class="btn btn-fixed btn-success">Contact us</a>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <p class="no-margin"><small>All pricing is per domain. Have questions? Check out the FAQs or call us at 646-435-9403.</small></p>
+            <p><small><sup>*</sup>Includes 20% discount for an annual contract instead of month to month contract.</small></p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="row text-center">
-      <div class="col-md-12">
-        <p class="no-margin"><small>All pricing is per domain. Have questions? Check out the FAQs or call us at 646-435-9403.</small></p>
-        <p><small><sup>*</sup>Includes 20% discount for an annual contract instead of month to month contract.</small></p>
+    <!-- PRODUCT CATALOG -->
+    <div id="featured-in" class="container-feature">
+      <div class="container">
+        <div class="col-md-12 text-center">
+          <h2 class="featurette-heading">Featured In</h2>
+          <p>&nbsp;</p>
+        </div>
       </div>
+      <div class="container">
+        <div class="row featurette">
+          <div class="col-md-offset-1 col-md-2 text-center">
+            <p class="logo-title"><img src="images/entrepre.png" class="img-responsive" /></p>
+            <div class="popover-lux">
+              <p class="lead no-margin">Awarded one of Entrepreneur's 100 Brilliant Companies in 2012.</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <p class="logo-title"><img src="images/gigaom.png" class="img-responsive" /></p>
+            <div class="popover-lux">
+              <p class="lead no-margin">"Instead of offering advertising alongside photo spreads that sends readers to outside sites, its technology allows publishers to make content Shoppable<sup>TM</sup> right there.”</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <p class="logo-title"><img src="images/tnw.png" class="img-responsive" /></p>
+            <div class="popover-lux">
+              <p class="lead no-margin">“A universal shopping experience that can be white-labeled for publishers.”</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <p class="logo-title"><img src="images/tech.png" class="img-responsive" /></p>
+            <div class="popover-lux">
+              <p class="lead no-margin">“They're just that good.”</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <p class="logo-title"><img src="images/instyle-gray.png" class="img-responsive" /></p>
+            <div class="popover-lux">
+              <p class="lead no-margin">"We're not sure how we lived before ESSENCE and 72Lux's [Shoppable] Beauty Matchmaker!"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
-
-    <hr id="featured-in" class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-12 text-center">
-        <h2 class="featurette-heading">Featured in</h2>
-        <p>&nbsp;</p>
-      </div>
-    </div>
-    <div class="row featurette">
-      <div class="col-md-offset-1 col-md-2 text-center">
-        <p class="logo-box"><img src="images/entrepre.png" /></p>
-        <div class="popover-lux">
-          <p class="lead no-margin">Awarded one of Entrepreneur's 100 Brilliant Companies in 2012.</p>
-        </div>
-      </div>
-      <div class="col-md-2 text-center">
-        <p class="logo-box"><img src="images/gigaom.png" /></p>
-        <div class="popover-lux">
-          <p class="lead no-margin">"Instead of offering advertising alongside photo spreads that sends readers to outside sites, its technology allows publishers to make content Shoppable<sup>TM</sup> right there.”</p>
-        </div>
-      </div>
-      <div class="col-md-2 text-center">
-        <p class="logo-box"><img src="images/tnw.png" /></p>
-        <div class="popover-lux">
-          <p class="lead no-margin">“A universal shopping experience that can be white-labeled for publishers.”</p>
-        </div>
-      </div>
-      <div class="col-md-2 text-center">
-        <p class="logo-box"><img src="images/tech.png" /></p>
-        <div class="popover-lux">
-          <p class="lead no-margin">“They're just that good.”</p>
-        </div>
-      </div>
-      <div class="col-md-2 text-center">
-        <p class="logo-box"><img src="images/instyle-gray.png" /></p>
-        <div class="popover-lux">
-          <p class="lead no-margin">"We're not sure how we lived before ESSENCE and 72Lux's [Shoppable] Beauty Matchmaker!"</p>
-        </div>
-      </div>
-    </div>
-    </div><!-- /.container -->
-
-    <!-- /END THE FEATURETTES -->
-
-    <hr id="footer" class="featurette-divider">
-
     <!-- FOOTER -->
-    <div id="footer-container" class="footer-container-outer">
+
+    <div id="footer-container" class="footer-container-outer stretch-image" data-stretch="images/pub-header-grain.jpg">
+      &nbsp
     </div>
+
+    <!-- 3 MODAL SLIDESHOWS -->
 
     <div class="modal modal-slideshow fade" id="slideshow-modal-tv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -579,19 +581,19 @@
                 <div>
                   <img src="images/slideshow/tv-001.png" alt="">
                   <div class="slideshow-caption hidden-detail">
-                    <p class="caption-text"><strong>Look, Love & Live</strong> at <strong>LooLoLi.com</strong>, where designer and stylist Claire Florence shares her inspirations and collections with her readers. She sells her exclusive scarf line along with products from many of our other retailers on her beautifully designed, Shoppable site!</p>
+                    <p class="caption-text lead"><strong>Look, Love & Live</strong> at <strong>LooLoLi.com</strong>, where designer and stylist Claire Florence shares her inspirations and collections with her readers. She sells her exclusive scarf line along with products from many of our other retailers on her beautifully designed, Shoppable site!</p>
                   </div>
                 </div>
                 <div>
                   <img src="images/slideshow/tv-001.png" alt="">
                   <div class="slideshow-caption hidden-detail">
-                    <p class="caption-text"><strong>Teen Vogue</strong> collaborated with 72Lux to create Shoppable slideshows across their site, along with a fully-curated Back-to-School Shop! With categories like clothing, shoes & accessories, beauty and school & dorm, their editors covered all the Back-to-School essentials for their readers to shop right from their site.</p>
+                    <p class="caption-text lead"><strong>Teen Vogue</strong> collaborated with 72Lux to create Shoppable slideshows across their site, along with a fully-curated Back-to-School Shop! With categories like clothing, shoes & accessories, beauty and school & dorm, their editors covered all the Back-to-School essentials for their readers to shop right from their site.</p>
                   </div>
                 </div>
                 <div>
                   <img src="images/slideshow/tv-001.png" alt="">
                   <div class="slideshow-caption hidden-detail">
-                    <p class="caption-text">The Wall Street Journal worked with 72Lux to create a Shoppable holiday gift guide called 'WSJ Select'. By leveraging 72Lux's flexible grid frames they were able to execute their vision of a store experience.</p>
+                    <p class="caption-text lead"><strong>The Wall Street Journal</strong> worked with 72Lux to create a Shoppable holiday gift guide called 'WSJ Select'. By leveraging 72Lux's flexible grid frames they were able to execute their vision of a store experience.</p>
                   </div>
                 </div>
               </div>
@@ -604,6 +606,7 @@
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+
 
     <div class="modal modal-slideshow fade" id="slideshow-modal-wsj" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">

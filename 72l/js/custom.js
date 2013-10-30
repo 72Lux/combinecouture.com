@@ -36,7 +36,9 @@ $(document).ready(function () {
     showMore();
   });
 
-  $('#footer-container').load('footer.html');
+  $('#footer-container').load('footer.html', function() {
+    $('.stretch-image').anystretch();
+  });
 
   $('#navigation').load('navigation.html', { active_link: 'Hello World' }, function() {
     $('.close-nav').on('click', function(e) {

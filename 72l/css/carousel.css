@@ -5,7 +5,7 @@
 body {
 /*  padding-bottom: 40px; */
   color: #222;
-  background-color: #fff; /*#f8f8f8;*/
+  background-color: #f8f8f8; /*#f8f8f8;*/
 }
 
 body.modal-open {
@@ -68,7 +68,7 @@ a:active {
 }
 
 .navbar-default {
-  background-color: #fff;
+  background-color: #f8f8f8;
   border-color: transparent;
 }
 
@@ -122,13 +122,21 @@ a:active {
 }
 
 .header-info {
-  padding-top: 0;
+  padding-top: 80px;
   padding-bottom: 0;
+}
+
+.header-info.dark {
+  background: #222;
 }
 
 .header-info-outer {
   width: 100%;
   background-color: #fff;
+}
+
+.header-info-outer.dark {
+  background-color: #222;
 }
 
 /* SIDENAV */
@@ -366,10 +374,18 @@ body.nav-open, .page-nav.nav-open {
 
 /* Featurettes
 ------------------------- */
+.feature-divider {
+  margin: 120px 0; /* Space out the Bootstrap <hr> more */
+  border-top: 1px solid #ccc; /* same color as body */
+}
 
 .featurette-divider {
-  margin: 120px 0; /* Space out the Bootstrap <hr> more */
-  border-top: 1px solid #fff; /* same color as body */
+  margin: 60px 0; /* Space out the Bootstrap <hr> more */
+  border-top: 1px solid #f8f8f8; /* same color as body */
+}
+
+.featurette-divider.dark {
+  border-top: 1px solid #eee; /* same color as body */
 }
 
 .featurette-divider.first {
@@ -377,16 +393,33 @@ body.nav-open, .page-nav.nav-open {
 }
 
 .featurette-heading.page-heading {
+  padding-top: 10px;
   margin-bottom: 10px;
 }
 
+.featurette-heading {
+  text-transform: uppercase;
+}
+
 /* Thin out the marketing headings */
-.featurette-heading, .featurette-subheading {
-  color: #000;
+.featurette-heading {
+  color: #222;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.header-info.dark .featurette-heading, .header-info.dark .featurette-subheading {
+  color: #fff;
+}
+
+.featurette-subheading {
+  color: #222;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin: 10px 0 20px 0;
 }
 
 .big-num {
@@ -395,6 +428,7 @@ body.nav-open, .page-nav.nav-open {
   line-height: 1;
   letter-spacing: -1px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 
@@ -588,18 +622,17 @@ body.nav-open, .page-nav.nav-open {
 }
 
 .footer-container-outer {
-  background: #666;
+  min-height: 300px;
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
 .footer-container {
-  color: #999;
 }
 
 .footer-container a {
-  color: #ccc;
+  color: #222;
 }
 
 .footer-container a:hover, .footer-container a:active {
@@ -617,13 +650,27 @@ body.nav-open, .page-nav.nav-open {
 .footer-container li {
   list-style-type: none;
 }
-.logo-box {
+
+.logo-title {
   height: 40px;
-  margin: 10px 0 20px 0;
+  text-align: center;
+  line-height: 40px;
+}
+
+.logo-title img, .logo-box img {
+  margin: 0 auto;
+}
+
+.logo-box {
+  width: 100%;
+  padding: 20px 0;
+  margin: 20px;
+  background: #fff;
+  height: 40px;
 }
 
 .logo-box.tall {
-  height: 180px;
+  height: 225px;
   display: inline-block;
 }
 
@@ -664,12 +711,12 @@ body.nav-open, .page-nav.nav-open {
 
 .publishers-header-container {
   height: 715px;
-  background: #fff url('../images/fi/ipad-and-iphone.png') no-repeat 5px 40px;
+  background: #fff url('../images/fi/publishers-header.png') no-repeat top right;
 }
 
 .merchants-header-container {
-  height: 715px;
-  background: #fff url('../images/fi/ipad-and-iphone.png') no-repeat 5px 40px;
+  height: 538px;
+  background: #222 url('../images/fi/merchants-header.png') no-repeat top right;
 }
 
 .shoppable-screencap-container {
@@ -680,10 +727,6 @@ body.nav-open, .page-nav.nav-open {
 .shoppable-for-merchants-screencap-container {
   height: 550px;
   background: #fff url('../images/fi/shoppable-for-merchants-app.png') no-repeat 5px 40px;
-}
-
-.page-heading {
-  margin-top: 70px;
 }
 
 .header-info .btn {
@@ -705,6 +748,7 @@ iframe {
 }
 
 .slides-container-outer {
+  margin-top: 20px;
   height: 500px;
 }
 
@@ -734,7 +778,7 @@ iframe {
   right: auto;
   width: 30%;
   background: #fff;
-  filter: alpha(opacity=90);
+  filter: alpha(opacity=80);
   opacity: .8;
   color: #222;
   font-weight: 200;
@@ -824,4 +868,39 @@ iframe {
   vertical-align: baseline;
   white-space: nowrap;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.content-block {
+  padding: 20px 20px 0 20px;
+  margin: 20px 20px 0 20px;
+}
+
+.footer-block.dark-block {
+  padding: 20px;
+  margin: 20px;
+  background: #999;
+  color: #fff;
+  filter: alpha(opacity=70);
+  opacity: .7;
+}
+.footer-block {
+  padding: 20px;
+  margin: 20px;
+  background: #999;
+  color: #222;
+  filter: alpha(opacity=80);
+  opacity: .8;
+}
+
+.footer-block:hover {
+  filter: alpha(opacity=90);
+  opacity: .9;
+}
+
+.container-feature {
+  padding: 120px 0;
+}
+
+.container-feature.dark {
+  background: #eee;
 }
