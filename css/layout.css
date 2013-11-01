@@ -250,8 +250,8 @@ and (max-device-width : 960px) {
     display: block;
     margin: auto;
     float: none;
-    width: 378px;
-    height: 100px;
+    width: 320px;
+    height: 85px;
   }
 }
 
