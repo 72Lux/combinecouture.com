@@ -77,6 +77,10 @@ a:active {
   margin: 0;
 }
 
+.navbar-default.topnav.light {
+  background: #f8f8f8;
+}
+
 .navbar-default .hide-for-scroll {
   display: none;
 }
@@ -138,6 +142,11 @@ a:active {
 .header-info-outer {
   width: 100%;
   background-color: #fff;
+}
+
+.header-info-outer.light {
+  width: 100%;
+  background-color: #f8f8f8;
 }
 
 .header-info-outer.dark {
@@ -391,6 +400,11 @@ body.nav-open, .page-nav.nav-open {
 
 .featurette-divider.dark {
   border-top: 1px solid #eee; /* same color as body */
+}
+
+.featurette-divider.light {
+  margin: 60px 0; /* Space out the Bootstrap <hr> more */
+  border-top: 1px solid #fff; /* same color as body */
 }
 
 .featurette-divider.first {
