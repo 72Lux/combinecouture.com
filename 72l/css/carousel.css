@@ -432,6 +432,11 @@ body.nav-open, .page-nav.nav-open {
   letter-spacing: -1px;
 }
 
+.featurette-heading.large-page-heading {
+  padding-top: 50px;
+  margin-bottom: 10px;
+}
+
 .header-info.dark .featurette-heading, .header-info.dark .featurette-subheading {
   color: #fff;
 }

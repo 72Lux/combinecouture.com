@@ -65,7 +65,7 @@ function scrollToAnchor(aid){
 }
 
 function setupNav() {
-  $('nav.sidenav').toggleClass('open', 500, "swing");
-  $('body').toggleClass('nav-open', 500, "swing");
-  $('#page-nav').toggleClass('nav-open', 500, "swing");
+  $('nav.sidenav').toggleClass('open', 300, "swing");
+  $('body').toggleClass('nav-open', 300, "swing");
+  $('#page-nav').toggleClass('nav-open', 300, "swing");
 }
