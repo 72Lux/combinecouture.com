@@ -1,3 +1,14 @@
+/*globaly css starts here*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, dl, dt, dd, ul, li, fieldset, form, label, legend{margin:0; padding:0; border:0; outline:0; vertical-align: baseline; background: transparent;}
+.clear{clear:both;}
+.left{float:left;}
+.right{float:right !important;}
+img{ border:none}
+:focus{outline:0;}
+body{padding:0; margin:0; font:12px Georgia,Times New Roman,times,serif;}
+a{ text-decoration:none; cursor:pointer;}
+a:hover{ text-decoration:none;}
+
 /*globaly css ends here*/
 
 
