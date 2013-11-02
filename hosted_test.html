@@ -1,20 +1,89 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
 
-  <meta name="viewport" content="width=device-width" />
-  <link rel='stylesheet' type='text/css' href='//d3i35264kiorxl.cloudfront.net/css/shop.css'>
-  <script id='lux-shop-loader' src='//dev.api.shoppable.co/assets/js/shop.js?token=kaXnt5Gew55WIQWHa8e650e5e7339e65'></script>
-</head>
-<body>
-  <a href="#" class="lux-cart-frame" data-hosted='1'>SHOPPING BAG</a> <span class="lux-cart-label">&nbsp;</span>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <br/><br/>
-  <div class='lux-product-frame' data-hosted='1'></div>
+    <title>Example page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel='stylesheet' type='text/css' href='//d3i35264kiorxl.cloudfront.net/css/shop.css'>
+    <script id='lux-shop-loader' src='//dev.api.shoppable.co/assets/js/shop.js?token=kaXnt5Gew55WIQWHa8e650e5e7339e65'></script>
+  </head>
+
+  <body>
+
+    <!-- Wrap all page content here -->
+    <div id="wrap">
+
+      <!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Website name</a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#" class="lux-cart-frame" data-hosted='1'>SHOPPING BAG</a> <span class="lux-cart-label">&nbsp;</span>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
+      <!-- Begin page content -->
+      <div class="container">
+        <div class="jumbotron">
+          <div class="page-header">
+            <h1>Example with fixed navbar</h1>
+          </div>
+        </div>
+        <p class="lead">Article title</p>
+        <p>Article text</p>
+        <div class='lux-product-frame' data-hosted='1'></div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted credit">Copyright &copy; Whomever 2013.</p>
+      </div>
+    </div>
 
 
-
-
-</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+  </body>
 </html>
