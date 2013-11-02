@@ -415,6 +415,10 @@ body.nav-open, .page-nav.nav-open {
   text-transform: uppercase;
 }
 
+.featurette-block {
+  margin-bottom: 40px;
+}
+
 .featurette-heading {
   color: #222;
   font-weight: 300;
@@ -953,4 +957,12 @@ iframe {
 .img-responsive {
   max-height: 500px;
   margin: 0 auto;
+}
+
+.text-lux {
+  color: #3099B0;
+}
+
+.hidden-detail {
+  display: none !important;
 }

@@ -26,6 +26,7 @@ $(document).ready(function () {
   }
 
   $('body').removeAttr('style');
+
   $('.scroll-link').on('click', function(e) {
     e.preventDefault();
     scrollToAnchor($(this).attr('href'));
