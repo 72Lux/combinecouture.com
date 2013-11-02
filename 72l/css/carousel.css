@@ -935,3 +935,12 @@ iframe {
   color: #fff;
   background-color: #3099B0;
 }
+
+.featurette ul {
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 0;
+}
+.table thead > tr > th {
+  border-bottom: 1px solid #dddddd;
+}
