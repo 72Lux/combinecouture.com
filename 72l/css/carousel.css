@@ -10,7 +10,6 @@ body {
 
 body.modal-open {
   overflow: hidden;
-  scroll: none;
 }
 
 a, .btn-link {
@@ -526,12 +525,27 @@ body.nav-open, .page-nav.nav-open {
 }
 
 .emphasis .plan-element, .emphasis .plan-header, .emphasis .plan-header h2 {
-  background: #666;
+  background: #222;
   color: #eee;
 }
 
+.emphasis .padded-for-offset {
+  padding-bottom: 20px;
+}
+
+.plan-labels .plan-header, .plan-labels .plan-element {
+  background: none;
+  margin-bottom: 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+.plan-labels .plan-header p {
+  line-height: 29px;
+  margin: 0;
+}
+
 .content-footer {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .btn-fixed {
@@ -965,4 +979,20 @@ iframe {
 
 .hidden-detail {
   display: none !important;
+}
+
+.plans-container p {
+  font-weight: 200;
+}
+
+.plans-featurette {
+  margin-top: 50px;
+}
+
+.popular-tag {
+  background: #fff !important;
+  margin: -40px 0 0 0;
+  text-align: center;
+  line-height: 40px;
+
 }
