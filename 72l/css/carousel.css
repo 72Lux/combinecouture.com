@@ -432,6 +432,10 @@ body.nav-open, .page-nav.nav-open {
   letter-spacing: -1px;
 }
 
+.page-heading.above-image {
+  margin-top: 175px;
+}
+
 .featurette-heading.large-page-heading {
   padding-top: 50px;
   margin-bottom: 10px;
@@ -738,12 +742,12 @@ body.nav-open, .page-nav.nav-open {
 
 .publishers-header-container {
   height: 653px;
-  background: #fff url('../images/fi/publishers-header.png') no-repeat top right;
+  background: #fff url('../images/fi/publishers-header.png') no-repeat top center;
 }
 
 .merchants-header-container {
   height: 669px;
-  background: #222 url('../images/fi/merchants-header.png') no-repeat top right;
+  background: #222 url('../images/fi/merchants-header.png') no-repeat top center;
 }
 
 .shoppable-screencap-container {
@@ -818,6 +822,7 @@ iframe {
   overflow: hidden;
   width: 300px;
   position: absolute;
+  margin-bottom: 20px;
 }
 
 
@@ -943,4 +948,9 @@ iframe {
 }
 .table thead > tr > th {
   border-bottom: 1px solid #dddddd;
+}
+
+.img-responsive {
+  max-height: 500px;
+  margin: 0 auto;
 }
