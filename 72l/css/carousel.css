@@ -186,6 +186,7 @@ a:active {
 
 .footer-container .social {
   padding: 20px 0 0 0;
+  display: inline-block;
 }
 
 .footer-container .social li a {
@@ -457,7 +458,7 @@ body.nav-open, .page-nav.nav-open {
 }
 
 .big-num {
-  font-size: 56px;
+  font-size: 60px;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
@@ -692,7 +693,11 @@ body.nav-open, .page-nav.nav-open {
 }
 
 .press-image {
-  margin: 0 auto 20px auto;
+  border: 1px solid #eee;
+}
+
+.press-date {
+  margin-top: 15px;
 }
 
 .press-text {
@@ -887,6 +892,10 @@ iframe {
   padding: 120px 0;
 }
 
+.container-feature.no-bottom {
+  padding: 120px 0 0 0;
+}
+
 .container-feature.dark {
   background: #eee;
 }
@@ -1006,7 +1015,7 @@ iframe {
   border-bottom: 0 ;
 }
 
-.plans-footer td .btn {
+.plans-footer td .btn, .modal-content {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -1037,4 +1046,22 @@ iframe {
 
 .last-footer-btn {
   margin-right: -1px;
+}
+
+.span-half {
+  width: 50%;
+  float: left;
+}
+
+.modal fieldset {
+  margin-right: 20px;
+}
+
+.control-label {
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.modal-body {
+  padding: 0 20px 20px 20px;
 }
