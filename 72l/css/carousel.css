@@ -472,45 +472,6 @@ body.nav-open, .page-nav.nav-open {
   margin-top: 10px;
 }
 
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-
-  /* Remove the edge padding needed for mobile */
-  .marketing {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
-
-  .featurette-subheading {
-    font-size: 32px;
-  }
-}
-
-@media (min-width: 992px) {
-  .featurette-heading, .featurette-heading {
-    margin-top: 0;
-  }
-}
-
 /* overrides */
 
 .no-margin {
@@ -1381,4 +1342,63 @@ iframe {
 
 .close-cart-modal:hover, .close-cart-modal:focus {
   background: url(../images/close.png) no-repeat center center #EEE;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-subheading {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading, .featurette-heading {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .page-heading.above-image {
+    margin-top: 0;
+  }
+
+  .header-info .btn-lux {
+    margin-bottom: 50px;
+  }
+  .centered-subnav {
+    display: none;
+  }
+  .fixed-right {
+    margin-top: -50px;
+  }
+  .navbar .navbar-default {
+    top: 0;
+    position: fixed;
+    width: 100%;
+  }
 }
