@@ -1401,4 +1401,7 @@ iframe {
     position: fixed;
     width: 100%;
   }
+  .steps-block {
+    margin-bottom: 40px;
+  }
 }
