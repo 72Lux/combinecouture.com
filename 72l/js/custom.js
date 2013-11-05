@@ -52,6 +52,17 @@ $(document).ready(function () {
     e.preventDefault();
   });
 
+  $('.hover-replace-image').hover(
+    function() {
+      var orig = $(this).attr('src');
+      var image = $(this).data('hover');
+      $(this).removeClass('masked').data('orig', orig).attr('src',image);
+    }, function() {
+      var orig = $(this).data('orig');
+      $(this).attr('src', orig).addClass('masked');
+    }
+  );
+
 });
 
 function showMore() {
@@ -67,6 +78,6 @@ function scrollToAnchor(aid){
 
 function setupNav() {
   $('nav.sidenav').toggleClass('open', 300, "swing");
-  $('body').toggleClass('nav-open', 300, "swing");
-  $('#page-nav').toggleClass('nav-open', 300, "swing");
+  // $('body').toggleClass('nav-open', 300, "swing");
+  // $('#page-nav').toggleClass('nav-open', 300, "swing");
 }

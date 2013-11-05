@@ -67,7 +67,7 @@ a:active {
 }
 
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: #64aac0;
   border-color: transparent;
 }
 
@@ -84,13 +84,10 @@ a:active {
   display: none;
 }
 
-.navbar-default.affix, .navbar-default.affix-top {
+.navbar-default.affix {
   width: 100%;
   top: 0;
   z-index: 1030;
-  border-top: 1px solid #e7e7e7;
-  border-bottom: 1px solid #e7e7e7;
-  height: 52px;
 }
 
 .navbar-default.affix-top.no-border {
@@ -98,8 +95,8 @@ a:active {
 }
 
 .navbar-default.affix-top {
-  border-top: 1px solid #e7e7e7;
-  border-bottom: 1px solid #e7e7e7;
+/*  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;*/
 }
 .navbar-default.affix .hide-for-scroll {
   display: inline-block;
@@ -111,7 +108,7 @@ a:active {
 }
 
 .fixed-right {
-  margin-top: -57px;
+  margin-top: -55px;
 }
 
 .fixed-right a, .show-side-nav {
@@ -120,7 +117,6 @@ a:active {
 }
 
 .subnav-outer {
-  height: 50px;
 }
 
 /* HEADER BLOCK */
@@ -171,6 +167,11 @@ a:active {
   list-style-type: none;
   margin-bottom: 30px;
   padding-left: 30px;
+}
+
+.category-list li {
+  display: inline;
+  padding: 0 10px;
 }
 
 .social li {
@@ -420,11 +421,11 @@ body.nav-open, .page-nav.nav-open {
 }
 
 .featurette-heading {
-  color: #222;
-  font-weight: 300;
+  color: #64aac0;
+  font-weight: 100;
   line-height: 1;
   letter-spacing: 3px;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
   font-size: 56px;
 }
 
@@ -437,7 +438,7 @@ body.nav-open, .page-nav.nav-open {
 }
 
 .page-heading.above-image {
-  margin-top: 175px;
+  margin-top: 120px;
 }
 
 .featurette-heading.large-page-heading {
@@ -458,12 +459,13 @@ body.nav-open, .page-nav.nav-open {
 }
 
 .big-num {
+  color: #64aac0;
   font-size: 60px;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 
@@ -529,14 +531,10 @@ body.nav-open, .page-nav.nav-open {
   display: inline-block;
 }
 
-.navbar-default > .active > a:hover, .navbar-default > .active > a:focus {
-  background-color: #3099B0;
-}
-
 .btn-lux {
   color: #ffffff;
-  background-color: #3099B0;
-  border-color: #3099B0;
+  background-color: #64aac0;
+  border-color: #64aac0
 }
 
 .btn-lux:hover, .btn-lux:focus, .btn-lux:active, .btn-lux.active {
@@ -548,6 +546,8 @@ body.nav-open, .page-nav.nav-open {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  height: 52px;
+  margin-bottom: 0;
 }
 
 .span-half {
@@ -672,20 +672,22 @@ body.nav-open, .page-nav.nav-open {
 }
 
 .logo-box {
-  width: 100%;
-  padding: 20px 0;
-  margin: 20px;
-  background: #fff;
+  display: inline-block;
+  margin: 10px;
   height: 40px;
 }
 
 .logo-box.tall {
-  height: 225px;
+  height: 150px;
   display: inline-block;
 }
 
+.logo-box.tall img {
+  width: 60px;
+}
+
 .logo-box.tall a {
-  line-height: 180px;
+  line-height: 150px;
 }
 
 .footer-copyright {
@@ -724,9 +726,9 @@ body.nav-open, .page-nav.nav-open {
 }
 
 .publishers-header-container {
-  height: 653px;
-  background: #fff url('../images/fi/publishers-header.png') no-repeat top center;
-}
+  height: 840px;
+/*  background: #fff url('../images/fi/publishers-header.png') no-repeat top center;
+*/}
 
 .merchants-header-container {
   height: 669px;
@@ -892,6 +894,10 @@ iframe {
   padding: 120px 0;
 }
 
+.container-feature.no-padding {
+  padding: 0;
+}
+
 .container-feature.no-bottom {
   padding: 120px 0 0 0;
 }
@@ -904,9 +910,20 @@ iframe {
   background: #222;
 }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #fff;
-  background-color: #3099B0;
+.navbar-nav > li > a {
+  color: #e0e0e0 !important;
+  background-color: #64aac0;
+  padding: 0 15px;
+  line-height: 50px;
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus  {
+  color: #fff !important;
+}
+
+.navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+  color: #eee !important;
+  background-color: #3099B0 !important;
 }
 
 .featurette ul {
@@ -916,6 +933,10 @@ iframe {
 }
 .table thead > tr > th {
   border-bottom: 1px solid #dddddd;
+}
+
+.table-no-border td {
+  border: 0 !important;
 }
 
 .img-responsive {
@@ -944,6 +965,10 @@ iframe {
   width: 100%;
   overflow: visible;
   margin-bottom: 10px;
+}
+
+.table-steps td {
+  padding: 3px !important;
 }
 
 .table-plans {
@@ -1073,14 +1098,14 @@ iframe {
 }
 
 .product-grid {
-  width: auto;
   margin: 0 auto;
   display: inline-block;
 }
 
 .product-grid .blank-cell, .product-grid .product {
   width: 240px;
-  height: 262px;
+  height: auto;
+  margin: 0;
 }
 
 /*On line 1894, match width from above for the image. Also adjust height for image:*/
@@ -1114,6 +1139,7 @@ iframe {
   font: 11px/13px 'Helvetica Neue', Helvetica, sans-serif;
 }
 .product-grid .product-info {
+  display: none;
   width: 100%;
 }
 
@@ -1123,10 +1149,6 @@ iframe {
   min-height: 0;
   font-size: 11px;
   font-weight: 200;
-}
-
-.frames-row {
-  margin-top: 50px;
 }
 
 .product-grid .product .product-image {
@@ -1140,7 +1162,6 @@ iframe {
 
 .product-grid .product:hover {
   background: #ccc;
-  border: 1px solid #ccc;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
@@ -1178,4 +1199,54 @@ iframe {
   min-height: 16.428571429px;
   padding: 15px;
   border-bottom: 0;
+}
+
+.close-cart-modal {
+  background: url(../images/close.png) no-repeat center center;
+}
+
+.steps-block {
+  border: 1px solid #eee;
+  height: 475px;
+}
+
+.steps-text {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.presents {
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.line-bg-inner {
+  display: inline-block;
+  background: #fff;
+  padding: 0 10px;
+}
+
+.line-bg-inner.dark {
+  background: #eee;
+}
+
+.line-bg {
+  background-size: contain;
+  background: url(../images/fi/key-line.png) no-repeat 50% 50%;
+}
+
+.steps-block .big-num {
+  margin-top: -125px;
+  position: relative;
+}
+
+.hover-replace-image {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.hover-replace-image.masked {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
