@@ -1221,7 +1221,18 @@ iframe {
 
 .linkFrameModal, .singleProductModal {
   padding: 0;
-  background: #eee;
+  background: #fff;
+  bottom: auto;
+  border: 1px solid #e0e0e0;
+}
+
+.singleProductModal .single-product {
+  padding: 0;
+  width: 100%;
+}
+
+.single-product .product-info-wrapper {
+  text-align: left;
 }
 
 .modal-header {
@@ -1283,4 +1294,80 @@ iframe {
 
 .frames-row {
   margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.single-product .product-info-wrapper .product-brand-name-text {
+  font-weight: normal;
+}
+
+.single-product .more-from-category-wrapper,
+.single-product .more-from-brand-wrapper {
+  padding: 10px 10px 20px 10px;
+  background: #fff;
+}
+
+.single-product .poweredBy-spacer {
+  height: 55px;
+}
+.single-product .product-info-wrapper .product-ships-from-text,
+.single-product .more-from-brand-label, .single-product .more-from-category-label {
+  font: 15px/17px "HelveticaNeue", sans-serif;
+  color: #999;
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
+.single-product .product-info-wrapper .product-brand-name-text {
+  font: 100 28px/28px 'HelveticaNeue', sans-serif;
+}
+
+.single-product .product-info-wrapper .price-1 {
+  font: 14px/14px 'HelveticaNeue', sans-serif;
+}
+
+.product-affiliate-link {
+  margin-top: -40px;
+  position: relative;
+}
+
+.single-product .product-info-wrapper .product-return-policy-url-text {
+  margin-top: 10px;
+}
+
+button {
+  display: inline-block;
+  padding: 3px 7px;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.add-to-cart {
+  margin-top: -60px;
+  float: left;
+}
+
+.add-to-cart-button {
+  color: #ffffff !important;
+  background-color: #64aac0 !important;
+  border-color: #64aac0 !important;
+}
+
+.add-to-cart-button:hover, .add-to-cart-button:focus, .add-to-cart-button:active {
+  color: #fff !important;
+  background-color: #2B879C !important;
+  border-color: #2B879C !important;
 }
