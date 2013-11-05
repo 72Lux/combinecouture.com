@@ -13,8 +13,10 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
     <link rel='stylesheet' type='text/css' href='//d3i35264kiorxl.cloudfront.net/dev/css/shop.css'>
     <script id='lux-shop-loader' src='//d3i35264kiorxl.cloudfront.net/dev/js/shop.js?token=P016H6XKpt3zd5XFa3a5586f0b7a57b5' data-luxapi='dev.api.shoppable.co'></script>
     <style type="text/css">
@@ -46,7 +48,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li>
               <!-- Shoppable shopping bag link -->
-              <a href="#" class="lux-cart-frame" data-hosted='1' data-checkout='https://dev.secure.shoppable.co/checkout'>SHOPPING BAG</a> <span class="lux-cart-label">&nbsp;</span>
+              <a href="#" class="lux-cart-frame" data-hosted='1' data-checkout='https://dev.api.shoppable.co/checkout'>SHOPPING BAG</a> <span class="lux-cart-label">&nbsp;</span>
             </li>
           </ul>
         </div><!--/.nav-collapse -->
