@@ -1378,3 +1378,7 @@ iframe {
   top: 50%;
   left: 25%;
 }
+
+.close-cart-modal:hover, .close-cart-modal:focus {
+  background: url(../images/close.png) no-repeat center center #EEE;
+}
