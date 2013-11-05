@@ -532,6 +532,17 @@ body.nav-open, .page-nav.nav-open {
   margin-left: -50px;
 }
 
+.btn-lux-light {
+  background: #fff;
+  color: #64aac0;
+}
+
+.btn-lux:hover, .btn-lux:focus, .btn-lux:active, .btn-lux.active {
+  background: #eee;
+  color: #64aac0;
+}
+
+
 .btn-lux {
   color: #ffffff;
   background-color: #64aac0;
@@ -832,6 +843,9 @@ iframe {
   -webkit-backface-visibility: visible !important;
 }
 
+.modal {
+  z-index: 1041;
+}
 .modal-slideshow .modal-header {
   background: #222;
   color: #fff;
@@ -1220,8 +1234,9 @@ iframe {
 }
 
 .steps-block {
-  border: 1px solid #eee;
+  border: 1px solid #e0e0e0;
   height: 475px;
+  background: #fff;
 }
 
 .steps-text {
