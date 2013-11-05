@@ -18,8 +18,9 @@
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
 
-    <link rel='stylesheet' type='text/css' href='css/frame.responsive.css'>
-    <link rel='stylesheet' type='text/css' href='css/cart.css'>
+<!--     <link rel='stylesheet' type='text/css' href='css/frame.responsive.css'>
+    <link rel='stylesheet' type='text/css' href='css/cart.css'> -->
+    <link rel='stylesheet' type='text/css' href='//d3i35264kiorxl.cloudfront.net/css/shop.css'>
     <!-- combinecouture.com token LOCAL -->
     <!-- // <script id='lux-shop-loader' src='//d3i35264kiorxl.cloudfront.net/dev/js/shop.js?token=a0497Dd5u621y4ZWd9f0bd8d35' data-luxapi='localhost:3000'></script> -->
 
@@ -54,7 +55,7 @@
             <div class="col-md-5 text-center">
               <h2 id="header" class="featurette-heading page-heading above-image"><img src="images/logos/72lux-large.png" width="100px" /></h2>
               <p class="presents line-bg"><span class="line-bg-inner">PRESENTS</span></p>
-              <p class=""><img src="images/logos/shoppable-teal.png" width="450px" /></p>
+              <p class=""><img src="images/logos/shoppable-teal.png" width="450px" class="img-responsive" /></p>
               <p class="lead">Combining editorial and commerce</p>
               <p class=""><a href="#features-and-pricing" class="scroll-link btn btn-lg btn-fixed btn-lux">Get STARTED</a></p>
 
@@ -75,12 +76,12 @@
       <div class="navbar navbar-default" data-spy="affix" data-offset-top="730">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="index.html"><img src="images/logos/72lux-large-white.png" width="80px" /></a>
+            <a class="navbar-brand" href="index.html"><img src="images/logos/72lux-large-light.png" width="80px" /></a>
           </div>
           <div id="page-nav" class="navbar-collapse collapse text-center page-nav">
             <ul class="nav navbar-nav centered-subnav">
               <li class="hidden-detail"><a href="#header" class="">TOP</a></li>
-              <li class=""><a href="#featured-clients" class="scroll-link">FEATURE CLIENTS</a></li>
+              <li class=""><a href="#featured-clients" class="scroll-link">FEATURED CLIENTS</a></li>
               <li class=""><a href="#how-it-works" class="scroll-link">HOW IT WORKS</a></li>
               <li class=""><a href="#product-catalog" class="scroll-link">PRODUCT CATEGORIES</a></li>
               <li class=""><a href="#features-and-pricing" class="scroll-link">FEATURES & PRICING</a></li>
@@ -98,7 +99,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2 class="featurette-heading">Feature Clients</h2>
+            <h2 class="featurette-heading">Featured Clients</h2>
           </div>
         </div>
       </div>
@@ -167,7 +168,7 @@
         </div>
         <nav class="slides-navigation">
           <a id="next-main-slide" href="#" class="next">Next</a>
-          <a id="prev-main-slide" href="#" class="prev">Prev</a>
+          <a id="prev-main-slide" href="#" class="prev" style="display: none">Prev</a>
         </nav>
       </div>
     </div>
@@ -201,7 +202,7 @@
                 <div class="steps-block">
                   <p class=""><img class="featurette-image img-responsive" src="images/fi/step-3.png" alt=""></p>
                   <h2 class="big-num">3</h2>
-                  <p class="steps-text">Select hwo you want to display Shoppable<sup>&reg;</sup> items within your article.</p>
+                  <p class="steps-text">Select how you want to display Shoppable<sup>&reg;</sup> items within your article.</p>
                 </div>
               </td>
               <td>
@@ -371,19 +372,12 @@
                 <td class="emphasis b-r">FREE</td>
                 <td class="b-r">Yes</td>
               </tr>
-              <tr>
-                <td class="plan-label">License / month<sup>*</sup></td>
+              <tr class="plans-final-row">
+                <td class="plan-label b-r b-b">License / month<sup>*</sup></td>
                 <td class="b-r">$417</td>
                 <td class="b-r">$833</td>
                 <td class="emphasis b-r">$1,499</td>
                 <td class="b-r">Contact us for a quote</td>
-              </tr>
-              <tr class="plans-final-row">
-                <td class="plan-label b-r b-b">License / year</td>
-                <td class="b-r">$5,000</td>
-                <td class="b-r">$10,000</td>
-                <td class="emphasis b-r">$17,988</td>
-                <td class="b-r">$40,000+</td>
               </tr>
               <tr class="plans-footer">
                 <td class="plan-label">&nbsp;</td>
@@ -437,7 +431,7 @@
           <div class="col-md-2 text-center">
             <p class="logo-title"><img src="images/logos/gigaom.png" class="img-responsive" /></p>
             <div class="popover-lux">
-              <p class=" no-margin">"Instead of offering advertising alongside photo spreads that sends readers to outside sites, its technology allows publishers to make content Shoppable<sup>TM</sup> right there.”</p>
+              <p class=" no-margin">"Instead of offering advertising alongside photo spreads that sends readers to outside sites, its technology allows publishers to make content Shoppable<sup>&reg;</sup> right there.”</p>
             </div>
           </div>
           <div class="col-md-2 text-center">
@@ -471,6 +465,7 @@
 
     <!-- 3 MODAL SLIDESHOWS -->
 
+    <div id="all-modal-slideshows">
     <div class="modal modal-slideshow fade" id="slideshow-modal-tv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -479,32 +474,8 @@
 
             <div id="slides-modal-tv">
               <div class="slides-container">
-                <div>
-                  <img src="images/slideshow/tv/1.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/tv/2.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/tv/3.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/tv/4.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/tv/5.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/tv/6.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/tv/7.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/tv/8.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/tv/9.png" alt="">
+                <div class="loading-msg">
+                  <h2 class="featurette-heading text-center">JUST A MOMENT</h2>
                 </div>
               </div>
               <nav class="slides-navigation">
@@ -526,34 +497,9 @@
 
             <div id="slides-modal-wsj">
               <div class="slides-container">
-                <div>
-                  <img src="images/slideshow/wsj/1.png" alt="">
+                <div class="loading-msg">
+                  <h2 class="featurette-heading text-center">JUST A MOMENT</h2>
                 </div>
-                <div>
-                  <img src="images/slideshow/wsj/2.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/wsj/3.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/wsj/4.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/wsj/5.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/wsj/6.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/wsj/7.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/wsj/8.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/wsj/9.png" alt="">
-                </div>
-
               </div>
               <nav class="slides-navigation">
                 <a href="#" class="next">Next</a>
@@ -573,32 +519,8 @@
 
             <div id="slides-modal-lll">
               <div class="slides-container">
-                <div>
-                  <img src="images/slideshow/lll/1.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/lll/2.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/lll/3.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/lll/4.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/lll/5.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/lll/6.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/lll/7.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/lll/8.png" alt="">
-                </div>
-                <div>
-                  <img src="images/slideshow/lll/9.png" alt="">
+                <div class="loading-msg">
+                  <h2 class="featurette-heading text-center">JUST A MOMENT</h2>
                 </div>
               </div>
               <nav class="slides-navigation">
@@ -610,6 +532,8 @@
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+    </div>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
