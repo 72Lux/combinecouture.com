@@ -1336,7 +1336,7 @@ iframe {
   margin-top: 10px;
 }
 
-button {
+.singleProductModal button {
   display: inline-block;
   padding: 3px 7px;
   margin-bottom: 0;
@@ -1371,4 +1371,10 @@ button {
   color: #fff !important;
   background-color: #2B879C !important;
   border-color: #2B879C !important;
+}
+
+.loading-msg h2 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
 }
