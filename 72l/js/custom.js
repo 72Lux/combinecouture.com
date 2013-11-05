@@ -10,7 +10,7 @@ $(document).ready(function () {
   $('.popover-lux-trigger').popover();
 
   if ($('#slides').length > 0) {
-    $('#slides').superslides({'inherit_height_from' : '.slides-container-outer', 'inherit_width_from' : '.container', 'pagination': false});
+    $('#slides').superslides({'inherit_height_from' : '.slides-container-outer', 'inherit_width_from' : '.container', 'animation' : 'fade', 'pagination': false});
   }
 
   if ($('#slides-modal-lll').length > 0) {
