@@ -65,13 +65,21 @@ $(document).ready(function () {
 
   $('#next-main-slide').on('click', function(e) {
     e.preventDefault();
+    $('#prev-main-slide').fadeIn();
     var next_index = $('#slides').superslides('next');
+    if(next_index == 2) {
+      $(this).hide();
+    }
     $('#slides').superslides('animate', next_index);
   });
 
   $('#prev-main-slide').on('click', function(e) {
     e.preventDefault();
+    $('#next-main-slide').fadeIn();
     var prev_slide = $('#slides').superslides('prev');
+    if(prev_slide == 0) {
+      $(this).hide();
+    }
     $('#slides').superslides('animate', prev_slide);
   });
 

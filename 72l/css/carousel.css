@@ -111,6 +111,10 @@ a:active {
   margin-top: -55px;
 }
 
+.fixed-right.single {
+  margin-top: -50px;
+}
+
 .fixed-right a, .show-side-nav {
   font-size: 20px !important;
   font-weight: 200;
@@ -845,6 +849,7 @@ iframe {
 
 .modal {
   z-index: 1041;
+  bottom: auto;
 }
 .modal-slideshow .modal-header {
   background: #222;
@@ -875,10 +880,6 @@ iframe {
 
   -webkit-box-shadow: none;
   box-shadow: none;
-}
-
-.hidden-detail {
-  display: none;
 }
 
 /*.modal-backdrop {
