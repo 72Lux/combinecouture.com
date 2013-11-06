@@ -1143,7 +1143,7 @@ iframe {
 
   display: block;
   background: #fff;
-  padding: 10px;
+  padding: 0 0 5px 0;
   opacity: .8;
   filter: alpha(opacity=80);
   -webkit-transition: 0.25s;
