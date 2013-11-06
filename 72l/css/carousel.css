@@ -512,6 +512,7 @@ body.nav-open, .page-nav.nav-open {
 .btn-lux:hover, .btn-lux:focus, .btn-lux:active, .btn-lux.active {
   background: #eee;
   color: #64aac0;
+  background-image: none;
 }
 
 
@@ -519,6 +520,7 @@ body.nav-open, .page-nav.nav-open {
   color: #ffffff !important;
   background-color: #64aac0 !important;
   border-color: #64aac0 !important;
+  background-image: none !important;
 }
 
 .btn-lux:hover, .btn-lux:focus, .btn-lux:active, .btn-lux.active, .continue_link:hover , .checkout_link:hover, .continue_link:active , .checkout_link:active, .continue_link:focus , .checkout_link:focus  {
