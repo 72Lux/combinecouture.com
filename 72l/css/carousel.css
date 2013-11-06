@@ -1133,6 +1133,20 @@ iframe {
   transition: 0.25s;
 }
 
+.product-grid .product:hover .product-info {
+
+  display: block;
+  background: #fff;
+  padding: 10px;
+  opacity: .8;
+  filter: alpha(opacity=80);
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+
+}
+
 .product-grid .product-info {
   width: 120px;
   min-height: 0;
