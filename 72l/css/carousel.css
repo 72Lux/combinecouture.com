@@ -511,13 +511,13 @@ body.nav-open, .page-nav.nav-open {
 }
 
 
-.btn-lux {
+.btn-lux, .continue_link, .checkout_link {
   color: #ffffff;
   background-color: #64aac0;
   border-color: #64aac0
 }
 
-.btn-lux:hover, .btn-lux:focus, .btn-lux:active, .btn-lux.active {
+.btn-lux:hover, .btn-lux:focus, .btn-lux:active, .btn-lux.active, .continue_link:hover , .checkout_link:hover, .continue_link:active , .checkout_link:active, .continue_link:focus , .checkout_link:focus  {
   color: #fff;
   background-color: #2B879C;
   border-color: #2B879C;
@@ -1305,23 +1305,23 @@ iframe {
 }
 
 .singleProductModal button, .cart-modal .modal-body button {
-  display: inline-block;
-  padding: 3px 7px;
-  margin-bottom: 0;
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 1.428571429;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
+  display: inline-block !important;
+  padding: 3px 7px !important;
+  margin-bottom: 0 !important;
+  font-size: 12px !important;
+  font-weight: normal !important;
+  line-height: 1.428571429 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  vertical-align: middle !important;
+  cursor: pointer !important;
+  border: 1px solid transparent !important;
+  border-radius: 4px !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  -o-user-select: none !important;
+  user-select: none !important;
 }
 
 .add-to-cart {
@@ -1360,12 +1360,12 @@ iframe {
 }
 
 .cart-modal .modal-body {
-  padding: 30px 0;
+  padding: 30px 0 0 0;
 }
 
 .cart-modal .main_heading {
   background: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: none;
 }
 
 .main_heading .shipped_from {
@@ -1379,6 +1379,7 @@ iframe {
 
 .cart-modal .items ul {
   border-bottom: 0;
+  background: #fff;
 }
 
 .main_heading .sub_total {
