@@ -847,9 +847,9 @@ iframe {
   box-shadow: none;
 }
 
-/*.modal-backdrop {
-  background-color: #fff;
-}*/
+.modal-backdrop {
+  background-color: #666;
+}
 
 .modal-backdrop.in {
   opacity: 0.9;
