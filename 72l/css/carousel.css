@@ -330,6 +330,9 @@ body.nav-open, .page-nav.nav-open {
   filter: alpha(opacity=80);
 }
 
+.container-steps .col-md-2 {
+  padding: 2px;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -708,9 +711,8 @@ body.nav-open, .page-nav.nav-open {
 /*  background: #fff url('../images/fi/publishers-header.png') no-repeat top center;
 */}
 
-.merchants-header-container {
-  height: 669px;
-  background: #222 url('../images/fi/merchants-header.png') no-repeat top center;
+.merchants-header-container img {
+  width: 100%;
 }
 
 .shoppable-screencap-container {
@@ -831,7 +833,9 @@ iframe {
 }
 
 .modal-slideshow .modal-dialog {
-  width: 90%;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .modal-slideshow .modal-content {
