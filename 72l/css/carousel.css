@@ -1120,11 +1120,32 @@ iframe {
 /*On line 1889, match height to height set above:*/
 .product-grid .product .product-image {
   height: 200px;
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.product-grid .product .product-image:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .product-grid .product-info {
   width: 120px;
   min-height: 0;
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.product-grid .product {
+  background: #eee;
+  border: 1px solid #eee;
+  position: relative;
 }
 
 .product-grid .product-brand-name {
