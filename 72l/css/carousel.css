@@ -970,8 +970,16 @@ iframe {
   margin-top: 50px;
 }
 
-.table-plans td {
+.col-md-12 .table-plans td {
   width: 20%;
+}
+
+.col-md-3 .table-plans td {
+  width: 50%;
+}
+
+.col-md-3 .table-plans {
+  margin-top: 100px;
 }
 
 .table-plans .emphasis {
