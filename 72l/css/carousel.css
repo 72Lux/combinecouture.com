@@ -1327,7 +1327,7 @@ iframe {
 
 .singleProductModal button, .cart-modal .modal-body button {
   display: inline-block !important;
-  padding: 3px 7px !important;
+  padding: 3px 7px;
   margin-bottom: 0 !important;
   font-size: 12px !important;
   font-weight: normal !important;
@@ -1346,7 +1346,6 @@ iframe {
 }
 
 .add-to-cart {
-  margin-top: -60px;
   float: left;
 }
 
@@ -1354,6 +1353,7 @@ iframe {
   color: #ffffff !important;
   background-color: #64aac0 !important;
   border-color: #64aac0 !important;
+  padding: 10px 20px !important;
 }
 
 .add-to-cart-button:hover, .add-to-cart-button:focus, .add-to-cart-button:active {
@@ -1405,6 +1405,10 @@ iframe {
 
 .main_heading .sub_total {
   color: #666;
+}
+
+.single-product .product-info-wrapper .color-and-size-selects {
+  margin-top: -40px;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
