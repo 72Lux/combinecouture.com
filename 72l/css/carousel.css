@@ -1304,7 +1304,7 @@ iframe {
   margin-top: 10px;
 }
 
-.singleProductModal button {
+.singleProductModal button, .cart-modal .modal-body button {
   display: inline-block;
   padding: 3px 7px;
   margin-bottom: 0;
@@ -1351,6 +1351,39 @@ iframe {
   background: url(../images/close.png) no-repeat center center #EEE;
 }
 
+.cart-modal {
+  background: #eee;
+}
+
+.cart-modal .modal-header {
+  display: none;
+}
+
+.cart-modal .modal-body {
+  padding: 30px 0;
+}
+
+.cart-modal .main_heading {
+  background: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.main_heading .shipped_from {
+  color: #666;
+}
+
+.main_heading .customer_service a {
+  color: #3099B0;
+  font: 14px/23px "HelveticaNeue", sans-serif;
+}
+
+.cart-modal .items ul {
+  border-bottom: 0;
+}
+
+.main_heading .sub_total {
+  color: #666;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
