@@ -1,8 +1,6 @@
 $(document).ready(function () {
 
-  $('#footer-container').load('footer.html', function() {
-    $('.stretch-image').anystretch();
-  });
+  $('.stretch-image').anystretch();
 
   $('#navigation').load('navigation.html', function() {
     $('.close-nav').on('click', function(e) {
@@ -75,6 +73,9 @@ $(document).ready(function () {
       $(this).attr('src', orig).addClass('masked');
     }
   );
+
+  $('#newsletter-signup-goes-here').load('newsletter-signup.html', function() {
+  });
 
 });
 
