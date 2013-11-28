@@ -12,7 +12,7 @@ a:hover{ text-decoration:none;}
 /*globaly css ends here*/
 
 
-.layout{width: 965px; margin: 0 auto;}
+.layout{/*width: 965px; */ margin: 0 auto;}
 
 #outer_top_head{float: left; width: 100%; background: url(../images/header_bg.gif) repeat-x 0 bottom; padding: 0 0 10px 0; margin-bottom: 10px;}
 #top_head{width: 965px; margin: 0 auto;}
