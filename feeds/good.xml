@@ -1,4 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE products [
+<!ELEMENT product (part_number,name,url,description,category,brand,keywords,adult,variant)>
+<!ELEMENT part_number (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT brand (#PCDATA)>
+<!ELEMENT keywords (#PCDATA)>
+<!ELEMENT adult (#PCDATA)>
+<!ELEMENT variants (sku,price,color,image,alternate_images)>
+<!ELEMENT sku (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT alternate_images (#PCDATA)>
+<!ENTITY Iacute "Í">
+<!ENTITY iacute "í">
+<!ENTITY frac12 "½">
+<!ENTITY mdash "—">
+<!ENTITY ndash "–">
+<!ENTITY rsquo "’">
+<!ENTITY rdquo "”">
+<!ENTITY ldquo "“">
+<!ENTITY lsquo "‘">
+<!ENTITY eacute "é">
+<!ENTITY Eacute "É">
+<!ENTITY Uuml "Ü">
+<!ENTITY auml "ä">
+<!ENTITY ouml "ö">
+<!ENTITY euml "ë">
+<!ENTITY iuml "ï">
+<!ENTITY uuml "ü">
+<!ENTITY ordm "º">
+<!ENTITY Ccedil "Ç">
+<!ENTITY ccedil "ç">
+<!ENTITY ucirc "û">
+<!ENTITY Ucirc "Û">
+<!ENTITY Ograve "Ò">
+<!ENTITY reg "®">
+<!ENTITY oslash "ø">
+<!ENTITY Oslash "Ø">
+<!ENTITY trade "">
+<!ENTITY gt ">">
+<!ENTITY amp "&#038;">
+]>
+
+
 <products>
   <product>
     <part_number>88</part_number>
@@ -43,4 +91,23 @@
       <image>http://placekitten.com/700/1000</image>
     </variants>
   </product>
+<product>
+    <part_number>100250000000</part_number>
+    <name>Peter Maly Two-Piece Andirons</name>
+    <url>http://store.dwell.com/peter-maly-two-piece-andirons.html</url>
+    <description>&ldquo;I like working with clear, geometric forms: for me, they are the essential condition of their longevity,&rdquo; notes designer Peter Maly. In his two-piece set of andirons, his sentiment is made visible. Distilling the form to its most fundamental, Peter Maly&rsquo;s andirons are minimal and clean. Made in Germany from stainless steel.</description>
+    <category>Home &gt; Decor &amp; Accessories &gt; Home Accents</category>
+    <brand>Conmoto</brand>
+    <keywords></keywords>
+    <adult>false</adult>
+       <variants>
+           <sku>100250000000</sku>
+           <price>850</price>
+           <color>stainless steel, matte</color>
+           <image>http://store.dwell.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/A/m/Ameico-Peter-Maly-2-piece-andiron-01.jpg.jpg</image>
+           <alternate_images></alternate_images>
+           <alternate_images></alternate_images>
+           <alternate_images></alternate_images>
+       </variants>
+    </product>
 </products>
