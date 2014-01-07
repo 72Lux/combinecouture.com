@@ -992,6 +992,10 @@ iframe {
 
 /* FOR GRID AND CART */
 
+.lux-product-frame {
+  text-align: center;
+}
+
 .cart-modal {
   border: 1px solid #222;
 }
@@ -1008,7 +1012,7 @@ iframe {
 .product-grid {
   margin: 0 auto;
   display: inline-block;
-  max-width: 960px;
+  max-width: 100%;
 }
 
 .product-grid .blank-cell, .product-grid .product {
@@ -1092,6 +1096,7 @@ iframe {
 .product-grid .product {
   background: #eee;
   border: 1px solid #eee;
+  margin: 0 10px 10px 0;
 }
 
 .product-grid .product:hover {
