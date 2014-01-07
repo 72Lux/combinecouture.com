@@ -1016,13 +1016,13 @@ iframe {
 }
 
 .product-grid .blank-cell, .product-grid .product {
-  width: 240px;
+  width: 224px;
   height: auto;
 }
 
 /*On line 1894, match width from above for the image. Also adjust height for image:*/
 .product-grid .product-image .product-image-src {
-  width: 240px;
+  width: 224px;
   height: 350px;
 }
 
