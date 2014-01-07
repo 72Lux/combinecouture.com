@@ -1078,6 +1078,9 @@ iframe {
   width: 100%;
 }
 
+.single-product .product-info-wrapper .product-sale-price .price-label {
+  color: #af0000;
+}
 
 .product-retail-price {
   width: 100%;
