@@ -8,11 +8,13 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>Shoppable Checkout Demo</title>
+    <title>Shoppable International Demo</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap-3.0.3.min.css" rel="stylesheet" type="text/css">
+    <link rel='stylesheet' type='text/css' href='//d3i35264kiorxl.cloudfront.net/css/shop.css'>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script id='lux-shop-loader' src='//d3i35264kiorxl.cloudfront.net/dev/js/shop.js?token=jj7JfIf9oO177lqX7c5503611' data-luxapi='dev.api.shoppable.co'></script>
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -29,17 +31,23 @@
     <div class="navbar navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <span class="navbar-brand text-muted">Checkout Demo</span>
+          <a class="navbar-brand" href="index.html">Back to Index</a>
         </div>
+        <div class="collapse navbar-collapse pull-right">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="#" class="lux-cart-frame" data-style="modal" data-show-powered-by='1' data-checkout="https://combinecouture.com/demo/us-checkout.html">SHOPPING BAG <span class="lux-cart-label">&nbsp;</span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
 
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p><a href="sg.html" class="lead">Nordstrom products for Singapore in a grid layout.</a></p>
-          <p><a href="us.html" class="lead">Nordstrom products for US (default) in a grid layout.</a></p>
-          <p><a href="us-mixed-retailer.html" class="lead">Nordstrom & Drugstore.com products for US (default) in a grid layout.</a></p>
+          <div class="alert alert-lux">
+            <p class="lead">The country is not specified and the frame will default to 'US'.</p>
+          </div>
+          <div class='lux-product-frame' data-frame='grid' data-version="1.5" data-id='210' data-show-powered-by='1'></div>
         </div>
       </div>
     </div><!-- /.container -->
