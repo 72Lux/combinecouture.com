@@ -28,7 +28,7 @@
     }
 
     $html = file_get_contents($url);
-    $html2 = preg_replace('/<\/head>/','<base href="http://' . $parsed_url['host'] . '"><script id="shoppable_magic_v0-1" options=\'"titleColor":"red", "subtitleColor":"blue", "bodyColor":"", "subTextColor":"" , "bgColor":"", "bgOpacity":"", "pdpBgColor":"", "btnColor":"", "btnTextColor":"", "token":"q3Zn150Wj8vvE8JF66c745d7307370aa"\' src="http://int.magic.shoppable.co/assets/application.js"></script></head>',$html);
+    $html2 = preg_replace('/<\/head>/','<base href="http://' . $parsed_url['host'] . '"><script id="shoppable_magic_v0-1" options=\'"titleColor":"red", "subtitleColor":"blue", "bodyColor":"", "subTextColor":"" , "bgColor":"", "bgOpacity":"", "pdpBgColor":"", "btnColor":"", "btnTextColor":"", "token":"UT8x212GWF3B0QRE2c4d9cf50bf489f6"\' src="http://int.magic.shoppable.co/assets/application.js"></script></head>',$html);
 #     $html2 = preg_replace('/<\/head>/','<script id="shoppable_magic_v0-1" options=\'"titleColor":"red", "subtitleColor":"blue", "bodyColor":"", "subTextColor":"" , "bgColor":"", "bgOpacity":"", "pdpBgColor":"", "btnColor":"", "btnTextColor":"", "token":"FbSD6nUL4KRy6LCJ655e9c04ce5077d9"\' src="http://int.magic.shoppable.co/assets/application.js">   	</head>',$html);
 
     echo $html2;
